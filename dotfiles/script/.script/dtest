@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pidof dunst && killall dunst
+dunst &
+
+notify-send "Notification" -i $HOME/.iconz/test.png -t 2000
+canberra-gtk-play -f $HOME/.config/dunst/sounds/message.oga

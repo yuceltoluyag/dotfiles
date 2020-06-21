@@ -1,0 +1,10 @@
+2020-03-18 14:20:52	-->	friday13 (~friday13@88.233.220.103) has joined #elixir-lang
+2020-03-18 14:20:52	--	Topic for #elixir-lang is "Elixir and ecosystem channel | https://elixir-lang.org | ElixirConf EU 2019 videos: https://bit.ly/2Jp96op | This channel is logged"
+2020-03-18 14:20:52	--	Topic set by josevalim (sid250896@gateway/web/irccloud.com/x-tvudrczpktieowlm) on Wed, 08 May 2019 15:45:51
+2020-03-18 14:20:52	--	Channel #elixir-lang: 399 nicks (0 ops, 0 voices, 399 normals)
+2020-03-18 14:21:00	--	Channel created on Sat, 04 Jun 2011 18:38:13
+2020-03-18 14:21:20	dysfun	benwilson512:      ** (throw) {:unexpected_errors, [%{"locations" => [%{"column" => 47, "line" => 2}], "message" => "Argument \"after\" has invalid value $after."}]}
+2020-03-18 14:21:29	<--	catonano (~catonano@151.45.51.184) has quit (Remote host closed the connection)
+2020-03-18 14:21:49	-->	catonano (~catonano@151.45.51.184) has joined #elixir-lang
+2020-03-18 14:22:30	-->	Bounga (~user@2a01:e0a:5:1a0:21c1:c28a:5c72:e50d) has joined #elixir-lang
+2020-03-18 14:22:45	<--	gvaughn (~gvaughn@2605:6000:8d60:2800:9544:c258:22fb:5db) has quit (Ping timeout: 240 seconds)

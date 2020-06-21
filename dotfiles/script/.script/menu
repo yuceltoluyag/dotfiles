@@ -1,0 +1,20 @@
+#!/bin/bash
+
+i=$(icon menu) c= l=
+
+while getopts i:c:l:p: OPT; do
+    case $OPT in
+        i) i=$(icon $OPTARG);;
+        c) c="-columns $OPTARG";;
+        l) l="-l $OPTARG";;
+        p) i+=" $OPTARG";;
+    esac
+done
+
+rofi -multi-select -dmenu -i -p "$i" $l $c
+command -v rofi >&- && exit
+
+source ~/.cache/wal/colors.sh
+dmenu -i -p "$i" -fn Terminus-9 \
+-nf $foreground -nb $background \
+-sf $background -sb $color2

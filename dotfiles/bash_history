@@ -1,0 +1,433 @@
+sudo loadkeys trq
+ping -c 4 google.com
+ping -c 4 google.com
+ping -c 4 google.com
+ping -c 4 google.com
+nmcli device list
+nmcli device wifi list
+man nmcli
+nmcli man
+nmcli --help
+sudo pacman -S bash-completion
+nmcli device wifi connect FiberHGW_ZTSXX_2.4GHZ password 94YbXrch94
+nmcli device wifi connect FiberHGW_ZTSX6X_2.4 password 94YbXrch94
+nmcli device wifi connect FiberHGW_ZTSX6X_2.4GHZ password 94YbXrch94
+nmcli device wifi list
+nmcli device wifi connect FiberHGW_ZTSX6X_2.4HZ password 94YbXrch94
+nmcli device wifi connect FiberHGW_ZTSX6X_2.4GHz password 94YbXrch94
+ping google.com
+sudo nano /etc/pacman.conf 
+sudo pacman -S xorg xorg-server xorg-xinit chromium i3-wm dmenu rofi feh sxiv mpv lightdm lightdm-gtk-greeter linux linux-firmware ranger xterm xorg-xterm 
+sudo pacman -S xorg xorg-server xorg-xinit chromium i3-wm dmenu rofi feh sxiv mpv lightdm lightdm-gtk-greeter linux linux-firmware ranger xterm  
+sudo systemctl enable lightdm
+sudo pacman -S neovim
+sudo pacman -Ss xf86-video
+sudo pacman -S xf86-video-intel xf86-video-nouveau
+reboot
+ls
+pwd
+sudo pacman -Syu
+sudo pacman -S reflector
+clear
+setxkbmap tr
+sudo pacman -S dunst
+sudo pacman -S alacritty
+asdas
+alacritty
+sudo pacman -S rofi xorg-backlight lm_sensors upower pulseaudio pamixer jq pacman-contrib mpd mpc maim feh
+sudo pacman -S rofi lm_sensors upower pulseaudio pamixer jq pacman-contrib mpd mpc maim feh
+sudo pacman -S xorg-xbacklight
+sudo pacman -S thunar-gtk2
+sudo pacman -Ss thunar-gtk2
+nano .config/alacritty/alacritty.yml
+touch .config/alacritty/alacritty.yml
+mkdir -p .config/alacritty/
+touch .config/alacritty/alacritty.yml
+nano .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+vim .config/alacritty/alacritty.yml
+rm -rf  .config/alacritty/alacritty.yml
+nvim .config/alacritty/alacritty.yml
+reset
+pacman -Qi
+git clone https://aur.archlinux.org/yay.git
+cd  yay
+makepkg -si
+yay -S pikaur --nonconfirm
+yay -S pikaur --noncofirm
+yay -S pikaur --nocnofirm
+yay -S pikaur 
+cd ..
+rm -rf yay
+sudo pacman -S i3bar
+sudo pacman -S i3-bar
+sudo pacman -S i3-block
+sudo pacman -S i3-blocks
+sudo pacman -S i3block
+sudo pacman -Ss i3block
+sudo pacman -Ss i3blocks
+sudo pacman -S i3blocks
+sudo pacman -Ss i3bar
+sudo pacman -S i3status
+yay -S sublime-text-dev
+subl3 .config/i3/config 
+sudo /etc/locale.gen 
+sudo /etc/locale.conf
+sudo subl3 /etc/locale.gen
+sudo locale-gen
+sudo localectl set-locale LANG=en_US.UTF-8
+cp /etc/i3status.conf ~/.config/i3status/config
+mkdir -p .config/i3status/
+cp /etc/i3status.conf ~/.config/i3status/config
+subl3 .config/i3status/config 
+subl3 .Xresources
+sudo pacman -S ttf-inconscalata
+sudo pacman -Ss ttf-inconscalata
+sudo pacman -Ss ttf-incon
+sudo pacman -S ttf-inconsolata
+xrdb .Xresources 
+pacman -Syu awesome-terminal-fonts
+sudo pacman -Syu awesome-terminal-fonts
+subl3 .config/alacritty/alacritty.yml 
+yay Iosevka
+subl3 /tmp/Alacritty-22457.log 
+pwd
+ls
+subl3 .config/i3/config 
+xpro
+xprop 
+vim
+nvim
+pacman -Qi
+ip link
+lsblk -f
+sudo subl3 noauto,x-systemd.automount
+sudo subl3 /etc/fstab 
+reboot
+feh
+https://github.com/yuceltoluyag/dotfiles.git
+setxkbmap tr
+git clone https://github.com/yuceltoluyag/dotfiles.git
+git clone https://github.com/yuceltoluyag/dotfiles.git
+git clone https://github.com/yuceltoluyag/dotfiles.git
+git clone https://github.com/yuceltoluyag/dotfiles.git
+yay -S thunar-gtk2
+sudo subl3  /etc/pacman.conf
+sudo pacman -S xdg-user-dir
+sudo pacman -S xdg-user-dirs
+xdg-user-dirs-update
+yay -S otf-sfmono
+pacman -Ss inconsolata
+cat /sys/class/backlight/acpi_video0/brightness
+cd Downloads/
+chmod +x i3.sh 
+./i3.sh 
+./i3.sh 
+./i3.sh 
+./i3.sh 
+yay -S acpid
+sudo systemctl enable acpid
+acpi_listen
+casdasd
+setxkbmap tr
+subl3 .config/i3/config 
+pidof redshift
+yay -S redshift
+pidof redshift
+pidof redshift
+redshift
+killall redshift
+killall redshift
+yay lxapp
+touch sokak.txt
+subl3 sokak.txt 
+ranger
+ranger
+clear
+./checkup 
+newsboat
+newsboat
+xprop
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . $HOME/.zprofile; 
+yay -S i3ass
+ls
+pwd
+sa
+cd
+alias 
+m
+pp
+sc
+vv
+klavyebul
+mkdir -p ~/.go/src
+sudo pacman -S ruby
+ls
+echo $GOPATH
+alias
+subi3blo 
+subi3blo 
+subi3blo 
+ptemiz
+temizle
+aynalar
+hata
+hatalog
+dmesg | grep -i -e DMAR -e IOMMU
+uname -a
+guncelle
+dmesg | grep -i -e DMAR -e IOMMU
+hatalog
+ls /lib/modules/2.6.33-ARCH/kernel/arch/x86/kernel/cpu/cpufreq/
+yay -S thermald
+sudo systemctl enable thermald.service 
+ls /lib/modules/2.6.33-ARCH/kernel/arch/x86/kernel/cpu/cpufreq/
+$ ls /usr/lib/modules/$(uname -r)/kernel/drivers/cpufreq/
+ls /usr/lib/modules/$(uname -r)/kernel/drivers/cpufreq/
+cpupower frequency-info
+hatalog
+sudo pacman -S gamin  gvfs ntfs-3g dosfstools
+sudo pacman -S gvfs ntfs-3g dosfstools
+cd /usr/share/polkit-1/rules.d
+sudo cd /usr/share/polkit-1/rules.d
+su
+su
+sudo blkid
+sudo gpasswd -a $USER disk
+clear
+ls
+pwd
+pwd
+ls -la
+pacbac
+pacbac b
+pacbac
+pacbac b
+pacbac 
+pacbac r
+sudo systemctl enable transmission.service
+yay -S transmission-cli
+sudo systemctl enable transmission.service
+shutdown -r now
+setxkbmap tr
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+redshift&
+pidof redshift 
+lolban baba
+lolban i3
+i3run -i floatterm -s -e 'alacritty -name floatterm'
+alacritty -n dropdown
+alacritty -e 'termite'
+alacritty -e  ncmpcpp 
+asdsad
+isadisaid
+alacritty -e 'xterm'
+i3run -i cterm -e 'alacritty -name cterm'
+htop
+pwd
+ls
+yay -S rxvt-unicode-patched
+xprop
+thunarIPC
+wal -i Pictures/
+launchfm 
+sudo pacman -S zsh
+mugshot
+launchfm 
+yay -S bluez
+yay -S bluez-utils
+sudo systemctl enable bluetooth
+wpg -a Pictures/
+wpg -a Pictures/*
+wal -i Pictures/
+wpg -s wallhaven-83o2ky.jpg 
+wpg-install.sh  -gi
+wpg -s wallhaven-83o2ky.jpg 
+./thunarIPC
+./thunarIPCstart 
+ls
+reboot
+ls
+pwd
+ptemiz
+temizle
+ls
+aynalar
+guncelle
+launchfm 
+cla
+killall subl3
+launchfm 
+zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+zsh
+git clone https://github.com/zdharma/fast-syntax-highlighting.git   ~ZSH_CUSTOM/plugins/fast-syntax-highlighting
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+zsh
+zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git .oh-my-zsh/custom/themes/powerlevel10k
+zsh
+zsh
+htop
+gotop
+yay -S gotop
+asdsad
+zsh
+vim
+composer
+zsh
+zsh
+zsh
+zsh
+ls
+zsh
+ls
+pwd
+zsh
+zsh
+ls
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+yay -S pacman -Syu awesome-terminal-fonts
+sudo pacman -Syu awesome-terminal-fonts
+yay -S powerline-fonts-git 
+zsh
+powerline-console-fonts
+yay -S powerline-console-fonts
+yay -S powerline-console-fonts
+pikaur  -S powerline-console-fonts
+vim
+nvim
+clear
+ls
+zsh
+zsh
+subl3 .Xresources 
+xrdb .Xresources 
+urxvt-tabbed 
+perl
+clear
+ls
+zsh
+ls
+pwd
+zsh
+ls
+urxvt
+yay terminus
+ls
+vim
+ls
+sudo pacman npm yarn
+yay -S npm yarn
+zsh
+zsh
+zsh
+i3urxvt 
+i3urxvt 
+i3urxvt 
+pacman -Qi
+))))==sada
+i3urxvt 
+killall urxvt
+ls
+zsh
+i3urxvt 
+zsh
+zsh
+zsh
+zsh
+ls
+pwd
+zsh
+i3urxvt 
+s
+ls
+pwd
+ranger
+zsh
+i3urxvt 
+xrdb .Xresources 
+ls
+zsh
+xrdb .Xresources 
+ls
+zsh
+yay -S rxvt-unicode-cvs-patched-wideglyphs
+i3urxvt 
+xrdb .Xresources 
+ls
+ls
+xrdb .Xresources 
+ls
+zsh
+yay -S URxvt.font: xft:Iosevka Term:style=Light:pixelsize=12:antialias=true:hinting=true
+yay -S rxvt-unicode-cvs-patched-wideglyphs
+vim
+ls
+pwd
+xrdb .Xresources 
+ls
+pwd
+zsh
+zsh
+zsh
+zsh
+zsh
+ls
+zsh
+ls
+dmesg | grep wlan0
+rmmod pcspkr
+sudo rmmod pcspkr
+ls  /etc/modprobe.d/
+su
+yay aic94xx wd719x
+yay aic94xx
+yay wd719x
+sudo mkinitcpio -p linux linux-firmware
+chsh -s zsh
+which zsh
+chsh -s /usr/bin/zsh 
+ls
+pwd
+ls
+pacman -Qi
+++-++--__---------++++
+pacman -Qi
+reboot
+ls
+pwd
+ls
+bash
+zsh
+ls
+pwd
+ls
+pwd
+clear
+clear
+pwd
+ls
+ls -la
+ls -la | ls_color

@@ -1,0 +1,480 @@
+;=====================================================
+#                     ████                ██                           
+#                     ████                ██                           
+#                       ██                ██                           
+# ██░███▒    ░████░     ██      ██▓  ▓██  ██░███▒    ▒████▓    ██░████ 
+# ███████▒  ░██████░    ██      ▒██  ██▓  ███████▒   ██████▓   ███████ 
+# ███  ███  ███  ███    ██       ██▒ ██░  ███  ███   █▒  ▒██   ███░    
+# ██░  ░██  ██░  ░██    ██       ███▒██   ██░  ░██    ▒█████   ██      
+# ██    ██  ██    ██    ██       ░██▓█▓   ██    ██  ░███████   ██      
+# ██░  ░██  ██░  ░██    ██        ████░   ██░  ░██  ██▓░  ██   ██      
+# ███  ███  ███  ███    ██▒       ▒███    ███  ███  ██▒  ███   ██      
+# ███████▒  ░██████░    █████      ██▓    ███████▒  ████████   ██      
+# ██░███▒    ░████░     ░████      ██░    ██░███▒    ▓███░██   ██      
+# ██                              ▒██                                  
+# ██                             ███▒                                  
+# ██                             ███            
+;
+;=====================================================
+
+[colors]
+background = ${xrdb:color0:#00000000}
+background-alt = #434C5E
+foreground = ${xrdb:color7:#00000000}
+foreground-inverse = ${xrdb:color0:#222}
+background-inverse = ${xrdb:color1:#222}
+foreground-faded = ${xrdb:color2:#222}
+background-raised = ${xrdb:color0:#222}
+foreground-prefix = ${xrdb:color2:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+warning = ${xrdb:color3:#222}
+active-led = ${xrdb:color1:#222}
+roxo = #b48ead
+dark0_hard      = #1d2021
+dark0           = #282828
+dark0_soft      = #32302f
+dark1           = #3c3836
+dark2           = #504945
+dark3           = #665c54
+dark4           = #7c6f64
+gray_245        = #928374
+gray_244        = #928374
+light0_hard     = #f9f5d7
+light0          = #fbf1c7
+light0_soft     = #f2e5bc
+light1          = #ebdbb2
+light2          = #d5c4a1
+light3          = #bdae93
+light4          = #a89984
+bright_red      = #fb4934
+bright_green    = #b8bb26
+bright_yellow   = #fabd2f
+bright_blue     = #83a598
+bright_purple   = #d3869b
+bright_aqua     = #8ec07c
+bright_orange   = #fe8019
+neutral_red     = #cc241d
+neutral_green   = #98971a
+neutral_yellow  = #d79921
+neutral_blue    = #458588
+neutral_purple  = #b16286
+neutral_aqua    = #689d6a
+neutral_orange  = #d65d0e
+faded_red       = #9d0006
+faded_green     = #79740e
+faded_yellow    = #b57614
+faded_blue      = #076678
+faded_purple    = #8f3f71
+faded_aqua      = #427b58
+faded_orange    = #af3a03
+
+
+
+[bar/top-bar]
+;monitor = ${env:MONITOR:LVDS-1}
+width = 100%
+height = 32
+offset-x = 0
+offset-y = 0
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+spacing = 1
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Fantasque Sans Mono:style=Regular:pixelsize=11;2
+font-1 = feather:style=Regular:pixelsize=11;3
+font-2 = FontAwesome:size=11;2
+font-3 = Termsynu:size=7;0
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=14;1"
+font-5 = "Font Awesome 5 Free:style=Regular:pixelsize=14;1"
+font-6 = "Font Awesome 5 Brands:pixelsize=7;1"
+font-7 = "Material Icons:size=7;4"
+
+
+modules-left = i3 sep uptime pkg
+modules-center = window
+modules-right = cpu memory hddled filesystem temperature netled network data pulse powermenu
+
+;----------------------------------------------------------
+;		        Top Bar
+;----------------------------------------------------------
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+pin-workspaces = false
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+
+strip-wsnumbers = true
+
+label-mode = %mode%
+label-mode-foreground = ${colors.secondary}
+label-mode-padding = 1
+
+label-focused = %name%
+label-focused-foreground = ${colors.secondary}
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 1
+
+label-unfocused = %name%
+label-unfocused-padding = 1
+
+label-visible = %name%
+label-visible-background = ${colors.background-alt}
+label-visible-padding = 1
+
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+[module/sep]
+type = custom/text
+content = 
+
+[module/sepv]
+type = custom/text
+content = 
+
+[module/uptime]
+type = custom/script
+interval = 30
+exec = ~/.config/polybar/scripts/uptime.sh
+
+[module/pkg]
+type = custom/script
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
+click-left = ~/.config/polybar/scripts/pkg.sh -u &
+exec = ~/.config/polybar/scripts/pkg.sh
+interval = 600
+
+[module/window]
+type = custom/script
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
+;label = %output:0:45:...%  %{B- -o -u}
+label = %output:0:40:...%
+click-left = ~/.config/polybar/scripts/titles.sh -i
+click-middle = ~/.config/polybar/scripts/titles.sh -c
+click-right = ~/.config/polybar/scripts/titles.sh -w
+exec = ~/.config/polybar/scripts/titles.sh
+
+[module/cpu]
+type = internal/cpu
+interval = 1.5
+format = <label>
+format-prefix = 
+label = %percentage:3%%
+
+[module/memory]
+type = internal/memory
+interval = 0.5
+format = <label>
+format-prefix = 
+label = %percentage_used:3%%
+
+[module/hddled]
+type = custom/script
+exec = ~/.config/polybar/scripts/hdd.sh
+tail = true
+
+
+[module/filesystem]
+type = internal/fs
+interval = 60
+mount-0 = /
+format = <label>
+format-mounted = <label-mounted>
+label-mounted = %free%
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+format-prefix = ""
+format-prefix-foreground = ${colors.secondary}
+format-warn-prefix = ""
+format-warn-prefix-foreground = ${colors.secondary}
+format = <label>
+format-warn = <label-warn>
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.secondary}
+
+[module/netled]
+type = custom/script
+exec = ~/.config/polybar/scripts/netled.sh
+tail = true
+
+[module/network]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>
+;format-connected-prefix = " "
+;format-connected-prefix-foreground = ${colors.secondary}
+
+format-disconnected = <label-disconnected>
+;format-disconnected-prefix = " "
+;format-disconnected-prefix-foreground = ${colors.secondary}
+
+format-packetloss = <label-packetloss>
+;format-packetloss-prefix = " "
+;format-packetloss-prefix-foreground = ${colors.secondary}
+
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+label-connected = %downspeed:3% %upspeed:3%
+;label-connected = %downspeed:3%
+;label-connected = %ifname%
+label-disconnected = offline
+label-packetloss = loss
+
+[module/data]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %a, %d-%m-%Y"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = ${colors.secondary}
+
+label = %date% %time%
+
+
+
+[module/pulse]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+format-volume-prefix = "%{T2}%{T-} "
+format-volume-prefix-foreground = ${colors.secondary}
+
+format-volume = <label-volume>
+label-volume = %percentage%%
+
+label-muted = 
+label-muted-foreground = ${colors.secondary}
+
+[module/powermenu]
+type = custom/menu
+
+;expand-right = true
+
+format-spacing = 1
+
+label-open = 
+;label-open-foreground = ${colors.secondary}
+
+label-close = " "
+;label-close-foreground = ${colors.secondary}
+
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = İptal
+menu-0-0-exec = menu-open-1
+
+menu-0-1 = Askıya Al
+menu-0-1-exec = menu-open-2
+
+menu-0-2 = Yeniden Başlat
+menu-0-2-exec = menu-open-3
+
+menu-0-3 = Kapat
+menu-0-3-exec = menu-open-4
+
+menu-1-0 = İptal?!
+menu-1-0-exec = i3-msg exit
+
+menu-2-0 = Kapat?!
+menu-2-0-exec = systemctl suspend
+
+menu-3-0 = Yeniden Başlat?!
+menu-3-0-exec = systemctl reboot
+
+menu-4-0 = Kapat?!
+menu-4-0-exec = systemctl poweroff
+
+
+;----------------------------------------------------------
+;		        B A R  ( B O T T O M )
+;----------------------------------------------------------
+[bar/bottom-bar]
+;monitor = ${env:MONITOR:LVDS-1}
+width = 100%
+height = 29
+fixed-center = true
+bottom = true
+tray-position = right
+tray-detached = true
+;tray-maxsize = 16
+pseudo-transparency = false
+tray-background = ${root.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+locale = en_US.UTF-8
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = ${colors.alert}
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 0
+module-margin-right = 1
+
+font-0 = Fantasque Sans Mono:style=Regular:pixelsize=11;2
+font-1 = feather:style=Regular:pixelsize=11;3
+font-2 = FontAwesome:size=11;2
+font-3 = Termsynu:size=7;0
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=14;1"
+font-5 = "Font Awesome 5 Free:style=Regular:pixelsize=14;1"
+font-6 = "Font Awesome 5 Brands:pixelsize=7;1"
+font-7 = "Material Icons:size=7;4"
+font-8 = "Weather Icons:size=12;0"
+
+
+modules-left = browser terminal editor thunar telegram steam sep 
+modules-center = mpd
+modules-right = news weather refresh lixo
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+border-top-size = 2
+border-top-color = ${colors.secondary}
+
+[module/news]
+type = custom/script
+exec = n=$(newsboat -x print-unread | cut -d ' ' -f 1); echo $(icon news)${n#0}
+interval = 2
+click-left  = start news
+click-right = notify news
+
+[module/torrents]
+type = custom/script
+exec = n=$(torrents | wc -l); icon torrents ${n#0}
+interval = 5
+click-left  = start torrents
+click-right = notify torrents
+
+[module/browser]
+type = custom/text
+content = "%{F#BF616A}%{F-}"
+click-left = firefox &
+click-middle = qutebrowser &
+click-right = chromium &
+
+[module/terminal]
+type = custom/text
+content = "%{F#5E81AC}%{F-}"
+click-left = $TERMINAL &
+
+[module/editor]
+type = custom/text
+content = 
+content-foreground = ${colors.secondary}
+click-left = code &
+click-right = subl3 &
+
+[module/thunar]
+type = custom/text
+content = "%{F#EBCB8B}%{F-}"
+click-left = thunar &
+
+[module/telegram]
+type = custom/text
+content = "%{F#a3be8c}%{F-}"
+click-left = telegram-desktop &
+
+[module/steam]
+type = custom/text
+content = 
+content-foreground = ${colors.roxo}
+click-left = /usr/bin/steam > /dev/null 2> /dev/null &
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+interval = 2
+format-online = <label-song>
+format-offline = <label-offline>
+
+label-song = %{F#D08770}%{F-} %artist% - %title%
+label-offline = %{F#D08770}%{F-} mpd
+
+[module/weather]
+type = custom/script
+interval = 600
+exec = ~/.config/polybar/blocks/openweathermap-detailed.sh
+label-font = 3
+
+[module/screencast]
+type = custom/script
+label = %output%
+click-left = termite -e ~/.local/bin/screencast &
+click-right = ~/.local/bin/screencast clear &
+exec = ~/.local/bin/screencast status
+tail = true
+
+[module/refresh]
+type = custom/text
+content = 
+content-foreground = ${colors.secondary}
+click-left = i3-msg reload &
+
+[module/lixo]
+type = custom/script
+tail = true
+click-middle = ~/.config/polybar/scripts/trash.sh -o &
+click-right = ~/.config/polybar/scripts/trash.sh -x &
+exec = ~/.config/polybar/scripts/trash.sh
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+[global/wm]
+margin-top = 5
+margin-bottom = 5

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# liked 
+# 3D-ASCII.flf
+# 3d.flf
+# 3d_diagonal.flf
+# 'ANSI Regular.flf'
+# ANSI Shadow.flf
+toilet -f 'ANSI Shadow.flf' "$1" | lolcat

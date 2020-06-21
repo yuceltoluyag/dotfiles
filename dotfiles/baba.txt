@@ -1,0 +1,30 @@
+wkygimehnynuilsa
+
+tag LIST "" "*"
+* LIST (\HasNoChildren) "/" "INBOX"
+* LIST (\HasChildren \Noselect) "/" "[Gmail]"
+* LIST (\HasNoChildren \Sent) "/" "[Gmail]/G&APY-nderilmi&AV8- Postalar"
+* LIST (\HasNoChildren) "/" "[Gmail]/Sohbetler"
+* LIST (\HasNoChildren \Junk) "/" "[Gmail]/Spam"
+* LIST (\Drafts \HasNoChildren) "/" "[Gmail]/Taslaklar"
+* LIST (\All \HasNoChildren) "/" "[Gmail]/T&APw-m Postalar"
+* LIST (\Flagged \HasNoChildren) "/" "[Gmail]/Y&ATE-ld&ATE-zl&ATE-"
+* LIST (\HasNoChildren \Trash) "/" "[Gmail]/&AMcA9g-p kutusu"
+* LIST (\HasNoChildren \Important) "/" "[Gmail]/&ANY-nemli"
+tag OK Success
+
+
+tag LIST "" "*"
+* LIST (\HasNoChildren) "/" +INBOX
+* LIST (\HasNoChildren) "/" Ar&AV8-iv
+* LIST (\Marked \HasNoChildren) "/" Inbox
+* LIST (\Marked \HasNoChildren \Junk) "/" Junk
+* LIST (\Marked \HasNoChildren) "/" Outbox
+* LIST (\HasNoChildren \Sent) "/" Sent
+* LIST (\HasNoChildren) "/" junkemail
+* LIST (\HasNoChildren) "/" junkemails
+* LIST (\HasNoChildren) "/" Notes
+* LIST (\HasNoChildren) "/" sentitems
+* LIST (\Marked \HasNoChildren \Trash) "/" Deleted
+* LIST (\HasNoChildren \Drafts) "/" Drafts
+tag OK LIST completed.

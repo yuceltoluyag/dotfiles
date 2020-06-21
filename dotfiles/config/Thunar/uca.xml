@@ -1,0 +1,78 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1581036737196835-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Terminali Aç</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>set-wallpaper</name>
+	<unique-id>1584655251460178-1</unique-id>
+	<command>feh --bg-max %f</command>
+	<description>valpipir çozir</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>toggle-layout</name>
+	<unique-id>1584655692153130-4</unique-id>
+	<command>actionfm toggle-layout</command>
+	<description>toggle between listview and iconview</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>toggle-order</name>
+	<unique-id>1584655847001907-1</unique-id>
+	<command>actionfm toggle-order</command>
+	<description>toggle bettween asc desc sort order</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>toggle-sort</name>
+	<unique-id>1584656940364271-2</unique-id>
+	<command>actionfm toggle-sort</command>
+	<description>toggle sort by name/time</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>save-layout</name>
+	<unique-id>1584656447143306-4</unique-id>
+	<command>actionfm save-layout %d</command>
+	<description>dirthack</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

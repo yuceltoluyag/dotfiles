@@ -1,0 +1,96 @@
+#!/bin/bash
+
+case $1 in
+           man) i=;;
+          apps) i=;;
+          kino) i=;;
+          lang) i=גּ;;
+          news) i=;;
+          pass) i=聾;;
+          star) i=;;
+          wiki) i=;;
+         bloge) i=;;
+         emoji) i=;;
+         files) i=;;
+         icons) i=;;
+         mixer) i=;;
+         music) i=$(music) i=${i%% *};;
+         theme) i=;;
+        editor) i=;;
+        picker) i=;;
+       browser) i=;;
+       symbols) i=;;
+       weather) i=;;
+       windows) i=;;
+      calendar) i=;;
+      document) i=;;
+      dotfiles) i=;;
+      terminal) i=;;
+     nerdfonts) i=;;
+     wallpaper) i=;;
+    screenshot) i=;;
+
+     redshift  ) i=$($0 redshift-$(pidof redshift));;
+     redshift- ) i=;;
+     redshift-*) i=;;
+
+    network-w*) i=;;
+    network-e*) i=;;
+    network-?*) i=;;
+    network-  ) i=;;
+    network   ) i=$($0 network-$(ip r g 1 | awk '{ print $5; exit }'));;
+
+    mail  ) i=$($0 mail-$(frm -s new | wc -l));;
+    mail-0) i=;;
+    mail-*) i=;;
+    mail-0) i=;;
+    mail-*) i=;;
+
+    days  ) i=$($0 days-$(days | grep -c 🎂));;
+    days-0) i=;;
+    days-1) i=;;
+    days-*) i=;;
+
+    os-alpi*) i=;;
+    os-arch*) i=;;
+    os-*mint) i=;;
+    os-ubun*) i=;;
+    os-*bsd*) i=;;
+    os      ) source /etc/os-release; i=$($0 os-${ID:-$(uname -s)});;
+    os-*    ) i=$(nerdfonts | awk "/linux-${1:3}/ { print \$1 }") i=${i:-};;
+
+    torrents      ) i=;;
+    torrents-[Dd]*) i=;;
+    torrents-[Qq]*) i=;;
+    torrents-Seed*) i=ﴻ;;
+    torrents-uplo*) i=ﴻ;;
+    torrents-[Sp]*) i=;;
+    torrents-*DL  ) i=;;
+    torrents-*UP  ) i=;;
+    torrents-Idle ) i=;;
+    torrents-*    ) i=;;
+
+    system         ) i=;;
+    system-lock    ) i=;;
+    system-quit    ) i=;;
+    system-sleep   ) i=鈴;;
+    system-reload  ) i=;;
+    system-reboot  ) i=;;
+    system-restart ) i=;;
+    system-poweroff) i=;;
+
+    audio      ) i=蓼;;
+    audio-*USB*) i=禍;;
+    audio-*    ) i=菉;;
+
+    battery-Full) i=;;
+    battery-Nor*) i=;;
+    battery-Low ) i=;;
+    battery-*   ) i=;;
+    battery     ) i=$($0 battery-$(battery | awk '{ print $NF; exit }'));;
+
+    '') grep -o '^\s\+\w\+' $0 | tr -d ' ' | sort -u;;
+     *) i=;;
+esac 2>&-
+
+echo "${i// } ${2:+ }${@:2}"

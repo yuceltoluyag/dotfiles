@@ -1,0 +1,19 @@
+2020-03-18 14:20:52	-->	friday13 (~friday13@88.233.220.103) has joined ##linux
+2020-03-18 14:20:52	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: "<command> | nc termbin.com 9999" | Need an op? Join ##linux-ops"
+2020-03-18 14:20:52	--	Topic set by sauvin on Wed, 08 Jan 2020 11:09:39
+2020-03-18 14:20:52	--	Channel ##linux: 1867 nicks (0 ops, 0 voices, 1867 normals)
+2020-03-18 14:20:52	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2020-03-18 14:20:52	--	URL for ##linux: https://freenode.linux.community
+2020-03-18 14:20:56	ayecee	converge: just to verify, you're in an interactive ssh session, right? this isn't being run through some kind of webpage or widget?
+2020-03-18 14:21:00	zfnmxt	MrElendig: Wait, so do you know if Wayland would or would not solve this issue?
+2020-03-18 14:21:08	--	Channel created on Sat, 10 Feb 2001 01:16:24
+2020-03-18 14:21:09	zfnmxt	I just don't want to have to restart the applications. That's it.
+2020-03-18 14:21:26	akik	zfnmxt: my friend was able to solve that problem with an xorg snippet so that the hidpi display wasn't all unusable
+2020-03-18 14:22:01	zfnmxt	akik: Might you be able to obtain said snippet? :D
+2020-03-18 14:22:04	-->	tafa2 (~tafa2@185.115.101.208) has joined ##linux
+2020-03-18 14:22:04	<--	tafa2 (~tafa2@185.115.101.208) has quit (Client Quit)
+2020-03-18 14:22:09	-->	Wryhder (~Wryhder@197.210.226.116) has joined ##linux
+2020-03-18 14:22:49	converge	ayecee, no, running it into ssh then docker
+2020-03-18 14:22:51	-->	repys (~repys@unaffiliated/repys) has joined ##linux
+2020-03-18 14:23:00	ayecee	converge: how do you mean?
+2020-03-18 14:23:06	-->	scampbell (~scampbell@mail.scampbell.net) has joined ##linux

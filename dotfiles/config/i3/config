@@ -1,0 +1,442 @@
+ #  Yücel Toluyağ
+ #  ytoluyag@gmail.com
+ #  https://yuceltoluyag.github.io/ᕙ(▀̿̿Ĺ̯̿̿▀̿ ̿) ᕗ
+ #  gtk-can-change-accels=1 ~/.gtkrc-2.0
+
+# >> Initialization
+set $mod   Mod4
+set $alt   Mod1
+set $super bindsym Mod4
+set $exec  exec --no-startup-id
+set $exe   exec --no-startup-id exec
+set $fyra  exec --no-startup-id exec i3fyra
+set $viswiz      exec --no-startup-id i3viswiz
+set $Kornhe      exec --no-startup-id i3Kornhe
+set $run         exec --no-startup-id i3run
+set $grun        exec --no-startup-id i3run -g
+set $srun        exec --no-startup-id i3run -s
+set $rofi        rofi -show
+set $term        urxvt
+set $browser     chromium
+set $reload      ~/.script/reload
+set $thunar      ~/.script/babamanager
+set $dirl  h
+set $dird  j
+set $diru  k
+set $dirr  l
+set $dirla Left
+set $dirda Down
+set $dirua Up
+set $dirra Right
+set $fyra_l0     -l 'AB=-360 BD=228 AC=-160'
+set $fyra_l9     -l 'AB=-480 BD=300 AC=-160'
+set $fyra_l8     -l 'AB=-640 BD=390 AC=-160'
+set $fyra_l7     -l 'AB=-920 BD=540 AC=-160'
+
+# >> Font 
+
+
+font pango:Iosevka 10
+floating_modifier $alt
+focus_follows_mouse no
+
+
+# >> Panic
+$super+Shift+q kill
+$super+Shift+c reload
+$super+Shift+r restart
+$super+Shift+e exec --no-startup-id \
+  "i3-nagbar -t warning -m 'You pressed the exit \
+  shortcut. Do you really want to exit i3? This \
+  will end your X session.' -b 'Yes, exit i3' \
+  'i3-msg exit'"
+
+$super+x $exe ~/.script/locker
+$super+u $exe ~/.script/dtest
+
+# >> Terminal
+$super+Mod1+Return  $srun -i dropdown -e '$term -n dropdown'
+$super+Return $exe i3run -i floatterm -s -e 'urxvt -name floatterm'
+$super+Shift+Return $exe i3run -i cterm -e 'urxvt -name cterm'
+$super+Control+Return $exe urxvt -name tiledterm
+$super+scedilla  $grun -i alacritty -e 'alacritty'
+
+# >> dropdown terminal
+for_window [instance="dropdown"] resize set 900 600
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 5
+
+# >> Program launching
+$super+p $exe i3run -i jetbrains-phpstorm -e 'jetbrains-phpstorm'
+$super+g $exe i3run -c chromium -e 'chromium'
+$super+shift+g $exe gimp
+$super+n  $exe urxvt -e ncmpcpp
+$super+y $exe  urxvt -e calcurse
+$super+i $exe  urxvt -e htop
+bindsym $mod+o exec notify Notification
+bindsym $mod+Shift+o exec notify -u low Notification
+bindsym $mod+Mod1+o exec notify -u critical Notification
+
+$super+F1 $exe chromium
+$super+F2 $exe ~/.local/bin/i3cmds/displayselect
+$super+F3 $exe ~/.local/bin/i3cmds/torwrap
+$super+F4 $exe ~/.local/bin/i3cmds/td-toggle
+$super+F5 $exe ~/.local/bin/i3cmds/dmenumount
+$super+F6 $exe ~/.local/bin/i3cmds/dmenuumount
+$super+F7 $exe ~/.local/bin/i3cmds/ducksearch
+$super+F8 $exe ~/.script/favmen
+# Display management
+$super+Control+F1 $exe dmenu-display primary
+$super+Control+F2 $exe dmenu-display secondary
+$super+Control+F3 $exe dmenu-display extend-right
+$super+Control+F4 $exe dmenu-display
+
+$super+e         $exe $thunar filemanagerA ThunarDetailsView
+$super+Control+b $exe $thunar filemanagerB ThunarIconView
+$super+Control+e $exe $thunar filemanagerD ThunarDetailsView
+$super+r         $exe dmenu_run
+
+
+# >> Shortcuts Ninca Gibiyim ~ Saian-Hayvan
+$super+c       $grun -i chromium -e 'chrome-launcher chromium'
+$super+$alt+c  $grun -i chromium -e 'chrome-launcher chromium nosecurity'
+$super+q       $grun -i qutebrowser -e 'qutebrowser'
+$super+s       $grun -i sublime_text -x subl3 -e 'subl3'
+$super+t       $grun -i telegram-desktop -e 'telegram-desktop'
+$super+v       $grun -i code
+$super+z       $srun -i zeal -e 'zeal'
+$super+Shift+s $srun -i spotify -e 'spotify'
+$super+Shift+v $grun -i code -e 'code'
+$super+Shift+w $srun -i whats-app-nativefier* -e 'whatsapp-web-desktop'
+$super+$alt+space $exe $rofi run
+bindsym $alt+space        $exe $rofi drun
+bindsym $alt+Tab          $exe $rofi window
+bindsym Control+$alt+c    $exe $rofi clipboard -modi "clipboard:greenclip print" -run-command '{cmd}'
+# Screen Capture & Video & Emoji
+$super+Scroll_Lock $exe  killall screenkey || screenkey
+bindsym Print $exe maim pic-full-$(date '+%y%m%d-%H%M-%S').png
+bindsym Shift+Print exec --no-startup-id ~/.script/maimpick
+$super+Print $exe ~/.script//dmenurecord
+$super+Delete $exe ~/.script/dmenurecord dmenurecord kill
+$super+quotedbl $exe ~/.local/bin/i3cmds/dmenuunicode
+$super+Insert $exe  ~/.local/bin/i3cmds/showclip
+#bindsym $mod+b      bar mode toggle
+bindsym $mod+Shift+b    floating toggle; sticky toggle; exec --no-startup-id hover left
+bindsym $mod+Shift+n    floating toggle; sticky toggle; exec --no-startup-id hover right
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'brightness up'"; # increase screen brightness with notification
+bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'brightness down'"; # decrease screen brightness with notification
+
+# >> Player Controller
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioStop exec mpc stop
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioLowerVolume exec --no-startup-id "$HOME/.script/volumedunst.sh down"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "$HOME/.script/volumedunst.sh up"
+bindsym XF86AudioMute exec --no-startup-id "$HOME/.script/volumedunst.sh mute"
+
+# >> Window rules
+
+for_window [class="^.*"] floating enabled
+for_window [class="Lxappearance"] focus; $fyra -m B
+for_window [class="Sxiv"] focus; $fyra -m B
+for_window [class="feh"] focus; $fyra -m D
+for_window [class="chromium"] focus; $fyra -m A
+for_window [class="Postman"] focus; $fyra -m A
+for_window [instance="subl3"] focus; $fyra -m A
+for_window [instance="jetbrains-phpstorm"] focus; $fyra -m A
+for_window [class="Sxiv"] title_format "sxiv" , focus; exec --no-startup-id exec i3fyra -m B
+for_window [instance="dropdown_tmuxdd"] resize set 625 450
+for_window [instance="dropdown_dropdowncalc"] resize set 800 300
+for_window [instance="dropdown_tmuxdd"] border pixel 3
+for_window [instance="dropdown_dropdowncalc"] border pixel 2
+for_window [class="Pinentry"] sticky enable
+for_window [class="sent"] border pixel 0px
+for_window [title="GIMP Startup"] move workspace 5
+for_window [class="kdenlive"] move workspace 2
+for_window [class="Gimp"] move workspace 5
+for_window [class="Steam"] move workspace 2
+for_window [class="libreoffice"] focus; exec --no-startup-id i3fyra -m A
+for_window [class="libreoffice-write"] focus; exec --no-startup-id i3fyra -m A
+for_window [class="Virtualbox Manager"] focus; exec --no-startup-id i3fyra -m A
+for_window [class="VirtualBox Machine"] focus; exec --no-startup-id i3fyra -m A
+for_window [class="jetbrains-studio"] focus; exec --no-startup-id i3fyra -m A
+for_window [class="Font-manager"] focus; exec --no-startup-id i3fyra -m A
+for_window [class="Thunar"] focus; exec --no-startup-id i3fyra -m B
+
+for_window [class="Chromium"]                                                           focus; $fyra -m A
+for_window [class="Firefox" instance="Navigator"]               focus; $fyra -m A
+for_window [class="jetbrains-studio"]                           focus; $fyra -m A
+for_window [class="mpv"]                                        focus; $fyra -m D
+for_window [instance="chromium" window_role="browser"]          focus; $fyra -m A
+for_window [instance="chromium" window_role="pop-up"]           focus; $fyra -m D
+for_window [instance="code" window_type="normal"]               focus; $fyra -m A
+for_window [instance="cterm"]                                   focus; $fyra -m C
+for_window [instance="filemanagerA"]                            focus; $fyra -m A
+for_window [instance="filemanagerB"]                            focus; $fyra -m B
+for_window [instance="filemanagerD"]                            focus; $fyra -m D
+for_window [instance="FoxitReader" window_type="normal"]        focus; $fyra -m A
+for_window [instance="irssi"]                                   focus; $fyra -m D
+for_window [instance="ncmpcpp"]                                 focus; $fyra -m B
+for_window [instance="qutebrowser"]                             focus; $fyra -m B
+for_window [instance="skype"]                                   focus; $fyra -m D
+for_window [instance="slack" title="Slack -"]                   focus; $fyra -m A
+for_window [instance="sublime_text" window_type="normal"]       focus; $fyra -m A
+for_window [instance="telegram-desktop" window_type="normal"]   focus; $fyra -m D
+for_window [instance="alacritty"]                                 focus; $fyra -m C
+for_window [instance="tiledterm"]                               floating disable
+for_window [instance="zathura"]                                 focus; $fyra -m D
+
+
+
+# >> Steam 
+
+# https://github.com/ValveSoftware/steam-for-linux/issues/1040
+for_window [class="^Steam$" title="^Friends$"] floating enable
+for_window [class="^Steam$" title="Steam - News"] floating enable
+for_window [class="^Steam$" title=".* - Chat"] floating enable
+for_window [class="^Steam$" title="^Settings$"] floating enable
+for_window [class="^Steam$" title=".* - event started"] floating enable
+for_window [class="^Steam$" title=".* CD key"] floating enable
+for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^Steam Keyboard$"] floating enable
+# Jetbrains
+for_window [class="^com-intellij-updater-Runner$" title="^Update$"] floating enable
+for_window [instance="^sun-awt-X11-XDialogPeer$" title="^Complete Installation$"] floating enable
+
+
+# >> Focus
+$super+$dirl  $viswiz l
+$super+$dird  $viswiz d
+$super+$diru  $viswiz u
+$super+$dirr  $viswiz r
+$super+$dirla $viswiz l
+$super+$dirda $viswiz d
+$super+$dirua $viswiz u
+$super+$dirra $viswiz r
+
+# >> Tabswitch
+
+$super+Tab       $exe i3flip n
+$super+Shift+Tab $exe i3flip p
+
+bindsym $mod+Escape   workspace prev
+bindsym $mod+Shift+Delete exec --no-startup-id lmc truemute ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e $FILE
+
+# >> Moving
+
+$super+Shift+$dirl  $fyra -m l
+$super+Shift+$dird  $fyra -m d
+$super+Shift+$diru  $fyra -m u
+$super+Shift+$dirr  $fyra -m r
+$super+Shift+$dirla $fyra -m l
+$super+Shift+$dirda $fyra -m d
+$super+Shift+$dirua $fyra -m u
+$super+Shift+$dirra $fyra -m r
+
+# >> Resizing
+
+# group A, enter size mode with direction:
+$super+Control+$dirl  $Kornhe s l
+$super+Control+$dird  $Kornhe s d
+$super+Control+$diru  $Kornhe s u
+$super+Control+$dirr  $Kornhe s r
+$super+Control+$dirla $Kornhe s l
+$super+Control+$dirda $Kornhe s d
+$super+Control+$dirua $Kornhe s u
+$super+Control+$dirra $Kornhe s r
+
+mode "sizemode" {
+  # group 1 only send direction speed 30:
+  bindsym $dirl  $Kornhe -p 30 l
+  bindsym $dird  $Kornhe -p 30 d
+  bindsym $diru  $Kornhe -p 30 u
+  bindsym $dirr  $Kornhe -p 30 r
+  bindsym $dirla $Kornhe -p 30 l
+  bindsym $dirda $Kornhe -p 30 d
+  bindsym $dirua $Kornhe -p 30 u
+  bindsym $dirra $Kornhe -p 30 r
+
+  # group 2 only send direction speed 5:
+  bindsym Shift+$dirl  $Kornhe -p 5 l
+  bindsym Shift+$dird  $Kornhe -p 5 d
+  bindsym Shift+$diru  $Kornhe -p 5 u
+  bindsym Shift+$dirr  $Kornhe -p 5 r
+  bindsym Shift+$dirla $Kornhe -p 5 l
+  bindsym Shift+$dirda $Kornhe -p 5 d
+  bindsym Shift+$dirua $Kornhe -p 5 u
+  bindsym Shift+$dirra $Kornhe -p 5 r
+
+  # group 3 change size direction:
+   $super+$dirl  $Kornhe s l
+   $super+$dird  $Kornhe s d
+   $super+$diru  $Kornhe s u
+   $super+$dirr  $Kornhe s r
+   $super+$dirla $Kornhe s l
+   $super+$dirda $Kornhe s d
+   $super+$dirua $Kornhe s u
+   $super+$dirra $Kornhe s r
+
+  # group 4 enter move mode:
+  bindsym m $Kornhe m -p 0 l
+
+  # group 5 move to absolute position 1-9:
+  bindsym 1 $Kornhe 1
+  bindsym 2 $Kornhe 2
+  bindsym 3 $Kornhe 3
+  bindsym 4 $Kornhe 4
+  bindsym 5 $Kornhe 5
+  bindsym 6 $Kornhe 6
+  bindsym 7 $Kornhe 7
+  bindsym 8 $Kornhe 8
+  bindsym 9 $Kornhe 9
+
+  # group 6 exit the mode
+  bindsym Escape $Kornhe x
+}
+
+
+# >> Window manipulation
+
+$super+f fullscreen toggle
+#$super+g layout toggle tabbed splith splitv
+$super+space focus mode_toggle
+
+# move workspace between screens
+$super+Control+$alt+Left move workspace to output left
+$super+Control+$alt+Right move workspace to output right
+
+# i3fyra -a = autolayout (floating toggle)
+$super+Shift+space $fyra -a
+
+# reset fyra layout
+$super+$alt+0 $fyra $fyra_l0
+$super+$alt+9 $fyra $fyra_l9
+$super+$alt+8 $fyra $fyra_l8
+$super+$alt+7 $fyra $fyra_l7
+$super+$alt+6 $fyra $fyra_l6
+
+# >> Autostart
+$exec mons -a
+$exec xfce4-power-manager
+$exe xscreensaver
+$fyra $fyra_l0
+$fyra -l 'AB=-450 BD=200 AC=-100'
+$exec setxkbmap tr
+$exec wal -R
+$exec imwheel
+$exec transmission-daemon
+$exec picom --config $HOME/.config/picom/picom.conf
+$exec checkup
+$exec unclutter
+$exec redshift
+$exec ~/.script/thunarIPCstart
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#$exec urxvtd -o -f -q
+#$exec ~/.local/bin/statusbar/mpdupdate
+
+# >> Workspace management
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
+set $ws9 ""
+set $ws10 ""
+
+# switch to workspace
+$super+1 workspace $ws1
+$super+2 workspace $ws2
+$super+3 workspace $ws3
+$super+4 workspace $ws4
+$super+5 workspace $ws5
+$super+6 workspace $ws6
+$super+7 workspace $ws7
+$super+8 workspace $ws8
+$super+9 workspace $ws9
+$super+0 workspace $ws10
+
+# move focused container to workspace
+$super+Shift+1 move container to workspace $ws1
+$super+Shift+2 move container to workspace $ws2
+$super+Shift+3 move container to workspace $ws3
+$super+Shift+4 move container to workspace $ws4
+$super+Shift+5 move container to workspace $ws5
+$super+Shift+6 move container to workspace $ws6
+$super+Shift+7 move container to workspace $ws7
+$super+Shift+8 move container to workspace $ws8
+$super+Shift+9 move container to workspace $ws9
+$super+Shift+0 move container to workspace $ws10
+
+# >> Colors   
+# Set Xresources colors:
+set_from_resource $darkblack    color0  #000000
+set_from_resource $black        color8  #000000
+set_from_resource $darkred      color1  #000000
+set_from_resource $red          color9  #000000
+set_from_resource $darkgreen    color2  #000000
+set_from_resource $green        color10 #000000
+set_from_resource $darkyellow   color3  #000000
+set_from_resource $yellow       color11 #000000
+set_from_resource $darkblue     color4  #000000
+set_from_resource $blue         color12 #000000
+set_from_resource $darkmagenta  color5  #000000
+set_from_resource $magenta      color13 #000000
+set_from_resource $darkcyan     color6  #000000
+set_from_resource $cyan         color14 #000000
+set_from_resource $darkwhite    color7  #000000
+set_from_resource $white        color15 #000000
+set $transparent                #00000000
+
+#                       BORDER          BACKGROUND      TEXT            INDICATOR   CHILD_BORDER
+client.focused          $red            $red            $magenta        $darkmagenta            $darkblue
+client.unfocused        $transparent    $blue           $white          $darkblue               $darkblack
+client.focused_inactive $transparent    $blue           $white          $darkblue               $darkblack
+client.urgent           $darkred        $darkred        $black          $darkred                $darkred
+client.background $black
+
+
+# >> App icons
+#           
+
+#bar {
+#   font pango:mono 10
+#   status_command i3blocks -c ~/.config/i3blocks/config
+#   position top
+#   mode dock
+#   modifier None
+#  
+#  colors {
+#                        background $darkblack
+#                        statusline $darkwhite
+#                        separator $cyan
+#                        focused_workspace  $blue $darkblue $darkblack
+#                        active_workspace   $blue $blue $darkwhite
+#                        inactive_workspace $darkblack $darkblack $white
+#                        urgent_workspace   $darkblack $darkblack $white
+#               }
+#}
+
+#bar {
+#        status_command    i3status
+#        position          top
+#        font pango:DejaVu Sans Mono 11
+#        colors {
+#                        background $darkblack
+#                        statusline $darkwhite
+#                        separator $cyan
+#                        focused_workspace  $blue $darkblue $darkblack
+#                        active_workspace   $blue $blue $darkwhite
+#                        inactive_workspace $darkblack $darkblack $white
+#                        urgent_workspace   $darkblack $darkblack $white
+#               }
+#}
+
+# syntax:ssHash

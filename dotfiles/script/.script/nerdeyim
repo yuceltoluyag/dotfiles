@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'open-uri'
+
+geoip   = JSON.parse(URI.open('http://ip-api.com/json').read)
+
+ip      = geoip["query"]
+city    = geoip["city"]
+country = geoip["country"]
+isp     = geoip["isp"]
+
+puts "Date:     #{Time.new}"
+puts "IP:       #{ip}"
+puts "ISP:      #{isp}"
+puts "Location: #{city + ", " if city}#{country}"
+puts ""

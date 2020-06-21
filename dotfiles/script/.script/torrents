@@ -1,0 +1,10 @@
+#!/bin/bash
+
+[[ $(pgrep transmission) ]] &&
+transmission-remote -l | sed '1d; $d; s/\s\+\s/|/g' |
+cut -d \| -f 3,9,10 | column -ts \|
+
+[[ $(pgrep qbittorrent) ]] &&
+curl -s http://127.0.0.1:9092/api/v2/sync/maindata |
+jq -r '.torrents[] | [.priority, .progress, .state, .name] | @tsv' | sort -n |
+awk -F \\t '{ printf "%d%%|%s|%s\n", ($2 * 100), $3, $4 }' | column -ts \|

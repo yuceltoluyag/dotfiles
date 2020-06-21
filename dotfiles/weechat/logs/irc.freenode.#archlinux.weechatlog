@@ -1,0 +1,1278 @@
+2020-03-18 14:20:51	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:20:51	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:20:51	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:20:52	--	Channel #archlinux: 1760 nicks (1 op, 0 voices, 1759 normals)
+2020-03-18 14:20:52	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:20:52	arojas	kwallet doesn't implement the secret service api
+2020-03-18 14:21:18	MrElendig	it should
+2020-03-18 14:21:43	MrElendig	but plasma likes to be special
+2020-03-18 14:22:27	MrElendig	last I heard they were dropping ksecretagent in favor of implementing it in kwallet directly though
+2020-03-18 14:23:31	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:23:31	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:23:31	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:23:31	--	Channel #archlinux: 1760 nicks (1 op, 0 voices, 1759 normals)
+2020-03-18 14:23:31	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:23:53	<--	DonRichie (~DonRichie@ricl.de) has quit (Quit: bye)
+2020-03-18 14:24:04	-->	DonRichie (~DonRichie@ricl.de) has joined #archlinux
+2020-03-18 14:24:08	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-18 14:24:12	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-18 14:24:59	-->	mirk0 (~mirko@unaffiliated/-mirko-/x-2946915) has joined #archlinux
+2020-03-18 14:36:29	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:36:29	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:36:29	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:36:29	--	Channel #archlinux: 1764 nicks (1 op, 0 voices, 1763 normals)
+2020-03-18 14:36:29	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:36:51	<--	Eduard_Munteanu (~Eduard_Mu@188.25.92.42) has quit (Remote host closed the connection)
+2020-03-18 14:36:59	<--	DonRichie (~DonRichie@ricl.de) has quit (Client Quit)
+2020-03-18 14:37:10	-->	DonRichie (~DonRichie@ricl.de) has joined #archlinux
+2020-03-18 14:38:44	bwe	arch installation, connecting it to the internet: drill @<DNS_IP> TXT archlinux.org resolves the domain correctly. ping to local gateway works. local firewall exception set to allow http traffic. pacman -Sy cannot sync.
+2020-03-18 14:39:01	-->	_Ev (~ev@unaffiliated/ev/x-3943829) has joined #archlinux
+2020-03-18 14:39:08	<--	roboticr (~robotic@unaffiliated/roboticr) has quit (Ping timeout: 256 seconds)
+2020-03-18 14:39:10	vanek	443?
+2020-03-18 14:39:14	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-18 14:39:15	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-18 14:39:20	Namarrgon	are you using a http or https mirror?
+2020-03-18 14:39:22	<--	klotz (~cyberklot@gateway/tor-sasl/klotz) has quit (Quit: klotz)
+2020-03-18 14:39:29	vanek	set the FW to allow 443 too
+2020-03-18 14:39:40	Namarrgon	what error do you get from pacman?
+2020-03-18 14:39:40	-->	fetiddius (~ben@2a00:23c5:f91f:c200:9482:e4b3:c007:15ae) has joined #archlinux
+2020-03-18 14:40:19	bwe	http
+2020-03-18 14:40:24	<--	mitch0 (~mitch@178-164-190-10.pool.digikabel.hu) has quit (Quit: leaving)
+2020-03-18 14:40:47	-->	mitch0 (~mitch@178-164-190-10.pool.digikabel.hu) has joined #archlinux
+2020-03-18 14:40:51	bwe	error: failed retrieving ....
+2020-03-18 14:40:59	<--	DonRichie (~DonRichie@ricl.de) has quit (Client Quit)
+2020-03-18 14:41:04	Namarrgon	needs more context
+2020-03-18 14:41:10	-->	DonRichie (~DonRichie@ricl.de) has joined #archlinux
+2020-03-18 14:41:11	bwe	curl google.com  results Couldn't connect to server.
+2020-03-18 14:41:20	fetiddius	Can anybody help me with my issue please? I cannot connect to localhost; browser just says sonnection refused. First noticed it when running CUPS for the first time. Brand new Arch install a few days ago. Thanks!
+2020-03-18 14:41:44	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:41:44	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:41:44	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:41:44	--	Channel #archlinux: 1763 nicks (1 op, 0 voices, 1762 normals)
+2020-03-18 14:41:44	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:41:45	vanek	fetiddius: check which port are you trying to connect and make sure you have something listening on it
+2020-03-18 14:41:46	MrElendig	tolarz: man pacman
+2020-03-18 14:41:51	Namarrgon	bwe: the rest of the output
+2020-03-18 14:41:53	MrElendig	tolarz: look for the word "needed"
+2020-03-18 14:41:59	tolarz	thanks
+2020-03-18 14:42:05	Windfisc1	fetiddius: localhost:631 != localhost
+2020-03-18 14:42:08	tolarz	I guess I cannot Ctrl-C a running pacman?
+2020-03-18 14:42:11	-->	SteffanW (~steffan@185.2.243.3) has joined #archlinux
+2020-03-18 14:42:11	Windfisc1	also, is cups started?
+2020-03-18 14:42:13	MrElendig	--needed even
+2020-03-18 14:42:16	tolarz	Guess I need to await 1GiB reinstallation
+2020-03-18 14:42:17	tolarz	:(
+2020-03-18 14:42:22	MrElendig	tolarz: no?
+2020-03-18 14:42:27	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-18 14:42:29	scpketer	you can interrupt downloading, but not upgrading/installing
+2020-03-18 14:42:44	MrElendig	pacman -Sh also lists it
+2020-03-18 14:43:16	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Quit: Leaving.)
+2020-03-18 14:43:22	tolarz	okay good
+2020-03-18 14:43:40	<--	neilb (~neil@36.255.233.27) has quit (Ping timeout: 256 seconds)
+2020-03-18 14:44:04	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:44:04	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:44:04	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:44:04	--	Channel #archlinux: 1761 nicks (1 op, 0 voices, 1760 normals)
+2020-03-18 14:44:04	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:44:07	-->	raoni (~raoni@labs-gw.ic.unicamp.br) has joined #archlinux
+2020-03-18 14:44:10	--	irc: disconnected from server
+2020-03-18 14:44:27	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:44:27	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:44:27	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:44:27	--	Channel #archlinux: 1762 nicks (1 op, 0 voices, 1761 normals)
+2020-03-18 14:44:27	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:44:29	-->	DonRichie (~DonRichie@ricl.de) has joined #archlinux
+2020-03-18 14:44:58	Namarrgon	bwe: is the dns server beyond the firewall?
+2020-03-18 14:45:07	Namarrgon	!nick phrik
+2020-03-18 14:45:08	--	_phrik_ is now known as phrik
+2020-03-18 14:45:08	fetiddius	so I need to set things to listen on ports manually? This is the first arch install I've ever done, so excuse the dumb questions
+2020-03-18 14:45:09	bwe	Namarrgon: Correct. It's a local DNS.
+2020-03-18 14:45:26	<--	DonRichie (~DonRichie@ricl.de) has quit (Client Quit)
+2020-03-18 14:45:36	-->	DonRichie (~DonRichie@ricl.de) has joined #archlinux
+2020-03-18 14:45:47	--	irc: disconnected from server
+2020-03-18 14:46:14	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:46:14	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:46:14	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:46:14	--	Channel #archlinux: 1764 nicks (1 op, 0 voices, 1763 normals)
+2020-03-18 14:46:14	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:46:19	-->	daex (daex@gateway/vpn/protonvpn/daex) has joined #archlinux
+2020-03-18 14:46:30	<--	codeworm (~codeworm@adsl-132.109.242.51.tellas.gr) has quit (Ping timeout: 256 seconds)
+2020-03-18 14:46:34	<--	DonRichie (~DonRichie@ricl.de) has quit (Client Quit)
+2020-03-18 14:46:45	-->	DonRichie (~DonRichie@ricl.de) has joined #archlinux
+2020-03-18 14:46:52	Namarrgon	bwe: what is in /etc/resolv.conf?
+2020-03-18 14:46:53	-->	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has joined #archlinux
+2020-03-18 14:47:10	vanek	fetiddius: what are you trying to run and connect to via browser?
+2020-03-18 14:47:12	--	Martchus_ is now known as Martchus
+2020-03-18 14:47:49	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-18 14:47:49	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-18 14:47:49	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-18 14:47:49	--	Channel #archlinux: 1765 nicks (1 op, 0 voices, 1764 normals)
+2020-03-18 14:47:49	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-18 14:48:00	vanek	bwe: dig google.com
+2020-03-18 14:48:06	fetiddius	sorted it, just hadn't started the cups service
+2020-03-18 14:48:11	vanek	fetiddius: :)
+2020-03-18 14:48:14	fetiddius	thanks all!
+2020-03-18 14:48:39	bwe	vanek: resolves correctly to 216.239.38.117 and other IPs
+2020-03-18 14:48:46	burakcank	grawity: Hey buddy, since yesterday I am working with rdp and I wonder if there is a way to increase performance in xfreerdp. I was tinkering with the options and flags but couldn't really find a combination.
+2020-03-18 14:48:54	vanek	bwe: curl http://google.com ?
+2020-03-18 14:48:56	phrik	Title: Google (at google.com)
+2020-03-18 14:49:00	vanek	(notice no s)
+2020-03-18 14:49:12	-->	kek_ (~kek_@2a02:120b:7f7:9ae0:b268:4418:c10b:9b6d) has joined #archlinux
+2020-03-18 14:49:26	bwe	vanek: couldn't connect to server
+2020-03-18 14:49:36	vanek	bwe: are you sure http is allowed out?
+2020-03-18 14:49:40	friday13	hi
+2020-03-18 14:50:02	vanek	bwe: if you got netcat you can attempt connecting to the ip of google.com on port 80
+2020-03-18 14:50:31	-->	Lord_of_Life_ (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux
+2020-03-18 14:51:05	<--	sec^nd (~second@gateway/tor-sasl/sec0nd) has quit (Remote host closed the connection)
+2020-03-18 14:51:05	<--	jugs (~jugs@gateway/tor-sasl/jugs) has quit (Remote host closed the connection)
+2020-03-18 14:51:25	kek_	hi, so I have a PDF that has lots of links like https://fo.com/pdf in it. Is it possible that I somehow tell my pdf viewer to download that link and open it directly in e.g. okular if I click it in okular? currently it opens it in the browser.
+2020-03-18 14:51:28	-->	sec^nd (~second@gateway/tor-sasl/sec0nd) has joined #archlinux
+2020-03-18 14:51:30	-->	jugs (~jugs@gateway/tor-sasl/jugs) has joined #archlinux
+2020-03-18 14:52:34	friday13	?invite
+2020-03-18 14:53:02	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-18 14:53:26	bwe	vanek: I've checked again that the firewall allows http requests.
+2020-03-18 14:53:45	-->	the_clean (~the_clean@cpe-71-79-84-188.columbus.res.rr.com) has joined #archlinux
+2020-03-18 14:53:59	<--	SteffanW (~steffan@185.2.243.3) has quit (Ping timeout: 250 seconds)
+2020-03-18 14:54:02	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Ping timeout: 250 seconds)
+2020-03-18 14:54:04	--	Lord_of_Life_ is now known as Lord_of_Life
+2020-03-18 14:54:09	<--	MarcinWieczorek (~marcin@77-253-199-164.adsl.inetia.pl) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-18 14:54:57	bwe	vanek: couldn't resolve host 216.239.... # netcat 216.239.36.117:80 # google.com
+2020-03-18 14:55:09	vanek	bwe: replace : with space
+2020-03-18 14:55:41	-->	quitman (~master@217-64-148-123.pool.ovpn.com) has joined #archlinux
+2020-03-18 14:56:12	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-18 14:56:29	vanek	alternative would be telnet <ip> 80 as it also initiates plain tcp
+2020-03-18 14:56:57	bwe	vanek: network is unreachable
+2020-03-18 14:57:04	-->	Bromite (~user@gateway/tor-sasl/hypercore) has joined #archlinux
+2020-03-18 14:57:15	bwe	vanek: it still looks like the NAT isn't working as expected, right?
+2020-03-18 14:57:24	vanek	bwe: not sure how your NAT is set up
+2020-03-18 14:57:31	vanek	bwe: but you can't go out on http
+2020-03-18 14:57:57	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-18 14:58:11	bwe	vanek: I'll check it again. Thanks for your support!
+2020-03-18 14:58:15	vanek	welcome
+2020-03-18 14:58:41	vanek	bwe: also check that you IP is part of the group that is allowed out on 80
+2020-03-18 14:58:47	<--	b0b (~bob@unaffiliated/sulfyr) has quit (Quit: o/)
+2020-03-18 14:58:48	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-18 14:58:48	<--	maccraft (~random@unaffiliated/maccraft) has quit (Ping timeout: 250 seconds)
+2020-03-18 14:59:03	vanek	can be that the permit 80 rule is there but your host is not part of the subnet that it refers to
+2020-03-18 14:59:05	<--	palooka-jock (~mike@45.126.44.146) has quit (Quit: WeeChat 1.9.1)
+2020-03-18 14:59:47	perrier-jouet	hi all
+2020-03-18 15:00:19	perrier-jouet	anyone using lxc ?
+2020-03-18 15:00:46	MrElendig	!anyone
+2020-03-18 15:00:46	perrier-jouet	how can we change the lxcpath location
+2020-03-18 15:00:47	phrik	Quite possibly. Why do you ask?
+2020-03-18 15:01:23	-->	cgundersson (~christian@195.216.38.78) has joined #archlinux
+2020-03-18 15:01:24	<--	Carp (~rue@1-162-40-190.dynamic-ip.hinet.net) has quit (Ping timeout: 250 seconds)
+2020-03-18 15:01:28	perrier-jouet	MrElendig:how are you longtime
+2020-03-19 13:24:59	-->	friday13 (~friday13@88.233.220.103) has joined #archlinux
+2020-03-19 13:24:59	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-19 13:24:59	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-19 13:24:59	--	Channel #archlinux: 1752 nicks (1 op, 0 voices, 1751 normals)
+2020-03-19 13:24:59	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-19 13:25:08	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 13:25:25	-->	antipatico (~antipatic@unaffiliated/antipatico) has joined #archlinux
+2020-03-19 13:25:59	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 13:26:01	kattjevfel	Only really noticed it in firefox as I constantly keep accidently opening new tabs and so on
+2020-03-19 13:26:04	-->	noraj (~quassel@per18-h03-89-89-230-177.dsl.sta.abo.bbox.fr) has joined #archlinux
+2020-03-19 13:26:22	-->	segurb (~segurb@unaffiliated/segurb) has joined #archlinux
+2020-03-19 13:26:39	-->	beest (~root@2601:480:4003:37e0::2fad) has joined #archlinux
+2020-03-19 13:27:31	hashworks	aiyion: One thing I thought about was just piping /dev/video0 trough ssh
+2020-03-19 13:27:43	<--	codeworm (~codeworm@adsl-132.109.242.51.tellas.gr) has quit (Ping timeout: 250 seconds)
+2020-03-19 13:27:56	hashworks	But I wasn't sucessfull yet, dd just tells me "error reading /dev/video0 invalid argument"
+2020-03-19 13:28:09	<--	_bogz (~bogz@unaffiliated/bogz) has quit (Ping timeout: 250 seconds)
+2020-03-19 13:28:37	-->	pointfourone8 (~c0a80064@114.79.166.8) has joined #archlinux
+2020-03-19 13:28:47	-->	bogz (~bogz@unaffiliated/bogz) has joined #archlinux
+2020-03-19 13:28:48	aiyion	you've looked at SE, right?
+2020-03-19 13:28:51	aiyion	https://unix.stackexchange.com/questions/2302/can-i-pipe-dev-video-over-ssh/483328
+2020-03-19 13:28:53	phrik	Title: Can I pipe /dev/video over ssh - Unix & Linux Stack Exchange (at unix.stackexchange.com)
+2020-03-19 13:30:05	-->	BruceHalter (~dns@2a02:908:f89:7700:cacd:e673:ff26:7ae) has joined #archlinux
+2020-03-19 13:30:13	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 13:30:13	<--	pointfourone (~c0a80064@114.79.174.100) has quit (Ping timeout: 264 seconds)
+2020-03-19 13:30:13	--	pointfourone8 is now known as pointfourone
+2020-03-19 13:30:41	<--	BruceHalter (~dns@2a02:908:f89:7700:cacd:e673:ff26:7ae) has left #archlinux
+2020-03-19 13:31:01	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 265 seconds)
+2020-03-19 13:31:33	MrElendig	hashworks: webusb
+2020-03-19 13:32:06	MrElendig	kattjevfel: bad mouse button?
+2020-03-19 13:32:50	hashworks	aiyion: Yup. The mplayer ssh example works locally, but not over network (invalid argument)
+2020-03-19 13:33:15	kattjevfel	MrElendig: Shouldn't be, I suppose I could try another one..
+2020-03-19 13:33:25	hashworks	Guess I'll take a look at the usb stuff
+2020-03-19 13:34:26	<--	vuoto (~vuoto@customer-212-237-101-103.ip4.gigabit.dk) has quit (Quit: vuoto)
+2020-03-19 13:34:35	kattjevfel	MrElendig: Nope, still happens.
+2020-03-19 13:34:53	-->	vuoto (~vuoto@customer-212-237-101-103.ip4.gigabit.dk) has joined #archlinux
+2020-03-19 13:34:58	<--	vuoto (~vuoto@customer-212-237-101-103.ip4.gigabit.dk) has quit (Client Quit)
+2020-03-19 13:35:08	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 13:35:24	hashworks	aiyion: As a comment says, "When you run mplayer tv://device=/dev/stdin it is not seeing a device specification and so falling back to /dev/video0 directly, giving the illusion of "working". But it won't work at all when the webcam and mplayer process are separated by the network."
+2020-03-19 13:35:24	<--	eljef (eljef@Home.Eljef.Me) has quit (Quit: eljef)
+2020-03-19 13:35:37	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 264 seconds)
+2020-03-19 13:35:48	kattjevfel	MrElendig: Are you using KDE? Try right clicking and having the cursor land on an item, see if it doesnt activate said item
+2020-03-19 13:36:17	-->	eljef (eljef@Home.Eljef.Me) has joined #archlinux
+2020-03-19 13:36:43	-->	vuoto (~vuoto@customer-212-237-101-103.ip4.gigabit.dk) has joined #archlinux
+2020-03-19 13:36:49	<--	vuoto (~vuoto@customer-212-237-101-103.ip4.gigabit.dk) has quit (Client Quit)
+2020-03-19 13:36:53	-->	beekay201 (~bk201@unaffiliated/beekay201) has joined #archlinux
+2020-03-19 13:36:53	<--	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2020-03-19 13:37:10	hashworks	haha, and the ffmpeg example has a 15s delay
+2020-03-19 13:37:15	hashworks	over lan
+2020-03-19 13:37:48	<--	murla (~murla@93.171.161.38) has quit (Remote host closed the connection)
+2020-03-19 13:37:54	MrElendig	kattjevfel: everytime I try to use plasma it pisses me off so much or just plain crashes reliably that I give up after a day
+2020-03-19 13:38:08	MrElendig	hashworks: seriously, webusb
+2020-03-19 13:38:11	MrElendig	:p
+2020-03-19 13:38:24	MrElendig	hashworks: why not just stream h264 though?
+2020-03-19 13:38:32	aiyion	hashworks: well then back to the usb pain :D
+2020-03-19 13:38:46	-->	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has joined #archlinux
+2020-03-19 13:38:48	friday13	hi dude
+2020-03-19 13:39:09	-->	Nefertiti (~Nefertiti@unaffiliated/nefertiti) has joined #archlinux
+2020-03-19 13:39:16	-->	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #archlinux
+2020-03-19 13:39:16	-->	vuoto (~vuoto@customer-212-237-101-103.ip4.gigabit.dk) has joined #archlinux
+2020-03-19 13:39:33	hashworks	MrElendig: stream h264? As long as Teams can pick it up as a webcam on the other end, sure
+2020-03-19 13:39:54	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 13:40:08	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 13:41:12	MrElendig	hashworks: so a xyproblem
+2020-03-19 13:41:17	Tazmainian	Teams works on linux ?
+2020-03-19 13:41:31	MrElendig	hashworks: feed the data into v4l2loopback
+2020-03-19 13:41:33	hashworks	Official Client, yes
+2020-03-19 13:41:39	hashworks	But it's electron I guess
+2020-03-19 13:41:44	MrElendig	at least skype happily uses it as a webcam
+2020-03-19 13:41:48	<--	Guest5194 (~s98259@unaffiliated/iveeee) has quit (Read error: Connection reset by peer)
+2020-03-19 13:41:53	<--	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has quit (Read error: Connection reset by peer)
+2020-03-19 13:41:54	MrElendig	I tested it yesterday, though with a local video source
+2020-03-19 13:41:54	Tazmainian	hashworks, oh ewe
+2020-03-19 13:42:13	MrElendig	skype "native" client that is, skype web for some reason refused to pick it up
+2020-03-19 13:42:26	hashworks	Surprisingly it works all right Tazmainian, with all the remote working going on here
+2020-03-19 13:42:46	Tazmainian	hashworks, yeah it's better than slack, but I dislike any electron based apps
+2020-03-19 13:43:22	<--	oz10001 (~Thunderbi@59.213.31.93.rev.sfr.net) has quit (Quit: oz10001)
+2020-03-19 13:43:24	MrElendig	wonder if the usb over ethernet driver is still in the kernel or it was ripped out
+2020-03-19 13:43:31	MrElendig	there was talk about removing it
+2020-03-19 13:43:33	-->	Guest5194 (~s98259@unaffiliated/iveeee) has joined #archlinux
+2020-03-19 13:44:02	<--	agent_white (~agent_whi@unaffiliated/agent-white/x-6197888) has quit (Quit: bbl)
+2020-03-19 13:44:09	Tazmainian	why remove it ?
+2020-03-19 13:44:24	MrElendig	Tazmainian: no one uses it / wants to maintain it
+2020-03-19 13:44:32	-->	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has joined #archlinux
+2020-03-19 13:44:33	MrElendig	there is also the userspace https://wiki.archlinux.org/index.php/USB/IP
+2020-03-19 13:44:34	phrik	Title: USB/IP - ArchWiki (at wiki.archlinux.org)
+2020-03-19 13:44:37	Tazmainian	oh, I still use usb ethernet controllers
+2020-03-19 13:44:45	MrElendig	Tazmainian: different thing
+2020-03-19 13:44:50	MrElendig	Tazmainian: usb OVER ethernet
+2020-03-19 13:44:55	MrElendig	not usb ethernet adapter
+2020-03-19 13:44:58	Tazmainian	ooooh
+2020-03-19 13:45:06	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 13:45:14	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 13:45:49	<--	Carp (~rue@1-162-40-190.dynamic-ip.hinet.net) has quit (Ping timeout: 264 seconds)
+2020-03-19 13:45:52	<--	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 13:45:55	<--	netopejr (~netopejr@ip-89-176-181-67.net.upcbroadband.cz) has quit (Remote host closed the connection)
+2020-03-19 13:46:08	MrElendig	CONFIG_USBIP_CORE=m still in apparently
+2020-03-19 13:46:15	-->	lucenera (~lucenera@5.171.28.3) has joined #archlinux
+2020-03-19 13:46:19	<--	Tools (~Casper@an.alternative.hidden.network) has quit (Quit: ircs://irc.lunarirc.net:6697/LunarBNC)
+2020-03-19 13:46:52	<--	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net - currently broken?)
+2020-03-19 13:46:58	<--	krator44 (~krator44@unaffiliated/krator44) has quit (Read error: Connection reset by peer)
+2020-03-19 13:46:58	<--	cisco87 (~cisco87@cisco87.powered.by.lunarbnc.net) has quit (Read error: Connection reset by peer)
+2020-03-19 13:46:58	<--	tinywrkb (~tinywrkb@2001:470:7857:fb2::f) has quit (Write error: Connection reset by peer)
+2020-03-19 13:47:16	MrElendig	ffmpeg -re -stream_loop -1 -i Laptop\ Cat!-lEtLb86O7NQ.webm -s 320x240 -vf format=pix_fmts=yuv420p -f v4l2 /dev/video0  + v4l2loopback worked for skype
+2020-03-19 13:47:28	MrElendig	did flip the video though
+2020-03-19 13:47:39	-->	tareef (~tareef@89.33.246.20) has joined #archlinux
+2020-03-19 13:48:25	<--	kieselsteini (~kieselste@pD9E1BFD0.dip0.t-ipconnect.de) has quit (Quit: Palaver https://palaverapp.com)
+2020-03-19 13:50:08	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 13:51:20	<--	b1tninja (~b1tninja@unaffiliated/b1tninja) has quit (Ping timeout: 265 seconds)
+2020-03-19 13:51:22	<--	n0a110w (~n0a110w@unaffiliated/n0a110w) has quit (Quit: ZNC - https://znc.in)
+2020-03-19 13:51:30	fogobogo	shame theres no -rootwin anymore
+2020-03-19 13:51:44	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #archlinux
+2020-03-19 13:51:47	-->	BruceHalter (~dns@2a02:908:f89:7700:cacd:e673:ff26:7ae) has joined #archlinux
+2020-03-19 13:51:47	-->	n0a110w (~n0a110w@unaffiliated/n0a110w) has joined #archlinux
+2020-03-19 13:51:50	<--	BruceHalter (~dns@2a02:908:f89:7700:cacd:e673:ff26:7ae) has left #archlinux
+2020-03-19 13:52:00	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 13:52:31	aiyion	argh. found the broken profile. Apparently having a profile that wants wpa, but lacks the key variable is not allowed.
+2020-03-19 13:52:40	aiyion	thanks for the input!
+2020-03-19 13:52:44	-->	quitman (~master@217-64-148-123.pool.ovpn.com) has joined #archlinux
+2020-03-19 13:52:48	MrElendig	doesn't mplayer still have it?
+2020-03-19 13:53:07	fogobogo	might be. not sure if it still works though
+2020-03-19 13:53:08	<--	transacid (~transacid@pdpc/supporter/professional/transacid) has quit (Ping timeout: 256 seconds)
+2020-03-19 13:54:03	-->	b1tninja (~b1tninja@unaffiliated/b1tninja) has joined #archlinux
+2020-03-19 13:54:50	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 13:55:00	-->	raster (~raster@enlightenment/developer/raster) has joined #archlinux
+2020-03-19 13:55:09	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 13:58:36	MrElendig	would depend on the wm/de
+2020-03-19 13:59:46	-->	Carp (~rue@1-162-40-190.dynamic-ip.hinet.net) has joined #archlinux
+2020-03-19 13:59:47	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 13:59:56	<--	buffet (~buffet@vm-irc.spline.inf.fu-berlin.de) has quit (Quit: Spline - https://spline.de)
+2020-03-19 14:00:05	-->	transacid (~transacid@pdpc/supporter/professional/transacid) has joined #archlinux
+2020-03-19 14:00:09	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:00:41	-->	Icedman (~Icedman@unaffiliated/icedman) has joined #archlinux
+2020-03-19 14:01:11	<--	qolfixes (~gentoo_es@unaffiliated/gentoo-eshoes/x-0253819) has quit (Quit: oh well)
+2020-03-19 14:01:52	fogobogo	ho hum. dunno X ain't what it used to be
+2020-03-19 14:02:41	<--	Warxcell (~Warxcell@7999.uMa.HeT.oT.telnet.bg) has quit (Quit: ZNC - https://znc.in)
+2020-03-19 14:04:10	-->	makaveli7 (~makaveli7@unaffiliated/makaveli7) has joined #archlinux
+2020-03-19 14:05:07	-->	bucktown (~Thunderbi@136.228.79.63) has joined #archlinux
+2020-03-19 14:05:14	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:05:35	<--	WinterStar (WinterStar@gateway/vpn/mullvad/winterstar) has quit (Ping timeout: 246 seconds)
+2020-03-19 14:05:46	-->	SandboxGeneral (~sandboxge@97.84.253.77) has joined #archlinux
+2020-03-19 14:05:53	-->	cdown_ (~cdown@199.201.66.0) has joined #archlinux
+2020-03-19 14:06:10	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 14:07:01	<--	SandboxGeneral (~sandboxge@97.84.253.77) has quit (Client Quit)
+2020-03-19 14:07:59	MrElendig	X haven't changed since 1981
+2020-03-19 14:08:11	MrElendig	everyone just bypasses it now because of that
+2020-03-19 14:08:23	<--	cdown (~cdown@89.32.122.5) has quit (Ping timeout: 246 seconds)
+2020-03-19 14:08:27	MrElendig	everyone uses direct rendering instead
+2020-03-19 14:08:35	--	cdown_ is now known as cdown
+2020-03-19 14:08:53	-->	Andecy (~Andecy@62.219.159.68) has joined #archlinux
+2020-03-19 14:10:09	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:10:38	-->	cisco87 (~cisco87@cisco87.powered.by.lunarbnc.net) has joined #archlinux
+2020-03-19 14:10:51	fogobogo	well yeah, but you have things like running rootless now and kms and whatnotelse
+2020-03-19 14:11:12	<--	f1refly (~f1refly@pptp-194-95-3-207.pptp.padnet.de) has quit (Quit: bye fags)
+2020-03-19 14:11:27	-->	f1refly (~f1refly@pptp-194-95-3-207.pptp.padnet.de) has joined #archlinux
+2020-03-19 14:12:28	ashpex	Give me a reason that I shouldn't switch to wayland now and then.
+2020-03-19 14:12:41	<--	kelnoky (~shao@ip1f1222c4.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 14:12:50	fogobogo	nothing works?
+2020-03-19 14:12:55	ashpex	Perfect.
+2020-03-19 14:13:24	-->	buffet (~buffet@vm-irc.spline.inf.fu-berlin.de) has joined #archlinux
+2020-03-19 14:13:25	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 264 seconds)
+2020-03-19 14:13:34	-->	Alak (~weechat@gateway/tor-sasl/alakzadeh) has joined #archlinux
+2020-03-19 14:13:49	-->	Diamondcite (~dcite@24-52-244-103.cable.teksavvy.com) has joined #archlinux
+2020-03-19 14:14:51	dagle	Nothing? I find that most things work.
+2020-03-19 14:14:53	-->	krator44 (~krator44@unaffiliated/krator44) has joined #archlinux
+2020-03-19 14:15:07	-->	Andecy_ (~Andecy@185.213.253.252) has joined #archlinux
+2020-03-19 14:15:15	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:15:33	<--	f1refly (~f1refly@pptp-194-95-3-207.pptp.padnet.de) has quit (Client Quit)
+2020-03-19 14:15:40	-->	dendazen (~dendazen@pool-72-76-93-243.nwrknj.fios.verizon.net) has joined #archlinux
+2020-03-19 14:15:47	-->	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has joined #archlinux
+2020-03-19 14:15:57	dagle	The worst thing for me atm is that wayland is pretty much: Gnome, kde or sway.
+2020-03-19 14:16:01	<--	paride15 (paride15@gateway/vpn/mullvad/paride15) has quit (Quit: Quit)
+2020-03-19 14:16:18	<--	well_laid_lawn (~Jean-luc@c114-77-254-225.rochd21.qld.optusnet.com.au) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:16:43	<--	Alak (~weechat@gateway/tor-sasl/alakzadeh) has quit (Client Quit)
+2020-03-19 14:16:43	raster	dagle:  enlightenment too
+2020-03-19 14:16:58	raster	everyone likes to ignore/forget that
+2020-03-19 14:16:59	ashpex	At least there is a wm that supports wayland.
+2020-03-19 14:17:01	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 264 seconds)
+2020-03-19 14:17:10	<--	Andecy (~Andecy@62.219.159.68) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:17:25	dagle	Well, enlightenment is just weird imo. One month everything works and is super slick and the next month it's weird as hell.
+2020-03-19 14:17:53	-->	f1refly (~f1refly@pptp-194-95-3-207.pptp.padnet.de) has joined #archlinux
+2020-03-19 14:17:59	<--	His_Dudeness__ (~His_Duden@ip-176-199-252-73.hsi06.unitymediagroup.de) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:18:11	-->	linzst (~linzst@unaffiliated/linzst) has joined #archlinux
+2020-03-19 14:18:29	MrElendig	also it is plasma not kde
+2020-03-19 14:18:46	MrElendig	there are a few other wayland compositors out there too, but they all suck
+2020-03-19 14:18:58	 *	MrElendig have only found gnome to be useable
+2020-03-19 14:19:05	ashpex	Does wayland even need compositors?
+2020-03-19 14:19:10	raster	yes
+2020-03-19 14:19:24	MrElendig	the compositor is what implements wayland
+2020-03-19 14:19:30	raster	as it *IS* a compositor by definition
+2020-03-19 14:19:38	raster	well wayland is a protocol.
+2020-03-19 14:19:52	dagle	Wayland is just a rendering communication protocoll that supports plugins to handle special cases.
+2020-03-19 14:19:58	raster	wayland compositors use the wayland server libs to implement the server-side of that protocol
+2020-03-19 14:20:08	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:20:09	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:20:14	raster	in order for the wl compositor to display anything it has to do some form of compositing...
+2020-03-19 14:20:29	-->	tinywrkb (~tinywrkb@2001:470:7857:fb2::f) has joined #archlinux
+2020-03-19 14:20:31	raster	even if that is as simple as assugning client buffers to hw dispplay planes
+2020-03-19 14:20:35	<--	dendazen (~dendazen@pool-72-76-93-243.nwrknj.fios.verizon.net) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:20:36	ashpex	heh good to know
+2020-03-19 14:21:20	raster	sagits not a rendering comms protocol/. it's a presentation protocol (if we ignore the input, cnp/dnd etc. bits)
+2020-03-19 14:21:29	raster	err dagle ^^^
+2020-03-19 14:21:50	-->	Tools (~Casper@an.alternative.hidden.network) has joined #archlinux
+2020-03-19 14:21:51	raster	x is a rendering protocol (in addition to many other things)
+2020-03-19 14:21:53	<--	Tools (~Casper@an.alternative.hidden.network) has quit (Excess Flood)
+2020-03-19 14:22:12	dagle	Depends on what you define as rendering.
+2020-03-19 14:22:48	raster	"draw line" "draw box" "draw arc" "draw filled polygon" "paste this bitmap daya here" etc.
+2020-03-19 14:22:57	raster	that's a rendering protocol.
+2020-03-19 14:23:35	-->	paride15 (paride15@gateway/vpn/mullvad/paride15) has joined #archlinux
+2020-03-19 14:23:44	-->	Tools (~Casper@an.alternative.hidden.network) has joined #archlinux
+2020-03-19 14:23:53	dagle	Your definition.
+2020-03-19 14:24:12	raster	that would be the accepted definition
+2020-03-19 14:24:31	dagle	Hkay
+2020-03-19 14:25:15	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:25:25	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 264 seconds)
+2020-03-19 14:25:26	<--	Carp (~rue@1-162-40-190.dynamic-ip.hinet.net) has quit (Ping timeout: 256 seconds)
+2020-03-19 14:26:16	<--	paride15 (paride15@gateway/vpn/mullvad/paride15) has quit (Client Quit)
+2020-03-19 14:27:27	-->	paride15 (paride15@gateway/vpn/mullvad/paride15) has joined #archlinux
+2020-03-19 14:28:28	<--	paride15 (paride15@gateway/vpn/mullvad/paride15) has left #archlinux
+2020-03-19 14:29:11	-->	Tom^ (~Tom^@unaffiliated/tom/x-6084202) has joined #archlinux
+2020-03-19 14:29:16	<--	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 14:30:10	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:30:31	earnestly	grawity: o_o Inter UI has a monospace
+2020-03-19 14:30:43	earnestly	I think
+2020-03-19 14:32:10	-->	paride15 (paride15@gateway/vpn/mullvad/paride15) has joined #archlinux
+2020-03-19 14:32:11	<--	Zephros (~Zephros@2605:a000:1113:41a0:c9f7:9061:27c9:ec3) has quit (Ping timeout: 246 seconds)
+2020-03-19 14:32:12	<--	paride15 (paride15@gateway/vpn/mullvad/paride15) has quit (Client Quit)
+2020-03-19 14:32:16	-->	yunhao94 (~yunhao94@183.197.176.103) has joined #archlinux
+2020-03-19 14:33:22	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 265 seconds)
+2020-03-19 14:33:53	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #archlinux
+2020-03-19 14:34:28	-->	scpketer (~scpketer@pppoe-185-145-56-235.prtcom.ru) has joined #archlinux
+2020-03-19 14:34:41	-->	sgn_ (~sgn@2402:800:6375:576b:45:8501:2b16:99b2) has joined #archlinux
+2020-03-19 14:34:59	<--	sgn (~sgn@2402:800:6375:576b:45:8501:2b16:99b2) has quit (Ping timeout: 246 seconds)
+2020-03-19 14:35:17	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:36:00	<--	lucenera (~lucenera@5.171.28.3) has quit (Quit: Leaving)
+2020-03-19 14:36:44	-->	yvejen (~yvejen@dyndsl-091-248-210-140.ewe-ip-backbone.de) has joined #archlinux
+2020-03-19 14:37:12	<--	antipatico (~antipatic@unaffiliated/antipatico) has quit (Remote host closed the connection)
+2020-03-19 14:37:41	-->	antipatico (~antipatic@unaffiliated/antipatico) has joined #archlinux
+2020-03-19 14:37:54	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 14:39:49	-->	fatkids (~fatkids@unaffiliated/fatkids) has joined #archlinux
+2020-03-19 14:40:26	earnestly	grawity: Nevermind, it was Roboto
+2020-03-19 14:41:12	fatkids	in gnome running on wayland, is there any way to list the current DPI and change the DPI setting?
+2020-03-19 14:42:49	<--	cottoneyejim (~cottoneye@95.155.56.31) has quit (Ping timeout: 264 seconds)
+2020-03-19 14:43:41	-->	damoreno (56dc6c16@lfbn-ann-1-12-22.w86-220.abo.wanadoo.fr) has joined #archlinux
+2020-03-19 14:43:43	-->	sigmundv_ (~sigmundv@51.37.219.204) has joined #archlinux
+2020-03-19 14:44:18	MrElendig	don't change the dpi, change the scaling factor and font size instead
+2020-03-19 14:44:36	b1tninja	scaling in wayland+gdk is bugged
+2020-03-19 14:44:37	damoreno	hello. I created a user without password so when he logins (locally) he has to set up a password. The thing is that he gets this when he logins: "su: Authentication token manipulation error". What am I doing wrong?
+2020-03-19 14:44:44	MrElendig	it should get the correct dpi from your monitor, unless your monitor is broken
+2020-03-19 14:44:50	b1tninja	just reduce resolution lol
+2020-03-19 14:44:51	MrElendig	b1tninja: less so than on xorg
+2020-03-19 14:45:15	MrElendig	works pretty well if you don't have 2x dpi difference on your screens
+2020-03-19 14:45:16	-->	dreadkopp (b20bd0ef@gateway/web/cgi-irc/kiwiirc.com/ip.178.11.208.239) has joined #archlinux
+2020-03-19 14:45:22	b1tninja	on a 4k display with 300% scale it tried to allocate something like 32k wide resolution
+2020-03-19 14:45:24	<--	sgn_ (~sgn@2402:800:6375:576b:45:8501:2b16:99b2) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 14:45:28	MrElendig	of course non-gome software might break horrible
+2020-03-19 14:45:32	MrElendig	like anything tk based
+2020-03-19 14:45:37	fatkids	MrElendig, err i got one of those koren monitors with a broken edid :(
+2020-03-19 14:45:46	MrElendig	fatkids: provide your own edid
+2020-03-19 14:45:48	-->	sgn (~sgn@2402:800:6375:576b:45:8501:2b16:99b2) has joined #archlinux
+2020-03-19 14:45:52	MrElendig	or manual mode
+2020-03-19 14:46:16	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:46:35	<--	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 14:46:44	fatkids	what is manual mode? sorry, i might not be seeing the appropriate menu option
+2020-03-19 14:46:45	-->	berton (~berton@181.220.114.167) has joined #archlinux
+2020-03-19 14:48:40	<--	berton (~berton@181.220.114.167) has quit (Remote host closed the connection)
+2020-03-19 14:49:11	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:49:26	<--	mefistofeles (~mefistofe@unaffiliated/mefistofeles) has quit (Ping timeout: 258 seconds)
+2020-03-19 14:50:36	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #archlinux
+2020-03-19 14:50:46	andril	o/
+2020-03-19 14:50:54	antipatico	O/
+2020-03-19 14:50:56	-->	Carp (~rue@1-162-40-190.dynamic-ip.hinet.net) has joined #archlinux
+2020-03-19 14:51:08	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:51:19	bwe	I've configured eth0 via /etc/systemd/network/20-wired.conf as https://wiki.archlinux.org/index.php/Systemd-networkd#Wired_adapter_using_a_static_IP instructs me to do.
+2020-03-19 14:51:20	phrik	Title: systemd-networkd - ArchWiki (at wiki.archlinux.org)
+2020-03-19 14:51:21	fogobogo	0/
+2020-03-19 14:51:53	fogobogo	bwe: well.. uhm... congrats?
+2020-03-19 14:51:54	MrElendig	bwe: and?
+2020-03-19 14:52:01	MrElendig	(and why do you have eth0?)
+2020-03-19 14:53:02	-->	the_clean (~the_clean@cpe-71-79-84-188.columbus.res.rr.com) has joined #archlinux
+2020-03-19 14:53:05	<--	transacid (~transacid@pdpc/supporter/professional/transacid) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:53:33	bwe	I did `systemctl restart systemd-networkd`, then `networkctl list`. The latter indicates OPERATIONAL to be off. => XY-Problem: How do I setup network configuration properly to be persistent?
+2020-03-19 14:53:42	-->	transacid (~transacid@pdpc/supporter/professional/transacid) has joined #archlinux
+2020-03-19 14:53:57	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 14:54:04	raster	fatkids: leaern the lesson. don't buy cheap junk if you don't want problems. :)
+2020-03-19 14:54:07	-->	Lord_of_Life_ (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux
+2020-03-19 14:54:13	<--	ashpex (~ashpex@nixnet.xyz) has quit (Ping timeout: 264 seconds)
+2020-03-19 14:54:28	fatkids	raster, i know :( it is kicking me hard
+2020-03-19 14:54:29	bwe	MrElendig: I assumed a single wired connection to be equivalent to eth0. Should it be different?
+2020-03-19 14:54:52	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Ping timeout: 246 seconds)
+2020-03-19 14:54:58	raster	fatkids:  now you get to waste a lot of time trying to work around it( like how to provide your own modelines) :)
+2020-03-19 14:55:17	MrElendig	!ifname
+2020-03-19 14:55:17	<--	beest (~root@2601:480:4003:37e0::2fad) has quit (Ping timeout: 246 seconds)
+2020-03-19 14:55:18	phrik	MrElendig: BLEEP BLOOP
+2020-03-19 14:55:21	MrElendig	hmm
+2020-03-19 14:56:47	MrElendig	https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/
+2020-03-19 14:56:48	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 14:56:49	phrik	Title: PredictableNetworkInterfaceNames (at www.freedesktop.org)
+2020-03-19 14:56:55	--	Lord_of_Life_ is now known as Lord_of_Life
+2020-03-19 14:57:33	MrElendig	bwe: systemctl enable systemd-networkd
+2020-03-19 14:57:52	-->	roboticr (~robotic@unaffiliated/roboticr) has joined #archlinux
+2020-03-19 14:58:00	MrElendig	bwe: sidenote: static ip assigned via dhcp can be nicer than hardcoding it on the machine itself
+2020-03-19 14:58:02	-->	mirk0 (~mirko@unaffiliated/-mirko-/x-2946915) has joined #archlinux
+2020-03-19 14:58:29	<--	buffet (~buffet@vm-irc.spline.inf.fu-berlin.de) has quit (Remote host closed the connection)
+2020-03-19 15:00:04	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 15:00:05	-->	mefistofeles (~mefistofe@unaffiliated/mefistofeles) has joined #archlinux
+2020-03-19 15:00:34	<--	that_lurker (~that_lurk@cable-tku-50ddf8-209.dhcp.inet.fi) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:00:40	-->	ubuntourist (~kjcole@unaffiliated/kjcole) has joined #archlinux
+2020-03-19 15:00:49	<--	Elodin (~weechat@unaffiliated/padawan) has quit (Ping timeout: 264 seconds)
+2020-03-19 15:00:51	bwe	MrElendig: How is then my wired connection named? Your link does not tell me that specifically, nor references another site that does so.
+2020-03-19 15:01:31	<--	yvejen (~yvejen@dyndsl-091-248-210-140.ewe-ip-backbone.de) has quit (Quit: leaving)
+2020-03-19 15:01:54	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 15:01:59	mirk0	I'm trying to load a program using an optimus card using optimus manager. I have installed nvidia-390xx and the module nvidia is loaded. In xrand --listproviders output there is only one sink, the modesetting. The output of glxinfo with all the required flags is http://ix.io/2eFs
+2020-03-19 15:02:04	MrElendig	bwe: usually en*
+2020-03-19 15:02:07	MrElendig	as the link says
+2020-03-19 15:02:14	<--	sprocklem (~sprocklem@unaffiliated/sprocklem) has quit (Ping timeout: 250 seconds)
+2020-03-19 15:02:30	<--	fatkids (~fatkids@unaffiliated/fatkids) has quit (Quit: Leaving)
+2020-03-19 15:02:37	-->	yunhao94_ (~yunhao94@183.197.176.103) has joined #archlinux
+2020-03-19 15:02:38	Namarrgon	bwe: "ip link"
+2020-03-19 15:02:41	-->	His_Dudeness__ (~His_Duden@ip-176-199-252-73.hsi06.unitymediagroup.de) has joined #archlinux
+2020-03-19 15:02:45	bwe	lo, eth0
+2020-03-19 15:02:46	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:02:51	bwe	which irritates me
+2020-03-19 15:02:53	-->	urodna (~urodna@unaffiliated/urodna) has joined #archlinux
+2020-03-19 15:02:55	MrElendig	vm?
+2020-03-19 15:03:00	bwe	yes
+2020-03-19 15:03:03	MrElendig	that explains it
+2020-03-19 15:04:02	mirk0	Any idea what is wrong here? It's probabbly about glx.. I found in bubmlebee thread about those errors (from glxinfo command) that there is probabbly old .run driver for nvidia that needs to be uninstalled. If that's the case I don't have the original run file to do --uninstall. I checked the directories that should contain it's files and they do not exist.
+2020-03-19 15:04:07	-->	sprocklem (~sprocklem@unaffiliated/sprocklem) has joined #archlinux
+2020-03-19 15:04:25	mirk0	s/thread/arch wiki page
+2020-03-19 15:04:36	-->	ashpex (~ashpex@nixnet.xyz) has joined #archlinux
+2020-03-19 15:04:44	<--	mflayer (~mflayer@dynamic-27vjbz26yn44aqqsln-pd01.res.v6.highway.a1.net) has quit (Ping timeout: 246 seconds)
+2020-03-19 15:05:03	Strykar	finally got triggered enough to just install the aic94xx-firmware and wd719x-firmware packages
+2020-03-19 15:05:22	Namarrgon	pft
+2020-03-19 15:05:23	--	rebootl is now known as deinname
+2020-03-19 15:05:28	Namarrgon	weak
+2020-03-19 15:05:29	bwe	MrElendig: Is there a clean way doing it? Or should I revert to https://unix.stackexchange.com/a/340393 ?
+2020-03-19 15:05:31	phrik	Title: systemd networkd - Predictable Network Interface Names break vm migration - Unix & Linux Stack Exchange (at unix.stackexchange.com)
+2020-03-19 15:05:34	--	deinname is now known as rebootl
+2020-03-19 15:05:36	<--	yunhao94 (~yunhao94@183.197.176.103) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:05:38	mirk0	Strykar: annoys me too
+2020-03-19 15:05:43	MrElendig	bwe: what is the actual problem?
+2020-03-19 15:06:02	MrElendig	bwe: enabeling the systemd-networkd service will make your configuration persistent
+2020-03-19 15:06:05	 *	antipatico fades away
+2020-03-19 15:06:07	<--	antipatico (~antipatic@unaffiliated/antipatico) has quit (Quit: Leaving)
+2020-03-19 15:06:49	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 15:07:07	-->	mflayer (~mflayer@178-191-146-141.adsl.highway.telekom.at) has joined #archlinux
+2020-03-19 15:07:18	-->	steevo (~steevo@64.22.231.226) has joined #archlinux
+2020-03-19 15:07:44	-->	password1 (~protectes@gateway/tor-sasl/protectess) has joined #archlinux
+2020-03-19 15:07:52	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:08:26	-->	mcveri (~mcveri@thunix/admin/mcveri) has joined #archlinux
+2020-03-19 15:08:41	<--	CyberShadow (vladimir@89.28.117.31) has quit (Read error: Connection reset by peer)
+2020-03-19 15:09:00	Strykar	Namarrgon: maybe, but I don't understand why of the thousands of firmware packages 2 obscure SAS/SCSI cards have the privilege of making mkinitcpio pipe up about them missing
+2020-03-19 15:09:14	bwe	MrElendig: `ip link show dev eth0` does not list the static IP assigned via /etc/systemd/network/20-wired.conf, even after reboot.
+2020-03-19 15:09:15	-->	CyberShadow (vladimir@89.28.117.31) has joined #archlinux
+2020-03-19 15:09:45	Namarrgon	Strykar: because they are not part of the linux-firmware page and nobody else wants to maintain them in the repos
+2020-03-19 15:09:47	-->	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has joined #archlinux
+2020-03-19 15:10:02	Namarrgon	Strykar: how often have you made use of the fallback image?
+2020-03-19 15:10:03	-->	blatant (~blatant@zonk.csv.warwick.ac.uk) has joined #archlinux
+2020-03-19 15:10:11	bwe	MrElendig: Exactly, I did expect it to be working after enabling systemd-networkd. But it isn't.
+2020-03-19 15:10:15	Strykar	once, on a VM
+2020-03-19 15:10:25	<--	His_Dudeness__ (~His_Duden@ip-176-199-252-73.hsi06.unitymediagroup.de) has quit (Ping timeout: 264 seconds)
+2020-03-19 15:10:39	-->	berton (~berton@181.220.114.167) has joined #archlinux
+2020-03-19 15:10:58	earnestly	It is weird now that pacman doesn't display a cursor while updating
+2020-03-19 15:11:06	damoreno	I created a user without password so when he logins (locally) he has to set up a password. The thing is that he gets this when he logins: "su: Authentication token manipulation error". What am I doing wrong?
+2020-03-19 15:11:10	Strykar	Namarrgon: so every firmware driver that isn't part of the linux-firmware page and nobody wants to maintain will earn a warning there?
+2020-03-19 15:11:23	Namarrgon	Strykar: no, only if some hook pulls it in
+2020-03-19 15:11:47	Strykar	so which hook is pulling these two in?
+2020-03-19 15:11:54	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:11:55	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 15:12:00	Namarrgon	Strykar: you don't get these warning for the non-fallback image because the autodetect hook filters these modules out
+2020-03-19 15:12:31	Namarrgon	Strykar: "block" most likely
+2020-03-19 15:13:20	Strykar	ah I see, I still don't get why it needs to be shown, anyone using that hardware can install the firmware like they should be expected to. for those 0.1% of arch users, all of us with OCD have to suffer
+2020-03-19 15:13:33	Strykar	Namarrgon: thanks, I'll check it out
+2020-03-19 15:13:55	Namarrgon	what if one day the firmware for the device you are actually using gets lost and mkinitcpio eats the error message?
+2020-03-19 15:14:03	Namarrgon	borked images!
+2020-03-19 15:14:10	<--	CyberShadow (vladimir@89.28.117.31) has quit (Quit: CREO ERGO SVM)
+2020-03-19 15:14:14	Namarrgon	then you start complaining that it didn't show a warning
+2020-03-19 15:14:37	<--	maccraft (~random@unaffiliated/maccraft) has quit (Ping timeout: 264 seconds)
+2020-03-19 15:14:38	Namarrgon	instead of using the block hook you could specify all storage modules manually in MODULES=
+2020-03-19 15:14:50	<--	berton (~berton@181.220.114.167) has quit (Remote host closed the connection)
+2020-03-19 15:15:10	Strykar	I didn't suggest mkinitcpio chomp the error msg... I do have AHCI specified in MODULES=
+2020-03-19 15:15:20	<--	TheFuzzball (~TheFuzzba@149.22.7.223) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-19 15:15:25	MrElendig	bwe: systemctl is-enabled systemd-networkd
+2020-03-19 15:15:44	MrElendig	bwe: and journalctl -b -u systemd-networkd
+2020-03-19 15:16:14	-->	berton (~berton@181.220.114.167) has joined #archlinux
+2020-03-19 15:16:18	-->	CyberShadow (vladimir@89.28.117.31) has joined #archlinux
+2020-03-19 15:16:51	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 15:16:52	bwe	enabled
+2020-03-19 15:17:00	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:17:06	dreisner	Strykar: today it's "useless modules for the 0.1%". some day that warning will be useful to someone who actually needs firmware for a device but is missing it.
+2020-03-19 15:17:23	dreisner	Strykar: you should *never* see those warnings for the autodetect-enabled image. if you do, it's a real problem.
+2020-03-19 15:17:34	-->	b1tninja_ (~b1tninja@unaffiliated/b1tninja) has joined #archlinux
+2020-03-19 15:17:39	bwe	MrElendig: eth0: Gained IPv6LL. Enumeration completed. Started Network Service.
+2020-03-19 15:17:50	<--	b1tninja (~b1tninja@unaffiliated/b1tninja) has quit (Ping timeout: 250 seconds)
+2020-03-19 15:17:58	earnestly	dreisner: Why does it say that the firmware is missing?  Does Arch provide such firmware?
+2020-03-19 15:18:11	dreisner	it says the firmware is missing because.... the firmware is missing.
+2020-03-19 15:18:16	Namarrgon	no, it's not packaged
+2020-03-19 15:18:20	dreisner	the module references the firmware, mkinitcpio can't find it.
+2020-03-19 15:18:30	earnestly	dreisner: I get that, Namarrgon answered ^ :p
+2020-03-19 15:18:42	<--	Andecy_ (~Andecy@185.213.253.252) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:19:13	bwe	networkctl list # eth0: OPERATIONAL: degraded, SETUP: unmanaged
+2020-03-19 15:19:28	Strykar	dreisner: doesn't every arch user see that warning? I believe I have an autodetect-enabled image, how would I confirm
+2020-03-19 15:19:31	dreisner	it also might not be required. for example, the iwlwifi module references 36 firmware files. surely you don't need all of them.
+2020-03-19 15:19:39	dreisner	Strykar: you'd look at the output of mkinitpcio, for one.
+2020-03-19 15:19:49	dreisner	Strykar: you could also look at /etc/mkinitcpio.conf
+2020-03-19 15:20:00	dreisner	or /etc/mkinitcpio.d/whatever.preset since that's also relevant.
+2020-03-19 15:20:07	Strykar	dreisner: which starts with "Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'"
+2020-03-19 15:20:16	dreisner	right, presets tend to build two images
+2020-03-19 15:20:33	dreisner	one with the modules listed in mkinitcpio.conf, the other explicitly *without* autodetect.
+2020-03-19 15:21:06	Strykar	so the backup one which does not autodetect triggers this?
+2020-03-19 15:21:15	dreisner	right
+2020-03-19 15:21:24	dreisner	that's what the output says.
+2020-03-19 15:21:57	-->	frvr_ (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 15:22:22	Strykar	right, fallback? "Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'"
+2020-03-19 15:22:40	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:23:07	<--	samuel02 (uid56682@gateway/web/irccloud.com/x-qmvbdjiirsvueeou) has quit (Quit: Connection closed for inactivity)
+2020-03-19 15:23:07	dreisner	yes, keep reading. the part where it says "WARNING: blah blah missing firmware mumble mumble" should only appear for creation of that image.
+2020-03-19 15:23:57	<--	bucktown (~Thunderbi@136.228.79.63) has quit (Quit: bucktown)
+2020-03-19 15:24:14	-->	TimeTrap_ (~TimeTrap@2601:44:c280:def:d03d:8936:21f1:9739) has joined #archlinux
+2020-03-19 15:24:31	Strykar	so the only difference in config (besides diff image names obv) between both under /etc/mkinitcpio.d/linux.preset is that fallback has "fallback_options="-S autodetect"" set
+2020-03-19 15:25:07	<--	noraj (~quassel@per18-h03-89-89-230-177.dsl.sta.abo.bbox.fr) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-03-19 15:25:45	Strykar	so perhaps a better Q is how do I tell mkinitcpio that I don't care if these two modules are missing in my fallback image?
+2020-03-19 15:26:10	<--	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 15:26:17	<--	n0sou1 (~n0s0u1@196.245.151.211) has quit (Remote host closed the connection)
+2020-03-19 15:26:25	-->	maccraft (~random@unaffiliated/maccraft) has joined #archlinux
+2020-03-19 15:26:26	dreisner	it's not *modules* that are missing
+2020-03-19 15:26:27	dreisner	it's firmware.
+2020-03-19 15:26:27	<--	blatant (~blatant@zonk.csv.warwick.ac.uk) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 15:26:36	dreisner	they may or may not be necessary.
+2020-03-19 15:26:52	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 15:26:54	dreisner	you don't tell mkinitcpio anything. you ignore the warnings. that's all they are. warnings. not something that must be fixed.
+2020-03-19 15:27:08	<--	frvr_ (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:27:50	-->	masos (~masos@88.201.137.224) has joined #archlinux
+2020-03-19 15:28:44	<--	hugokarius (~hugokariu@unaffiliated/hugokarius) has quit (Quit: out)
+2020-03-19 15:28:46	-->	bucktown (~Thunderbi@136.228.79.63) has joined #archlinux
+2020-03-19 15:28:57	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #archlinux
+2020-03-19 15:29:24	 *	Strykar looks at the block hook
+2020-03-19 15:30:18	masos	hey everyone, do you by any chance know why os-prober could be not detecting another linux distribution?
+2020-03-19 15:31:13	dreisner	Strykar: if you don't think you'll ever need the fallback image, you can disable it.
+2020-03-19 15:31:16	<--	ashpex (~ashpex@nixnet.xyz) has left #archlinux ("WeeChat 2.7.1")
+2020-03-19 15:31:22	<--	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-19 15:31:39	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 250 seconds)
+2020-03-19 15:31:41	-->	Andecy_ (~Andecy@185.213.253.252) has joined #archlinux
+2020-03-19 15:31:52	-->	frvr (~florea@83.103.192.86) has joined #archlinux
+2020-03-19 15:32:09	-->	tomeaton17 (tomeaton17@unaffiliated/tomeaton17) has joined #archlinux
+2020-03-19 15:32:14	Strykar	that's quite the choice :p
+2020-03-19 15:32:21	-->	freswa (~freswa@p200300C52F284E02A570AD5381342418.dip0.t-ipconnect.de) has joined #archlinux
+2020-03-19 15:32:52	<--	maccraft (~random@unaffiliated/maccraft) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:33:26	Strykar	I still dont "get it", there must be numerous firmware packages I'm missing, but these two are the only one's I'm warned about
+2020-03-19 15:34:04	-->	maccraft (~random@unaffiliated/maccraft) has joined #archlinux
+2020-03-19 15:34:47	masos	the system I'm trying to detect is Kali on /dev/mmcblk0p3 with /boot on /dev/mmcblk0p2 (mounted under /mnt and /mnt/boot, respectively), the current one is Arch on /dev/sda4
+2020-03-19 15:35:19	masos	os-prober produces no additional entries when grub-mkconfig is run
+2020-03-19 15:35:36	-->	Martchus_ (~martchus@ipservice-092-211-027-165.092.211.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 15:36:16	<--	frvr (~florea@83.103.192.86) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:36:49	<--	Martchus (~martchus@dslb-084-056-197-026.084.056.pools.vodafone-ip.de) has quit (Ping timeout: 264 seconds)
+2020-03-19 15:37:03	-->	that_lurker (~that_lurk@cable-tku-50ddf8-209.dhcp.inet.fi) has joined #archlinux
+2020-03-19 15:37:48	<--	mirk0 (~mirko@unaffiliated/-mirko-/x-2946915) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 15:38:50	-->	Martchus (~martchus@ipservice-092-211-010-207.092.211.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 15:39:02	damoreno	why I cannot login with users with expired passwords? Why is not asking me to change the password?
+2020-03-19 15:40:25	<--	maccraft (~random@unaffiliated/maccraft) has quit (Ping timeout: 264 seconds)
+2020-03-19 15:40:30	masos	damoreno: accounts created with an -f parameter set are disabled permanently after some time after password expiry
+2020-03-19 15:40:35	<--	Martchus_ (~martchus@ipservice-092-211-027-165.092.211.pools.vodafone-ip.de) has quit (Ping timeout: 260 seconds)
+2020-03-19 15:41:23	damoreno	masos not the case. If I use passwd -d and chage -d 0 over the account, when I try to login I just get an error an it never ask for the new password
+2020-03-19 15:42:39	damoreno	the same doesn't apply to ubuntu so must be any specific arch pam configuration
+2020-03-19 15:43:02	-->	Martchus_ (~martchus@ipservice-092-217-240-051.092.217.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 15:43:47	<--	Martchus (~martchus@ipservice-092-211-010-207.092.211.pools.vodafone-ip.de) has quit (Ping timeout: 250 seconds)
+2020-03-19 15:43:58	-->	toinux (~3lch4p0@rtr01-blx1-home.toinux.tk) has joined #archlinux
+2020-03-19 15:44:06	<--	igemnace (~igemnace@2001:4451:4469:6200:a932:ac86:d765:ef84) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 15:44:45	<--	Andecy_ (~Andecy@185.213.253.252) has quit (Read error: Connection reset by peer)
+2020-03-19 15:44:55	mpan	damoreno: not directly answering your question, but more like making the problem non-existent: stop expiring passwords. It’s an obsolete concept dating back long before computers were invented and having little use in the current age. It is also proven to effectively decrease security for most users. The current trend is to advise against it.
+2020-03-19 15:45:14	steevo	damoreno,  what is error
+2020-03-19 15:45:20	-->	Martchus (~martchus@dslb-088-066-075-123.088.066.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 15:45:25	damoreno	mpan I need to do it like that as this is part of an ansible playbook
+2020-03-19 15:45:31	-->	Andecy_ (~Andecy@185.213.253.252) has joined #archlinux
+2020-03-19 15:45:52	steevo	mpan, the one thing it does do though is reduce dwell time
+2020-03-19 15:46:26	<--	novns (~novns@unaffiliated/novns) has quit (Quit: Bye)
+2020-03-19 15:47:20	damoreno	steevo: With su, "You are required to change your password immediately (administrator eforced)" and after one second "su: Authentication token manipulation error". If I login directly with the user, the "su: " in the previous message dissapears
+2020-03-19 15:47:24	mpan	steevo: only neglible portion of attacks have that form, so the benefit is minor. And the drawback is that it forces chosing weak passwords, promotes bad practices like writing down passwords on sticky notes etc.
+2020-03-19 15:47:35	<--	Martchus_ (~martchus@ipservice-092-217-240-051.092.217.pools.vodafone-ip.de) has quit (Ping timeout: 260 seconds)
+2020-03-19 15:48:00	steevo	damoreno, what login manager do you use?
+2020-03-19 15:48:05	-->	Martchus_ (~martchus@dslb-084-056-199-186.084.056.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 15:48:24	damoreno	steevo so far just the terminal. Fresh installation
+2020-03-19 15:48:43	mpan	steevo: this is exactly the view that has dragged from the past centuries into the modern computer security without ever checking if such a situation is even happening.
+2020-03-19 15:49:09	steevo	mpan, you're not wrong, but it is a balance. You can mitigate people from using weak passwords by using a password manager, so they only have to remember one or two passwords
+2020-03-19 15:49:29	mingdao	I read the news article about hplip, and ran `pacman -Suy --overwrite /usr/share/hplip/\*` to perform the upgrade. Afterwards I got another warning about directory permissions https://0x0.st/imCn.txt which wasn't mentioned. Is there any need for intervention there?
+2020-03-19 15:49:49	mpan	But most people do not use password manager. And still the benefit is minimal. It’s more like giving psychological comfort of pretending something is being done for security than actually being useful.
+2020-03-19 15:50:23	<--	Martchus (~martchus@dslb-088-066-075-123.088.066.pools.vodafone-ip.de) has quit (Ping timeout: 258 seconds)
+2020-03-19 15:51:07	steevo	mpan, Like I said, you are correct. It is difficult to convince c-level managers though, so sometimes it isn't optional
+2020-03-19 15:51:40	MrElendig	set up pam to require minimum 500bits of entropy
+2020-03-19 15:51:42	BazookaTooth	mingdao: nope
+2020-03-19 15:51:55	-->	Lantorax (~Lantorax@cpe-76-90-138-212.socal.res.rr.com) has joined #archlinux
+2020-03-19 15:51:57	MrElendig	enropy/randomness/strenght
+2020-03-19 15:52:41	damoreno	mpan in this case is an ansible playbook applied directly over a local machine to create the user. I find it more convenient to just set the password after. I could also just create a user without password and modify it afterwards. But I prefer to be reminded to do it when I login with the new account. In any other case, I agree with you
+2020-03-19 15:53:30	-->	Martchus (~martchus@ipservice-092-211-018-231.092.211.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 15:54:03	-->	Bromite (~user@gateway/tor-sasl/hypercore) has joined #archlinux
+2020-03-19 15:54:08	mpan	damoreno: yeah, I understand that. I was just responding to another person. :)
+2020-03-19 15:55:17	damoreno	I've seen that adding "password include system-local-login" to su fixes the problem with su and when I login in the terminal. Is this good enough?
+2020-03-19 15:56:01	<--	Martchus_ (~martchus@dslb-084-056-199-186.084.056.pools.vodafone-ip.de) has quit (Ping timeout: 264 seconds)
+2020-03-19 15:56:01	<--	scpketer (~scpketer@pppoe-185-145-56-235.prtcom.ru) has quit (Ping timeout: 264 seconds)
+2020-03-19 15:56:51	damoreno	to /etc/pam.d/su I mean
+2020-03-19 15:57:48	<--	chimay (~chimay@unaffiliated/chimay) has quit (Ping timeout: 256 seconds)
+2020-03-19 15:58:51	<--	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has quit (Quit: WeeChat 2.7.1)
+2020-03-19 16:00:06	-->	\\Mr_C\\ (~mrc@cpe-75-187-191-230.neo.res.rr.com) has joined #archlinux
+2020-03-19 16:00:10	-->	Elodin (~weechat@unaffiliated/padawan) has joined #archlinux
+2020-03-19 16:00:13	bwe	MrElendig: I fixed it! /etc/systemd/network/20-wired.conf is incorrect. It needs to be 20-wired.network! My mistake.
+2020-03-19 16:01:15	-->	BillTheBloke (~BillTheBl@2606:6080:1001:5::1e) has joined #archlinux
+2020-03-19 16:02:01	<--	gnomengineer (~gnomengin@212.243.95.77) has quit (Ping timeout: 264 seconds)
+2020-03-19 16:02:51	-->	chimay (~chimay@unaffiliated/chimay) has joined #archlinux
+2020-03-19 16:03:38	-->	scpketer (~scpketer@pppoe-185-145-56-235.prtcom.ru) has joined #archlinux
+2020-03-19 16:03:47	<--	solsTiCe (solsTiCe@gateway/vpn/privateinternetaccess/solstice) has quit (Quit: Leaving)
+2020-03-19 16:03:56	-->	dandels (~dandels@unaffiliated/dandels) has joined #archlinux
+2020-03-19 16:06:41	-->	oDiafanos (~odifis@195.97.79.227) has joined #archlinux
+2020-03-19 16:06:51	-->	His_Dudeness__ (~His_Duden@ip-176-199-253-55.hsi06.unitymediagroup.de) has joined #archlinux
+2020-03-19 16:08:38	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-19 16:08:38	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-19 16:08:44	damoreno	steevo mpan so is it ok to use "password include system-local-login" in /etc/pam.d/su or this allows more things than I'm aware of?
+2020-03-19 16:09:04	<--	adnidor (~adnidor@p200300E597FF1C9F556FA63463565D45.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2020-03-19 16:09:19	<--	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has quit (Read error: Connection reset by peer)
+2020-03-19 16:09:35	-->	burakcank (~burakcank@159.146.14.42) has joined #archlinux
+2020-03-19 16:09:41	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-19 16:09:41	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-19 16:09:43	<--	toinux (~3lch4p0@rtr01-blx1-home.toinux.tk) has quit (Read error: Connection reset by peer)
+2020-03-19 16:09:53	-->	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has joined #archlinux
+2020-03-19 16:09:56	<--	Tobbi (~Tobbi@supertux/tobbi) has quit (Read error: Connection reset by peer)
+2020-03-19 16:10:41	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-19 16:10:46	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-19 16:10:46	<--	kerberizer (~luchesar@wikipedia/Iliev) has quit (Ping timeout: 256 seconds)
+2020-03-19 16:11:11	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-19 16:11:34	<--	roboticr (~robotic@unaffiliated/roboticr) has quit (Ping timeout: 250 seconds)
+2020-03-19 16:11:51	<--	bucktown (~Thunderbi@136.228.79.63) has quit (Quit: bucktown)
+2020-03-19 16:11:51	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-19 16:12:19	<--	Andecy_ (~Andecy@185.213.253.252) has quit (Read error: Connection reset by peer)
+2020-03-19 16:12:27	-->	Andecy (~Andecy@185.213.253.252) has joined #archlinux
+2020-03-19 16:13:06	<--	masos (~masos@88.201.137.224) has quit (Ping timeout: 256 seconds)
+2020-03-19 16:13:08	-->	argo (~argo@unaffiliated/argo) has joined #archlinux
+2020-03-19 16:13:21	<--	KaseiWan1 (~KaseiWang@gateway/tor-sasl/kaseiwang) has quit (Remote host closed the connection)
+2020-03-19 16:13:55	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-19 16:13:59	-->	KaseiWan1 (~KaseiWang@gateway/tor-sasl/kaseiwang) has joined #archlinux
+2020-03-19 16:14:06	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-19 16:14:29	-->	kerberizer (~luchesar@wikipedia/Iliev) has joined #archlinux
+2020-03-19 16:14:38	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-19 16:14:39	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-19 16:15:05	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-19 16:15:06	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-19 16:15:22	 *	password1 feeds bwe fish
+2020-03-19 16:15:47	-->	bucktown (~Thunderbi@136.228.79.63) has joined #archlinux
+2020-03-19 16:16:39	-->	CiD2 (~CiD2@unaffiliated/jespunya) has joined #archlinux
+2020-03-19 16:16:42	-->	Skugfisk (~Skugfisk@46.46.195.196) has joined #archlinux
+2020-03-19 16:16:50	-->	roboticr (~robotic@unaffiliated/roboticr) has joined #archlinux
+2020-03-19 16:17:46	<--	freswa (~freswa@p200300C52F284E02A570AD5381342418.dip0.t-ipconnect.de) has quit (Quit: freswa)
+2020-03-19 16:18:19	-->	gnomengineer (~gnomengin@212.243.95.77) has joined #archlinux
+2020-03-19 16:18:30	<--	MarcinWieczorek (~marcin@77-253-199-164.adsl.inetia.pl) has quit (Ping timeout: 250 seconds)
+2020-03-19 16:19:12	-->	MarcinWieczorek (~marcin@212.182.24.81) has joined #archlinux
+2020-03-19 16:19:29	-->	freswa (~freswa@p200300C52F284E02E1B982A720E2BACD.dip0.t-ipconnect.de) has joined #archlinux
+2020-03-19 16:20:20	<--	andreas303 (~andreas@gateway/tor-sasl/andreas303) has quit (Remote host closed the connection)
+2020-03-19 16:20:20	 *	electrohead feeds password1 fishfood
+2020-03-19 16:21:25	-->	Martchus_ (~martchus@ipservice-092-211-021-021.092.211.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 16:21:25	-->	adnidor (~adnidor@p200300E597FF1BA91099B732021D8E80.dip0.t-ipconnect.de) has joined #archlinux
+2020-03-19 16:21:31	-->	toinux (~3lch4p0@rtr01-blx1-home.toinux.tk) has joined #archlinux
+2020-03-19 16:21:36	<--	cdown (~cdown@199.201.66.0) has quit (Read error: Connection reset by peer)
+2020-03-19 16:21:52	-->	ndegruchy (~nathan@37.120.215.244) has joined #archlinux
+2020-03-19 16:22:39	-->	andreas303 (~andreas@gateway/tor-sasl/andreas303) has joined #archlinux
+2020-03-19 16:23:08	-->	cdown (~cdown@89.32.122.5) has joined #archlinux
+2020-03-19 16:23:14	<--	dandels (~dandels@unaffiliated/dandels) has quit (Ping timeout: 256 seconds)
+2020-03-19 16:23:18	-->	rubdos_ (~rubdos@77.109.118.221) has joined #archlinux
+2020-03-19 16:23:39	-->	TheFuzzball (~TheFuzzba@149.22.7.223) has joined #archlinux
+2020-03-19 16:23:42	<--	Martchus (~martchus@ipservice-092-211-018-231.092.211.pools.vodafone-ip.de) has quit (Ping timeout: 250 seconds)
+2020-03-19 16:24:05	<--	folkrav (~folkrav@173.231.104.26) has quit (Ping timeout: 250 seconds)
+2020-03-19 16:24:07	<--	rubdos (~rubdos@2a02:578:859d:700:8b44:5716:382d:a7da) has quit (Ping timeout: 256 seconds)
+2020-03-19 16:24:17	-->	nos0u1 (~n0s0u1@196.245.151.211) has joined #archlinux
+2020-03-19 16:24:37	damoreno	actually I found this ticket about my problem https://bugs.archlinux.org/task/63262
+2020-03-19 16:24:39	phrik	Title: FS#63262 : [util-linux] login default pam configuration does not allow password update on the TTY (at bugs.archlinux.org)
+2020-03-19 16:24:45	CubeTheThird	I love how I normally only do updates about once a week, and it feels like every time I do, there's a kernel update released shortly after
+2020-03-19 16:24:49	-->	folkrav (~folkrav@173.231.104.26) has joined #archlinux
+2020-03-19 16:26:51	bwe	password1: I don't eat fish.
+2020-03-19 16:26:54	<--	hamki (~Thunderbi@199.168.137.253.16clouds.com) has quit (Remote host closed the connection)
+2020-03-19 16:27:23	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #archlinux
+2020-03-19 16:27:28	-->	hamki (~Thunderbi@199.168.137.253.16clouds.com) has joined #archlinux
+2020-03-19 16:29:18	-->	Martchus (~martchus@ipservice-092-211-017-167.092.211.pools.vodafone-ip.de) has joined #archlinux
+2020-03-19 16:30:08	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #archlinux
+2020-03-19 16:30:11	-->	maccraft (~random@unaffiliated/maccraft) has joined #archlinux
+2020-03-19 16:30:25	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Client Quit)
+2020-03-19 16:30:43	-->	rubdos (~rubdos@77.109.118.221) has joined #archlinux
+2020-03-19 16:31:25	<--	bogz (~bogz@unaffiliated/bogz) has quit (Ping timeout: 264 seconds)
+2020-03-19 16:31:53	<--	Martchus_ (~martchus@ipservice-092-211-021-021.092.211.pools.vodafone-ip.de) has quit (Ping timeout: 250 seconds)
+2020-03-19 16:32:01	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined #archlinux
+2020-03-19 16:32:22	<--	rubdos_ (~rubdos@77.109.118.221) has quit (Ping timeout: 250 seconds)
+2020-03-19 16:32:48	-->	soft_cement (uid323143@gateway/web/irccloud.com/x-fapsblrwovcvctab) has joined #archlinux
+2020-03-19 16:32:56	-->	infides (~infides@92.117.248.139) has joined #archlinux
+2020-03-19 16:32:58	-->	delusionallogic_ (~delusiona@176-23-98-104-cable.dk.customer.tdc.net) has joined #archlinux
+2020-03-19 16:35:28	-->	bogz (~bogz@unaffiliated/bogz) has joined #archlinux
+2020-03-19 16:36:14	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #archlinux
+2020-03-20 02:07:08	-->	friday13 (~friday13@85.101.196.7) has joined #archlinux
+2020-03-20 02:07:08	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-20 02:07:08	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-20 02:07:08	--	Channel #archlinux: 1766 nicks (1 op, 0 voices, 1765 normals)
+2020-03-20 02:07:08	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-20 02:07:24	friday13	hi good night ;D
+2020-03-20 02:07:39	kiraslaugh	Hey hows it going everyone. I am trying to figure out my backlight with i3 and when I run xbacklight I am getting "No outputs have backlight property." What do I need to change to get it to work?
+2020-03-20 02:07:53	<--	kelnoky (~shao@ip1f1222c4.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 2.7.1)
+2020-03-20 02:08:08	junelul	So I can get é but how do I get the one where the mark goes from top to bottom
+2020-03-20 02:08:18	-->	Newami (~Newami@ip174-68-64-138.sd.sd.cox.net) has joined #archlinux
+2020-03-20 02:08:21	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-20 02:08:21	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-20 02:08:44	<--	Newami (~Newami@ip174-68-64-138.sd.sd.cox.net) has quit (Remote host closed the connection)
+2020-03-20 02:08:47	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-20 02:08:54	<--	hamki (~Thunderbi@199.168.137.253) has quit (Ping timeout: 240 seconds)
+2020-03-20 02:08:56	-->	hamki1 (~Thunderbi@199.168.137.253.16clouds.com) has joined #archlinux
+2020-03-20 02:08:57	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-20 02:09:01	 *	rcf just chèats and uses a compose key
+2020-03-20 02:09:25	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-20 02:09:26	demonicm1niac1	which layout?
+2020-03-20 02:09:26	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-20 02:09:41	demonicm1niac1	with any altgr it's altgr `+letter
+2020-03-20 02:09:44	junelul	altgr-intl i guess, im on an american keyboard
+2020-03-20 02:10:04	junelul	oh
+2020-03-20 02:10:10	junelul	ya that works
+2020-03-20 02:10:24	junelul	é
+2020-03-20 02:10:42	-->	pinpox| (~pinpox@xdsl-89-0-228-152.nc.de) has joined #archlinux
+2020-03-20 02:10:43	demonicm1niac1	altgr+` and then let go of altgr and e
+2020-03-20 02:10:53	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-20 02:10:59	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-20 02:11:04	demonicm1niac1	altgr+e will just make é again otherwise
+2020-03-20 02:11:06	junelul	èé yep thank you
+2020-03-20 02:11:18	--	hamki1 is now known as hamki
+2020-03-20 02:11:23	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-20 02:11:23	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-20 02:11:32	<--	TheFuzzball (~TheFuzzba@149.22.7.223) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-20 02:11:45	junelul	do you know how i can get the cédille?
+2020-03-20 02:11:47	earnestly	jaawerth: But who knows, inotify replaced dnotify, so many another *notify will come along
+2020-03-20 02:11:55	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #archlinux
+2020-03-20 02:11:56	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-20 02:12:04	<--	pinpox- (~pinpox@xdsl-89-0-248-213.nc.de) has quit (Ping timeout: 256 seconds)
+2020-03-20 02:12:07	<--	Piotrek\\ (~piotrekli@088156131097.dynamic-1-kat-k-4-3-0.vectranet.pl) has quit (Quit: Leaving)
+2020-03-20 02:12:11	demonicm1niac1	uhhh
+2020-03-20 02:12:22	demonicm1niac1	ç that one?
+2020-03-20 02:12:27	junelul	ya
+2020-03-20 02:12:34	demonicm1niac1	that's just altgr+,
+2020-03-20 02:12:38	<--	contained (contained@gateway/vpn/privateinternetaccess/contained) has quit (Quit: like a fart in the wind)
+2020-03-20 02:13:14	junelul	thank you very much o/
+2020-03-20 02:13:33	andril	removed brave and back to tor - the update time was horrendous
+2020-03-20 02:13:42	-->	binTrl_ (~binaryTra@116.72.128.224) has joined #archlinux
+2020-03-20 02:13:42	demonicm1niac1	circonflex is altgr+6 and then letter without altgr
+2020-03-20 02:13:51	<--	kiraslaugh (~user@cpe-107-9-51-149.cinci.res.rr.com) has quit (Remote host closed the connection)
+2020-03-20 02:14:51	junelul	guess ill also for the tréma
+2020-03-20 02:15:01	junelul	two dots on top
+2020-03-20 02:15:08	-->	Signaltonsalat (~dickbutt@ip4d150d1c.dynamic.kabel-deutschland.de) has joined #archlinux
+2020-03-20 02:15:09	<--	transacid (~transacid@pdpc/supporter/professional/transacid) has quit (Ping timeout: 250 seconds)
+2020-03-20 02:15:09	<--	random-nick (~random-ni@unaffiliated/random-nick) has quit (Ping timeout: 250 seconds)
+2020-03-20 02:15:17	demonicm1niac1	that's altgr+" and then letter
+2020-03-20 02:15:49	Namarrgon	gnzlbg: no, when you add a new key
+2020-03-20 02:16:02	junelul	yep thats all of them thank you again
+2020-03-20 02:16:18	gnzlbg	ah ok, I should have done it then then :D
+2020-03-20 02:16:19	demonicm1niac1	o/
+2020-03-20 02:16:27	<--	binTrl (~binaryTra@115.96.126.213) has quit (Ping timeout: 250 seconds)
+2020-03-20 02:16:32	<--	junelul (60fc37c3@pool-96-252-55-195.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2020-03-20 02:17:26	<--	gmpreussner (~j3rky@107-200-244-113.lightspeed.wlfrct.sbcglobal.net) has quit (Ping timeout: 246 seconds)
+2020-03-20 02:17:51	<--	murray (~murray@dyndsl-089-166-173-239.ewe-ip-backbone.de) has quit (Quit: Leaving)
+2020-03-20 02:17:56	-->	p71 (~chatzilla@68-187-65-81.dhcp.ftwo.tx.charter.com) has joined #archlinux
+2020-03-20 02:18:11	-->	gmpreussner (~j3rky@107-200-244-113.lightspeed.wlfrct.sbcglobal.net) has joined #archlinux
+2020-03-20 02:18:41	-->	toinux (~3lch4p0@2a04:cec0:1174:925f:b:112c:5bad:4163) has joined #archlinux
+2020-03-20 02:19:10	<--	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has quit (Quit: Konversation terminated!)
+2020-03-20 02:20:21	<--	CathyInBlue (~garrett@2605:a000:112e:a76:0:3e13:19fe:af7d) has quit (Quit: Be excellent to each other.)
+2020-03-20 02:20:36	-->	Martchus_ (~martchus@ipservice-092-211-014-167.092.211.pools.vodafone-ip.de) has joined #archlinux
+2020-03-20 02:21:42	<--	Martchus (~martchus@dslb-088-077-017-032.088.077.pools.vodafone-ip.de) has quit (Ping timeout: 256 seconds)
+2020-03-20 02:21:50	<--	segurb (~segurb@unaffiliated/segurb) has quit (Quit: https://i.imgur.com/xrUtDu3.gif)
+2020-03-20 02:22:01	<--	xulin (~xulin@45.83.220.174) has quit (Quit: Mauro, SHUT THE FUCK UP! > https://lkml.org/lkml/2012/12/23/75)
+2020-03-24 01:43:30	-->	friday13 (~friday13@85.101.196.7) has joined #archlinux
+2020-03-24 01:43:30	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-24 01:43:30	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-24 01:43:31	--	Channel #archlinux: 1828 nicks (2 ops, 0 voices, 1826 normals)
+2020-03-24 01:43:31	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-24 01:43:40	horseface	i swear my beard grew an inch overnight.
+2020-03-24 01:43:48	j0hannes_	the home directory is simply mounted via "/dev/mapper/lv-home  /home  xfs  defaults  0  0"
+2020-03-24 01:44:02	<--	WaxXX (~WaXxX@2601:189:381:49c0:f80f:fce9:c7d7:fc21) has quit (Ping timeout: 260 seconds)
+2020-03-24 01:44:03	friday13	hi , i use arch btw
+2020-03-24 01:44:07	-->	folkrav (~folkrav@173.231.104.26) has joined #archlinux
+2020-03-24 01:44:12	mingdao	friday13: spot on
+2020-03-24 01:44:16	j0hannes_	I'm using pCloud which provides a virtual filesystem inside the home directory using fuse
+2020-03-24 01:44:44	<--	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has quit (Ping timeout: 250 seconds)
+2020-03-24 01:45:22	Tea	Is that self hosted?
+2020-03-24 01:46:19	j0hannes_	no, it's a cloud solution; but even if I close it, I still cannot access my home directory
+2020-03-24 01:46:19	<--	cdown (~cdown@199.201.66.0) has quit (Read error: Connection reset by peer)
+2020-03-24 01:46:34	sheep	what do you get from findmnt /home?
+2020-03-24 01:46:37	-->	toochainz (~toochainz@unaffiliated/toochainz) has joined #archlinux
+2020-03-24 01:46:41	<--	mingc (~mingc@2400:8902::f03c:91ff:feb7:8e82) has quit (K-Lined)
+2020-03-24 01:47:19	<--	ramses (~ramses@nat-35.starnet.cz) has quit (Quit: ramses)
+2020-03-24 01:47:26	j0hannes_	 /home  /dev/mapper/lv-home xfs    rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota
+2020-03-24 01:47:29	-->	mingc (~mingc@2400:8902::f03c:91ff:feb7:8e82) has joined #archlinux
+2020-03-24 01:47:34	-->	cdown (~cdown@89.32.122.5) has joined #archlinux
+2020-03-24 01:48:17	sheep	what sort of storage hardware is that lvm volume group on?
+2020-03-24 01:48:22	-->	TheFuzzball (~TheFuzzba@149.22.7.223) has joined #archlinux
+2020-03-24 01:49:05	j0hannes_	it's a single SSD
+2020-03-24 01:49:19	sheep	is there anything weird in dmesg?
+2020-03-24 01:49:48	j0hannes_	nothing, that's where I looked first
+2020-03-24 01:49:53	<--	Tobbi (~Tobbi@supertux/tobbi) has quit (Ping timeout: 250 seconds)
+2020-03-24 01:50:18	<--	enoq (~enoq@2a02:8388:6a87:b080:649f:9456:c1b1:28e4) has quit (Quit: enoq)
+2020-03-24 01:50:38	j0hannes_	I was suspecting the disk, but if there was a disk failure I would not have been able to log in and start an X session
+2020-03-24 01:51:57	j0hannes_	smart says I'm using 2% of the available spare
+2020-03-24 01:52:34	<--	mowcat (~mowcat@cpc105070-sgyl40-2-0-cust722.18-2.cable.virginm.net) has quit (Remote host closed the connection)
+2020-03-24 01:52:44	-->	jtle (~quassel@2a01:7e01::f03c:91ff:fe86:ad43) has joined #archlinux
+2020-03-24 01:53:58	<--	Ploppz (4e17c0dd@gateway/web/cgi-irc/kiwiirc.com/ip.78.23.192.221) has quit (Remote host closed the connection)
+2020-03-24 01:54:12	-->	irc_user (uid423822@gateway/web/irccloud.com/x-rfrhdeoktuawpplh) has joined #archlinux
+2020-03-24 01:55:15	<--	haniaF (~haniaF@79.184.91.221.ipv4.supernova.orange.pl) has quit (Ping timeout: 256 seconds)
+2020-03-24 01:55:50	<--	r4pr0n (~r4pr0n@gateway/tor-sasl/r4pr0n) has quit (Quit: r4pr0n)
+2020-03-24 01:56:48	-->	Alakzadeh (~weechat@gateway/tor-sasl/alakzadeh) has joined #archlinux
+2020-03-24 01:57:40	<--	skyscater (~skyscater@194-166-149-118.adsl.highway.telekom.at) has quit (Quit: Leaving)
+2020-03-24 01:57:44	<--	AK5Z (~goatman@unaffiliated/goatman) has quit (Ping timeout: 250 seconds)
+2020-03-24 01:58:03	<--	phoenix181 (~phoenix18@42.106.178.95) has quit (Ping timeout: 260 seconds)
+2020-03-24 01:58:58	<--	The_Loko (~The_Loko@185.239.201.73) has quit (Quit: Leaving)
+2020-03-24 01:59:23	<--	Alak (~weechat@gateway/tor-sasl/alakzadeh) has quit (Ping timeout: 240 seconds)
+2020-03-24 02:00:18	<--	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has quit (Remote host closed the connection)
+2020-03-24 02:01:02	<--	plastico (~plastico@2001:8a0:de6b:1a00:9d14:766e:70a8:dcea) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 02:01:09	<--	dwilolo (~dwilolo@93.51.10.40) has quit (Ping timeout: 250 seconds)
+2020-03-24 02:01:14	<--	jpe (~jp@i59F44EA5.versanet.de) has quit (Ping timeout: 240 seconds)
+2020-03-24 02:01:19	-->	mogad0n (~mogad0n@unaffiliated/mogad0n) has joined #archlinux
+2020-03-24 02:01:25	-->	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has joined #archlinux
+2020-03-24 02:01:47	<--	desmu (~desmu@2a02:908:391:8260:3c1:9333:2bd5:4202) has quit (Ping timeout: 272 seconds)
+2020-03-24 02:02:04	j0hannes_	the only line in the kernel log that I don't know is: broken atomic modeset userspace detected, disabling atomic
+2020-03-24 02:02:14	<--	random-nick (~random-ni@unaffiliated/random-nick) has quit (Ping timeout: 240 seconds)
+2020-03-24 02:02:40	j0hannes_	I just rebooted, unmounted the partition and did an xfs_repair; no errors were reported
+2020-03-24 02:02:41	-->	burakcank (~burakcank@159.146.14.42) has joined #archlinux
+2020-03-24 02:02:43	-->	dwilolo (~dwilolo@93.51.10.40) has joined #archlinux
+2020-03-24 02:03:00	<--	SanskritFritz (~quassel@2E8B404F.catv.pool.telekom.hu) has quit (Quit: leaving...)
+2020-03-24 02:03:16	<--	acidtripper (~acidtripp@unaffiliated/acidtripper) has quit (Remote host closed the connection)
+2020-03-24 02:04:37	<--	TheFuzzball (~TheFuzzba@149.22.7.223) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-24 02:06:05	<--	maccraft (~random@unaffiliated/maccraft) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 02:06:53	<--	LysergicDreams (~Lysergia@141.193.5.26) has quit (Ping timeout: 246 seconds)
+2020-03-24 02:09:28	-->	Tobbi (~Tobbi@supertux/tobbi) has joined #archlinux
+2020-03-24 02:10:29	-->	NeverSummer (~quassel@unaffiliated/neversummer) has joined #archlinux
+2020-03-24 02:10:55	-->	jtri (~jtritz@mobile-166-175-184-232.mycingular.net) has joined #archlinux
+2020-03-24 02:12:10	-->	SunWuKung (~SunWuKung@node-1w7jr9qr6l9ibbenh977tc894.ipv6.telus.net) has joined #archlinux
+2020-03-24 02:12:54	-->	Darkmatter66 (~Darkmatte@37.237.208.25) has joined #archlinux
+2020-03-24 02:13:14	<--	bnzmnzhnz (~user@pool-100-36-185-63.washdc.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2020-03-24 02:13:47	<--	SunWuKung (~SunWuKung@node-1w7jr9qr6l9ibbenh977tc894.ipv6.telus.net) has quit (Client Quit)
+2020-03-24 02:14:01	<--	flxfoo (~dave@154.red-2-142-29.dynamicip.rima-tde.net) has quit (Ping timeout: 264 seconds)
+2020-03-24 02:14:09	<--	BobbyJr (~BobbyJr@robsworld.plus.com) has quit (Ping timeout: 250 seconds)
+2020-03-24 02:14:22	jtri	hello, I'm trying to get a (1 year-ish) old virtual environment to run again, having some trouble with this install "pip install MySQL-python==1.2.5" , here's the traceback: http://dpaste.com/28RX26N
+2020-03-24 02:14:23	@phrik	Title: dpaste: 28RX26N (at dpaste.com)
+2020-03-24 02:14:34	<--	Darkmatter66_ (~Darkmatte@37.237.208.25) has quit (Ping timeout: 240 seconds)
+2020-03-24 02:14:50	-->	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has joined #archlinux
+2020-03-24 02:15:00	<--	rdbeni0 (~user@public-gprs377352.centertel.pl) has quit (Remote host closed the connection)
+2020-03-24 02:15:45	sheep	jtri: you likely need a newer version of MySQL-python hat works with modern versions of mysql
+2020-03-24 02:17:05	-->	BobbyJr (~BobbyJr@robsworld.plus.com) has joined #archlinux
+2020-03-24 02:17:28	jtri	sheep: ah, thanks, will try that
+2020-03-24 02:17:58	jtri	well... leaving off the ==1.2.5 gives the same error
+2020-03-24 02:18:05	jirido	Does anyone here know anything about how the cryptech project goes? https://cryptech.is/ there has not been any updates for a while. Or if the thunder and lightening powers of foss cryptosolutions has moved somewhere else and what that project might be?
+2020-03-24 02:18:10	@phrik	Title: CrypTech.is – Making the Internet a little bit safer (at cryptech.is)
+2020-03-24 02:18:51	sheep	jtri: it looks like 1.2.5 was the last release
+2020-03-24 02:19:31	jtri	hmm, where does that leave me?
+2020-03-24 02:20:12	sheep	try a different mysql library. They should all be compliant with the python DB API specification, so you likely won't need any significant code changes
+2020-03-24 02:20:41	<--	d4nky (~keith@S0106802aa88eb867.wp.shawcable.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 02:21:08	sheep	it looks like mysql's documentation recomments mysql-connector-python
+2020-03-24 02:22:13	-->	SunWuKung (~SunWuKung@node-1w7jr9qr6l9ibbenh977tc894.ipv6.telus.net) has joined #archlinux
+2020-03-24 02:23:15	<--	dwilolo (~dwilolo@93.51.10.40) has quit (Ping timeout: 250 seconds)
+2020-03-24 02:23:39	<--	sa02irc (~mbax@155-079-043-212.ip-addr.inexio.net) has quit (Remote host closed the connection)
+2020-03-24 02:24:05	<--	LKoen (~LKoen@lstlambert-657-1-123-43.w92-154.abo.wanadoo.fr) has quit (Quit: “It’s only logical. First you learn to talk, then you learn to think. Too bad it’s not the other way round.”)
+2020-03-24 02:24:07	-->	d4nky (~keith@S0106802aa88eb867.wp.shawcable.net) has joined #archlinux
+2020-03-24 02:24:49	<--	Aly0sha_ (~aly0sha@unaffiliated/aly0sha) has quit (Ping timeout: 264 seconds)
+2020-03-24 02:25:03	-->	dwilolo (~dwilolo@93.51.10.40) has joined #archlinux
+2020-03-24 02:25:05	jtri	I think that's working :) haven't run the code to use it yet, but the import is not longer choking
+2020-03-24 04:42:47	-->	friday13 (~friday13@85.101.196.7) has joined #archlinux
+2020-03-24 04:42:47	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-24 04:42:47	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-24 04:42:48	--	Channel #archlinux: 1794 nicks (2 ops, 0 voices, 1792 normals)
+2020-03-24 04:42:48	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-24 04:43:02	<--	stoopkid (uid137696@gateway/web/irccloud.com/x-tmkhfgfqibhqdynd) has quit (Quit: Connection closed for inactivity)
+2020-03-24 04:43:02	-->	jintseng (~jintseng@pool-108-35-167-214.nwrknj.fios.verizon.net) has joined #archlinux
+2020-03-24 04:44:14	friday13	hi
+2020-03-24 04:44:24	friday13	kernel update and modprobe: FATAL: Module nvidia not found in directory /lib/modules/5.5.11-arch1-1
+2020-03-24 04:44:51	thrice	pacman -Q nvidia ?
+2020-03-24 04:45:20	Cirrus_Minor	u want nvidia-dkms for ur nvidia vrersion
+2020-03-24 04:45:24	Cirrus_Minor	mibbe
+2020-03-24 04:45:39	friday13	pacman -Q nvidia-390xx nvidia-390xx 390.132-35
+2020-03-24 04:46:24	litez	Forgive me but it's been a long time, I set up my arch laptop to auto connect to my wifi on startup and I forget where that file might be. I believe I did it using dhcpcd
+2020-03-24 04:46:30	thrice	pretty sure that was dropped to the AUR
+2020-03-24 04:47:05	thrice	litez: if you have encryption, there is a probably something with wpa_supplicant; otherwise, dhcpcd ?
+2020-03-24 04:47:25	litez	ah yes, that rings a bell. thank you, ill look into it
+2020-03-24 04:47:30	thrice	litez: take a look in /etc/systemd/system/*
+2020-03-24 04:47:48	litez	thx
+2020-03-24 04:48:01	-->	shadowkyogre (7358dd25f8@gateway/shell/jabberfr/x-gczzdkhomwfgmhor) has joined #archlinux
+2020-03-24 04:48:40	-->	Br4wdSw0rd (~BS@97-113-121-232.tukw.qwest.net) has joined #archlinux
+2020-03-24 04:48:57	thrice	friday13: you probably need this instead, https://aur.archlinux.org/packages/nvidia-390xx-dkms/
+2020-03-24 04:48:59	@phrik	Title: AUR (en) - nvidia-390xx-dkms (at aur.archlinux.org)
+2020-03-24 04:49:16	<--	zro (~zro@wikimedia/zro) has quit (Ping timeout: 250 seconds)
+2020-03-24 04:49:17	<--	yunhao94 (~yunhao94@183.197.176.84) has quit (Ping timeout: 258 seconds)
+2020-03-24 04:50:08	Cirrus_Minor	he does
+2020-03-24 04:50:47	-->	zro (~zro@wikimedia/zro) has joined #archlinux
+2020-03-24 04:51:03	-->	nbits (~nbits@177.170.198.163) has joined #archlinux
+2020-03-24 04:51:47	<--	bucktown (~Thunderbi@136.228.79.63) has quit (Remote host closed the connection)
+2020-03-24 04:52:04	-->	bucktown (~Thunderbi@136.228.79.63) has joined #archlinux
+2020-03-24 04:52:06	friday13	ttps://wiki.archlinux.org/index.php/NVIDIA  Until yesterday, there were nvidia-390xx packages. Not now @thrice
+2020-03-24 04:52:24	Cirrus_Minor	and the 390xx driver from aur (if not running latest)
+2020-03-24 04:52:31	friday13	but there is https://aur.archlinux.org/packages/?O=0&SeB=nd&K=390xx&outdated=&SB=n&SO=a&PP=50&do_Search=Git
+2020-03-24 04:52:33	@phrik	Title: AUR (en) - Search Criteria: 390xx (at aur.archlinux.org)
+2020-03-24 04:52:50	<--	n000g (~NRG@unaffiliated/n000g) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-24 04:53:14	friday13	nvidia-390xx 390.132-35
+2020-03-24 04:53:15	<--	shadowkyogre (7358dd25f8@gateway/shell/jabberfr/x-gczzdkhomwfgmhor) has left #archlinux
+2020-03-24 04:53:31	thrice	friday13: yeah, dkms will help it to rebuild automagically
+2020-03-24 04:53:58	Cirrus_Minor	390xx utils too bro
+2020-03-24 04:54:44	friday13	ok i will try 
+2020-03-24 04:54:46	Cirrus_Minor	friday13: geforce 450 st ?
+2020-03-24 04:54:55	friday13	quadroda 2000m
+2020-03-24 04:55:00	Cirrus_Minor	k
+2020-03-24 04:56:03	thrice	dkms kinda sucks, but it's the lesser of all evils
+2020-03-24 04:57:16	Cirrus_Minor	thrice: i been usin for ages with no ill effect, in wot way does it suck ?
+2020-03-24 04:57:59	Cirrus_Minor	needs it now dkms-ck is defunct
+2020-03-24 04:58:17	<--	jintseng (~jintseng@pool-108-35-167-214.nwrknj.fios.verizon.net) has quit (Quit: Leaving)
+2020-03-24 04:58:31	-->	stevwills (~steven@modemcable221.13-177-173.mc.videotron.ca) has joined #archlinux
+2020-03-24 04:59:34	stevwills	hello, i have a problem with gnome-settings that doesn't want to delete one of my old static ip configurations... anyone know something about that???
+2020-03-24 04:59:40	friday13	I reinstalled the nvidia-390xx package and the problem is resolved
+2020-03-24 04:59:54	thrice	Cirrus_Minor: just if the module doesn't build, requires patching, etc
+2020-03-24 05:00:12	thrice	friday13: you mean, you rebuilt it (and re-installed)?
+2020-03-24 05:00:16	Cirrus_Minor	thrice: i see, makes sense
+2020-03-24 05:00:50	<--	alx741 (~alx741@181.196.68.93) has quit (Ping timeout: 246 seconds)
+2020-03-24 05:01:06	friday13	sudo modprobe -vv nvidia          modprobe: INFO: custom logging function 0x55d0ab991f50 registeredinsmod /lib/modules/5.5.11-arch1-1/kernel/drivers/char/ipmi/ipmi_msghandler.ko.xz insmod /lib/modules/5.5.11-arch1-1/kernel/drivers/char/ipmi/ipmi_devintf.ko.xz insmod /lib/modules/5.5.11-arch1-1/extramodules/nvidia.ko.gz modprobe: INFO: context 0x55d0acbf9450 released
+2020-03-24 05:01:20	stevwills	does anyone know where the network configurations from gnome settings are store??
+2020-03-24 05:01:20	<--	kelnoky (~shao@ip1f1222c4.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 05:01:40	<--	troulouliou_dev (~troulouli@unaffiliated/troulouliou-dev/x-4757952) has quit (Quit: Leaving)
+2020-03-24 05:01:52	stevwills	stored
+2020-03-24 05:02:05	friday13	@thrice yep reinstalled and solved 
+2020-03-24 05:04:37	-->	friday13 (~friday13@85.101.196.7) has joined #archlinux
+2020-03-24 05:04:37	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-24 05:04:37	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-24 05:04:38	--	Channel #archlinux: 1791 nicks (2 ops, 0 voices, 1789 normals)
+2020-03-24 05:04:38	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-24 05:05:22	<--	lukelr (~lukelr@p57B15B75.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2020-03-24 05:05:23	<--	jstein (~jstein@gentoo/developer/jstein) has quit (Quit: quit)
+2020-03-24 05:05:40	-->	lukelra (~lukelr@p200300DFA7052CBFA2012B4C6A39FBE2.dip0.t-ipconnect.de) has joined #archlinux
+2020-03-24 05:06:53	<--	onosendi1 (~onosendi@ip24-251-64-84.ph.ph.cox.net) has quit (Read error: Connection reset by peer)
+2020-03-24 05:07:18	-->	onosendi1 (~onosendi@ip24-251-64-84.ph.ph.cox.net) has joined #archlinux
+2020-03-24 05:07:32	-->	smokeroot (~hexpurry@dynrak234g-48-2-67-105.inwitelecom.net) has joined #archlinux
+2020-03-24 05:07:58	<--	djapo (~archie@unaffiliated/djapo) has quit (Ping timeout: 250 seconds)
+2020-03-24 05:08:39	-->	shadowkyogre (7358dd25f8@gateway/shell/jabberfr/x-gczzdkhomwfgmhor) has joined #archlinux
+2020-03-24 05:09:26	<--	smokeroot (~hexpurry@dynrak234g-48-2-67-105.inwitelecom.net) has quit (Client Quit)
+2020-03-24 05:09:59	<--	mirk0 (~mirko@unaffiliated/-mirko-/x-2946915) has quit (Ping timeout: 258 seconds)
+2020-03-24 05:10:46	<--	bucktown (~Thunderbi@136.228.79.63) has quit (Quit: bucktown)
+2020-03-24 05:10:52	<--	litez (~litez@24.114.66.225) has quit
+2020-03-24 05:11:25	-->	minacious (~og@198.251.83.105) has joined #archlinux
+2020-03-24 05:14:01	<--	mpan (~mysql@unaffiliated/mpan) has quit (Ping timeout: 264 seconds)
+2020-03-24 05:14:19	-->	litez (~lite@199.119.233.240) has joined #archlinux
+2020-03-24 05:14:22	<--	litez (~lite@199.119.233.240) has quit (Client Quit)
+2020-03-24 05:14:38	-->	alx741 (~alx741@181.196.69.206) has joined #archlinux
+2020-03-24 05:16:53	<--	rafasc (~rafasc@unaffiliated/rafasc) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 05:17:08	-->	n000g (~NRG@unaffiliated/n000g) has joined #archlinux
+2020-03-24 05:17:12	<--	bwayne (~bwayne@2604:2d80:b00c:5c00:fdbf:4ce2:91b5:b06a) has quit (Quit: Konversation terminated!)
+2020-03-24 05:17:20	<--	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 05:17:47	-->	Sonderblade (~helloman@94.191.140.14.mobile.tre.se) has joined #archlinux
+2020-03-24 05:18:22	<--	mrbanie (~mrbanie@unaffiliated/mrbanie) has quit (Ping timeout: 250 seconds)
+2020-03-24 05:18:36	-->	litez (~lite@199.119.233.240) has joined #archlinux
+2020-03-24 05:18:55	-->	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has joined #archlinux
+2020-03-24 05:19:14	-->	Yomi (~yomi@ip68-109-112-37.ri.ri.cox.net) has joined #archlinux
+2020-03-24 05:19:41	-->	akiva (~akiva@d50-92-125-120.bchsia.telus.net) has joined #archlinux
+2020-03-24 05:20:17	<--	Narrat (~Narrat@p200300DF5F4FD6789A0B00CA93AE15F6.dip0.t-ipconnect.de) has quit (Quit: They say a little knowledge is a dangerous thing, but it's not one half so bad as a lot of ignorance.)
+2020-03-24 05:20:19	-->	mpan (~mysql@unaffiliated/mpan) has joined #archlinux
+2020-03-24 05:20:20	-->	mrbanie (~mrbanie@unaffiliated/mrbanie) has joined #archlinux
+2020-03-24 05:20:50	Sonderblade	if you use NetworkManager, do you need to have wpa_supplicant running?
+2020-03-24 05:21:22	CubeTheThird	you don't need to have it running, but it's a requirement to install it
+2020-03-24 05:21:30	CubeTheThird	there is however an AUR package fork that doesn't have the dep
+2020-03-24 05:21:41	thurstylark	NM takes care of running it and using it if necessary
+2020-03-24 05:21:51	Sonderblade	so i can disable the service?
+2020-03-24 05:21:57	-->	fogobogo_ (~fogobogo@unaffiliated/fogobogo) has joined #archlinux
+2020-03-24 05:22:38	<--	fogobogo (~fogobogo@unaffiliated/fogobogo) has quit (Ping timeout: 256 seconds)
+2020-03-24 05:22:38	thurstylark	if you enabled it explicitly before, yes.
+2020-03-24 05:22:55	thurstylark	If it's enabled as a dep for NM, then no
+2020-03-24 05:23:02	thurstylark	I just can't remember if that's the case...
+2020-03-24 05:24:14	<--	stevwills (~steven@modemcable221.13-177-173.mc.videotron.ca) has quit (Ping timeout: 240 seconds)
+2020-03-24 05:24:48	-->	liqsliu (~liqsliu@unaffiliated/liqsliu) has joined #archlinux
+2020-03-24 05:24:53	<--	litez (~lite@199.119.233.240) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 05:24:58	CubeTheThird	you can still configure it to use e.g. IWD instead
+2020-03-24 05:25:37	-->	_chaky_ (~chaky@gateway/tor-sasl/chaky) has joined #archlinux
+2020-03-24 05:26:12	-->	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has joined #archlinux
+2020-03-24 05:27:51	<--	Sonderblade (~helloman@94.191.140.14.mobile.tre.se) has quit (Read error: No route to host)
+2020-03-24 05:29:03	<--	chaky (~chaky@gateway/tor-sasl/chaky) has quit (Ping timeout: 240 seconds)
+2020-03-24 05:29:05	--	_chaky_ is now known as chaky
+2020-03-24 05:29:25	-->	ronj (~ronj@192.222.217.213) has joined #archlinux
+2020-03-24 05:32:37	<--	mogad0n (~mogad0n@unaffiliated/mogad0n) has quit (Ping timeout: 246 seconds)
+2020-03-24 05:33:36	-->	Nicop06 (~nicolas@2a02:c7f:c043:e900:d7e6:6e95:4769:57ce) has joined #archlinux
+2020-03-24 05:34:25	<--	agregory (~agregory@c-98-207-137-206.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2020-03-24 05:34:57	<--	cer-0 (~cer0@189.228.164.56) has left #archlinux
+2020-03-24 05:36:49	<--	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has quit (Ping timeout: 264 seconds)
+2020-03-24 05:38:12	-->	Lehthanis (~robbie@cpe-174-101-171-114.cinci.res.rr.com) has joined #archlinux
+2020-03-24 05:38:46	-->	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-qwljsimdwclcrxug) has joined #archlinux
+2020-03-24 05:39:49	j0hannes_	is there any way to remove processes that hang in io wait or is the only way to reboot?
+2020-03-24 05:39:52	Lehthanis	hey guys...so my sound card still isn't working right...it seems to randomly work...we found out at one point it seems like I have "two" cards...but they're both using the same module sound_hda_intel. one of them is nvidia for the hdmi port on my laptoop.
+2020-03-24 05:39:57	Lehthanis	anyone have any more ideas?
+2020-03-24 05:40:47	Lehthanis	I've tried setting a .conf file in modprobe.d that sets options snd_hda_intel index=1
+2020-03-24 05:40:56	Lehthanis	but to no avail...it randomly works
+2020-03-24 05:40:57	Br4wdSw0rd	j0hannes_: htop + f9
+2020-03-24 05:40:57	<--	SinclairResearch (~IceChat9@37.189.131.136) has quit (Quit: Wink, Wink, nudge, nudge. Know what I mean?)
+2020-03-24 05:41:24	j0hannes_	Br4wdSw0rd: I already tried but it doesn't work
+2020-03-24 05:42:05	Br4wdSw0rd	j0hannes_: u pressed f9 then sent sigkill? and it is still alive?
+2020-03-24 05:42:10	<--	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-qwljsimdwclcrxug) has quit (Excess Flood)
+2020-03-24 05:42:24	<--	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has quit (Quit: shibboleth)
+2020-03-24 05:42:32	-->	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-buhvevzcamerjyze) has joined #archlinux
+2020-03-24 05:42:32	j0hannes_	Br4wdSw0rd: yes
+2020-03-24 05:42:49	j0hannes_	the problem seems to be fuse, again
+2020-03-24 05:43:08	Br4wdSw0rd	j0hannes_: holly, ok idk yea id probs reboot at that point idk :(
+2020-03-24 05:43:33	--	Br4wdSw0rd is now known as BSword
+2020-03-24 05:44:03	-->	ferche23 (~ferche23@200.123.38.117) has joined #archlinux
+2020-03-24 05:44:08	j0hannes_	that's what I usually do
+2020-03-24 05:45:03	-->	jkwnki (~jkwnki@p200300CD472B60001E1BB5FFFE7A47F7.dip0.t-ipconnect.de) has joined #archlinux
+2020-03-24 05:45:23	-->	phoenix181 (~phoenix18@42.106.178.95) has joined #archlinux
+2020-03-24 05:45:28	<--	apetresc (~apetresc@toroon474qw-lp140-01-70-31-85-175.dsl.bell.ca) has quit (Ping timeout: 268 seconds)
+2020-03-24 05:45:30	<--	ferche23 (~ferche23@200.123.38.117) has quit (Max SendQ exceeded)
+2020-03-24 05:46:16	-->	ferche23 (~ferche23@200.123.38.117) has joined #archlinux
+2020-03-24 05:46:24	<--	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-buhvevzcamerjyze) has quit (Excess Flood)
+2020-03-24 05:46:37	<--	Alex_ander (~Alex_ande@118.117.98.198) has quit (Remote host closed the connection)
+2020-03-24 05:46:38	-->	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-xytoyyckkmjutnwe) has joined #archlinux
+2020-03-24 05:46:41	<--	jumper149 (~jumper149@p200300E54F25850076E50BFFFEAFC8D8.dip0.t-ipconnect.de) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 05:46:48	-->	boyne (~cirrus@host-2-99-112-227.as13285.net) has joined #archlinux
+2020-03-24 05:46:51	-->	homerj (~homerj@april-fools/2013/second/homerj) has joined #archlinux
+2020-03-24 05:46:58	<--	Llewelyn_ (~Llewelyn@50-47-133-145.evrt.wa.frontiernet.net) has quit (Quit: Leaving)
+2020-03-24 05:47:04	--	boyne is now known as clyde
+2020-03-24 05:47:48	<--	ferche23 (~ferche23@200.123.38.117) has quit (Max SendQ exceeded)
+2020-03-24 05:48:31	<--	ronj (~ronj@192.222.217.213) has quit (Quit: Leaving)
+2020-03-24 05:48:46	-->	ferche23 (~ferche23@200.123.38.117) has joined #archlinux
+2020-03-24 05:49:40	-->	Alex_ander (~Alex_ande@118.117.98.198) has joined #archlinux
+2020-03-24 05:51:41	<--	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-xytoyyckkmjutnwe) has quit (Excess Flood)
+2020-03-24 05:51:53	-->	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-apwbwsvbdcnyovqo) has joined #archlinux
+2020-03-24 05:51:54	<--	onosendi1 (~onosendi@ip24-251-64-84.ph.ph.cox.net) has quit (Ping timeout: 240 seconds)
+2020-03-24 05:55:35	Lehthanis	should HDA nVidia be using snd_hda_intel also?
+2020-03-24 05:57:25	-->	Sonderblade (~helloman@94.191.140.14.mobile.tre.se) has joined #archlinux
+2020-03-24 05:57:53	-->	apetresc (~apetresc@toroon474qw-lp140-01-70-31-85-175.dsl.bell.ca) has joined #archlinux
+2020-03-24 05:58:01	<--	vandman (~vandman@2a01:e35:2fb5:c881:d6e2:f934:94f8:140d) has quit (Ping timeout: 272 seconds)
+2020-03-24 05:59:41	-->	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has joined #archlinux
+2020-03-24 06:00:37	<--	urodna (~urodna@unaffiliated/urodna) has quit (Quit: urodna)
+2020-03-24 06:00:55	<--	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has quit (Read error: Connection reset by peer)
+2020-03-24 06:01:18	<--	GI_Jack (~GI_Jack@pdpc/supporter/active/gi-jack) has quit (Quit: Leaving)
+2020-03-24 06:01:37	<--	Manifest0 (~Manifest0@59-nat1-1.centrio.cz) has quit (Read error: Connection reset by peer)
+2020-03-24 06:01:45	-->	cdown_ (~cdown@199.201.66.0) has joined #archlinux
+2020-03-24 06:02:37	-->	Manifest0 (~Manifest0@59-nat1-1.centrio.cz) has joined #archlinux
+2020-03-24 06:04:11	<--	cdown (~cdown@89.32.122.5) has quit (Ping timeout: 246 seconds)
+2020-03-24 06:04:15	--	cdown_ is now known as cdown
+2020-03-24 06:04:25	<--	tschan (~tschan@p57A868B2.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2020-03-24 06:05:06	-->	changfeng (~changfeng@27.214.177.92) has joined #archlinux
+2020-03-24 06:09:28	-->	tschan (~tschan@p57A866C7.dip0.t-ipconnect.de) has joined #archlinux
+2020-03-24 06:10:39	-->	tomty89 (~user@123202047155.ctinets.com) has joined #archlinux
+2020-03-24 06:10:51	-->	xirhtogal (~lagothrix@unaffiliated/lagothrix) has joined #archlinux
+2020-03-24 06:10:51	--	lagothrix is now known as Guest50983
+2020-03-24 06:10:51	<--	Guest50983 (~lagothrix@unaffiliated/lagothrix) has quit (Killed (card.freenode.net (Nickname regained by services)))
+2020-03-24 06:10:51	--	xirhtogal is now known as lagothrix
+2020-03-24 06:14:55	<--	clyde (~cirrus@host-2-99-112-227.as13285.net) has quit (Quit: Lost terminal)
+2020-03-24 06:14:55	<--	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has quit (Remote host closed the connection)
+2020-03-24 06:15:23	-->	onosendi1 (~onosendi@ip24-251-64-84.ph.ph.cox.net) has joined #archlinux
+2020-03-24 06:16:15	-->	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has joined #archlinux
+2020-03-24 06:16:38	-->	katie_ (~katie_@c-va-bc1c2fc474-50822-1.tingfiber.com) has joined #archlinux
+2020-03-24 06:17:55	-->	[b0b] (~bob@unaffiliated/sulfyr) has joined #archlinux
+2020-03-24 06:17:56	novum	Welp. I tried and failed to boot via EFISTUB. Sad because I don't have time to keep reading infinite amounts of pages nor continue experimenting
+2020-03-24 06:18:43	-->	InvisibleRasta (~Invisible@185.241.30.108) has joined #archlinux
+2020-03-24 06:19:17	--	mrbeyond is now known as mrinfinity
+2020-03-24 06:20:16	<--	His_Dudeness__ (~His_Duden@176.199.252.161) has quit (Ping timeout: 250 seconds)
+2020-03-24 06:21:13	<--	b0b (~bob@unaffiliated/sulfyr) has quit (Ping timeout: 264 seconds)
+2020-03-24 06:21:15	--	[b0b] is now known as b0b
+2020-03-28 00:07:38	-->	friday13 (~friday13@85.96.21.134) has joined #archlinux
+2020-03-28 00:07:38	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | https://www.archlinux.org/news/sshd-needs-restarting-after-upgrading-to-openssh-82p1/"
+2020-03-28 00:07:38	--	Topic set by phrik (~phrik@archlinux/bot/phrik) on Mon, 17 Feb 2020 05:03:05
+2020-03-28 00:07:39	--	Channel #archlinux: 1816 nicks (2 ops, 0 voices, 1814 normals)
+2020-03-28 00:07:39	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2020-03-28 00:07:48	friday13	hi
+2020-03-28 00:07:48	vvor	Whatever you need
+2020-03-28 00:07:57	-->	zro (~zro@wikimedia/zro) has joined #archlinux
+2020-03-28 00:08:19	bdunn	Okay - I think I have enough to either make this happen to completely destroy my server. LOL. Thanks everyone. I've learned to ask here for opinions first because when I started with Arch I was still thinking "GRUB is the way to go!" LOL
+2020-03-28 00:08:22	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:08:22	BrainDamage	setpill: https://i.imgur.com/TZAu6AO.jpg
+2020-03-28 00:08:22	<--	asasasas (~asasasas@217.163.30.112) has quit (Read error: Connection reset by peer)
+2020-03-28 00:09:08	evanescode	there it is
+2020-03-28 00:09:15	vvor	bdunn: Grub is the way to go :)
+2020-03-28 00:09:20	<--	frvr (~florea@89.44.192.140) has quit (Remote host closed the connection)
+2020-03-28 00:09:23	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:09:23	<--	asasasas (~asasasas@217.163.30.112) has quit (Read error: Connection reset by peer)
+2020-03-28 00:09:32	bdunn	BY THE WAY - I have switched from VMware ESXi 6.7 to KVM/QEMU and ... MY GOD IS THIS FAST!
+2020-03-28 00:09:41	earnestly	BrainDamage: beautiful
+2020-03-28 00:09:51	setpill	:D
+2020-03-28 00:10:22	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:10:22	<--	asasasas (~asasasas@217.163.30.112) has quit (Read error: Connection reset by peer)
+2020-03-28 00:10:45	bdunn	I turned on the server just now... had my phone system in a qcow2 ready to boot. 20 seconds... my phone is up and ready to go. That's while a ton of other things is going on at the same time. I'm amazed. No more VMware if I can avoid it.
+2020-03-28 00:11:11	<--	jordanc (~jordanc@ip68-6-200-248.sd.sd.cox.net) has quit (Quit: jordanc)
+2020-03-28 00:11:44	setpill	evanescode: with the weird port there's an endless amount of add/bind alternating with remove/unbind. a LOT less per cycle (maybe 20 lines, 10 ish for add/bind, 10 ish for remove/unbind). No change lines at all
+2020-03-28 00:12:02	setpill	No idea what this means
+2020-03-28 00:12:06	mongy	chad , lol
+2020-03-28 00:13:33	evanescode	setpill: do u have any udev rules wrt to usb devices?
+2020-03-28 00:13:34	<--	wart (~wart@c-73-211-1-187.hsd1.in.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-03-28 00:14:22	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:14:22	<--	Warepire (~Warepire@unaffiliated/warepire) has quit (Read error: Connection reset by peer)
+2020-03-28 00:14:22	<--	asasasas (~asasasas@217.163.30.112) has quit (Read error: Connection reset by peer)
+2020-03-28 00:14:31	evanescode	looks like somethings fighting over how to configure the usb device. weird though
+2020-03-28 00:14:44	<--	MarcinWieczorek (~marcin@81-219-114-224.adsl.inetia.pl) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-28 00:14:44	aphirst	Good evening, everyone. I have a generic bluetooth headset (that works with my phone) and I was hoping I could use it as a headset in Arch too. I have bluetooth set up and after installing pulseaudio-bluetooth and rebooting I am able to get audio into the headphones, but am unable to use the microphone.
+2020-03-28 00:14:51	-->	wart (~wart@c-73-211-1-187.hsd1.in.comcast.net) has joined #archlinux
+2020-03-28 00:14:55	-->	Warepire (~Warepire@unaffiliated/warepire) has joined #archlinux
+2020-03-28 00:15:16	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:15:16	<--	asasasas (~asasasas@217.163.30.112) has quit (Remote host closed the connection)
+2020-03-28 00:15:29	aphirst	I was mainly using the blueman-manager GUI to set it up; but regardless, I have gotten as far as seeing what looks like an audio source from the headset in pavucontrol but there's no volume level and of course nothing comes through.
+2020-03-28 00:15:42	setpill	evanescode: I don't *think* so.
+2020-03-28 00:16:03	setpill	I don't remember ever messing with anything like that but that's no guarantee.
+2020-03-28 00:16:18	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:16:26	<--	asasasas (~asasasas@217.163.30.112) has quit (Remote host closed the connection)
+2020-03-28 00:16:41	setpill	 /etc/udev/rules.d is empty, not sure where else to check
+2020-03-28 00:16:55	-->	Lord_of_Life_ (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux
+2020-03-28 00:17:06	<--	berton_ (~berton@181.220.114.167) has quit (Quit: Leaving)
+2020-03-28 00:17:43	evanescode	freaky then
+2020-03-28 00:17:52	setpill	Yeah, def
+2020-03-28 00:18:41	-->	pavl (~pavl@79.165.233.28) has joined #archlinux
+2020-03-28 00:18:57	earnestly	setpill: Old quake players used to use PS/2 specifically because it has basically no latency compared with usb
+2020-03-28 00:19:05	earnestly	They also used CRTs
+2020-03-28 00:19:08	-->	dre_ (~dre_@115-188-153-178-fibre.sparkbb.co.nz) has joined #archlinux
+2020-03-28 00:19:35	earnestly	Some CS:GO people still do lol
+2020-03-28 00:19:46	<--	dre_ (~dre_@115-188-153-178-fibre.sparkbb.co.nz) has quit (Max SendQ exceeded)
+2020-03-28 00:19:59	<--	rts64 (~rts64@90.173.153.162) has quit (Quit: WeeChat 2.7.1)
+2020-03-28 00:20:00	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Ping timeout: 264 seconds)
+2020-03-28 00:20:03	--	Lord_of_Life_ is now known as Lord_of_Life
+2020-03-28 00:20:18	-->	dre_ (~dre_@115-188-153-178-fibre.sparkbb.co.nz) has joined #archlinux
+2020-03-28 00:20:19	-->	rts64 (~rts64@90.173.153.162) has joined #archlinux
+2020-03-28 00:20:23	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:20:23	<--	asasasas (~asasasas@217.163.30.112) has quit (Read error: Connection reset by peer)
+2020-03-28 00:20:37	demonicm2niac1	pretty sure all smash players of n64/gamecube times still play on crt competitive
+2020-03-28 00:21:30	demonicm2niac1	original wii was composite only and not hdmi wasn't it? so i guess that one too
+2020-03-28 00:21:32	 *	mongy cleans his ps/2 mouse ball
+2020-03-28 00:21:45	<--	stepnem (~stepnem@185.112.167.47) has quit (Ping timeout: 240 seconds)
+2020-03-28 00:21:52	mongy	super fast precision restored
+2020-03-28 00:22:22	earnestly	mongy: lol, I was suggesting more keyboards
+2020-03-28 00:22:23	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:22:23	<--	asasasas (~asasasas@217.163.30.112) has quit (Read error: Connection reset by peer)
+2020-03-28 00:22:30	-->	stepnem (~stepnem@185.112.167.47) has joined #archlinux
+2020-03-28 00:22:46	earnestly	I think there were optical ps/2 mice though?
+2020-03-28 00:22:51	demonicm2niac1	earnestly: tbh ever since usb3 and native usb3 hid devices with 1000mhz polling rate it's dumb
+2020-03-28 00:23:09	earnestly	demonicm2niac1: Well I did preface it with "Quake", so that gives it some age
+2020-03-28 00:23:10	demonicm2niac1	1.1 devices connecting as such were bad or on a hub
+2020-03-28 00:23:15	earnestly	Quake Arena stuff
+2020-03-28 00:23:27	demonicm2niac1	yeah i was just caying cs:go as you mentioned
+2020-03-28 00:23:32	-->	pvdp6655 (~pvdp@cpe-120-146-189-241.static.qld.bigpond.net.au) has joined #archlinux
+2020-03-28 00:23:33	earnestly	CRT still seems to win on presentation latency
+2020-03-28 00:23:39	demonicm2niac1	not really
+2020-03-28 00:23:42	demonicm2niac1	card is digital
+2020-03-28 00:23:42	earnestly	demonicm2niac1: That was in terms of CRT
+2020-03-28 00:23:54	demonicm2niac1	so you have digital to analog conversion
+2020-03-28 00:24:03	<--	Betal (~Betal@unaffiliated/betal) has quit (Quit: WeeChat 2.7.1)
+2020-03-28 00:24:17	demonicm2niac1	a fast refresh rate tft over digital to digital without conversion isn't slower
+2020-03-28 00:24:25	earnestly	demonicm2niac1: Testing really shows that 144 monitors are about equivalent
+2020-03-28 00:24:46	demonicm2niac1	hmhm so it was a thing during 60hz only tft i guess yeah i can see that
+2020-03-28 00:24:52	earnestly	But below that, normal LCDs, or so, is about 30ms
+2020-03-28 00:24:53	demonicm2niac1	crt could run at 85hz+
+2020-03-28 00:25:15	demonicm2niac1	drop the resolution enough and you can run 200hz :P
+2020-03-28 00:25:19	earnestly	demonicm2niac1: Oddly the 144 was still a bit behind, but probably not statistically so
+2020-03-28 00:25:20	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:25:26	<--	asasasas (~asasasas@217.163.30.112) has quit (Remote host closed the connection)
+2020-03-28 00:25:42	-->	jaawerth (~jaawerth@104.131.115.202) has joined #archlinux
+2020-03-28 00:25:55	demonicm2niac1	tbh pretty much no player can tell the difference between 120 and 144hz
+2020-03-28 00:25:57	earnestly	!yt xploding plastix - amateur girlfriends go proskirt agent
+2020-03-28 00:25:58	@phrik	earnestly: Xploding Plastix - Amateur Girlfriends Go Proskirt Agents ... <https://www.youtube.com/watch?v=aRn5pGLby4c>
+2020-03-28 00:26:11	demonicm2niac1	and between 144 and 240hz only when playing for hours on both side by side
+2020-03-28 00:26:25	-->	beest (~root@2601:480:4003:37e0::2fad) has joined #archlinux
+2020-03-28 00:27:08	earnestly	demonicm2niac1: (Fwiw, the comment about CS:GO was for CRTs, they were running it very low resolution/graphics, but that was awhile ago.  I think it may have been a NiP player)
+2020-03-28 00:27:09	aphirst	I can be a bit more specific with my bluetooth problem. The A2DP sink seems to work fine, but if i try to set it to the HSP/HFP mode, there's no mic AND the audio output stops working too.
+2020-03-28 00:27:37	-->	Alak (~Alak@unaffiliated/alakzadeh) has joined #archlinux
+2020-03-28 00:27:38	-->	r0shi (~r0shi@bl17-119-69.dsl.telepac.pt) has joined #archlinux
+2020-03-28 00:27:59	demonicm2niac1	earnestly: hmhm. the surprising thing for me simply is the digital to analog conversion being a) lossy and b) takes at least 1 to 2ms
+2020-03-28 00:28:13	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:28:21	<--	asasasas (~asasasas@217.163.30.112) has quit (Remote host closed the connection)
+2020-03-28 00:28:22	-->	sameee (~sameee@163.47.184.241) has joined #archlinux
+2020-03-28 00:28:26	earnestly	demonicm2niac1: That's not a lot of ms's
+2020-03-28 00:28:35	earnestly	Is it?
+2020-03-28 00:29:00	demonicm2niac1	on a 144hz fast response time gaming monitor tn panel it's also not 30ms for sure
+2020-03-28 00:29:11	demonicm2niac1	that sounds like an average for a lot of panel spread
+2020-03-28 00:29:36	earnestly	demonicm2niac1: This was prior to 120/144 monitors fwiw
+2020-03-28 00:29:40	-->	Nact (~l@host-149-154-198-59.dynamic.voo.be) has joined #archlinux
+2020-03-28 00:29:44	earnestly	I haven't really paid attention since
+2020-03-28 00:29:57	demonicm2niac1	ah
+2020-03-28 00:30:03	demonicm2niac1	https://displaylag.com/display-database/
+2020-03-28 00:30:05	<--	binTrl (~binaryTra@2409:4064:e:372a:50c1:63f9:fcf0:fd59) has quit (Quit: WeeChat 2.7.1)
+2020-03-28 00:30:06	demonicm2niac1	that exists for some time
+2020-03-28 00:30:07	@phrik	Title: Best TVs & Monitors for Gaming: Input Lag Database (at displaylag.com)
+2020-03-28 00:30:29	<--	andmars (~andreas@unaffiliated/andmars) has quit (Quit: leaving)
+2020-03-28 00:30:32	demonicm2niac1	that's on top of if vsync enabled vertical refresh ofc
+2020-03-28 00:31:09	-->	guyzmo (~guyzmo@leloop/guyzmo) has joined #archlinux
+2020-03-28 00:31:16	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:31:16	<--	asasasas (~asasasas@217.163.30.112) has quit (Remote host closed the connection)
+2020-03-28 00:31:35	-->	_hadallen (~Srain@S0106f0f249e30983.no.shawcable.net) has joined #archlinux
+2020-03-28 00:32:42	<--	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has quit (Read error: Connection reset by peer)
+2020-03-28 00:32:42	<--	x4- (~quassel@sub254-3.elpos.net) has quit (Remote host closed the connection)
+2020-03-28 00:32:58	-->	sepehrdad (sepehrdad@gateway/vpn/protonvpn/sepehrdad) has joined #archlinux
+2020-03-28 00:33:17	-->	eb0t (~eblip@unaffiliated/eblip) has joined #archlinux
+2020-03-28 00:33:32	-->	eb0t_ (~eblip@unaffiliated/eblip) has joined #archlinux
+2020-03-28 00:33:38	-->	Th3R0b (~frank@81-197-112-130.elisa-laajakaista.fi) has joined #archlinux
+2020-03-28 00:34:36	<--	rtur (~rtur@p200300E8470C61014A4CB620324CD92E.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-03-28 00:35:12	<--	def_jam (~eblip@unaffiliated/eblip) has quit (Ping timeout: 250 seconds)
+2020-03-28 00:35:16	<--	luce_nera (~lucenera@host30-198-dynamic.8-87-r.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2020-03-28 00:35:17	<--	zabereer (~zabereer@35.0.169.217.in-addr.arpa) has quit (Quit: WeeChat 2.7.1)
+2020-03-28 00:35:34	-->	brno (~brno@97-115-107-139.ptld.qwest.net) has joined #archlinux
+2020-03-28 00:35:44	-->	asasasas (~asasasas@217.163.30.112) has joined #archlinux
+2020-03-28 00:35:51	<--	eblip (~eblip@unaffiliated/eblip) has quit (Ping timeout: 265 seconds)
+2020-03-28 00:36:12	-->	lucenera (~lucenera@host30-198-dynamic.8-87-r.retail.telecomitalia.it) has joined #archlinux
+2020-03-28 00:37:43	-->	vuoto (~vuoto@80.71.142.174) has joined #archlinux
+2020-03-28 00:37:44	<--	cereal_poster (~cereal_po@167.250.163.64) has quit (Quit: Ping timeout (120 seconds))
+2020-03-28 00:38:18	-->	cereal_poster (~cereal_po@167.250.163.64) has joined #archlinux
+2020-03-28 00:38:35	<--	krabador (~krabador@unaffiliated/krabador) has quit (Quit: Leaving)
+2020-03-28 00:38:57	-->	krabador (~krabador@unaffiliated/krabador) has joined #archlinux
+2020-03-28 00:39:04	<--	enceladus (~enceladus@128-78-140-174.abo.bbox.fr) has quit (Quit: Bye!)
+2020-03-28 00:39:25	<--	rts64 (~rts64@90.173.153.162) has quit (Quit: WeeChat 2.7.1)
+2020-03-28 00:39:51	-->	rts64 (~rts64@90.173.153.162) has joined #archlinux
+2020-03-28 00:40:01	<--	captn3m0 (~captn3m0@124.123.104.8) has quit (Ping timeout: 256 seconds)
+2020-03-28 00:40:07	<--	thingfish (~thingfish@unaffiliated/thingfish) has quit (Quit: Leaving.)
+2020-03-28 00:40:18	<--	AndrevS (~AndrevS@2001:982:2b90:1:3d0:835b:c894:e33b) has quit (Quit: umount /dev/irc)
+2020-03-28 00:40:27	-->	fyrgebraec (~enceladus@sp137-h04-128-78-140-174.dsl.sta.abo.bbox.fr) has joined #archlinux
+2020-03-28 00:40:29	-->	captn3m0 (~captn3m0@124.123.104.8) has joined #archlinux
+2020-03-28 00:40:45	<--	abdulocracy (~abdulocra@79.191.170.248.ipv4.supernova.orange.pl) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-03-28 00:44:20	m1cl	someone an idea how to stream my audio from my computer to my ipad?
+2020-03-28 00:44:32	<--	tonyspaz (~tonyspaz@unaffiliated/tonyspaz) has quit (Quit: WeeChat 2.7.1)
+2020-03-28 00:44:33	<--	segurb (~segurb@unaffiliated/segurb) has quit (Quit: https://i.imgur.com/xrUtDu3.gif)
+2020-03-28 00:45:44	BrainDamage	bluetooth should work
+2020-03-28 00:46:04	BrainDamage	alternatively, set a rtp or http stream, but that'll require to open a link in the ipad
+2020-03-28 00:46:17	-->	cad_enc (~tonyspaz@unaffiliated/tonyspaz) has joined #archlinux

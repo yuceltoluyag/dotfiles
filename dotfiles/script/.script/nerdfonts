@@ -1,0 +1,10 @@
+#!/bin/bash
+
+f=~/.cache/nerdfonts
+
+[[ ! -f $f ]] &&
+curl -s https://www.nerdfonts.com/cheat-sheet |
+grep 'class-name">nf-' | tr '<>' '\t\t' | cut -f 3,7 |
+while read n s; do printf '%b %s\n' "\u$s" "$n"; done > $f
+
+cat $f

@@ -1,0 +1,33 @@
+#!/bin/bash
+
+ln(){ # {{{
+    s=$(cat)
+    n=$(echo "$s" | wc -l)
+
+    echo "$s" | {
+        (( $n < 2 )) && cat ||
+        head -n 9 | nl -w ${#n} -s '. '
+    }
+
+    (( $n > 9 )) && echo "$n. ..."
+} # }}}
+news(){ # {{{
+    sqlite3 ~/.local/share/newsboat/cache.db '
+        select title from rss_item
+        where unread = 1 order by pubDate desc
+    '
+} # }}}
+
+case $1 in
+        days) notify-send -i x-office-calendar    Дни      -- "$(days             | ln)";;
+        mail) notify-send -i emblem-mail          Почта    -- "$(frm -s new | tac | ln)";;
+        news) notify-send -i application-rss+xml  Haberler  -- "$(news             | ln)";;
+     weather) notify-send -i ~/.cache/weather.svg Hava durumu   -- "$(weather          | ln)";;
+    torrents) notify-send -i transmission         Torrent -- "$(torrents         | ln)";;
+     battery) notify-send -i battery              Заряд    -- "$(battery          | ln)";;
+      #music) notify-send -i audio-x-generic      Музыка   -- "$(music            | ln)";;
+       music) music-notify;;
+
+    '') grep -o '^\s\+\w\+)' $0 | tr -d ' )' | sort;;
+     *) notify-send -i "$1" "${1^}" -- "$($* | ln)";;
+esac

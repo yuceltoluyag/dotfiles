@@ -1,0 +1,10 @@
+#!/bin/bash
+
+f=~/.cache/weather
+
+[[ $1 == -n && -f $f ]] && cat $f && exit
+read icon weather desc < <(curl -s 'https://wttr.in/spb?lang=tr&format=%c%20%t%20%C')
+
+[[ $weather ]] || exit
+echo "$weather ${desc,,}" | tee $f
+printf '<svg><text y="38" style="font-size: 38px">%s</text></svg>' $icon > $f.svg

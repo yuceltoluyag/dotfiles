@@ -1,0 +1,66 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+# shell opts
+shopt -s nullglob
+shopt -s autocd
+shopt -s cdspell
+shopt -s cmdhist
+shopt -s histappend
+shopt -s expand_aliases
+shopt -s checkwinsize
+shopt -s globstar 2> /dev/null
+shopt -s nocaseglob
+shopt -s autocd 2> /dev/null
+shopt -s dirspell 2> /dev/null
+shopt -s cdspell 2> /dev/null
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc" # Load shortcut aliases
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+source ~/.script/prompt
+
+# Babanın Mekanı
+alias guncelle='sudo pacman -Syyu && pikaur -Syu'
+alias paketara='sudo pacman -Ss'
+alias temizle='sudo pacman -Sc $(pacman -Qdtq)'
+alias ptemiz='sudo pacman -Rs $(pacman -Qtdq)'
+alias hata='systemctl --failed'
+alias hatalog='journalctl -p 3 -xb'
+alias aynalar='sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist'
+alias ytmp3='youtube-dl -4icwxo "%(playlist_index)s - %(title)s.%(ext)s" --yes-playlist --playlist-reverse --audio-format mp3 --audio-quality 0 --embed-thumbnail --download-archive archive.txt'
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' 
+alias subconfig='subl3 .config/i3/config'
+alias subzsh='subl3 .zshrc'
+alias subi3blo='subl3 .config/i3blocks/i3blocks.conf'
+alias klavyebul='xev | grep -A2 --line-buffered '^KeyRelease' | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
+
+#Path
+PATH="$HOME/.script:$PATH" 
+export PATH
+PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix=~/.node_modules
+PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+export GEM_HOME=$HOME/.gem
+GOPATH=$HOME/.go:$HOME/.go
+export PATH="$PATH:$HOME/go/bin"
+eval $(dircolors -b $HOME/.dircolors)
+
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+export PATH="$PATH:$HOME/.script/PATHed"
+export WALLPAPERDIR="$HOME/Pictures/"
+export EDITOR="subl3"
+export TERMINAL="urxvt"
+export BROWSER="chromium"
+export READER="zathura"
+export FILE="thunar"
+export XDG_CONFIG_HOME="$HOME/.config"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

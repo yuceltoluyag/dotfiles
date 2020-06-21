@@ -1,0 +1,4 @@
+#!/bin/bash
+
+printf $'\u200e'' %s  %s\n' $(nerdfonts) | menu -i nerdfonts -c 3 |
+cut -d ' ' -f 2 | tr \\n ' ' | xsel -b
