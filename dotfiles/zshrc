@@ -61,14 +61,14 @@ export LS_COLORS="$LS_COLORS:ow=1;35:tw=1;35:"
 
 # Babanın Mekanı
 alias dotdrop='dotdrop --cfg=$HOME/Documents/Work/dotfiles/config.yaml'
-alias guncelle='sudo pacman -Syyu && pikaur -Syu'
+alias guncelle='sudo pacman -Syyu && yay -Syu'
 alias paketara='sudo pacman -Ss'
 alias temizle='sudo pacman -Sc $(pacman -Qdtq)'
 alias ptemiz='sudo pacman -Rs $(pacman -Qtdq)'
 alias hata='systemctl --failed'
 alias hatalog='journalctl -p 3 -xb'
 alias aynalar='sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist'
-alias ytmp3='youtube-dl -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0'
+alias ytmp3='youtube-dl --download-archive downloaded.txt --no-post-overwrites -ciwx --embed-thumbnail --audio-quality 0  --audio-format mp3 -o "%(title)s.%(ext)s"'
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' 
 alias subconfig='subl3 .config/i3/config'
 alias subzsh='subl3 .zshrc'
