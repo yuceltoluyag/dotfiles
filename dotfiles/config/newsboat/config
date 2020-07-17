@@ -20,6 +20,7 @@ articlelist-title-format ""
 # reload-threads 4
 # reload-time 90
 # reload-only-visible-feeds yes
+cache-file "~/.config/newsboat/cache.db"
 
 # notifications
 notify-format "Newsboat: %d new"
