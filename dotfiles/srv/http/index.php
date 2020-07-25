@@ -28,23 +28,20 @@
 <?php
 
 $klasor = opendir('/srv/http/');
-  if($klasor){
-    while ($dosya = readdir($klasor)){
-        if($dosya != '.' && $dosya != '..'){
-            if(is_dir($dosya)){
-             
-                ?>
+  if ($klasor) {
+      while ($dosya = readdir($klasor)) {
+          if ($dosya != '.' && $dosya != '..') {
+              if (is_dir($dosya)) {
+                  ?>
                 <div class="babacan">
  <div class="col-sm-12"> <img src="folder.svg" alt="klasör" class="klasor"/>
-              <a href="<?php echo $dosya;?>" target="_blank"><?php echo $dosya;?></a>
+              <a href="<?php echo $dosya; ?>" target="_blank"><?php echo $dosya; ?></a>
           </div></div>
                 <?php
-            }
-            
-        }
-    }
-}
-
+              }
+          }
+      }
+  }
 
 ?>
             
