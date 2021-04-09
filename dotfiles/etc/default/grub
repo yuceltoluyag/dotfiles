@@ -43,8 +43,8 @@ GRUB_DISABLE_RECOVERY=true
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
-GRUB_BACKGROUND="/usr/share/grub/themes/Stylish/background.jpg"
-GRUB_THEME="/usr/share/grub/themes/Stylish/theme.txt"
+GRUB_BACKGROUND="/usr/share/grub/themes/stylish-color-1080p/background.jpg"
+GRUB_THEME="/usr/share/grub/themes/stylish-color-1080p/theme.txt"
 
 # Uncomment to get a beep at GRUB start
 

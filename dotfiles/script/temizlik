@@ -6,6 +6,7 @@ import shutil
 CLEAN_FILES = [
     '~/hostr/',
     '~/.bzr.log',
+    '~/.cache',
     '~/.cache/babl/',
     '~/.cache/gegl-0.2/',
     '~/.cache/google-chrome/',

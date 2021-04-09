@@ -1,9 +1,9 @@
-sw_volume: 62
+sw_volume: 26
 audio_device_state:1:my_fifo
 audio_device_state:1:pulse audio
 state: play
-current: 29
-time: 705.916000
+current: 148
+time: 40.763000
 random: 1
 repeat: 0
 single: 0
@@ -12,77 +12,154 @@ crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:keltoza/`Evgeny Grinko - Field`-7dHr_H4MpZU.mp3
-1:keltoza/Akora, Mike Stil, Yam Nor - Eyes of Love (Toly Braun Remix)-q3Y1UtPywgA.mp3
-2:keltoza/Barbary - Close My Eyes (Original Mix)-q3MhCmVSIrY.mp3
-3:keltoza/Brenda Mullen - I Don't Wanna Know (Bentley Grey Remix)-3V8wqZH7a6s.mp3
-4:keltoza/DE GRAAL' - What You (Barbary Remix)-9FT_mbuB0f8.mp3
-5:keltoza/Dimitris Athanasiou - Around You (Original Mix)-DVa62zzqRIc.mp3
-6:keltoza/Dj Vianu - Back to You-5kmIeRkhysA.mp3
-7:keltoza/Drop G & Melih Aydogan - Nothing You Can Do-4MEu4fYetI4.mp3
-8:keltoza/Gotye - Somebody That I Used To Know (feat. Kimbra) - official music video-8UVNT4wvIGY.mp3
-9:keltoza/Housenick - Sugar (GeoM Remix)-EffKFWTzrYc.mp3
-10:keltoza/Jamie Woon - Shoulda-TrzNd3M5_Y8.mp3
-11:keltoza/Kid Cudi - Day 'N' Nite-VrDfSZ_6f4U.mp3
-12:keltoza/Kid Cudi - Marijuana (Official Video)-IsRchv-Gxn4.mp3
-13:keltoza/Moe Turk & TSHNKO Feat. Mougleta - My Blood (Kevin Karlson Remix)-tvC34N3kNm8.mp3
-14:keltoza/Moe Turk, DJ Fuzzy & Ayman Nageeb - Outta My Head (West.K Remix)-mbkT7hKU5o4.mp3
-15:keltoza/Mpirgkel - Bubbles (Radio Mix)-lq7MIhKGMXA.mp3
-16:keltoza/MvM - Is This The Way (Original Mix)-Sd8NlovQR3w.mp3
-17:keltoza/Passenger _ Let Her Go (Official Video)-RBumgq5yVrA.mp3
-18:keltoza/Simply Falling - Iyeoka (Official Music Video)-9Pes54J8PVw.mp3
-19:keltoza/The Enigma TNG - Mantra-xV7ACiK2Q0A.mp3
-20:keltoza/The Polish Ambassador- Infinite Mammalia (Future, Sex, Computers)--44eSPkeqRw.mp3
-21:keltoza/Zhoneus Deep - Feels Like (Dee Pete Remix)-KiYZMAHOoiw.mp3
-22:jimTv/_ A BIT OF DRIVE MUSIC - vol.1°-OSwY67xJNTc.mp3
-23:jimTv/Programming _ Coding _ Hacking music vol.1-kHCn5h4_dh0.mp3
-24:jimTv/Programming _ Coding _ Hacking music vol.10 (PEACEFUL MIND)-wTvkT6Q_CwI.mp3
-25:jimTv/Programming _ Coding _ Hacking music vol.11 (OVERLOAD)-O08RgWpVG8Y.mp3
-26:jimTv/Programming _ Coding _ Hacking music vol.12 (ENCRYPTED AI)-TQ9ZNwi9N6Y.mp3
-27:jimTv/Programming _ Coding _ Hacking music vol.13 (AFTER REPAIR)-46VPN677cLI.mp3
-28:jimTv/Programming _ Coding _ Hacking music vol.14 (CYBORG PRODUCTION)-09j1wYdNfVQ.mp3
-29:jimTv/Programming _ Coding _ Hacking music vol.15 (HIDDEN SERVICE)-1-_tyTJHgB8.mp3
-30:jimTv/Programming _ Coding _ Hacking music vol.16 (CONNECTION LOST)-l9nh1l8ZIJQ.mp3
-31:jimTv/Programming _ Coding _ Hacking music vol.17 (INFINITY)-UoPpxj77Vi0.mp3
-32:jimTv/Programming _ Coding _ Hacking music vol.18 (ANONYMOUS HEADQUARTERS)-Z-VfaG9ZN_U.mp3
-33:jimTv/Programming _ Coding _ Hacking music vol.19 (EASY THOUGHTS)-0V7X9fa0wco.mp3
-34:jimTv/Programming _ Coding _ Hacking music vol.2 (BRUTAL)-FS8XtrLqIxw.mp3
-35:jimTv/Programming _ Coding _ Hacking music vol.20 (UNDER THE DEEP)-rr0gvSS1OzE.mp3
-36:jimTv/Programming _ Coding _ Hacking music vol.21 (FORBIDDEN MIX)-72LUL1hhXdc.mp3
-37:jimTv/Programming _ Coding _ Hacking music vol.22 (CYBER SOUL)-rrwjymZMLdM.mp3
-38:jimTv/Programming _ Coding _ Hacking music vol.3 (TIME TO HACK)-UcuoP5Fzcig.mp3
-39:jimTv/Programming _ Coding _ Hacking music vol.5 (HARDWARE)-TndfgYerRYY.mp3
-40:jimTv/Programming _ Coding _ Hacking music vol.6 (SERVERS)-fKvk3tpHrdA.mp3
-41:jimTv/Programming _ Coding _ Hacking music vol.7 (CYBORG CAN NOT DIE)-do7Jl_4_d5w.mp3
-42:jimTv/Programming _ Coding _ Hacking music vol.8 (CONNECTING)-IpV9FCBnW20.mp3
-43:jimTv/Programming _ Coding _ Hacking music vol.9 (NUCLEAR POWER)-tb2Kp6kAx5o.mp3
-44:filfar/🔶PROGRAMMERS UNION 🔶-J8I0LexC4nw.mp3
-45:filfar/Active Background Coding - UNIVERSE Edition ✨ #7-EWD8JhDlZ1s.mp3
-46:filfar/Anonymous Slow Down Coding 🔒 #3-P5Jrlg6LSzE.mp3
-47:filfar/Background Warzone Music #2-0H6c0kFgAXo.mp3
-48:filfar/Battlefield 1_3_4 MIX for Programmers-tX22unMbtCY.mp3
-49:filfar/Battlefield 3_4 MIX for Programmers #2-pcevFZi4Wgs.mp3
-50:filfar/Chillout Programming Mix-U6QX7aAwPhg.mp3
-51:filfar/Crypto Programming VIBE Music 🦠 #6-8x1svKFbdU0.mp3
-52:filfar/Focus & Concentration - Lost in Beats ❤️ #11-DREsDEUWPYc.mp3
-53:filfar/HACK your MIND - Focus & Work Music 🔶 #12-DvDPnieadZc.mp3
-54:filfar/Hacker _ Programming _ Coding Music 💠 #5-ALbDv_4mM0g.mp3
-55:filfar/Hacker _ Programming _ Coding Music 🔑 #1-TLbQkfZBwUU.mp3
-56:filfar/Hacking Active Background Music-TsjfyhmBd1g.mp3
-57:filfar/Hacking Music Mix - Mr. Robot 🤖#13-iAYMJk9IsDA.mp3
-58:filfar/Music for Coding - Tesseract of Code 💎 #9-waqxrK-EFI0.mp3
-59:filfar/Music for Programming - HALF LIFE Edition ☢️ #8-ALBMaQvS004.mp3
-60:filfar/Programming Music - SPACE Edition 🌍 #10-FUV3BulYrJQ.mp3
-61:filfar/PROGRAMMING MUSIC for DARK MINDS 2019-AtitOXy0iWo.mp3
-62:filfar/PROGRAMMING MUSIC for FAST MINDS 2018-ASvIFKdDY1E.mp3
-63:filfar/Programming Music Mix 2015 #2--b_Qp0hTTvM.mp3
-64:filfar/Programming Music Mix 2015-5AOI0aXiL6I.mp3
-65:filfar/Programming Music Mix 2016-e2A7T3VCuMI.mp3
-66:filfar/PROGRAMMING MUSIC MIX 2018-zO5SF36g42U.mp3
-67:filfar/Programming Music Mix for Dark Minds 2016-aAF5k9oIX0g.mp3
-68:filfar/Programming Music Mix for DARK MINDS 2017-EBuhQWpcyTQ.mp3
-69:filfar/Programming Music Mix for Dark Minds-6dkqVj7heiA.mp3
-70:filfar/Programming Music - JOHN WICK Edition 🐺 #4-fuUFrAVGYe4.mp3
-71:filfar/PROGRAMMING MUSIC MIX-_N-gOQ-SaVY.mp3
-72:filfar/Calm Designer _ Programmer Music-vvixb-jE250.mp3
+0:Kwizma/DDD Quarantine Sessions 10 - Kwizma.mp3
+1:Kwizma/Flowdan - Groundhog feat. Animai (Kwizma Bootleg).mp3
+2:Kwizma/Flowdan - Welcome To London (Kwizma Bootleg).mp3
+3:Kwizma/Kwizma - Altum (Out Now!).mp3
+4:Kwizma/Kwizma - Atlantis [CLIP].mp3
+5:Kwizma/Kwizma - Atlantis.mp3
+6:Kwizma/Kwizma - Blue Planet.mp3
+7:Kwizma/Kwizma - Carbon (Out Now!).mp3
+8:Kwizma/Kwizma - Coin Toss (Out Now!).mp3
+9:Kwizma/Kwizma - Come On.mp3
+10:Kwizma/Kwizma - Cover [CLIP].mp3
+11:Kwizma/Kwizma - Cover.mp3
+12:Kwizma/Kwizma - Crunch [CLIP].mp3
+13:Kwizma/Kwizma - Dataset Exclusive Mix _ #029.mp3
+14:Kwizma/Kwizma - Davy Jones.mp3
+15:Kwizma/Kwizma - Erosion [Free Download].mp3
+16:Kwizma/Kwizma - Firefight.mp3
+17:Kwizma/Kwizma - Giza [Free Download].mp3
+18:Kwizma/Kwizma - Gravitation [CLIP].mp3
+19:Kwizma/Kwizma - Haka VIP [Free Download].mp3
+20:Kwizma/Kwizma - Lawrence [Australia Fires Charity Release].mp3
+21:Kwizma/Kwizma - Mental Cage.mp3
+22:Kwizma/Kwizma - Meraki.mp3
+23:Kwizma/Kwizma - Needle.mp3
+24:Kwizma/Kwizma - Poison Bottle EP (Out Now!).mp3
+25:Kwizma/Kwizma - Pulsatio [Free Download].mp3
+26:Kwizma/Kwizma - Right On.mp3
+27:Kwizma/Kwizma - Santa Blanca [Free Download].mp3
+28:Kwizma/Kwizma - Sidewinder [CLIP].mp3
+29:Kwizma/Kwizma - Story (Out Now!).mp3
+30:Kwizma/Kwizma - System [CLIP].mp3
+31:Kwizma/Kwizma - Tananum (N-Type Flex FM Clip).mp3
+32:Kwizma/Kwizma - The Unspoken.mp3
+33:Kwizma/Kwizma - Trap Card.mp3
+34:Kwizma/Kwizma - Yang.mp3
+35:Kwizma/Kwizma - Yin.mp3
+36:Kwizma/Kwizma x Leon Switch - Slumber [CLIP].mp3
+37:Kwizma/06. Kwizma - Kailo _ Free Download.mp3
+38:Kwizma/Blinded (Blind Man VIP) by Kwizma & Nomine [nominebandcamp.com].mp3
+39:Kwizma/DDD Quarantine Sessions 10 - Kwizma.mp3
+40:Kwizma/Elemental Arts Presents - Kwizma.mp3
+41:Kwizma/Episode055 - KWIZMA.mp3
+42:Kwizma/Flowdan - Groundhog feat. Animai (Kwizma Bootleg).mp3
+43:Kwizma/Flowdan - Horror Show Style (Kwizma Bootleg).mp3
+44:Kwizma/Flowdan - Welcome To London (Kwizma Bootleg).mp3
+45:Kwizma/Kelly Dean - Binary Flow Feat. ILL Chill - - Silent Motion Records.mp3
+46:Kwizma/Kelly Dean - Bloodline Feat. Armanni Reign - Silent Motion Records.mp3
+47:Kwizma/Kelly Dean - Dark Energy.mp3
+48:Kwizma/Kelly Dean - Gravedigger.mp3
+49:Kwizma/Kelly Dean - Special.mp3
+50:Kwizma/Kelly Dean Feat Strikez - Its My Nature - Kuro Records 005.mp3
+51:Kwizma/Kelly Dean ft. Alys Be - Lost.mp3
+52:Kwizma/Kelly Dean x Kwizma - Calamity.mp3
+53:Kwizma/Kelly Dean x Kwizma - Get Wavey.mp3
+54:Kwizma/Kelly Dean x Kwizma - Oasis.mp3
+55:Kwizma/Kelly Dean x Kwizma - Therapy (Leon Switch Remix).mp3
+56:Kwizma/Kelly Dean x Kwizma - Therapy.mp3
+57:Kwizma/Kelly Dean X Leon Switch - Toecutter (Kwizma Remix) - Silent Motion Records.mp3
+58:Kwizma/Kelly Dean X LeonSwitch - Toecutter - Silent Motion Records.mp3
+59:Kwizma/Kelly Dean X LeonSwitch - Wasteland - Silent Motion Records.mp3
+60:Kwizma/Kial x Kwizma - Hyperspace.mp3
+61:Kwizma/Kial x Kwizma - The Book of Five Rings.mp3
+62:Kwizma/Kuro Records Podcast Episode 1 - Kelly Dean.mp3
+63:Kwizma/Kwizma - Altum (Out Now!).mp3
+64:Kwizma/Kwizma - Apperception.mp3
+65:Kwizma/Kwizma - Atlantis [CLIP].mp3
+66:Kwizma/Kwizma - Atlantis.mp3
+67:Kwizma/Kwizma - Black Rain [Free Download].mp3
+68:Kwizma/Kwizma - Blizzard.mp3
+69:Kwizma/Kwizma - Blue Planet.mp3
+70:Kwizma/Kwizma - Carbon (Out Now!).mp3
+71:Kwizma/Kwizma - Carbon EP (VCEP017).mp3
+72:Kwizma/Kwizma - Carthage EP (SPREP017) [FKOF Promo].mp3
+73:Kwizma/Kwizma - Cave Drops.mp3
+74:Kwizma/Kwizma - Coin Toss (Out Now!).mp3
+75:Kwizma/Kwizma - Come On.mp3
+76:Kwizma/Kwizma - Cover [CLIP].mp3
+77:Kwizma/Kwizma - Cover.mp3
+78:Kwizma/Kwizma - Crunch [CLIP].mp3
+79:Kwizma/Kwizma - Dataset Exclusive Mix _ #029.mp3
+80:Kwizma/Kwizma - Davy Jones.mp3
+81:Kwizma/Kwizma - Erosion [Free Download].mp3
+82:Kwizma/Kwizma - Firefight.mp3
+83:Kwizma/Kwizma - FKOFd040 [FKOF Promo].mp3
+84:Kwizma/Kwizma - Giza [Free Download].mp3
+85:Kwizma/Kwizma - Gravitation [CLIP].mp3
+86:Kwizma/Kwizma - Guestmix for Åbysmal Ẹntities Årchivẹ.mp3
+87:Kwizma/Kwizma - Haka [Free Download].mp3
+88:Kwizma/Kwizma - Haka VIP (N-Type w_ NōTaN Rinse FM Clip).mp3
+89:Kwizma/Kwizma - Haka VIP [Free Download].mp3
+90:Kwizma/Kwizma - Hitman [Elemental Arts Premiere].mp3
+91:Kwizma/Kwizma - Lawrence [Australia Fires Charity Release].mp3
+92:Kwizma/Kwizma - Mammoth.mp3
+93:Kwizma/Kwizma - Mental Cage.mp3
+94:Kwizma/Kwizma - Meraki.mp3
+95:Kwizma/Kwizma - Monster [PREMIERE].mp3
+96:Kwizma/Kwizma - Morgue [AxH Remix] Clip.mp3
+97:Kwizma/Kwizma - Needle.mp3
+98:Kwizma/Kwizma - Poison Bottle EP (Out Now!).mp3
+99:Kwizma/Kwizma - Psychopath [OUT NOW!].mp3
+100:Kwizma/Kwizma - Pulsatio [Free Download].mp3
+101:Kwizma/Kwizma - Radar [OUT NOW!].mp3
+102:Kwizma/Kwizma - Railroad.mp3
+103:Kwizma/Kwizma - Right On.mp3
+104:Kwizma/Kwizma - Santa Blanca [Free Download].mp3
+105:Kwizma/Kwizma - Sidewinder [CLIP].mp3
+106:Kwizma/Kwizma - Story (Out Now!).mp3
+107:Kwizma/Kwizma - System [CLIP].mp3
+108:Kwizma/Kwizma - System.mp3
+109:Kwizma/Kwizma - T-Rex (DDD063).mp3
+110:Kwizma/Kwizma - Tananum (N-Type Flex FM Clip).mp3
+111:Kwizma/Kwizma - Tenebris EP (Out Now).mp3
+112:Kwizma/Kwizma - The Abyss [OUT NOW!].mp3
+113:Kwizma/Kwizma - The Forest.mp3
+114:Kwizma/Kwizma - The Unspoken.mp3
+115:Kwizma/Kwizma - Trap Card.mp3
+116:Kwizma/Kwizma - What The Hell - Kuro Records 005.mp3
+117:Kwizma/Kwizma - Yang.mp3
+118:Kwizma/Kwizma - Yin.mp3
+119:Kwizma/Kwizma x Kelly Dean - Calamity (N-Type RinseFM Clip).mp3
+120:Kwizma/Kwizma X Kelly Dean - Get Wavey  [Rinse FM London w_ N-Type Clip].mp3
+121:Kwizma/Kwizma x Leon Switch - Slumber [CLIP].mp3
+122:Kwizma/Leon Switch - React - Kuro Records 005.mp3
+123:Kwizma/NōTaN - Code Of The Streets (N-Type x Beezy Rinse FM Clip).mp3
+124:Kwizma/NōTaN - Code Of The Streets.mp3
+125:Kwizma/NōTaN - Full Control Studio Mix [FREE DOWNLOAD].mp3
+126:Kwizma/NōTaN - Full Control.mp3
+127:Kwizma/NōTaN - Revenant.mp3
+128:Kwizma/NōTaN - Serenity.mp3
+129:Kwizma/NōTaN - Syntax - Kuro Records 005.mp3
+130:Kwizma/NōTaN Live @ The Black Box 2_4_2020.mp3
+131:Kwizma/NōTaN RinseFM Guest Mix For N-Type [FREE DOWNLOAD].mp3
+132:Kwizma/Prelude.mp3
+133:Kwizma/SPREP017-A Kwizma - Carthage.mp3
+134:Kwizma/SPREP017-B  Kwizma - Tomahawk.mp3
+135:Kwizma/SPREP017-C  Kwizma - Submarine.mp3
+136:Kwizma/SPREP017-D  Kwizma x Kial - Hyperspace.mp3
+137:Kwizma/SPREP017-E  Kwizma - Carthage (Leon Switch RMX).mp3
+138:Kwizma/SPREP017-F  Kwizma - Submarine (Kelly Dean RMX).mp3
+139:Kwizma/SPREP018-E Kial x Max Mischief - No Escapin (Kwizma RMX).mp3
+140:Kwizma/SPREP019-A Kwizma - Waterfall.mp3
+141:Kwizma/SPREP019-B Kwizma - Fuck It.mp3
+142:Kwizma/SPREP019-C Kwizma - Diji.mp3
+143:Kwizma/SPREP019-D Kwizma - Crunch.mp3
+144:Kwizma/SPREP019-E Kwizma - Fuck It (Rufus! RMX).mp3
+145:Kwizma/SPREP020-B Leon Switch x Kwizma - Traction.mp3
+146:Kwizma/Walsh presents  - Biscuit Factory Mix Series  - 008 Kwizma.mp3
+147:Kwizma/Kwizma - Divine Power [FKOF Free Download].mp3
+148:Kwizma/Kwizma x FatKidOnFire mix.mp3
+149:Kwizma/NōTaN - Burning Bridge [FKOF Free Download].mp3
 playlist_end

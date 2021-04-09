@@ -1,433 +1,500 @@
-sudo loadkeys trq
-ping -c 4 google.com
-ping -c 4 google.com
-ping -c 4 google.com
-ping -c 4 google.com
-nmcli device list
-nmcli device wifi list
-man nmcli
-nmcli man
-nmcli --help
-sudo pacman -S bash-completion
-nmcli device wifi connect FiberHGW_ZTSXX_2.4GHZ password 94YbXrch94
-nmcli device wifi connect FiberHGW_ZTSX6X_2.4 password 94YbXrch94
-nmcli device wifi connect FiberHGW_ZTSX6X_2.4GHZ password 94YbXrch94
-nmcli device wifi list
-nmcli device wifi connect FiberHGW_ZTSX6X_2.4HZ password 94YbXrch94
-nmcli device wifi connect FiberHGW_ZTSX6X_2.4GHz password 94YbXrch94
-ping google.com
-sudo nano /etc/pacman.conf 
-sudo pacman -S xorg xorg-server xorg-xinit chromium i3-wm dmenu rofi feh sxiv mpv lightdm lightdm-gtk-greeter linux linux-firmware ranger xterm xorg-xterm 
-sudo pacman -S xorg xorg-server xorg-xinit chromium i3-wm dmenu rofi feh sxiv mpv lightdm lightdm-gtk-greeter linux linux-firmware ranger xterm  
-sudo systemctl enable lightdm
-sudo pacman -S neovim
-sudo pacman -Ss xf86-video
-sudo pacman -S xf86-video-intel xf86-video-nouveau
-reboot
-ls
-pwd
-sudo pacman -Syu
-sudo pacman -S reflector
-clear
-setxkbmap tr
-sudo pacman -S dunst
-sudo pacman -S alacritty
-asdas
-alacritty
-sudo pacman -S rofi xorg-backlight lm_sensors upower pulseaudio pamixer jq pacman-contrib mpd mpc maim feh
-sudo pacman -S rofi lm_sensors upower pulseaudio pamixer jq pacman-contrib mpd mpc maim feh
-sudo pacman -S xorg-xbacklight
-sudo pacman -S thunar-gtk2
-sudo pacman -Ss thunar-gtk2
-nano .config/alacritty/alacritty.yml
-touch .config/alacritty/alacritty.yml
-mkdir -p .config/alacritty/
-touch .config/alacritty/alacritty.yml
-nano .config/alacritty/alacritty.yml
-vim .config/alacritty/alacritty.yml
-vim .config/alacritty/alacritty.yml
-rm -rf  .config/alacritty/alacritty.yml
-nvim .config/alacritty/alacritty.yml
-reset
-pacman -Qi
-git clone https://aur.archlinux.org/yay.git
-cd  yay
-makepkg -si
-yay -S pikaur --nonconfirm
-yay -S pikaur --noncofirm
-yay -S pikaur --nocnofirm
-yay -S pikaur 
+sudo mv grub /etc/default/
 cd ..
-rm -rf yay
-sudo pacman -S i3bar
-sudo pacman -S i3-bar
-sudo pacman -S i3-block
-sudo pacman -S i3-blocks
-sudo pacman -S i3block
-sudo pacman -Ss i3block
-sudo pacman -Ss i3blocks
-sudo pacman -S i3blocks
-sudo pacman -Ss i3bar
-sudo pacman -S i3status
-yay -S sublime-text-dev
-subl3 .config/i3/config 
-sudo /etc/locale.gen 
-sudo /etc/locale.conf
-sudo subl3 /etc/locale.gen
-sudo locale-gen
-sudo localectl set-locale LANG=en_US.UTF-8
-cp /etc/i3status.conf ~/.config/i3status/config
-mkdir -p .config/i3status/
-cp /etc/i3status.conf ~/.config/i3status/config
-subl3 .config/i3status/config 
-subl3 .Xresources
-sudo pacman -S ttf-inconscalata
-sudo pacman -Ss ttf-inconscalata
-sudo pacman -Ss ttf-incon
-sudo pacman -S ttf-inconsolata
-xrdb .Xresources 
-pacman -Syu awesome-terminal-fonts
-sudo pacman -Syu awesome-terminal-fonts
-subl3 .config/alacritty/alacritty.yml 
-yay Iosevka
-subl3 /tmp/Alacritty-22457.log 
-pwd
 ls
-subl3 .config/i3/config 
-xpro
-xprop 
-vim
-nvim
-pacman -Qi
-ip link
-lsblk -f
-sudo subl3 noauto,x-systemd.automount
-sudo subl3 /etc/fstab 
-reboot
-feh
-https://github.com/yuceltoluyag/dotfiles.git
-setxkbmap tr
-git clone https://github.com/yuceltoluyag/dotfiles.git
-git clone https://github.com/yuceltoluyag/dotfiles.git
-git clone https://github.com/yuceltoluyag/dotfiles.git
-git clone https://github.com/yuceltoluyag/dotfiles.git
-yay -S thunar-gtk2
-sudo subl3  /etc/pacman.conf
-sudo pacman -S xdg-user-dir
-sudo pacman -S xdg-user-dirs
-xdg-user-dirs-update
-yay -S otf-sfmono
-pacman -Ss inconsolata
-cat /sys/class/backlight/acpi_video0/brightness
-cd Downloads/
-chmod +x i3.sh 
-./i3.sh 
-./i3.sh 
-./i3.sh 
-./i3.sh 
+cd lightdm/
+ls
+sudo mv * /etc/lightdm/
+sudo subl3 /etc/lightdm/lightdm.conf
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd /home/friday13/Downloads/dotfiles-master/dotfiles/etc/httpd
+ls
+cd conf/
+ls
+ls
+sudo mv * /etc/httpd/conf/
+sudo pacman -S gvfs ntfs-3g dosfstools
+sudo pacman -S apache
+sudo systemctl enable httpd
+sudo systemctl restart httpd
+sudo pacman -S mysql
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+sudo systemctl enable mysqld
+sudo systemctl start mysqld
+sudo mysql_secure_installation
+sudo pacman -S php php-apache
+sudo pacman -S phpmyadmin
+sudo pacman -S php-dblib
+sudo pacman -S php-pgsql php-sqlite php-gd php-odbc
+guncelle
+sudo chmod o+w /srv/http/ 
+sudo chown -R friday13:friday13 /srv/http/
+sudo chown -R friday13 /srv/http/
+ls
+sudo mv * /etc/httpd/conf/
+cd ..
+cd ..
+ls
+cd modprobe.d/
+ls
+ls
+sudo mv * /etc/modprobe.d/nobeep.conf
+cd ..
+ls
+ls -la
+ls
+sudo pacman -S virtualbox
+sudo modprobe vboxdrv
+sudo nano /etc/modules-load.d/virtualbox.conf
+sudo usermod -aG vboxusers friday13
+sudo lsmod | grep vboxdrv
+cd ..
+ls
+ls
+cd etc/
+ls
+cd php/
+ls
+sudo mv * /etc/php/
+cd ..
+ls
+cd udev/
+sudo mv * /etc/udev/rules.d/
+ls
+cd /etc/udev/rules.d/
+ls
+cd rules.d/
+ls
+ls
+ls
+sudo mv * /etc/udev/rules.d/
+ls
+cd ..
+ls
+pwd
+sudo rm -rf rules.d/
+ls
+pwd
+cd /home/friday13/Downloads/dotfiles-master/dotfiles/etc/webapps
+ls
+pwd
+cd phpmyadmin/
+ls
+sudo mv * /etc/webapps/phpmyadmin/
+ls
+pwd
+sudo systemctl restart httpd
+sudo systemctl status httpd
+cd /etc/webapps/phpmyadmin/
+ls
+subl3 config.inc.php 
+ls
+cd /home/friday13/Downloads/dotfiles-master/dotfiles/srv
+ls
+cd http/
+ls
+sudo mv * /srv/http
+cd ~
+ls
+rm -rf mi 
+ls
+sudo pacman -S gvfs ntfs-3g dosfstools
+su
+ls
+lspci -k | grep -A 2 -E "(VGA|3D)"
+pacman -Q | grep acpi
+sudo pacman -S acpi
+systemctl enable acpid
+systemctl enable acpi
+pacman -Q | grep acpi
+yay -S acpi_call
 yay -S acpid
-sudo systemctl enable acpid
-acpi_listen
-casdasd
-setxkbmap tr
-subl3 .config/i3/config 
-pidof redshift
-yay -S redshift
-pidof redshift
-pidof redshift
-redshift
-killall redshift
-killall redshift
-yay lxapp
-touch sokak.txt
-subl3 sokak.txt 
-ranger
-ranger
-clear
-./checkup 
-newsboat
-newsboat
-xprop
-export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DISPLAY=:0; . $HOME/.zprofile; 
-yay -S i3ass
-ls
-pwd
-sa
-cd
-alias 
-m
-pp
-sc
-vv
-klavyebul
-mkdir -p ~/.go/src
-sudo pacman -S ruby
-ls
-echo $GOPATH
-alias
-subi3blo 
-subi3blo 
-subi3blo 
-ptemiz
-temizle
-aynalar
+pacman -Q | grep acpi
+systemctl enable acpid
+pacman -Ql thinkfan
+yay -S thinkfan lm_sensors
+sudo modprobe thinkpad_acpi
+cat /proc/acpi/ibm/fan
+systemctl enable thinkfan
+hwmon /sys/devices/virtual/thermal/thermal_zone0/temp
+yay -S hwmon
+yay -S hwmon-git
+sudo subl3 /etc/thinkfan.conf
+hwmon /sys/devices/virtual/thermal/thermal_zone0/temp
+lm_sensors
+yay -S lm_sensors
+lm_sensors
+lm_sensor
+sensor
+sensors
+hwmon /sys/devices/virtual/thermal/thermal_zone0/temp
+sensor /sys/devices/virtual/thermal/thermal_zone0/temp
+sensors /sys/devices/virtual/thermal/thermal_zone0/temp
+pacman -Ql thinkfan
+sudo subl3 /usr/lib/modprobe.d/thinkpad_acpi.conf
+sudo subl3 /usr/share/doc/thinkfan/examples/thinkfan.yaml
+systemctl status thermald.service 
+cpupower frequency-info
 hata
 hatalog
-dmesg | grep -i -e DMAR -e IOMMU
-uname -a
-guncelle
-dmesg | grep -i -e DMAR -e IOMMU
-hatalog
-ls /lib/modules/2.6.33-ARCH/kernel/arch/x86/kernel/cpu/cpufreq/
-yay -S thermald
-sudo systemctl enable thermald.service 
-ls /lib/modules/2.6.33-ARCH/kernel/arch/x86/kernel/cpu/cpufreq/
-$ ls /usr/lib/modules/$(uname -r)/kernel/drivers/cpufreq/
-ls /usr/lib/modules/$(uname -r)/kernel/drivers/cpufreq/
-cpupower frequency-info
-hatalog
-sudo pacman -S gamin  gvfs ntfs-3g dosfstools
-sudo pacman -S gvfs ntfs-3g dosfstools
-cd /usr/share/polkit-1/rules.d
-sudo cd /usr/share/polkit-1/rules.d
-su
-su
-sudo blkid
-sudo gpasswd -a $USER disk
-clear
-ls
-pwd
-pwd
-ls -la
-pacbac
-pacbac b
-pacbac
-pacbac b
-pacbac 
-pacbac r
-sudo systemctl enable transmission.service
-yay -S transmission-cli
-sudo systemctl enable transmission.service
-shutdown -r now
+yay -S mpd
+yay -S pywal-git 
+wal -i Pictures/
+wal -R
+wal -R Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+yay -S feh
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
+wal -i Pictures/
 setxkbmap tr
-wal -i Pictures/
-wal -i Pictures/
-wal -i Pictures/
-redshift&
-pidof redshift 
-lolban baba
-lolban i3
-i3run -i floatterm -s -e 'alacritty -name floatterm'
-alacritty -n dropdown
-alacritty -e 'termite'
-alacritty -e  ncmpcpp 
-asdsad
-isadisaid
-alacritty -e 'xterm'
-i3run -i cterm -e 'alacritty -name cterm'
-htop
-pwd
+subl3config
+subl3 .bashrc 
 ls
-yay -S rxvt-unicode-patched
-xprop
-thunarIPC
-wal -i Pictures/
-launchfm 
-sudo pacman -S zsh
-mugshot
-launchfm 
-yay -S bluez
-yay -S bluez-utils
-sudo systemctl enable bluetooth
-wpg -a Pictures/
-wpg -a Pictures/*
-wal -i Pictures/
-wpg -s wallhaven-83o2ky.jpg 
-wpg-install.sh  -gi
-wpg -s wallhaven-83o2ky.jpg 
-./thunarIPC
-./thunarIPCstart 
-ls
-reboot
-ls
-pwd
-ptemiz
-temizle
-ls
-aynalar
-guncelle
-launchfm 
-cla
-killall subl3
-launchfm 
-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-zsh
-git clone https://github.com/zdharma/fast-syntax-highlighting.git   ~ZSH_CUSTOM/plugins/fast-syntax-highlighting
-zsh
-zsh
-zsh
-zsh
-zsh
-zsh
-zsh
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-zsh
-zsh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git .oh-my-zsh/custom/themes/powerlevel10k
-zsh
-zsh
-htop
-gotop
-yay -S gotop
-asdsad
-zsh
-vim
-composer
-zsh
-zsh
-zsh
-zsh
-ls
-zsh
-ls
-pwd
-zsh
-zsh
-ls
-zsh
-zsh
-zsh
-zsh
-zsh
-zsh
-zsh
-zsh
-zsh
-zsh
-yay -S pacman -Syu awesome-terminal-fonts
-sudo pacman -Syu awesome-terminal-fonts
-yay -S powerline-fonts-git 
-zsh
-powerline-console-fonts
-yay -S powerline-console-fonts
-yay -S powerline-console-fonts
-pikaur  -S powerline-console-fonts
-vim
+subl3 .bashrc 
+subconfig
+yay -S newsboat
+yay -S jq
+clear
+yay -S icon
+yay -S icon-git
+yay -S dunst
 nvim
-clear
-ls
-zsh
-zsh
-subl3 .Xresources 
-xrdb .Xresources 
-urxvt-tabbed 
-perl
-clear
-ls
-zsh
-ls
-pwd
-zsh
-ls
-urxvt
-yay terminus
-ls
+yay -S neovim
+subconfig
+subconfig
+yay -S i3
+i3fyra
+yay -S i3ass
+google-chrome-stable 
+yay -S notify
 vim
+vim .config/i3/config 
+nvim
+yay -S alacritty
+yay -S chromium
+yay -S ncmpcpp calcurse htop
+yay -S qutebrowser code
+yay -S zeal
+yay -S maim
+yay -S mpv
+thunar
+yay -S irssi
+yay -S zathura
+yay -S steam
+yay -S mons xfce4-power-manager xscreensaver imwheel
+yay -S transmission
+yay -S transmission-qt
+yay -S picom
+yay -S checkup unclutter redshift
+yay -S checkup unclutter redshift
+yay -S checkup unclutter-xfixes-git redshift
+yay -S checkup unclutter redshift
+sudo pacman -R chromium
+thunar
+yay -S thunar-gtk2
+thunar
+sudo pacman -R thunar
+sudo pacman -R thunar-volman 
+sudo pacman -R thunar
+thunar
+yay -S thunar-gtk2
+ptemiz
+yay -S thunar
+thunar
+sudo ln --symbolic /usr/lib/libxfconf-0.so.3 /usr/lib/libxfconf-0.so.2
+pacman -Qm
+yay -S xconf
+yay -S xfconf
+sudo pacman -R libxfce4ui-gtk2
+sudo pacman -Rsc libxfce4ui-gtk2
+yay -S thunar
+thunar
+yay -S xfce4-power-manager
+babamanager 
+yay -S i3run
+subl3 .script/
+subl3 .script/ .
+thunar
+yay -S nvidia-390xx-dkms
+sudo pacman -S xf86-video-intel mesa xf86-video-nouveau # paketlerini kurabilirsiniz
+yay -S  nvidia-390xx nvidia-390xx-settings nvidia-390xx-utils opencl-nvidia-390xx  lib32-nvidia-390xx-utils  lib32-opencl-nvidia-390xx
+sudo systemctl enable optimus-manager.service
+systemctl status optimus-manager.service 
+uname -a
+modinfo nvidia-uvm
+modprobe nvidia-uvm
+pacman -Qs nvidia
+modprobe nvidia
+killall picom compton xcompmgr
+nvdock
+optimus-manager-qt 
+cd .script/
 ls
-sudo pacman npm yarn
-yay -S npm yarn
-zsh
-zsh
-zsh
-i3urxvt 
-i3urxvt 
-i3urxvt 
-pacman -Qi
-))))==sada
-i3urxvt 
-killall urxvt
+actionfm 
+autoscriptmenu 
+babamanager
+yay -S i3run
+yay -S i3ass
+i3run 
+clear
+thunar
+pcmanfm
+i3fyra 
+i3fyra -a
+i3fyra -m B
+subconfig 
+vim .config/i3/config 
+i3fyra -l
+i3fyra --l
+i3fyra
+i3fyra --layout 'AB=-300 BD=420
+i3fyra --layout 'AB=-300 BD=420'
+i3fyra -l 'AB=-300 BD=420'
+i3fyra -l 'AB=-450 BD=200 AC=-100'
+yay -S gawk
+i3fyra -l AB=-450 BD=200 AC=-100
+i3fyra -l A=-450 BD=200 AC=-100
+vim .config/i3/config 
+ekran
+cd .script
 ls
-zsh
-i3urxvt 
-zsh
-zsh
-zsh
-zsh
+battery.sh 
+battery_status 
+blaze
 ls
-pwd
-zsh
-i3urxvt 
-s
+check-network 
+cover_search 
+cover_search baba
+devicon-lookup 
 ls
-pwd
-ranger
-zsh
-i3urxvt 
-xrdb .Xresources 
+dimensions 
 ls
-zsh
-xrdb .Xresources 
+displaytitle 
+dmenu-display 
+dmenurecord 
+dmn_browse 
+dmn_clip
+yay -S bc
+dmn_clip
+yay -S clipmenu
+dmn_clip
 ls
-zsh
-yay -S rxvt-unicode-cvs-patched-wideglyphs
-i3urxvt 
-xrdb .Xresources 
+dmn_power
+dmn_run
+dmn_web
+drawterm
+yay -S wmctrl
+drawterm
 ls
+draw_urxvt 
+dtest
+vim dtest 
+vim dtest 
+cd .script/
 ls
-xrdb .Xresources 
-ls
-zsh
-yay -S URxvt.font: xft:Iosevka Term:style=Light:pixelsize=12:antialias=true:hinting=true
-yay -S rxvt-unicode-cvs-patched-wideglyphs
-vim
-ls
-pwd
-xrdb .Xresources 
-ls
-pwd
-zsh
-zsh
-zsh
-zsh
-zsh
-ls
-zsh
-ls
-dmesg | grep wlan0
-rmmod pcspkr
-sudo rmmod pcspkr
-ls  /etc/modprobe.d/
-su
-yay aic94xx wd719x
-yay aic94xx
-yay wd719x
-sudo mkinitcpio -p linux linux-firmware
-chsh -s zsh
-which zsh
-chsh -s /usr/bin/zsh 
-ls
-pwd
-ls
-pacman -Qi
-++-++--__---------++++
-pacman -Qi
+dunstfm
+dunstfm
+enablesettings 
+yay -S thunar gvfs file-roller ark xarchiver thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-volman ffmpegthumbnailer tumbler raw-thumbnailer libgsf
+yay -S gvfs-mtp
+thunar
+thunar --daemon
+yay -S xfce4-goodies
+thunar
+type -a xfce4-clipman
+ldd $(which xfce4-appfinder) | grep -i xfce4
+sudo ln -s /usr/lib/libxfce4util.so.7 /usr/lib/libxfce4util.so.6
+pacman -Q | wc -l
+sudo pacman -R garcon-devel 
+sudo pacman -S garcon
+thunar
+xfwm4-settings
+sudo ln -s /usr/lib/libxfconf-0.so.3 /usr/lib/libxfconf-0.so.2
+thunar
+sudo ln -s /usr/lib/libxfconf-0.so.3 /usr/lib/libxfconf-0.so.3
+thunar
+thunar --version
+sudo thunar
+xfwm4
+sudo pacman -U http://www.oberon.at/oberon/xfwm4-gtk3-4.13.0-1.1-x86_64.pkg.tar.xz
+xfce4-settings
+xfdesktop
+yay -S xfwm4-gtk3
+yay -S xfwm4
+xfdesktop
+xfdesktop
+xfwm4
+yay -S linux-lts linux-firmware
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+uname -a
+yay -S linux linux-firmware
+ls -lsha /boot
+mkinitcpio -p linux linux-firmware intel-ucode
+sudo mkinitcpio -p linux linux-firmware intel-ucode
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+ls -lsha /boot
 reboot
+hatalog
+uname -a
+ls -l /usr/lib/modules/$(uname -r)/kernel/drivers/acpi
+dmesg | grep -i acpi
+sudo dmesg | grep -i acpi
+acpi /sys/class/power_supply/BAT0/
+yay -S acpi_call-dkms
+sudo mkinitcpio -p linux linux-firmware intel-ucode
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+hatalog
+modprobe vboxdrv
+yay -S virtualbox
+sudo pacman -R virtualbox
+ptemiz
+yay -S virtualbox
+modprobe vboxdrv
+sudo pacman -R linux-lts
+depmod -a
+ls
+uname -a
+mkinitcpio -p linux 
+sudo mkinitcpio -p linux 
+sudo mkinitcpio -p linux linux-lts intel-ucode
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
+sudo os-prober
+thunar
+hata
+hatalog
+ls /sys/class/hwmon/
+hwmon /sys/devices/virtual/thermal/thermal_zone0/temp
+pwmconfig
+sudo pwmconfig
+cat /proc/acpi/ibm/fan
+echo level auto > /proc/acpi/ibm/fan
+sudo echo level auto > /proc/acpi/ibm/fan
+hwmon /sys/devices/virtual/thermal/thermal_zone0/temp
+thinkfan -n
+sudo thinkfan -n
+sudo rm -rf /etc/thinkfan.conf 
+sudo cp /usr/share/doc/thinkfan/examples/thinkfan.yaml /etc/thinkfan.conf
+sudo thinkfan -n
+sudo vim /etc/thinkfan.conf 
+sudo thinkfan -n
+sudo vim /etc/thinkfan.conf 
+sudo thinkfan -n
+sudo vim /etc/thinkfan.conf 
+sudo thinkfan -n
+sudo vim /etc/thinkfan.conf 
+sudo rm -rf /etc/thinkfan.conf 
+sudo systemctl disable thinkfan
+reboo
+reboot
+/sys/class/hwmon/hwmon1/device/
+ls
+ls -lart
+sensors
+sudo sensors-detect
+sudo sensors-detect
+cat /sys/class/hwmon/hwmon1/temp1_label
+cat /sys/class/hwmon/hwmon1/temp1_input 
+cat /sys/class/hwmon/hwmon1/temp1_crit 
+lsmod | grep -i smsc
+lsmod | grep -i smsc
+polybar
+polybar bar
+xrefresh 
+reload
 ls
 pwd
-ls
-bash
-zsh
-ls
-pwd
-ls
-pwd
-clear
-clear
-pwd
+hata
+hatalog
+systemctl status httpd.service 
+sudo vim /etc/httpd/conf/httpd.conf 
+systemctl restart httpd.service 
+systemctl status httpd.service 
+sudo pacman -R httpd
+sudo pacman -R apache 
+sudo pacman -R php-apache 
+sudo pacman -R apache
+hatalog
+find /etc/systemd -name \*.service -type l -a -xtype f -printf %f\\n
+systemctl disable --now netctl-auto@wlan0.service
+systemctl disable wpa_supplicant
+hatalog
+mpd
+thunar
+xdg-user-dirs-update
+yay -S xdg-user-dirs
+xdg-user-dirs-update
+pcmanfm 
+xdg-user-dirs-update
+xdg-user-dirs-update
+xdg-user-dirs-update
+vim .config/user-dirs.dirs 
+rm -rf .config/user-dirs.*
+cd .config/
 ls
 ls -la
-ls -la | ls_color
+xdg-user-dirs-update
+vim .config/user-dirs.dirs 
+LC_ALL=C xdg-user-dirs-update --force
+mpd
+hata
+systemctl disable httpd
+hata
+hatalog
+yay -S ytdl
+cat .bashrc
+cd ~
+cat .bashrc 
+ytmp3
+yay -S youtube-dl
+wpgtk
+yay -S wpgtk-git 
+yay -S zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+asdlasld
+pwd
+ls
+exit
+asdasdk
+cd .config
+ls
+pwd
+exit
+pwd
+exit
+exit
+mmmasdas
+kdlsa
+exit
+cd Documents/
+ls
+frostybot-js/
+ls
+nvim package.json 
+:q!
+q
+exit
+gem install neovim
+npm install -g neovim
+exit
+ls
+pwd
+clear

@@ -2,7 +2,7 @@
 # /home/friday13/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
-# Generated on Tue Mar 24 04:27:51 2020
+# Generated on Fri Apr  9 00:56:53 2021
 #
 
 # ConfigProperties:
@@ -19,3 +19,61 @@ Timer = Memory_Used_(GPU_0),Yes,3000
 
 # Attributes:
 
+f13:0.0/SyncToVBlank=0
+f13:0.0/LogAniso=0
+f13:0.0/FSAA=0
+f13:0.0/GammaCorrectedAALines=0
+f13:0.0/TextureClamping=1
+f13:0.0/FXAA=0
+f13:0.0/AllowFlipping=0
+f13:0.0/FSAAAppControlled=1
+f13:0.0/LogAnisoAppControlled=1
+f13:0.0/OpenGLImageSettings=1
+f13:0.0/FSAAAppEnhanced=0
+f13:0.0/GammaCorrectedAALinesValue=16
+f13:0[DPY:VGA-0]/Dithering=0
+f13:0[DPY:VGA-0]/DitheringMode=0
+f13:0[DPY:VGA-0]/DitheringDepth=0
+f13:0[DPY:VGA-0]/SynchronousPaletteUpdates=0
+f13:0[DPY:LVDS-0]/Dithering=0
+f13:0[DPY:LVDS-0]/DitheringMode=0
+f13:0[DPY:LVDS-0]/DitheringDepth=0
+f13:0[DPY:LVDS-0]/ColorSpace=0
+f13:0[DPY:LVDS-0]/ColorRange=0
+f13:0[DPY:LVDS-0]/SynchronousPaletteUpdates=0
+f13:0[DPY:DP-0]/Dithering=0
+f13:0[DPY:DP-0]/DitheringMode=0
+f13:0[DPY:DP-0]/DitheringDepth=0
+f13:0[DPY:DP-0]/ColorSpace=0
+f13:0[DPY:DP-0]/ColorRange=0
+f13:0[DPY:DP-0]/SynchronousPaletteUpdates=0
+f13:0[DPY:DP-1]/Dithering=0
+f13:0[DPY:DP-1]/DitheringMode=0
+f13:0[DPY:DP-1]/DitheringDepth=0
+f13:0[DPY:DP-1]/ColorSpace=0
+f13:0[DPY:DP-1]/ColorRange=0
+f13:0[DPY:DP-1]/SynchronousPaletteUpdates=0
+f13:0[DPY:DP-2]/Dithering=0
+f13:0[DPY:DP-2]/DitheringMode=0
+f13:0[DPY:DP-2]/DitheringDepth=0
+f13:0[DPY:DP-2]/ColorSpace=0
+f13:0[DPY:DP-2]/ColorRange=0
+f13:0[DPY:DP-2]/SynchronousPaletteUpdates=0
+f13:0[DPY:DP-3]/Dithering=0
+f13:0[DPY:DP-3]/DitheringMode=0
+f13:0[DPY:DP-3]/DitheringDepth=0
+f13:0[DPY:DP-3]/ColorSpace=0
+f13:0[DPY:DP-3]/ColorRange=0
+f13:0[DPY:DP-3]/SynchronousPaletteUpdates=0
+f13:0[DPY:DP-4]/Dithering=0
+f13:0[DPY:DP-4]/DitheringMode=0
+f13:0[DPY:DP-4]/DitheringDepth=0
+f13:0[DPY:DP-4]/ColorSpace=0
+f13:0[DPY:DP-4]/ColorRange=0
+f13:0[DPY:DP-4]/SynchronousPaletteUpdates=0
+f13:0[DPY:DP-5]/Dithering=0
+f13:0[DPY:DP-5]/DitheringMode=0
+f13:0[DPY:DP-5]/DitheringDepth=0
+f13:0[DPY:DP-5]/ColorSpace=0
+f13:0[DPY:DP-5]/ColorRange=0
+f13:0[DPY:DP-5]/SynchronousPaletteUpdates=0

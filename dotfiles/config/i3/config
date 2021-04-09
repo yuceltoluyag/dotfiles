@@ -17,7 +17,7 @@ set $grun        exec --no-startup-id i3run -g
 set $srun        exec --no-startup-id i3run -s
 set $rofi        rofi -show
 set $term        urxvt
-set $browser     chromium
+set $browser     google-chrome-stable
 set $reload      ~/.script/reload
 set $thunar      ~/.script/babamanager
 set $dirl  h
@@ -68,7 +68,7 @@ for_window [instance="dropdown"] border pixel 5
 
 # >> Program launching
 $super+p $exe i3run -i jetbrains-phpstorm -e 'jetbrains-phpstorm'
-$super+g $exe i3run -c chromium -e 'chromium'
+$super+g $exe i3run -c google-chrome-stable -e 'google-chrome-stable'
 $super+shift+g $exe gimp
 $super+n  $exe urxvt -e ncmpcpp
 $super+y $exe  urxvt -e calcurse
@@ -77,13 +77,13 @@ bindsym $mod+o exec notify Notification
 bindsym $mod+Shift+o exec notify -u low Notification
 bindsym $mod+Mod1+o exec notify -u critical Notification
 
-$super+F1 $exe chromium
-$super+F2 $exe ~/.local/bin/i3cmds/displayselect
-$super+F3 $exe ~/.local/bin/i3cmds/torwrap
-$super+F4 $exe ~/.local/bin/i3cmds/td-toggle
-$super+F5 $exe ~/.local/bin/i3cmds/dmenumount
-$super+F6 $exe ~/.local/bin/i3cmds/dmenuumount
-$super+F7 $exe ~/.local/bin/i3cmds/ducksearch
+$super+F1 $exe google-chrome-stable
+$super+F2 $exe ~/.script/displayselect
+$super+F3 $exe ~/.script/torwrap
+$super+F4 $exe ~/.script/td-toggle
+$super+F5 $exe ~/.script/dmenumount
+$super+F6 $exe ~/.script/dmenuumount
+$super+F7 $exe ~/.script/ducksearch
 $super+F8 $exe ~/.script/favmen
 # Display management
 $super+Control+F1 $exe dmenu-display primary
@@ -98,8 +98,8 @@ $super+r         $exe dmenu_run
 
 
 # >> Shortcuts Ninca Gibiyim ~ Saian-Hayvan
-$super+c       $grun -i chromium -e 'chrome-launcher chromium'
-$super+$alt+c  $grun -i chromium -e 'chrome-launcher chromium nosecurity'
+$super+c       $grun -i google-chrome-stable -e 'chrome-launcher google-chrome-stable'
+$super+$alt+c  $grun -i google-chrome-stable -e 'chrome-launcher google-chrome-stable nosecurity'
 $super+q       $grun -i qutebrowser -e 'qutebrowser'
 $super+s       $grun -i sublime_text -x subl3 -e 'subl3'
 $super+t       $grun -i telegram-desktop -e 'telegram-desktop'
@@ -116,10 +116,10 @@ bindsym Control+$alt+c    $exe $rofi clipboard -modi "clipboard:greenclip print"
 $super+Scroll_Lock $exe  killall screenkey || screenkey
 bindsym Print $exe maim pic-full-$(date '+%y%m%d-%H%M-%S').png
 bindsym Shift+Print exec --no-startup-id ~/.script/maimpick
-$super+Print $exe ~/.script//dmenurecord
+$super+Print $exe ~/.script/dmenurecord
 $super+Delete $exe ~/.script/dmenurecord dmenurecord kill
-$super+quotedbl $exe ~/.local/bin/i3cmds/dmenuunicode
-$super+Insert $exe  ~/.local/bin/i3cmds/showclip
+$super+quotedbl $exe ~/.script/dmenuunicode
+$super+Insert $exe   ~/.script/showclip
 #bindsym $mod+b      bar mode toggle
 bindsym $mod+Shift+b    floating toggle; sticky toggle; exec --no-startup-id hover left
 bindsym $mod+Shift+n    floating toggle; sticky toggle; exec --no-startup-id hover right
@@ -142,7 +142,7 @@ for_window [class="^.*"] floating enabled
 for_window [class="Lxappearance"] focus; $fyra -m B
 for_window [class="Sxiv"] focus; $fyra -m B
 for_window [class="feh"] focus; $fyra -m D
-for_window [class="chromium"] focus; $fyra -m A
+for_window [class="Google-chrome"] focus; $fyra -m A
 for_window [class="Postman"] focus; $fyra -m A
 for_window [instance="subl3"] focus; $fyra -m A
 for_window [instance="jetbrains-phpstorm"] focus; $fyra -m A
@@ -165,12 +165,12 @@ for_window [class="jetbrains-studio"] focus; exec --no-startup-id i3fyra -m A
 for_window [class="Font-manager"] focus; exec --no-startup-id i3fyra -m A
 for_window [class="Thunar"] focus; exec --no-startup-id i3fyra -m B
 
-for_window [class="Chromium"]                                                           focus; $fyra -m A
+for_window [class="Google-chrome"]                                                           focus; $fyra -m A
 for_window [class="Firefox" instance="Navigator"]               focus; $fyra -m A
 for_window [class="jetbrains-studio"]                           focus; $fyra -m A
 for_window [class="mpv"]                                        focus; $fyra -m D
-for_window [instance="chromium" window_role="browser"]          focus; $fyra -m A
-for_window [instance="chromium" window_role="pop-up"]           focus; $fyra -m D
+for_window [instance="Google-chrome" window_role="browser"]          focus; $fyra -m A
+for_window [instance="Google-chrome" window_role="pop-up"]           focus; $fyra -m D
 for_window [instance="code" window_type="normal"]               focus; $fyra -m A
 for_window [instance="cterm"]                                   focus; $fyra -m C
 for_window [instance="filemanagerA"]                            focus; $fyra -m A
@@ -329,7 +329,7 @@ $exec setxkbmap tr
 $exec wal -R
 $exec imwheel
 $exec transmission-daemon
-$exec picom --config $HOME/.config/picom/picom.conf
+#$exec picom --config $HOME/.config/picom/picom.conf
 $exec checkup
 $exec unclutter
 $exec redshift

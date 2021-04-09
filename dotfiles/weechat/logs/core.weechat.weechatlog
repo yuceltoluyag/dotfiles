@@ -187,3 +187,76 @@
 2020-03-28 00:07:24		script: 364 scripts for WeeChat 2.7.1
 2020-03-28 00:46:49		fifo: pipe closed
 2020-03-28 00:46:49		python: scripts unloaded
+2021-04-05 09:28:08		New key binding (context "default"): meta-B => /buflist toggle
+2021-04-05 09:28:08		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-05 09:28:08		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-05 09:28:08		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-05 09:28:08		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-05 09:28:08		perl scripts loaded: color_popup, highmon
+2021-04-05 09:28:08		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-05 09:28:08		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-05 09:28:08		python: stdout/stderr (?):           ^
+2021-04-05 09:28:08		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-05 09:28:08		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-05 09:28:08		python scripts loaded: colorize_nicks, go, grep, text_item
+2021-04-05 09:28:08		ruby scripts loaded: colorizer
+2021-04-05 09:28:09		script: 364 scripts for WeeChat 3.1
+2021-04-05 09:28:09		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, ruby, script, trigger
+2021-04-05 11:06:25		Warning: /home/friday13/.weechat/sec.conf, line 15: unknown option for section "crypt": passphrase_file = ""
+2021-04-05 11:06:25		Options reloaded from sec.conf
+2021-04-05 11:06:25		Options reloaded from weechat.conf
+2021-04-05 11:06:25		Options reloaded from plugins.conf
+2021-04-05 11:06:25		Options reloaded from charset.conf
+2021-04-05 11:06:25		Options reloaded from logger.conf
+2021-04-05 11:06:25		Options reloaded from exec.conf
+2021-04-05 11:06:25		Options reloaded from trigger.conf
+2021-04-05 11:06:25		Options reloaded from alias.conf
+2021-04-05 11:06:25		Options reloaded from buflist.conf
+2021-04-05 11:06:25		Options reloaded from fifo.conf
+2021-04-05 11:06:25		Options reloaded from irc.conf
+2021-04-05 11:06:25		Options reloaded from relay.conf
+2021-04-05 11:06:25		Options reloaded from perl.conf
+2021-04-05 11:06:25		Options reloaded from guile.conf
+2021-04-05 11:06:25		Options reloaded from python.conf
+2021-04-05 11:06:25		Options reloaded from colorize_nicks.conf
+2021-04-05 11:06:25		Options reloaded from ruby.conf
+2021-04-05 11:06:25		Options reloaded from script.conf
+2021-04-05 11:06:25		Options reloaded from fset.conf
+2021-04-05 11:06:25		ruby: scripts unloaded
+2021-04-05 11:06:25		python: scripts unloaded
+2021-04-07 07:42:59		New key binding (context "default"): meta-B => /buflist toggle
+2021-04-07 07:42:59		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-07 07:42:59		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-07 07:42:59		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-07 07:42:59		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-07 07:42:59		perl scripts loaded: color_popup, highmon
+2021-04-07 07:42:59		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-07 07:42:59		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-07 07:42:59		python: stdout/stderr (?):           ^
+2021-04-07 07:42:59		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-07 07:42:59		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-07 07:42:59		python scripts loaded: colorize_nicks, go, grep, text_item
+2021-04-07 07:42:59		ruby scripts loaded: colorizer
+2021-04-07 07:42:59		script: 364 scripts for WeeChat 3.1
+2021-04-07 07:42:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, ruby, script, trigger
+2021-04-07 08:17:04		Options reloaded from sec.conf
+2021-04-07 08:17:04		Options reloaded from weechat.conf
+2021-04-07 08:17:04		Options reloaded from plugins.conf
+2021-04-07 08:17:04		Options reloaded from charset.conf
+2021-04-07 08:17:04		Options reloaded from logger.conf
+2021-04-07 08:17:04		Options reloaded from exec.conf
+2021-04-07 08:17:04		Options reloaded from trigger.conf
+2021-04-07 08:17:04		Options reloaded from alias.conf
+2021-04-07 08:17:04		Options reloaded from buflist.conf
+2021-04-07 08:17:04		Options reloaded from fifo.conf
+2021-04-07 08:17:04		Options reloaded from irc.conf
+2021-04-07 08:17:04		Options reloaded from relay.conf
+2021-04-07 08:17:04		Options reloaded from perl.conf
+2021-04-07 08:17:04		Options reloaded from guile.conf
+2021-04-07 08:17:04		Options reloaded from python.conf
+2021-04-07 08:17:04		Options reloaded from colorize_nicks.conf
+2021-04-07 08:17:04		Options reloaded from ruby.conf
+2021-04-07 08:17:04		Options reloaded from script.conf
+2021-04-07 08:17:04		Options reloaded from fset.conf
+2021-04-07 08:17:04		ruby: scripts unloaded
+2021-04-07 08:17:04		python: scripts unloaded

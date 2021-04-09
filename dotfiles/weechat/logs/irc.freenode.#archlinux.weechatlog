@@ -1276,3 +1276,194 @@
 2020-03-28 00:45:44	BrainDamage	bluetooth should work
 2020-03-28 00:46:04	BrainDamage	alternatively, set a rtp or http stream, but that'll require to open a link in the ipad
 2020-03-28 00:46:17	-->	cad_enc (~tonyspaz@unaffiliated/tonyspaz) has joined #archlinux
+2021-04-05 09:28:26	-->	friday13 (~friday13@88.225.64.22) has joined #archlinux
+2021-04-05 09:28:26	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-05 09:28:26	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-05 09:28:27	--	Channel #archlinux: 1612 nicks (2 ops, 0 voices, 1610 normals)
+2021-04-05 09:28:27	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-05 09:29:03	friday13	hi im back :)
+2021-04-05 09:30:07	-->	krofe (krofe@gateway/vpn/protonvpn/krofe) has joined #archlinux
+2021-04-05 09:30:09	NetSysFire	!welcomerpg
+2021-04-05 09:30:10	<--	abdulocracy1 (~meabduloc@79.184.148.58.ipv4.supernova.orange.pl) has quit (Read error: Connection reset by peer)
+2021-04-05 09:30:10	phrik	Welcome to #archlinux, tell us how you fucked up.
+2021-04-05 09:30:32	-->	abdulocracy1 (~meabduloc@79.184.148.58.ipv4.supernova.orange.pl) has joined #archlinux
+2021-04-05 09:34:26	Hackerpcs	how to determine the running kernel version? I'm not talking about the pacman package version but to check if the system was restarted and kernel was updated or if the old one is still running
+2021-04-05 09:34:36	Edu4rdSHL	uname -r
+2021-04-05 09:34:55	Hackerpcs	true :P
+2021-04-05 09:35:51	<--	fflam (~mdt@91.193.4.190) has quit (Ping timeout: 260 seconds)
+2021-04-05 09:37:21	<--	nic3-14159 (~nic3-1415@d206-75-55-33.abhsia.telus.net) has quit (Read error: Connection reset by peer)
+2021-04-05 09:37:27	<--	teal (~j-james@207-225-245-157.tukw.qwest.net) has quit (Quit: WeeChat 3.1)
+2021-04-05 09:37:32	-->	nic3-14159 (~nic3-1415@node-1w7jra26unx971wts3bso2ysr.ipv6.telus.net) has joined #archlinux
+2021-04-05 09:37:33	<--	bitdex (~bitdex@gateway/tor-sasl/bitdex) has quit (Remote host closed the connection)
+2021-04-05 09:37:34	-->	zarakshR_ (~zarakshR@94.198.43.37) has joined #archlinux
+2021-04-05 09:37:38	--	zarakshR_ is now known as zarakshR
+2021-04-05 09:37:38	-->	kiao (~tt@82-132-231-19.dab.02.net) has joined #archlinux
+2021-04-05 09:37:43	-->	Linerly (~Thunderbi@103.105.53.64) has joined #archlinux
+2021-04-05 09:38:02	zarakshR	Which filesystem do you think I should use for a high capacity HDD that I'll use for backups.
+2021-04-05 09:38:12	zarakshR	I dont intent to read/write from the disk very often
+2021-04-05 09:38:16	zarakshR	Just long term backups
+2021-04-05 09:38:24	-->	bitdex (~bitdex@gateway/tor-sasl/bitdex) has joined #archlinux
+2021-04-05 09:39:47	<--	bitdex (~bitdex@gateway/tor-sasl/bitdex) has quit (Remote host closed the connection)
+2021-04-05 09:39:51	-->	fling (~fling@fsf/member/fling) has joined #archlinux
+2021-04-05 09:40:21	-->	zarakshR_ (~zarakshR@94.198.43.101) has joined #archlinux
+2021-04-05 09:40:22	<--	edlou (uid413273@gateway/web/irccloud.com/x-gbrtssjbkcbobpmr) has quit (Quit: Connection closed for inactivity)
+2021-04-05 09:40:32	-->	bitdex (~bitdex@gateway/tor-sasl/bitdex) has joined #archlinux
+2021-04-05 09:41:17	Edu4rdSHL	ext4
+2021-04-05 09:42:14	<--	portalrat (~muskrat@trivialand/player/muskrat) has quit (Quit: Leaving)
+2021-04-05 09:43:52	-->	lakrass (~lakrass@5.18.248.95) has joined #archlinux
+2021-04-05 09:44:14	<--	lakrass (~lakrass@5.18.248.95) has left #archlinux
+2021-04-05 09:44:18	<--	zarakshR (~zarakshR@94.198.43.37) has quit (Ping timeout: 268 seconds)
+2021-04-05 09:44:19	--	zarakshR_ is now known as zarakshR
+2021-04-05 09:44:31	-->	maschinenhans (~maschinen@200116b82aea8e00d4fa5ff6b7bef858.dip.versatel-1u1.de) has joined #archlinux
+2021-04-05 09:44:38	HaMsTeRs	I've never used zfs, but i herad that it's good for something
+2021-04-05 09:45:01	-->	earnestly (~earnestly@unaffiliated/earnestly) has joined #archlinux
+2021-04-05 09:45:16	<--	charlie5 (~rod@pa49-180-14-204.pa.nsw.optusnet.com.au) has quit (Quit: Leaving.)
+2021-04-05 09:46:14	<--	lawt (~lawt@c-73-151-3-92.hsd1.ca.comcast.net) has quit (Quit: WeeChat 2.8)
+2021-04-05 09:47:17	-->	zarakshR_ (~zarakshR@94.198.43.53) has joined #archlinux
+2021-04-05 09:49:38	-->	Szadek_ (Szadek@gateway/vpn/mullvad/szadek) has joined #archlinux
+2021-04-05 09:50:20	-->	akiva (~akiva@d50-92-124-213.bchsia.telus.net) has joined #archlinux
+2021-04-05 09:50:25	-->	fflam (~mdt@ip70-179-20-127.sd.sd.cox.net) has joined #archlinux
+2021-04-05 09:50:28	<--	Szadek_ (Szadek@gateway/vpn/mullvad/szadek) has quit (Client Quit)
+2021-04-05 09:50:39	<--	zarakshR (~zarakshR@94.198.43.101) has quit (Ping timeout: 265 seconds)
+2021-04-05 09:50:40	--	zarakshR_ is now known as zarakshR
+2021-04-05 09:50:47	<--	Szadek (~Szadek@92.60.40.214) has quit (Ping timeout: 260 seconds)
+2021-04-05 09:51:06	-->	manti7 (~manti7@176.10.104.94) has joined #archlinux
+2021-04-05 09:51:20	-->	Szadek (Szadek@gateway/vpn/mullvad/szadek) has joined #archlinux
+2021-04-05 09:51:37	<--	nic3-14159 (~nic3-1415@node-1w7jra26unx971wts3bso2ysr.ipv6.telus.net) has quit (Read error: Connection reset by peer)
+2021-04-05 09:52:15	-->	b0tanik (~b0tanik@188.163.73.73) has joined #archlinux
+2021-04-05 09:52:21	-->	nic3-14159 (~nic3-1415@node-1w7jra26unx971wts3bso2ysr.ipv6.telus.net) has joined #archlinux
+2021-04-05 09:53:15	-->	darutoko (~darutoko@37.21.215.108) has joined #archlinux
+2021-04-05 09:54:27	-->	hanetzer (~hanetzer@abyss/hanetzer) has joined #archlinux
+2021-04-05 09:56:21	<--	ransome (~quassel@151.46.151.235) has quit (Read error: Connection reset by peer)
+2021-04-05 09:57:32	<--	zarakshR (~zarakshR@94.198.43.53) has quit (Ping timeout: 246 seconds)
+2021-04-05 09:58:14	-->	ramses (~ramses@nat-35.starnet.cz) has joined #archlinux
+2021-04-05 09:58:24	-->	lawt (~lawt@c-73-151-3-92.hsd1.ca.comcast.net) has joined #archlinux
+2021-04-05 09:59:18	-->	ransome (~quassel@151.46.212.225) has joined #archlinux
+2021-04-05 10:00:51	-->	zarakshR (~zarakshR@94.198.43.69) has joined #archlinux
+2021-04-05 10:01:18	-->	charlie5 (~rod@pa49-180-14-204.pa.nsw.optusnet.com.au) has joined #archlinux
+2021-04-05 10:01:20	<--	charlie5 (~rod@pa49-180-14-204.pa.nsw.optusnet.com.au) has quit (Read error: Connection reset by peer)
+2021-04-05 10:03:56	<--	unluckyshrubbery (~unluckysh@unaffiliated/unluckyshrubbery) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-04-05 10:04:31	CarloWood	I don't know why, but sudden when I open vim textfil;  clicking somewhere makes the cursor jump to that spot.  I can't find out how to turn that off :/.  It interferes with copy&paste.
+2021-04-05 10:06:43	-->	markopasha (~cc@88.230.164.179) has joined #archlinux
+2021-04-05 10:07:07	<--	zaxs (zaxs@gateway/vpn/privateinternetaccess/zaxs) has quit (Ping timeout: 240 seconds)
+2021-04-05 10:07:49	Gnea	CarloWood: what is the result of :set mouse
+2021-04-05 10:07:52	-->	Vayu_Vata (~vayuvata@2400:1a00:b010:f43f:6657:1b19:ad33:2602) has joined #archlinux
+2021-04-05 10:07:52	-->	charlie5 (~rod@pa49-180-14-204.pa.nsw.optusnet.com.au) has joined #archlinux
+2021-04-05 10:08:09	CarloWood	mouse=a
+2021-04-05 10:08:19	Gnea	try :set mouse=r
+2021-04-05 10:08:31	<--	tpowa (~tpowa@archlinux/developer/tpowa) has quit (Quit: Verlassend)
+2021-04-05 10:09:29	CarloWood	thanks :)
+2021-04-05 10:09:34	Gnea	cheers :)
+2021-04-05 10:10:12	<--	Vayu_Vata (~vayuvata@2400:1a00:b010:f43f:6657:1b19:ad33:2602) has quit (Client Quit)
+2021-04-05 10:10:23	<--	VayuVata (~vayuvata@2400:1a00:b010:f43f:6657:1b19:ad33:2602) has quit (Ping timeout: 276 seconds)
+2021-04-05 10:10:36	-->	VayuVata (~vayuvata@2400:1a00:b010:f43f:6657:1b19:ad33:2602) has joined #archlinux
+2021-04-05 10:11:29	<--	zarakshR (~zarakshR@94.198.43.69) has quit (Ping timeout: 252 seconds)
+2021-04-05 10:14:47	-->	zarakshR (~zarakshR@94.198.43.69) has joined #archlinux
+2021-04-05 10:16:25	-->	tpowa (~tpowa@archlinux/developer/tpowa) has joined #archlinux
+2021-04-05 10:17:11	<--	charlie5 (~rod@pa49-180-14-204.pa.nsw.optusnet.com.au) has quit (Quit: Leaving.)
+2021-04-05 10:17:16	-->	palasso (~palasso@unaffiliated/palasso) has joined #archlinux
+2021-04-05 10:17:38	<--	qncfj (~qncfj@18.29.21.113) has quit (Quit: WeeChat 3.0)
+2021-04-05 10:18:12	-->	desmu (~desmu@ip-37-201-133-101.hsi13.unitymediagroup.de) has joined #archlinux
+2021-04-05 10:23:24	-->	jujudusud (~julien@2a01:cb1c:8050:b700:515e:711b:6513:9d31) has joined #archlinux
+2021-04-05 10:23:30	<--	zarakshR (~zarakshR@94.198.43.69) has quit (Ping timeout: 260 seconds)
+2021-04-05 10:24:36	-->	danisanti (~danisanti@unaffiliated/danisanti) has joined #archlinux
+2021-04-05 10:25:50	<--	VayuVata (~vayuvata@2400:1a00:b010:f43f:6657:1b19:ad33:2602) has quit (Quit: Leaving)
+2021-04-05 10:26:50	-->	panikovsky (~panikovsk@188.114.8.164) has joined #archlinux
+2021-04-05 10:27:24	-->	charlie5 (~rod@pa49-180-14-204.pa.nsw.optusnet.com.au) has joined #archlinux
+2021-04-05 10:27:56	-->	sozuba (~sozuba@unaffiliated/sozuba) has joined #archlinux
+2021-04-05 10:28:16	-->	sa02irc (~mbax@155-079-043-212.ip-addr.inexio.net) has joined #archlinux
+2021-04-05 10:28:40	-->	zarakshR (~zarakshR@94.198.43.53) has joined #archlinux
+2021-04-05 10:28:58	<--	vee (~vee@unaffiliated/vee) has quit (Ping timeout: 240 seconds)
+2021-04-05 10:30:43	<--	blue_penquin (bluepenq1@gateway/shell/matrix.org/x-lpbihmtqawtldpng) has left #archlinux ("User left")
+2021-04-05 10:31:59	-->	blue_penquin (bluepenq1@gateway/shell/matrix.org/x-lpbihmtqawtldpng) has joined #archlinux
+2021-04-05 10:32:23	<--	aiyion (~aiyion@gateway/tor-sasl/aiyion) has quit (Remote host closed the connection)
+2021-04-05 10:32:46	-->	aiyion (~aiyion@gateway/tor-sasl/aiyion) has joined #archlinux
+2021-04-05 10:33:22	<--	djapo (~archie@unaffiliated/djapo) has quit (Ping timeout: 260 seconds)
+2021-04-05 10:34:45	<--	bamdad (~bamdad@gateway/tor-sasl/bamdad) has quit (Ping timeout: 240 seconds)
+2021-04-05 10:34:49	-->	polve (~polve@dynamic-adsl-78-12-73-90.clienti.tiscali.it) has joined #archlinux
+2021-04-05 10:35:21	<--	Linerly (~Thunderbi@103.105.53.64) has quit (Quit: Linerly)
+2021-04-05 10:35:27	-->	naomiguel (~xoxoxo@gateway/tor-sasl/novelcoronavirus) has joined #archlinux
+2021-04-05 10:35:52	<--	naomiguel (~xoxoxo@gateway/tor-sasl/novelcoronavirus) has quit (Remote host closed the connection)
+2021-04-05 10:35:58	<--	novelcoronavirus (~xoxoxo@gateway/tor-sasl/novelcoronavirus) has quit (Ping timeout: 240 seconds)
+2021-04-05 10:36:11	-->	naomiguel (~xoxoxo@gateway/tor-sasl/novelcoronavirus) has joined #archlinux
+2021-04-05 10:37:04	-->	jkwnki (~jkwnki@p200300cd4719ca00f02d8b35492d8b8d.dip0.t-ipconnect.de) has joined #archlinux
+2021-04-05 10:37:16	-->	Volgaar (~volgaar@104.66.13.93.rev.sfr.net) has joined #archlinux
+2021-04-05 10:37:59	-->	random-nick (~random-ni@unaffiliated/random-nick) has joined #archlinux
+2021-04-05 10:38:42	-->	bamdad (~bamdad@gateway/tor-sasl/bamdad) has joined #archlinux
+2021-04-05 10:38:59	<--	zarakshR (~zarakshR@94.198.43.53) has quit (Ping timeout: 265 seconds)
+2021-04-05 10:40:26	<--	fabic_ (~fabic@lfbn-reu-1-377-201.w92-130.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2021-04-05 10:42:21	-->	zarakshR (~zarakshR@94.198.43.53) has joined #archlinux
+2021-04-05 10:43:10	<--	charlie5 (~rod@pa49-180-14-204.pa.nsw.optusnet.com.au) has quit (Quit: Leaving.)
+2021-04-05 10:43:50	<--	hejux (~hejux@43.129.80.244) has quit (Quit: WeeChat 3.1)
+2021-04-05 10:44:13	-->	flyingpig (~dongsibo@bras-base-gmlyon2002w-grc-25-70-51-253-138.dsl.bell.ca) has joined #archlinux
+2021-04-05 10:45:14	<--	flyingpig (~dongsibo@bras-base-gmlyon2002w-grc-25-70-51-253-138.dsl.bell.ca) has left #archlinux
+2021-04-05 10:47:06	-->	vee (~vee@unaffiliated/vee) has joined #archlinux
+2021-04-05 10:47:25	-->	AlwaysLivid (~AlwaysLiv@gateway/tor-sasl/alwayslivid) has joined #archlinux
+2021-04-05 10:48:13	<--	jkwnki (~jkwnki@p200300cd4719ca00f02d8b35492d8b8d.dip0.t-ipconnect.de) has quit (Quit: WeeChat 2.8)
+2021-04-05 10:48:26	<--	stree (~stree@68.36.8.116) has quit (Ping timeout: 268 seconds)
+2021-04-05 10:48:28	-->	jkwnki (~jkwnki@p200300cd4719ca00f02d8b35492d8b8d.dip0.t-ipconnect.de) has joined #archlinux
+2021-04-05 10:48:41	<--	jkwnki (~jkwnki@p200300cd4719ca00f02d8b35492d8b8d.dip0.t-ipconnect.de) has quit (Client Quit)
+2021-04-05 10:48:44	<--	zarakshR (~zarakshR@94.198.43.53) has quit (Read error: Connection reset by peer)
+2021-04-05 10:49:36	-->	GWM-Deus (~GWM@unaffiliated/gwm) has joined #archlinux
+2021-04-05 10:50:27	HaMsTeRs	Oh, MS's first OS was not DOS
+2021-04-05 10:51:00	-->	SpinTronix_ (~SpinTroni@HSI-KBW-091-089-020-221.hsi2.kabelbw.de) has joined #archlinux
+2021-04-05 10:52:12	<--	vee (~vee@unaffiliated/vee) has quit (Ping timeout: 240 seconds)
+2021-04-05 10:52:31	-->	alexvp (~Thunderbi@195.140.213.167) has joined #archlinux
+2021-04-05 10:52:58	HaMsTeRs	https://en.wikipedia.org/wiki/Xenix
+2021-04-05 10:52:58	phrik	Title: Xenix - Wikipedia (at en.wikipedia.org)
+2021-04-05 10:53:44	-->	amahl (~amahl@dxv5skyggnhzpjw5cxj1t-3.rev.dnainternet.fi) has joined #archlinux
+2021-04-05 10:54:58	-->	_thelion_ (~matthias@88-117-124-230.adsl.highway.telekom.at) has joined #archlinux
+2021-04-05 10:55:02	-->	vee (~vee@unaffiliated/vee) has joined #archlinux
+2021-04-05 10:55:14	<--	tasse (~tasse@55d4706a.access.ecotel.net) has quit (Quit: Bye)
+2021-04-05 10:55:19	wyre	HaMsTeRs, TIL
+2021-04-05 10:55:56	-->	zarakshR (~zarakshR@1.39.130.249) has joined #archlinux
+2021-04-05 10:56:40	-->	tasse (~tasse@55d4706a.access.ecotel.net) has joined #archlinux
+2021-04-05 10:56:53	-->	jehelset (~jeh@cm-84.209.80.117.getinternet.no) has joined #archlinux
+2021-04-05 10:58:17	HaMsTeRs	:D I'm actually rading some articles (wiki) for memory modes
+2021-04-05 10:58:21	HaMsTeRs	and found this gold
+2021-04-05 10:58:22	-->	yifan (~Thunderbi@101.228.43.52) has joined #archlinux
+2021-04-05 10:58:23	HaMsTeRs	:D
+2021-04-05 10:58:26	HaMsTeRs	:D
+2021-04-05 10:58:28	HaMsTeRs	:D
+2021-04-05 10:58:30	-->	hejux (~hejux@193.122.100.11) has joined #archlinux
+2021-04-05 10:58:30	HaMsTeRs	:D
+2021-04-05 10:58:30	<--	EMIYA has kicked HaMsTeRs (flood limit)
+2021-04-05 10:58:40	-->	HaMsTeRs (~mx@182.152.59.64) has joined #archlinux
+2021-04-05 10:58:59	<--	agregory (~b42@c-98-207-137-206.hsd1.ca.comcast.net) has quit (Quit: agregory)
+2021-04-05 11:00:43	-->	stree (~stree@68.36.8.116) has joined #archlinux
+2021-04-05 11:02:45	-->	throwinsmoke6 (~throwinsm@dhcp-108-168-126-214.cable.user.start.ca) has joined #archlinux
+2021-04-05 11:04:12	<--	throwinsmoke (~throwinsm@dhcp-108-168-126-214.cable.user.start.ca) has quit (Ping timeout: 240 seconds)
+2021-04-05 11:04:12	--	throwinsmoke6 is now known as throwinsmoke
+2021-04-05 11:05:43	-->	WhyNot-POR (~WhyNot@2a01:c23:7c7d:2f00:9c33:1cd2:4bb4:d2fe) has joined #archlinux
+2021-04-07 07:43:18	-->	friday13 (~friday13@88.225.64.22) has joined #archlinux
+2021-04-07 07:43:18	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-07 07:43:18	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-07 07:43:18	--	Channel #archlinux: 1636 nicks (1 op, 0 voices, 1635 normals)
+2021-04-07 07:43:18	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-07 07:44:14	-->	abarr (~aplsm@KD113148020047.ppp-bb.dion.ne.jp) has joined #archlinux
+2021-04-07 07:44:24	<--	gratidude (~gratidude@unaffiliated/gratidude) has quit (Quit: WeeChat 3.1)
+2021-04-07 07:45:50	-->	tassee (~tasse@55d4646e.access.ecotel.net) has joined #archlinux
+2021-04-07 07:45:51	<--	tasse (~tasse@55d47966.access.ecotel.net) has quit (Ping timeout: 260 seconds)
+2021-04-07 07:45:52	-->	humachine (~sysad@unaffiliated/humachine) has joined #archlinux
+2021-04-07 07:45:57	--	tassee is now known as tasse
+2021-04-07 07:46:57	-->	gratidude (~gratidude@unaffiliated/gratidude) has joined #archlinux
+2021-04-07 07:50:13	friday13	hi
+2021-04-07 07:50:19	-->	C5OK5Y (~C5OK5Y@ip-94-113-67-204.net.upcbroadband.cz) has joined #archlinux
+2021-04-07 07:50:31	NetSysFire	!give friday13 welcome
+2021-04-07 07:50:33	phrik	friday13: Welcome to #archlinux, tell us how you fucked up.
+2021-04-07 07:51:34	<--	typebrook (~Thunderbi@123.51.177.134) has quit (Ping timeout: 260 seconds)
+2021-04-07 07:53:55	-->	emdev (~igloo@24.42.207.142) has joined #archlinux
+2021-04-07 07:55:45	<--	emdev (~igloo@24.42.207.142) has quit (Remote host closed the connection)
+2021-04-07 08:00:58	<--	Caleb (~Caleb@archlinux/user/caleb) has quit (Ping timeout: 258 seconds)
+2021-04-07 08:01:45	-->	Fr1nge (~Fr1nge@176.33.138.133) has joined #archlinux
+2021-04-07 08:04:31	-->	szorfein (~daggoth@gateway/tor-sasl/szorfein) has joined #archlinux
+2021-04-07 08:07:35	-->	typebrook (~Thunderbi@123.51.177.134) has joined #archlinux
+2021-04-07 08:07:57	<--	xulfer (uid452788@gateway/web/irccloud.com/x-ygkibcvopvcquhih) has quit (Quit: Connection closed for inactivity)
+2021-04-07 08:09:51	<--	szorfein (~daggoth@gateway/tor-sasl/szorfein) has quit (Remote host closed the connection)
+2021-04-07 08:10:13	-->	szorfein (~daggoth@gateway/tor-sasl/szorfein) has joined #archlinux
+2021-04-07 08:10:55	-->	Caleb (~Caleb@archlinux/user/caleb) has joined #archlinux
+2021-04-07 08:11:43	<--	falkjet (~falkjet@ti0051a400-2205.bb.online.no) has quit (Read error: Connection reset by peer)
+2021-04-07 08:12:23	-->	rfwef (~Thunderbi@112.96.226.30) has joined #archlinux
+2021-04-07 08:12:59	<--	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Remote host closed the connection)
+2021-04-07 08:13:06	<--	lawt (~lawt@c-73-151-3-92.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
+2021-04-07 08:15:02	<--	rtypo (~alex@unaffiliated/rtypo) has quit (Ping timeout: 252 seconds)
