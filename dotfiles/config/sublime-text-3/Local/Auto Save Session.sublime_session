@@ -243,8 +243,7 @@
 					"file": "/home/friday13/Documents/dotfiles/config.yaml",
 					"settings":
 					{
-						"buffer_size": 8132,
-						"encoding": "UTF-8",
+						"buffer_size": 8217,
 						"line_ending": "Unix"
 					}
 				}
@@ -604,7 +603,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 8132,
+								"buffer_size": 8217,
 								"regions":
 								{
 								},
