@@ -88,3 +88,68 @@
 2021-04-07 07:43:18	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
 2021-04-07 07:43:18	--	Channel #archlinux-tr: 8 nicks (2 ops, 0 voices, 6 normals)
 2021-04-07 07:43:20	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 09:36:35	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 09:36:35	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 09:36:35	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 09:36:35	--	Channel #archlinux-tr: 8 nicks (2 ops, 0 voices, 6 normals)
+2021-04-09 09:36:37	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 09:39:36	-->	I-M (~id@88.243.139.92) has joined #archlinux-tr
+2021-04-09 09:40:28	friday13	/server add twitch irc.twitch.tv/6667 -password=oauth:*** -nicks=TWITCH_NAME -username=TWITCH_NAME
+2021-04-09 09:47:17	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 09:47:17	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 09:47:17	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 09:47:17	--	Channel #archlinux-tr: 9 nicks (2 ops, 0 voices, 7 normals)
+2021-04-09 09:47:20	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 09:48:57	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 09:48:57	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 09:48:57	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 09:48:57	--	Channel #archlinux-tr: 9 nicks (2 ops, 0 voices, 7 normals)
+2021-04-09 09:48:59	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 09:58:32	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 09:58:32	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 09:58:32	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 09:58:32	--	Channel #archlinux-tr: 9 nicks (2 ops, 0 voices, 7 normals)
+2021-04-09 09:58:34	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 10:09:04	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 10:09:04	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 10:09:04	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 10:09:04	--	Channel #archlinux-tr: 9 nicks (2 ops, 0 voices, 7 normals)
+2021-04-09 10:09:06	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 10:18:36	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 10:18:36	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 10:18:36	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 10:18:36	--	Channel #archlinux-tr: 9 nicks (2 ops, 0 voices, 7 normals)
+2021-04-09 10:18:38	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 10:19:19	friday13	/set plugins.var.python.twitch.debug on
+2021-04-09 10:32:16	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 10:32:16	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 10:32:16	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 10:32:16	--	Channel #archlinux-tr: 9 nicks (2 ops, 0 voices, 7 normals)
+2021-04-09 10:32:19	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 10:48:22	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-09 10:48:22	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-09 10:48:22	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-09 10:48:22	--	Channel #archlinux-tr: 9 nicks (2 ops, 0 voices, 7 normals)
+2021-04-09 10:48:24	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-09 11:01:56	<--	ChanServ (ChanServ@services.) has quit (*.net *.split)
+2021-04-09 11:01:57	<--	aykut (~aykut@unaffiliated/aykut) has quit (*.net *.split)
+2021-04-09 11:02:00	<--	shebang (~shebang@shebang.me) has quit (*.net *.split)
+2021-04-09 11:02:01	<--	emrahnzm (~emrah@unaffiliated/emrahnzm/x-036739) has quit (*.net *.split)
+2021-04-09 11:02:01	<--	I-M (~id@88.243.139.92) has quit (*.net *.split)
+2021-04-09 11:02:03	<--	rapt0r (~rapt0r@h4.halitalptekin.com) has quit (*.net *.split)
+2021-04-09 11:02:04	<--	huseyinkozan (~hk@31.223.46.166) has quit (*.net *.split)
+2021-04-09 11:02:41	-->	ChanServ (ChanServ@services.) has joined #archlinux-tr
+2021-04-09 11:02:41	--	Mode #archlinux-tr [+o ChanServ] by barjavel.freenode.net
+2021-04-09 11:04:58	-->	huseyinkozan (~hk@31.223.46.166) has joined #archlinux-tr
+2021-04-09 11:05:38	-->	aykut (~aykut@unaffiliated/aykut) has joined #archlinux-tr
+2021-04-09 11:05:38	-->	I-M (~id@88.243.139.92) has joined #archlinux-tr
+2021-04-09 11:05:38	-->	shebang (~shebang@shebang.me) has joined #archlinux-tr
+2021-04-09 11:06:37	-->	emrahnzm (~emrah@unaffiliated/emrahnzm/x-036739) has joined #archlinux-tr
+2021-04-09 11:06:37	--	Mode #archlinux-tr [+o emrahnzm] by barjavel.freenode.net
+2021-04-09 11:49:04	-->	rapt0r (~rapt0r@h4.halitalptekin.com) has joined #archlinux-tr
+2021-04-14 14:43:14	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux-tr
+2021-04-14 14:43:14	--	Topic for #archlinux-tr is "ArchLinux | Kurulum : https://wiki.archlinux.org/index.php/Installation_Guide | Genel : https://wiki.archlinux.org/index.php/General_recommendations | SSS : https://wiki.archlinux.org/index.php/Frequently_asked_questions"
+2021-04-14 14:43:14	--	Topic set by aykut (~aykut@unaffiliated/aykut) on Sun, 18 Mar 2018 21:20:39
+2021-04-14 14:43:14	--	Channel #archlinux-tr: 7 nicks (2 ops, 0 voices, 5 normals)
+2021-04-14 14:43:16	--	Channel created on Fri, 29 Jan 2010 01:45:26
+2021-04-14 14:43:59	-->	I-M (~id@88.243.149.52) has joined #archlinux-tr

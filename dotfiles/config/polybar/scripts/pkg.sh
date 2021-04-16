@@ -6,7 +6,7 @@ icone="${HOME}/.local/share/icons/flattrcolor/apps/64/package.svg"
 
 if [ $1 ]; then
 	if [ $pac -gt 0 ] || [ $aur -gt 0 ]; then
-		$TERMINAL -e "yay -Syu"
+		$TERMINAL -e "yay -Syyu"
 	else
 		notify-send -i $icone "Güncelleniyor" "Güncelleme yok."
 	fi

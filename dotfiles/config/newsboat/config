@@ -1,62 +1,114 @@
 browser "xdg-open"
 macro o set browser "/usr/bin/mpv %u > /dev/null 2>&1 &" ; open-in-browser ; set browser "xdg-open"
 macro y set browser "youtube-dl %u"; open-in-browser ; set browser "xdg-open"
-
-#general stuff
-show-read-articles yes
-show-read-feeds yes
-auto-reload yes
-cleanup-on-quit no
-max-items 100
-feed-sort-order title-desc
-mark-as-read-on-hover yes
-display-article-progress yes
-max-browser-tabs 10
-show-keymap-hint no
-feedlist-format "%4i %9u  %t"    #"%t %d %u %U %c %S %n"
-articlelist-format  "%4i %D %?T? %-10T   ?%t"
-feedlist-title-format ""
-articlelist-title-format ""
-# reload-threads 4
-# reload-time 90
-# reload-only-visible-feeds yes
-cache-file "~/.config/newsboat/cache.db"
-
 # notifications
-notify-format "Newsboat: %d new"
+notify-format "newsboat:\n%n unread articles within %f unread feeds"
 notify-program "/usr/bin/notify-send"
 
-#keybinds
-bind-key j down
-bind-key k up
-bind-key l open
-bind-key h quit
-unbind-key g # bound to `sort` by default
-bind-key g home
-bind-key s sort
-unbind-key G # bound to `rev-sort` by default
-bind-key G end
-bind-key O open-all-unread-in-browser-and-mark-read
-unbind-key r
-bind-key r reload-all
+# Main config {{{
+    always-display-description true
+    article-sort-order date-asc
+    max-items 100
+    notify-always yes
+    notify-screen yes
+    prepopulate-query-feeds yes
+    refresh-on-startup no
+    auto-reload yes
+    reload-threads 3
+    reload-time 120
+    show-read-feeds no
+    text-width 120
+    show-keymap-hint no
+    feedlist-title-format "—[%u feeds with new articles]——%>——(%N %V)—"
+    feedlist-format "%S [%U] %-80t %?d?- %-80d&? %>"
+    articlelist-title-format "—[%T]——(%u unread, %t total)——%>——(%U)—"
+    articlelist-format "%?T?%-60T ?%t"
+    notify-format  "%I %d %n %f new articles (%n unread articles, %f unread feeds)"
+    datetime-format "%b %d %H:%M"
+    html-renderer "w3m -dump -T text/html"
+    # Podcasts config
+    download-path "~/Downloads/podcasts/%n"
+    player "mpv"
+    cache-file "~/.config/newsboat/cache.db"
+# }}}
 
-color background         default   default
-color listnormal         default   default
-color listnormal_unread  green     default
-color listfocus          yellow    default bold
-color listfocus_unread   yellow    default bold
-color info               default   default
-color article            magenta   default
+##-------- macros {{{
+## Note: macro prefix key ( default: , )
+## add video or audio to play queue using mpv (requires: mpv, youtube-dl)
+macro p set browser "mpv --ontop --speed=1.5 %u"; open-in-browser ; set browser "$BROWSER %u"
 
-# highlights
-highlight article "^(Title):.*$" red default
-highlight article "https?://[^ ]+" blue default
-highlight article "\\[image\\ [0-9]+\\]" green default
+# Play podcast
+# macro e open ; enqueue ; set browser "~/.config/newsboat/play_podcast.sh" ; open-in-browser ; set browser "$BROWSER %u" ; quit
+macro e pipe-to "grep -o 'http.*mp3' | xargs -n1 mpv --speed=1.5" ; toggle-article-read "read"
 
-# Killfiles
+# read reddit comments with rtv (reddit terminal viewer)
+# macro r set browser "rtv -l %u"; open-in-browser ; set browser "$BROWSER %u"
+macro r set browser "tmux split-window && tmux send-keys 'tuir -l %u && tmux kill-pane\n'"; open-in-browser ; set browser "$BROWSER %u"
 
-#ignore-article "*" "title =~ \"Väder\""
-#ignore-article "*" "title =~ \"Rugby\""
-#ignore-article "*" "title =~ \"Uutiset\""
-#ignore-article "*" "title =~ \"Kulturnyheterna\""
-#ignore-article "*" "title =~ \"från dagen\""
+# copy url to clipboard "yank"
+macro y set browser "echo %u | pbcopy"; open-in-browser ; set browser "$BROWSER %u"
+## }}}
+
+# disable
+# cleanup-on-quit no
+# feed-sort-order date-desc
+# mark-as-read-on-hover yes
+# display-article-progress yes
+# max-browser-tabs 10
+
+
+# Key bindings ---------------------------------- {{{
+  bind-key j down feedlist
+  bind-key k up feedlist
+  bind-key j next articlelist
+  bind-key k prev articlelist
+  bind-key J next-feed articlelist
+  bind-key K prev-feed articlelist
+  bind-key j down article
+  bind-key k up article
+  bind-key B bookmark article
+  bind-key O open-in-browser-and-mark-read
+  bind-key U show-urls
+  bind-key j down
+  bind-key k up
+  bind-key l open
+  bind-key h quit
+  unbind-key g # bound to `sort` by default
+  bind-key g home
+  bind-key s sort
+  unbind-key G # bound to `rev-sort` by default
+  bind-key G end
+  unbind-key r
+  bind-key r reload-all
+# }}}
+
+
+# formatting and colorization ------------------------------------------ {{{
+  highlight all "━━.*━━" yellow black blink
+  highlight feedlist "^ *[0-9]+ *N " color156 default
+  highlight articlelist "^ *[0-9]+ *N " color156 default
+
+  highlight article "^(Feed|Title|Author|Link|Date|Linux):.*" color75 default
+  highlight article "^Podcast Download URL:.*" color71 default
+  highlight article "^Links:" white color240 underline
+  highlight article "\\[[0-9][0-9]*\\]" color72 default bold
+  highlight article "\\[image [0-9][0-9]*\\]" color72 default bold
+  highlight article "\\[embedded flash: [0-9][0-9]*\\]" color72 default bold
+  highlight article ":.*\\(link\\)$" color74 default
+  highlight article ":.*\\(image\\)$" color74 default
+  highlight article ":.*\\(embedded flash\\)$" color74 default
+  highlight article "^(Feed|Title|Author|Link|Date):.*" yellow default bold
+
+  color info blue default
+  color listnormal color237 default
+  color listnormal_unread color244 default
+  color listfocus_unread color7 color27
+  color listfocus color7 color27
+  # color listfocus color166 color235
+  color article color244 color234
+# }}}
+
+
+# ignore-article "*" "title =~ \"Sponsor\""
+# ignore-article "*" "title =~ \"Sponsored\""
+

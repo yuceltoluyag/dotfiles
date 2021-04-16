@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CHECKINTERVAL=0.1
-DEVICE="wlp3s0"
+DEVICE="wlan0"
 
 if [ "$1" == "out" ]; then
   #ICONE=""

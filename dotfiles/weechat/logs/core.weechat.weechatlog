@@ -260,3 +260,519 @@
 2021-04-07 08:17:04		Options reloaded from fset.conf
 2021-04-07 08:17:04		ruby: scripts unloaded
 2021-04-07 08:17:04		python: scripts unloaded
+2021-04-09 09:36:17		New key binding (context "default"): meta-B => /buflist toggle
+2021-04-09 09:36:17		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:36:17		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:36:17		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:36:17		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 09:36:17		perl scripts loaded: color_popup, highmon
+2021-04-09 09:36:17		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 09:36:17		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 09:36:17		python: stdout/stderr (?):           ^
+2021-04-09 09:36:17		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 09:36:17		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 09:36:17		python scripts loaded: colorize_nicks, go, grep, text_item
+2021-04-09 09:36:17		ruby scripts loaded: colorizer
+2021-04-09 09:36:17		script: 364 scripts for WeeChat 3.1
+2021-04-09 09:36:17		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 09:41:01		irc: server added: twitch
+2021-04-09 09:42:49		irc: server "twitch" already exists, can't add it!
+2021-04-09 09:44:45		irc: server "twitch" already exists, can't add it!
+2021-04-09 09:46:39		irc: server "twitch" already exists, can't add it!
+2021-04-09 09:46:54		Options reloaded from sec.conf
+2021-04-09 09:46:54		Options reloaded from weechat.conf
+2021-04-09 09:46:54		Options reloaded from plugins.conf
+2021-04-09 09:46:54		Options reloaded from charset.conf
+2021-04-09 09:46:54		Options reloaded from logger.conf
+2021-04-09 09:46:54		Options reloaded from exec.conf
+2021-04-09 09:46:54		Options reloaded from trigger.conf
+2021-04-09 09:46:54		Options reloaded from alias.conf
+2021-04-09 09:46:54		Options reloaded from buflist.conf
+2021-04-09 09:46:54		Options reloaded from fifo.conf
+2021-04-09 09:46:54		Options reloaded from irc.conf
+2021-04-09 09:46:54		Options reloaded from relay.conf
+2021-04-09 09:46:54		Options reloaded from lua.conf
+2021-04-09 09:46:54		Options reloaded from perl.conf
+2021-04-09 09:46:54		Options reloaded from guile.conf
+2021-04-09 09:46:54		Options reloaded from python.conf
+2021-04-09 09:46:54		Options reloaded from colorize_nicks.conf
+2021-04-09 09:46:54		Options reloaded from ruby.conf
+2021-04-09 09:46:54		Options reloaded from script.conf
+2021-04-09 09:46:54		Options reloaded from fset.conf
+2021-04-09 09:46:54		ruby: scripts unloaded
+2021-04-09 09:46:54		python: scripts unloaded
+2021-04-09 09:47:02		New key binding (context "default"): meta-B => /buflist toggle
+2021-04-09 09:47:02		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:47:02		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:47:02		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:47:02		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 09:47:02		perl scripts loaded: color_popup, highmon
+2021-04-09 09:47:02		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 09:47:02		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 09:47:02		python: stdout/stderr (?):           ^
+2021-04-09 09:47:02		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 09:47:02		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 09:47:02		python scripts loaded: colorize_nicks, go, grep, text_item
+2021-04-09 09:47:02		ruby scripts loaded: colorizer
+2021-04-09 09:47:02		script: 364 scripts for WeeChat 3.1
+2021-04-09 09:47:02		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 09:47:16		irc: server added: twitch
+2021-04-09 09:48:21		irc: command "join" must be executed on connected irc server
+2021-04-09 09:48:33		Options reloaded from sec.conf
+2021-04-09 09:48:33		Options reloaded from weechat.conf
+2021-04-09 09:48:33		Options reloaded from plugins.conf
+2021-04-09 09:48:33		Options reloaded from charset.conf
+2021-04-09 09:48:33		Options reloaded from logger.conf
+2021-04-09 09:48:33		Options reloaded from exec.conf
+2021-04-09 09:48:33		Options reloaded from trigger.conf
+2021-04-09 09:48:33		Options reloaded from alias.conf
+2021-04-09 09:48:33		Options reloaded from buflist.conf
+2021-04-09 09:48:33		Options reloaded from fifo.conf
+2021-04-09 09:48:33		Options reloaded from irc.conf
+2021-04-09 09:48:33		Options reloaded from relay.conf
+2021-04-09 09:48:33		Options reloaded from lua.conf
+2021-04-09 09:48:33		Options reloaded from perl.conf
+2021-04-09 09:48:33		Options reloaded from guile.conf
+2021-04-09 09:48:33		Options reloaded from python.conf
+2021-04-09 09:48:33		Options reloaded from colorize_nicks.conf
+2021-04-09 09:48:33		Options reloaded from ruby.conf
+2021-04-09 09:48:33		Options reloaded from script.conf
+2021-04-09 09:48:33		Options reloaded from fset.conf
+2021-04-09 09:48:33		ruby: scripts unloaded
+2021-04-09 09:48:33		python: scripts unloaded
+2021-04-09 09:48:38		New key binding (context "default"): meta-B => /buflist toggle
+2021-04-09 09:48:38		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:48:38		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:48:38		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:48:38		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 09:48:38		perl scripts loaded: color_popup, highmon
+2021-04-09 09:48:38		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 09:48:38		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 09:48:38		python: stdout/stderr (?):           ^
+2021-04-09 09:48:38		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 09:48:38		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 09:48:38		python scripts loaded: colorize_nicks, go, grep, text_item
+2021-04-09 09:48:38		ruby scripts loaded: colorizer
+2021-04-09 09:48:38		script: 364 scripts for WeeChat 3.1
+2021-04-09 09:48:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 09:49:08		irc: server added: twitch
+2021-04-09 09:49:44		Options saved to sec.conf
+2021-04-09 09:49:44		Options saved to weechat.conf
+2021-04-09 09:49:44		Options saved to plugins.conf
+2021-04-09 09:49:44		Options saved to charset.conf
+2021-04-09 09:49:44		Options saved to logger.conf
+2021-04-09 09:49:44		Options saved to exec.conf
+2021-04-09 09:49:44		Options saved to trigger.conf
+2021-04-09 09:49:44		Options saved to alias.conf
+2021-04-09 09:49:44		Options saved to buflist.conf
+2021-04-09 09:49:44		Options saved to fifo.conf
+2021-04-09 09:49:44		Options saved to irc.conf
+2021-04-09 09:49:44		Options saved to relay.conf
+2021-04-09 09:49:44		Options saved to lua.conf
+2021-04-09 09:49:44		Options saved to perl.conf
+2021-04-09 09:49:44		Options saved to guile.conf
+2021-04-09 09:49:44		Options saved to python.conf
+2021-04-09 09:49:44		Options saved to colorize_nicks.conf
+2021-04-09 09:49:44		Options saved to ruby.conf
+2021-04-09 09:49:44		Options saved to script.conf
+2021-04-09 09:49:44		Options saved to fset.conf
+2021-04-09 09:50:03		Buffers list:
+2021-04-09 09:50:03		  [1] core.weechat (notify: all)
+2021-04-09 09:50:03		  [1] irc.server.freenode (notify: all)
+2021-04-09 09:50:03		  [1] irc.server.twitch (notify: all)
+2021-04-09 09:50:03		  [2] perl.highmon (notify: none)
+2021-04-09 09:50:03		  [3] irc.freenode.#archlinux (notify: all)
+2021-04-09 09:50:03		  [4] irc.freenode.#archlinux-tr (notify: all)
+2021-04-09 09:50:03		  [5] irc.twitch.yuceltoluyag (notify: all)
+2021-04-09 09:52:22		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:52:25		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:52:39		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:52:41		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:52:49		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:55:34		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:55:37		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:55:37		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:55:37		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2021-04-09 09:56:29		Too few arguments for command "/quote" (help on command: /help quote)
+2021-04-09 09:58:12		ruby: scripts unloaded
+2021-04-09 09:58:12		python: scripts unloaded
+2021-04-09 09:58:14		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:58:14		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:58:14		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 09:58:14		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 09:58:14		perl scripts loaded: color_popup, highmon
+2021-04-09 09:58:14		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 09:58:14		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 09:58:14		python: stdout/stderr (?):           ^
+2021-04-09 09:58:14		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 09:58:14		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 09:58:14		python scripts loaded: colorize_nicks, go, grep, text_item
+2021-04-09 09:58:14		ruby scripts loaded: colorizer
+2021-04-09 09:58:14		script: 364 scripts for WeeChat 3.1
+2021-04-09 09:58:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 09:58:19		irc: command "join" must be executed on connected irc server
+2021-04-09 09:59:13		irc: command "join" must be executed on irc buffer (server, channel or private)
+2021-04-09 10:05:48		Buffers list:
+2021-04-09 10:05:48		  [1] core.weechat (notify: all)
+2021-04-09 10:05:48		  [1] irc.server.freenode (notify: all)
+2021-04-09 10:05:48		  [1] irc.server.twitch (notify: all)
+2021-04-09 10:05:48		  [2] perl.highmon (notify: none)
+2021-04-09 10:05:48		  [3] irc.freenode.#archlinux (notify: all)
+2021-04-09 10:05:48		  [4] irc.freenode.#archlinux-tr (notify: all)
+2021-04-09 10:05:48		  [5] irc.twitch.yuceltoluyag (notify: all)
+2021-04-09 10:08:45		ruby: scripts unloaded
+2021-04-09 10:08:45		python: scripts unloaded
+2021-04-09 10:08:46		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:08:46		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:08:46		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:08:46		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 10:08:46		perl scripts loaded: color_popup, highmon
+2021-04-09 10:08:46		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 10:08:46		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 10:08:46		python: stdout/stderr (?):           ^
+2021-04-09 10:08:46		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 10:08:46		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 10:08:46		python scripts loaded: colorize_nicks, go, grep, text_item
+2021-04-09 10:08:46		ruby scripts loaded: colorizer
+2021-04-09 10:08:46		script: 364 scripts for WeeChat 3.1
+2021-04-09 10:08:46		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 10:10:11		Error with command "/plugin twitch.py" (help on command: /help plugin)
+2021-04-09 10:10:16		Plugins loaded:
+2021-04-09 10:10:16		  buflist: Buffers list
+2021-04-09 10:10:16		  fifo: FIFO pipe for remote control
+2021-04-09 10:10:16		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2021-04-09 10:10:16		  lua: Support of lua scripts
+2021-04-09 10:10:16		  irc: IRC (Internet Relay Chat) protocol
+2021-04-09 10:10:16		  perl: Support of perl scripts
+2021-04-09 10:10:16		  alias: Alias commands
+2021-04-09 10:10:16		  trigger: Text replacement and command execution on events triggered by WeeChat/plugins
+2021-04-09 10:10:16		  script: Script manager
+2021-04-09 10:10:16		  logger: Log buffers to files
+2021-04-09 10:10:16		  charset: Charset conversions
+2021-04-09 10:10:16		  exec: Execution of external commands in WeeChat
+2021-04-09 10:10:16		  guile: Support of scheme scripts (with Guile)
+2021-04-09 10:10:16		  fset: Fast set of WeeChat and plugins options
+2021-04-09 10:10:16		  python: Support of python scripts
+2021-04-09 10:10:16		  ruby: Support of ruby scripts
+2021-04-09 10:10:27		Error with command "/plugin help" (help on command: /help plugin)
+2021-04-09 10:10:31		[core]  /plugin  list|listfull [<name>]
+2021-04-09 10:10:31		                 load <filename> [<arguments>]
+2021-04-09 10:10:31		                 autoload [<arguments>]
+2021-04-09 10:10:31		                 reload [<name>|* [<arguments>]]
+2021-04-09 10:10:31		                 unload [<name>]
+2021-04-09 10:10:32		list/load/unload plugins
+2021-04-09 10:10:32		     list: list loaded plugins
+2021-04-09 10:10:32		 listfull: list loaded plugins (verbose)
+2021-04-09 10:10:32		     load: load a plugin
+2021-04-09 10:10:32		 autoload: autoload plugins in system or user directory
+2021-04-09 10:10:32		   reload: reload a plugin (if no name given, unload all plugins, then autoload plugins)
+2021-04-09 10:10:32		   unload: unload a plugin (if no name given, unload all plugins)
+2021-04-09 10:10:32		 filename: plugin (file) to load
+2021-04-09 10:10:32		     name: a plugin name
+2021-04-09 10:10:32		arguments: arguments given to plugin on load
+2021-04-09 10:10:32		Without argument, this command lists loaded plugins.
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/buflist.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/fifo.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/relay.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/lua.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/irc.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/perl.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/alias.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/trigger.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/script.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl.so: cannot open shared object file: No such file or directory
+2021-04-09 10:10:43		If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/logger.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/charset.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/exec.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/guile.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/fset.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/spell.so": libaspell.so.15: cannot open shared object file: No such file or directory
+2021-04-09 10:10:43		If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/python.so": a plugin with same name already exists
+2021-04-09 10:10:43		Unable to load plugin "/usr/lib/weechat/plugins/ruby.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/buflist.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/fifo.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/relay.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/lua.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/irc.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/perl.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/alias.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/trigger.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/script.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl.so: cannot open shared object file: No such file or directory
+2021-04-09 10:10:55		If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/logger.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/charset.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/exec.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/guile.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/fset.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/spell.so": libaspell.so.15: cannot open shared object file: No such file or directory
+2021-04-09 10:10:55		If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/python.so": a plugin with same name already exists
+2021-04-09 10:10:55		Unable to load plugin "/usr/lib/weechat/plugins/ruby.so": a plugin with same name already exists
+2021-04-09 10:15:43		irc: server "twitch" already exists, can't add it!
+2021-04-09 10:15:59		Option changed: irc.server.twitch.capabilities = "twitch.tv/membership,twitch.tv/commands,twitch.tv/tags"  (default if null: "")
+2021-04-09 10:16:22		Option changed: irc.server.twitch.nicks = "yuceltoluyag"  (default if null: "friday13,friday131,friday132,friday133,friday134")
+2021-04-09 10:17:15		Option changed: irc.server.twitch.password = "9p90ofvnhicsaq19oihtcssicjryxp"  (default if null: "")
+2021-04-09 10:17:47		Unknown command "/twitch" (type /help for help)
+2021-04-09 10:18:10		Options saved to sec.conf
+2021-04-09 10:18:10		Options saved to weechat.conf
+2021-04-09 10:18:10		Options saved to plugins.conf
+2021-04-09 10:18:10		Options saved to charset.conf
+2021-04-09 10:18:10		Options saved to logger.conf
+2021-04-09 10:18:10		Options saved to exec.conf
+2021-04-09 10:18:10		Options saved to trigger.conf
+2021-04-09 10:18:10		Options saved to alias.conf
+2021-04-09 10:18:10		Options saved to buflist.conf
+2021-04-09 10:18:10		Options saved to fifo.conf
+2021-04-09 10:18:10		Options saved to irc.conf
+2021-04-09 10:18:10		Options saved to relay.conf
+2021-04-09 10:18:10		Options saved to lua.conf
+2021-04-09 10:18:10		Options saved to perl.conf
+2021-04-09 10:18:10		Options saved to guile.conf
+2021-04-09 10:18:10		Options saved to python.conf
+2021-04-09 10:18:10		Options saved to colorize_nicks.conf
+2021-04-09 10:18:10		Options saved to ruby.conf
+2021-04-09 10:18:10		Options saved to script.conf
+2021-04-09 10:18:10		Options saved to fset.conf
+2021-04-09 10:18:20		ruby: scripts unloaded
+2021-04-09 10:18:20		python: scripts unloaded
+2021-04-09 10:18:22		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:18:22		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:18:22		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:18:22		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 10:18:22		perl scripts loaded: color_popup, highmon
+2021-04-09 10:18:22		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 10:18:22		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 10:18:22		python: stdout/stderr (?):           ^
+2021-04-09 10:18:22		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 10:18:22		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 10:18:22		python scripts loaded: colorize_nicks, go, grep, text_item, twitch
+2021-04-09 10:18:22		ruby scripts loaded: colorizer
+2021-04-09 10:18:22		script: 364 scripts for WeeChat 3.1
+2021-04-09 10:18:22		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 10:19:15		Option changed: plugins.var.python.twitch.debug = "on"
+2021-04-09 10:20:27		Option changed: irc.server.twitch.password = "oauth:9p90ofvnhicsaq19oihtcssicjryxp"  (default if null: "")
+2021-04-09 10:20:35		Options saved to sec.conf
+2021-04-09 10:20:35		Options saved to weechat.conf
+2021-04-09 10:20:35		Options saved to plugins.conf
+2021-04-09 10:20:35		Options saved to charset.conf
+2021-04-09 10:20:35		Options saved to logger.conf
+2021-04-09 10:20:35		Options saved to exec.conf
+2021-04-09 10:20:35		Options saved to trigger.conf
+2021-04-09 10:20:35		Options saved to alias.conf
+2021-04-09 10:20:35		Options saved to buflist.conf
+2021-04-09 10:20:35		Options saved to fifo.conf
+2021-04-09 10:20:35		Options saved to irc.conf
+2021-04-09 10:20:35		Options saved to relay.conf
+2021-04-09 10:20:35		Options saved to lua.conf
+2021-04-09 10:20:35		Options saved to perl.conf
+2021-04-09 10:20:35		Options saved to guile.conf
+2021-04-09 10:20:35		Options saved to python.conf
+2021-04-09 10:20:35		Options saved to colorize_nicks.conf
+2021-04-09 10:20:35		Options saved to ruby.conf
+2021-04-09 10:20:35		Options saved to script.conf
+2021-04-09 10:20:35		Options saved to fset.conf
+2021-04-09 10:20:44		irc: command "join" must be executed on connected irc server
+2021-04-09 10:23:28		Option changed: irc.server.twitch.password = "oauth:yicf2ucez0l4ld01rycxvzjnf39be0"  (default if null: "")
+2021-04-09 10:23:31		Options saved to sec.conf
+2021-04-09 10:23:31		Options saved to weechat.conf
+2021-04-09 10:23:31		Options saved to plugins.conf
+2021-04-09 10:23:31		Options saved to charset.conf
+2021-04-09 10:23:31		Options saved to logger.conf
+2021-04-09 10:23:31		Options saved to exec.conf
+2021-04-09 10:23:31		Options saved to trigger.conf
+2021-04-09 10:23:31		Options saved to alias.conf
+2021-04-09 10:23:31		Options saved to buflist.conf
+2021-04-09 10:23:31		Options saved to fifo.conf
+2021-04-09 10:23:31		Options saved to irc.conf
+2021-04-09 10:23:31		Options saved to relay.conf
+2021-04-09 10:23:31		Options saved to lua.conf
+2021-04-09 10:23:31		Options saved to perl.conf
+2021-04-09 10:23:31		Options saved to guile.conf
+2021-04-09 10:23:31		Options saved to python.conf
+2021-04-09 10:23:31		Options saved to colorize_nicks.conf
+2021-04-09 10:23:31		Options saved to ruby.conf
+2021-04-09 10:23:31		Options saved to script.conf
+2021-04-09 10:23:31		Options saved to fset.conf
+2021-04-09 10:23:52		Option changed: plugins.var.python.twitch.token = "yicf2ucez0l4ld01rycxvzjnf39be0"
+2021-04-09 10:23:55		Options saved to sec.conf
+2021-04-09 10:23:55		Options saved to weechat.conf
+2021-04-09 10:23:55		Options saved to plugins.conf
+2021-04-09 10:23:55		Options saved to charset.conf
+2021-04-09 10:23:55		Options saved to logger.conf
+2021-04-09 10:23:55		Options saved to exec.conf
+2021-04-09 10:23:55		Options saved to trigger.conf
+2021-04-09 10:23:55		Options saved to alias.conf
+2021-04-09 10:23:55		Options saved to buflist.conf
+2021-04-09 10:23:55		Options saved to fifo.conf
+2021-04-09 10:23:55		Options saved to irc.conf
+2021-04-09 10:23:55		Options saved to relay.conf
+2021-04-09 10:23:55		Options saved to lua.conf
+2021-04-09 10:23:55		Options saved to perl.conf
+2021-04-09 10:23:55		Options saved to guile.conf
+2021-04-09 10:23:55		Options saved to python.conf
+2021-04-09 10:23:55		Options saved to colorize_nicks.conf
+2021-04-09 10:23:55		Options saved to ruby.conf
+2021-04-09 10:23:55		Options saved to script.conf
+2021-04-09 10:23:55		Options saved to fset.conf
+2021-04-09 10:29:48		Buffer "*" not found
+2021-04-09 10:29:51		Too few arguments for command "/msg" (help on command: /help msg)
+2021-04-09 10:30:04		Too few arguments for command "/msg" (help on command: /help msg)
+2021-04-09 10:31:04		Buffers list:
+2021-04-09 10:31:04		  [1] core.weechat (notify: all)
+2021-04-09 10:31:04		  [1] irc.server.freenode (notify: all)
+2021-04-09 10:31:04		  [1] irc.server.twitch (notify: all)
+2021-04-09 10:31:04		  [2] perl.highmon (notify: none)
+2021-04-09 10:31:04		  [3] irc.freenode.#archlinux (notify: all)
+2021-04-09 10:31:04		  [4] irc.freenode.#archlinux-tr (notify: all)
+2021-04-09 10:31:04		  [5] irc.twitch.yuceltoluyag (notify: all)
+2021-04-09 10:31:04		  [6] irc.twitch.bigmomm (notify: all)
+2021-04-09 10:31:59		ruby: scripts unloaded
+2021-04-09 10:31:59		python: scripts unloaded
+2021-04-09 10:32:00		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:32:00		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:32:00		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:32:00		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 10:32:00		perl scripts loaded: color_popup, highmon
+2021-04-09 10:32:00		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 10:32:00		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 10:32:00		python: stdout/stderr (?):           ^
+2021-04-09 10:32:00		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 10:32:00		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 10:32:01		python scripts loaded: colorize_nicks, go, grep, text_item, twitch
+2021-04-09 10:32:01		ruby scripts loaded: colorizer
+2021-04-09 10:32:01		script: 364 scripts for WeeChat 3.1
+2021-04-09 10:32:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 10:35:42		Unknown command "/messages" (type /help for help)
+2021-04-09 10:38:08		Unknown command "/emoteonly" (type /help for help)
+2021-04-09 10:38:35		[core]
+2021-04-09 10:38:35		  away     command  filter   key      plugin   reload   set      version
+2021-04-09 10:38:35		  bar      cursor   help     layout   print    repeat   unset    wait   
+2021-04-09 10:38:35		  buffer   debug    history  mouse    proxy    save     upgrade  window 
+2021-04-09 10:38:35		  color    eval     input    mute     quit     secure   uptime 
+2021-04-09 10:38:35		[buflist]
+2021-04-09 10:38:35		  buflist
+2021-04-09 10:38:35		[fifo]
+2021-04-09 10:38:35		  fifo
+2021-04-09 10:38:35		[relay]
+2021-04-09 10:38:35		  relay
+2021-04-09 10:38:35		[lua]
+2021-04-09 10:38:35		  lua
+2021-04-09 10:38:35		[irc]
+2021-04-09 10:38:35		  admin       deop        kickban     nick        reconnect   servlist    users     
+2021-04-09 10:38:35		  allchan     devoice     kill        notice      rehash      squery      version   
+2021-04-09 10:38:35		  allpv       die         links       notify      remove      squit       voice     
+2021-04-09 10:38:35		  allserv     disconnect  list        op          restart     stats       wallchops 
+2021-04-09 10:38:35		  ban         halfop      lusers      oper        sajoin      summon      wallops   
+2021-04-09 10:38:35		  cap         ignore      map         part        samode      time        who       
+2021-04-09 10:38:35		  connect     info        me          ping        sanick      topic       whois     
+2021-04-09 10:38:35		  ctcp        invite      mode        pong        sapart      trace       whowas    
+2021-04-09 10:38:35		  cycle       ison        motd        query       saquit      unban     
+2021-04-09 10:38:35		  dcc         join        msg         quiet       server      unquiet   
+2021-04-09 10:38:35		  dehalfop    kick        names       quote       service     userhost  
+2021-04-09 10:38:35		[perl]
+2021-04-09 10:38:35		  highclean  highmon  perl
+2021-04-09 10:38:35		[alias]
+2021-04-09 10:38:35		  AAWAY    ANICK    CHAT     IG       LEAVE    N        SIGNOFF  V        WII    
+2021-04-09 10:38:35		  alias    BEEP     CL       J        M        Q        T        W        WW     
+2021-04-09 10:38:35		  AME      BYE      CLOSE    K        MSGBUF   REDRAW   UB       WC     
+2021-04-09 10:38:35		  AMSG     C        EXIT     KB       MUB      SAY      UMODE    WI     
+2021-04-09 10:38:35		[trigger]
+2021-04-09 10:38:35		  trigger
+2021-04-09 10:38:35		[script]
+2021-04-09 10:38:35		  script
+2021-04-09 10:38:35		[logger]
+2021-04-09 10:38:35		  logger
+2021-04-09 10:38:35		[charset]
+2021-04-09 10:38:35		  charset
+2021-04-09 10:38:35		[exec]
+2021-04-09 10:38:35		  exec
+2021-04-09 10:38:35		[guile]
+2021-04-09 10:38:35		  guile
+2021-04-09 10:38:35		[fset]
+2021-04-09 10:38:35		  fset
+2021-04-09 10:38:35		[python]
+2021-04-09 10:38:35		  go  grep  logs  python  text_item  twitch
+2021-04-09 10:38:35		[ruby]
+2021-04-09 10:38:35		  ruby
+2021-04-09 10:40:59		Too few arguments for command "/msg" (help on command: /help msg)
+2021-04-09 10:44:15		Unknown command "/getmessage" (type /help for help)
+2021-04-09 10:45:14		Unknown command "/tmi.twitch.tv" (type /help for help)
+2021-04-09 10:47:39		WeeChat main buffer can't be closed
+2021-04-09 10:47:41		ruby: scripts unloaded
+2021-04-09 10:47:41		python: scripts unloaded
+2021-04-09 10:47:52		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:47:52		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:47:52		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-09 10:47:52		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-09 10:47:52		perl scripts loaded: color_popup, highmon
+2021-04-09 10:47:52		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-09 10:47:52		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-09 10:47:52		python: stdout/stderr (?):           ^
+2021-04-09 10:47:52		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-09 10:47:52		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-09 10:47:52		python scripts loaded: colorize_nicks, go, grep, text_item, twitch
+2021-04-09 10:47:52		ruby scripts loaded: colorizer
+2021-04-09 10:47:52		script: 364 scripts for WeeChat 3.1
+2021-04-09 10:47:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-09 10:48:16		irc: command "whois" must be executed on irc buffer (server, channel or private)
+2021-04-09 14:28:10		Options reloaded from sec.conf
+2021-04-09 14:28:10		Options reloaded from weechat.conf
+2021-04-09 14:28:10		Options reloaded from plugins.conf
+2021-04-09 14:28:10		Options reloaded from charset.conf
+2021-04-09 14:28:10		Options reloaded from logger.conf
+2021-04-09 14:28:10		Options reloaded from exec.conf
+2021-04-09 14:28:10		Options reloaded from trigger.conf
+2021-04-09 14:28:10		Options reloaded from alias.conf
+2021-04-09 14:28:10		Options reloaded from buflist.conf
+2021-04-09 14:28:10		Options reloaded from fifo.conf
+2021-04-09 14:28:10		Options reloaded from irc.conf
+2021-04-09 14:28:10		Options reloaded from relay.conf
+2021-04-09 14:28:10		Options reloaded from lua.conf
+2021-04-09 14:28:10		Options reloaded from perl.conf
+2021-04-09 14:28:10		Options reloaded from guile.conf
+2021-04-09 14:28:10		Options reloaded from python.conf
+2021-04-09 14:28:10		Options reloaded from colorize_nicks.conf
+2021-04-09 14:28:10		Options reloaded from ruby.conf
+2021-04-09 14:28:10		Options reloaded from script.conf
+2021-04-09 14:28:10		Options reloaded from fset.conf
+2021-04-09 14:28:10		ruby: scripts unloaded
+2021-04-09 14:28:10		python: scripts unloaded
+2021-04-14 14:42:58		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-14 14:42:58		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-14 14:42:58		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
+2021-04-14 14:42:58		perl: function "register" not found (or failed) in file "/home/friday13/.weechat/perl/autoload/multiline.pl"
+2021-04-14 14:42:58		perl scripts loaded: color_popup, highmon
+2021-04-14 14:42:58		python: stdout/stderr (?):   File "/home/friday13/.weechat/python/autoload/bandwidth.py", line 44
+2021-04-14 14:42:58		python: stdout/stderr (?):     print "This script must be run under WeeChat."
+2021-04-14 14:42:58		python: stdout/stderr (?):           ^
+2021-04-14 14:42:58		python: stdout/stderr (?): SyntaxError: Missing parentheses in call to 'print'. Did you mean print("This script must be run under WeeChat.")?
+2021-04-14 14:42:58		python: unable to parse file "/home/friday13/.weechat/python/autoload/bandwidth.py"
+2021-04-14 14:42:58		python scripts loaded: colorize_nicks, go, grep, text_item, twitch
+2021-04-14 14:42:58		ruby scripts loaded: colorizer
+2021-04-14 14:42:58		script: 364 scripts for WeeChat 3.1
+2021-04-14 14:42:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+2021-04-14 15:10:37		Options reloaded from sec.conf
+2021-04-14 15:10:37		Options reloaded from weechat.conf
+2021-04-14 15:10:37		Options reloaded from plugins.conf
+2021-04-14 15:10:37		Options reloaded from charset.conf
+2021-04-14 15:10:37		Options reloaded from logger.conf
+2021-04-14 15:10:37		Options reloaded from exec.conf
+2021-04-14 15:10:37		Options reloaded from trigger.conf
+2021-04-14 15:10:37		Options reloaded from alias.conf
+2021-04-14 15:10:37		Options reloaded from buflist.conf
+2021-04-14 15:10:37		Options reloaded from fifo.conf
+2021-04-14 15:10:37		Options reloaded from irc.conf
+2021-04-14 15:10:37		Options reloaded from relay.conf
+2021-04-14 15:10:37		Options reloaded from lua.conf
+2021-04-14 15:10:37		Options reloaded from perl.conf
+2021-04-14 15:10:37		Options reloaded from guile.conf
+2021-04-14 15:10:37		Options reloaded from python.conf
+2021-04-14 15:10:37		Options reloaded from colorize_nicks.conf
+2021-04-14 15:10:37		Options reloaded from ruby.conf
+2021-04-14 15:10:37		Options reloaded from script.conf
+2021-04-14 15:10:37		Options reloaded from fset.conf
+2021-04-14 15:10:37		ruby: scripts unloaded
+2021-04-14 15:10:37		python: scripts unloaded

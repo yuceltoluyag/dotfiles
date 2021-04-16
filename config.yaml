@@ -303,6 +303,12 @@ dotfiles:
     src: srv/http
     dst: /srv/http
     chmod: '757'
+  f_thinkfan.conf:
+    src: etc/thinkfan.conf
+    dst: /etc/thinkfan.conf
+  f_default.pa:
+    src: etc/pulse/default.pa
+    dst: /etc/pulse/default.pa
 profiles:
   f13:
     dotfiles:
@@ -400,3 +406,5 @@ profiles:
     - f_php.ini
     - f_httpd.conf
     - d_http
+    - f_thinkfan.conf
+    - f_default.pa

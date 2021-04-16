@@ -1,6 +1,3 @@
-sudo mv grub /etc/default/
-cd ..
-ls
 cd lightdm/
 ls
 sudo mv * /etc/lightdm/
@@ -498,3 +495,6 @@ exit
 ls
 pwd
 clear
+clear
+exit
+exit

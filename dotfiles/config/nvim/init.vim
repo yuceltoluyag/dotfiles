@@ -7,6 +7,9 @@ source $HOME/.config/nvim/custom/fzf.vim
 source $HOME/.config/nvim/custom/start-screen.vim
 source $HOME/.config/nvim/custom/sneak.vim
 source $HOME/.config/nvim/custom/quickscope.vim
+source $HOME/.config/nvim/custom/floaterm.vim
+source $HOME/.config/nvim/custom/snippets.vim
+source $HOME/.config/nvim/custom/sass.vim
 filetype off
 " Force loading python3
 if has('python3')
@@ -47,6 +50,14 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'justinmk/vim-sneak'
   Plug 'unblevable/quick-scope'
   Plug 'liuchengxu/vim-which-key'
+  Plug 'voldikss/vim-floaterm'
+  Plug 'honza/vim-snippets'
+  Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
+  Plug 'JulesWang/css.vim'
+  Plug 'tpope/vim-haml'
+  Plug 'AtsushiM/search-parent.vim'
+  Plug 'AtsushiM/sass-compile.vim'
+
 call plug#end()
 
 " Enable theming support

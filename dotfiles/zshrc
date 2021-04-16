@@ -26,7 +26,7 @@ alias hata='systemctl --failed'
 alias hatalog='journalctl -p 3 -xb'
 alias aynalar='sudo reflector --country Germany --age 12 --protocol https --sort rate --verbose --save /etc/pacman.d/mirrorlist'
 alias ytmp3='youtube-dl --download-archive downloaded.txt --no-post-overwrites -ciwx --embed-thumbnail --audio-quality 0 --add-metada  --audio-format mp3 -o "%(title)s.%(ext)s"'
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' 
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias subconfig='subl3 .config/i3/config'
 alias subzsh='subl3 .zshrc'
 alias subi3blo='subl3 .config/i3/i3blocks.conf'
@@ -64,7 +64,7 @@ shopt -s cdspell 2> /dev/null
 
 # -------------------------------- Export ---------------------------------
 
-PATH="$HOME/.script:$PATH" 
+PATH="$HOME/.script:$PATH"
 export PATH
 PATH="$HOME/.config/composer/vendor/bin:$PATH"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
@@ -82,15 +82,13 @@ export WALLPAPERDIR="$HOME/Pictures/"
 export EDITOR="$(if [[ -n $DISPLAY ]]; then echo 'nvim'; else echo 'subl3'; fi)"
 export TERMINAL="rxvt-unicode"
 export BROWSER="google-chrome-stable"
+export BROWSERCLI=w3m
 export READER="zathura"
 export FILE="thunar"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export SSH_KEY_PATH="~/.ssh/id_rsa"
-HISTFILE="$XDG_DATA_HOME"/zsh/history
-HISTSIZE=1000000
-SAVEHIST=1000000
 export PATH="$HOME/.local/bin":$PATH
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999

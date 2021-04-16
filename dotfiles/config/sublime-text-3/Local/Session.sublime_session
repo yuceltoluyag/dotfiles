@@ -1,12 +1,10 @@
 {
 	"folder_history":
 	[
-		"/home/friday13/.script",
-		"/home/friday13",
-		"/home/friday13/.pacbac"
+		"/home/friday13/Documents/Baba"
 	],
 	"last_version": 3211,
-	"last_window_id": 8,
+	"last_window_id": 2,
 	"log_indexing": false,
 	"settings":
 	{
@@ -30,27 +28,19 @@
 				"selected_items":
 				[
 					[
+						"color",
+						"UI: Select Color Scheme"
+					],
+					[
 						"instal",
 						"Package Control: Install Package"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"packa",
-						"Install Package Control"
-					],
-					[
-						"men",
-						"View: Toggle Menu"
 					]
 				],
 				"width": 0.0
 			},
 			"console":
 			{
-				"height": 124.0,
+				"height": 136.0,
 				"history":
 				[
 				]
@@ -66,64 +56,10 @@
 			},
 			"file_history":
 			[
-				"/home/friday13/.script/dmenuhandler",
-				"/home/friday13/.local/bin/steam-launcher",
-				"/home/friday13/.config/mimeapps.list",
-				"/home/friday13/.script/favmen",
-				"/home/friday13/.config/nvim/custom/coc.vim",
-				"/home/friday13/.config/alacritty/alacritty.yml",
-				"/home/friday13/.config/i3/config",
-				"/home/friday13/.config/Thunar/bookmarks",
-				"/home/friday13/.gtkrc-2.0",
-				"/home/friday13/.config/nvim/keys/mappings.vim",
-				"/home/friday13/.config/nvim/general/settings.vim",
-				"/home/friday13/.local/share/icons/default/index.theme",
-				"/home/friday13/.icons/default/index.theme",
-				"/home/friday13/.script/favori",
-				"/home/friday13/.config/coc/commands",
-				"/home/friday13/.config/nvim/custom/paths.vim",
-				"/home/friday13/.vimrc",
-				"/home/friday13/.vimrc.plug",
-				"/home/friday13/.zshrc",
-				"/home/friday13/.tmux.conf",
-				"/home/friday13/.config/nvim/coc-settings.json",
-				"/home/friday13/.config/ranger/rc.conf",
-				"/home/friday13/.config/nvim/init.vim",
-				"/home/friday13/.config/tumbler.rc",
-				"/home/friday13/.ssh/id_ed25519.pub",
-				"/home/friday13/.config/nvim/coc",
-				"/home/friday13/.viminfo",
-				"/home/friday13/.tmux.powerline.conf",
-				"/home/friday13/.vimrc.lightline",
-				"/home/friday13/.vimrc.maps",
-				"/home/friday13/installer.sh",
-				"/home/friday13/.vim/rc/dein.toml",
-				"/home/friday13/.script/temizlik",
-				"/home/friday13/.xinitrc",
-				"/home/friday13/.config/gtk-3.0/settings.ini",
-				"/home/friday13/.Xresources",
-				"/home/friday13/Downloads/curconf",
-				"/home/friday13/.profile",
-				"/home/friday13/.local/bin/notification.sh",
-				"/home/friday13/.config/rofi/config.rasi",
-				"/home/friday13/.config/qutebrowser/quickmarks",
-				"/home/friday13/.config/dunst/dunstrc",
-				"/home/friday13/.config/qutebrowser/config.py",
-				"/home/friday13/.config/qutebrowser/bookmarks/urls",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/zshrc",
-				"/home/friday13/Downloads/dotfiles-master/config.yaml",
-				"/home/friday13/mi",
-				"/etc/webapps/phpmyadmin/config.inc.php",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/etc/modules-load.d/virtualbox.conf",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/etc/default/grub",
-				"/home/friday13/Downloads/paketyukle.sh",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/baba.txt",
-				"/home/friday13/.pacbac/pkgloc.lst",
-				"/home/friday13/.Xdefaults"
 			],
 			"find":
 			{
-				"height": 63.0
+				"height": 0.0
 			},
 			"find_in_files":
 			{
@@ -137,7 +73,6 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"displayselect"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -154,21 +89,13 @@
 			},
 			"incremental_find":
 			{
-				"height": 47.0
+				"height": 0.0
 			},
 			"input":
 			{
 				"height": 0.0
 			},
-			"menu_visible": false,
-			"output.SublimeLinter":
-			{
-				"height": 0.0
-			},
-			"output.exec":
-			{
-				"height": 248.0
-			},
+			"menu_visible": true,
 			"output.find_results":
 			{
 				"height": 0.0
@@ -176,7 +103,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 90.0
+				"height": 0.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -210,13 +137,13 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 293.0,
+			"side_bar_width": 150.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			}
 		},
-		"new_window_width": 1556.0
+		"new_window_width": 1466.0
 	},
 	"windows":
 	[
@@ -229,24 +156,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/home/friday13/.config/nvim/init.vim",
-					"settings":
-					{
-						"buffer_size": 3546,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/friday13/.config/nvim/keys/which-key.vim",
-					"settings":
-					{
-						"buffer_size": 2776,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -260,27 +169,19 @@
 				"selected_items":
 				[
 					[
-						"men",
-						"View: Toggle Menu"
-					],
-					[
 						"instal",
 						"Package Control: Install Package"
 					],
 					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"packa",
-						"Install Package Control"
+						"color",
+						"UI: Select Color Scheme"
 					]
 				],
 				"width": 0.0
 			},
 			"console":
 			{
-				"height": 124.0,
+				"height": 136.0,
 				"history":
 				[
 				]
@@ -294,119 +195,73 @@
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
+			"expanded_folders":
+			[
+				"/home/friday13/Documents/Baba",
+				"/home/friday13/Documents/Baba/_posts"
+			],
 			"file_history":
 			[
-				"/home/friday13/.config/nvim/custom/quickscope.vim",
-				"/home/friday13/.config/nvim/custom/sneak.vim",
-				"/home/friday13/.config/nvim/custom/signify.vim",
-				"/home/friday13/.config/nvim/custom/start-screen.vim",
-				"/home/friday13/.script/pywal-discord",
-				"/home/friday13/.gtkrc-2.0",
-				"/home/friday13/.config/nvim/custom/rnvimr.vim",
-				"/home/friday13/.config/ranger/rc.conf",
-				"/home/friday13/.config/nvim/init.vim",
-				"/home/friday13/.zshrc",
-				"/home/friday13/.config/nvim/general/settings.vim",
-				"/home/friday13/.config/nvim/custom/fzf.vim",
-				"/home/friday13/Music/Kwizma/downloaded.txt",
-				"/home/friday13/.config/i3/config",
-				"/home/friday13/.script/ducksearch",
-				"/home/friday13/.script/texclear",
-				"/home/friday13/.script/torwrap",
-				"/home/friday13/.script/transadd",
-				"/home/friday13/.script/rotdir",
-				"/home/friday13/.script/rssadd",
-				"/home/friday13/.script/samedir",
-				"/home/friday13/.script/setbg",
-				"/home/friday13/.script/shortcuts",
-				"/home/friday13/Downloads/voidrice-master/.config/shell/inputrc",
-				"/home/friday13/Downloads/voidrice-master/.config/shell/bm-files",
-				"/home/friday13/Downloads/voidrice-master/.config/shell/bm-dirs",
-				"/home/friday13/Downloads/voidrice-master/.config/shell/aliasrc",
-				"/home/friday13/.script/slider",
-				"/home/friday13/.script/sysact",
-				"/home/friday13/.script/tag",
-				"/home/friday13/.script/td-toggle",
-				"/home/friday13/.script/displayselect",
-				"/home/friday13/.script/maimpick",
-				"/home/friday13/.script/noisereduce",
-				"/home/friday13/.script/opout",
-				"/home/friday13/.script/pauseallmpv",
-				"/home/friday13/.script/peertubetorrent",
-				"/home/friday13/.script/podentr",
-				"/home/friday13/.script/prompt",
-				"/home/friday13/.script/qndl",
-				"/home/friday13/.script/queueandnotify",
-				"/home/friday13/.script/ifinstalled",
-				"/home/friday13/.script/lf-select",
-				"/home/friday13/.profile",
-				"/home/friday13/.script/linkhandler",
-				"/home/friday13/.xinitrc",
-				"/home/friday13/.script/getkeys",
-				"/home/friday13/.script/dmenuunicode",
-				"/home/friday13/.script/ext",
-				"/home/friday13/.script/getbib",
-				"/home/friday13/.script/dmenurecord",
-				"/home/friday13/.script/dmenuumount",
-				"/home/friday13/.script/dmenumountcifs",
-				"/home/friday13/.script/dmenupass",
-				"/home/friday13/.script/dmenumount",
-				"/home/friday13/.script/dmenuhandler",
-				"/home/friday13/.local/bin/steam-launcher",
-				"/home/friday13/.config/mimeapps.list",
-				"/home/friday13/.script/favmen",
-				"/home/friday13/.config/nvim/custom/coc.vim",
-				"/home/friday13/.config/alacritty/alacritty.yml",
-				"/home/friday13/.config/Thunar/bookmarks",
-				"/home/friday13/.config/nvim/keys/mappings.vim",
-				"/home/friday13/.local/share/icons/default/index.theme",
-				"/home/friday13/.icons/default/index.theme",
-				"/home/friday13/.script/favori",
-				"/home/friday13/.config/coc/commands",
-				"/home/friday13/.config/nvim/custom/paths.vim",
-				"/home/friday13/.vimrc",
-				"/home/friday13/.vimrc.plug",
-				"/home/friday13/.tmux.conf",
-				"/home/friday13/.config/nvim/coc-settings.json",
-				"/home/friday13/.config/tumbler.rc",
-				"/home/friday13/.ssh/id_ed25519.pub",
-				"/home/friday13/.config/nvim/coc",
-				"/home/friday13/.viminfo",
-				"/home/friday13/.tmux.powerline.conf",
-				"/home/friday13/.vimrc.lightline",
-				"/home/friday13/.vimrc.maps",
-				"/home/friday13/installer.sh",
-				"/home/friday13/.vim/rc/dein.toml",
-				"/home/friday13/.script/temizlik",
-				"/home/friday13/.config/gtk-3.0/settings.ini",
-				"/home/friday13/.Xresources",
-				"/home/friday13/Downloads/curconf",
-				"/home/friday13/.local/bin/notification.sh",
-				"/home/friday13/.config/rofi/config.rasi",
-				"/home/friday13/.config/qutebrowser/quickmarks",
-				"/home/friday13/.config/dunst/dunstrc",
-				"/home/friday13/.config/qutebrowser/config.py",
-				"/home/friday13/.config/qutebrowser/bookmarks/urls",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/zshrc",
-				"/home/friday13/Downloads/dotfiles-master/config.yaml",
-				"/home/friday13/mi",
-				"/etc/webapps/phpmyadmin/config.inc.php",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/etc/modules-load.d/virtualbox.conf",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/etc/default/grub",
-				"/home/friday13/Downloads/paketyukle.sh",
-				"/home/friday13/Downloads/dotfiles-master/dotfiles/baba.txt",
-				"/home/friday13/.pacbac/pkgloc.lst",
-				"/home/friday13/.Xdefaults"
+				"/home/friday13/Documents/Baba/_posts/2020-11-06-facebook-toplu-grup-2021.md",
+				"/home/friday13/Documents/Baba/_posts/2021-02-09-facebook-5000-arkadas-ekleme-sureli -v2.md",
+				"/home/friday13/Documents/Baba/_posts/2020-10-24-elektronik-sigara-zararlimi-faydalimi.md",
+				"/home/friday13/Documents/Baba/_posts/2020-07-17-newsboat-kullanimi.md",
+				"/home/friday13/Documents/Baba/_posts/2020-07-06-felix-coin-guvenlimidir.md",
+				"/home/friday13/Documents/Baba/_posts/2020-07-05-archlinux-ntfs-nasil-yapilandirilir.md",
+				"/home/friday13/Documents/Baba/_posts/2020-07-03-laravel-ide-helper-kullanimi.md",
+				"/home/friday13/Documents/Baba/_posts/2020-06-24-internetten-para-kazanma-guncel-yatirimsiz.md",
+				"/home/friday13/Documents/Baba/_posts/2020-06-15-archlinux-valet-kurulumu.md",
+				"/home/friday13/Documents/Baba/_posts/2020-06-06-guncel-ucretsiz-steam-gog-epic-oyunlari - Kopya.md",
+				"/home/friday13/Documents/Baba/_posts/2020-01-04-vagrant-virtualbox-61-ile-uyumlu-hale.md",
+				"/home/friday13/Documents/Baba/_posts/2020-06-01-tavsiye-ettigim-programlar-ve-uygulamalar.md",
+				"/home/friday13/Documents/Baba/_posts/2020-04-18-linux-ekran-karti-kurulumu.md",
+				"/home/friday13/Documents/Baba/_posts/2020-02-06-phpstorm-icerisinde-phpcsfixer.md",
+				"/home/friday13/Documents/Baba/_posts/2020-02-04-imap-openssl-terminalde-kullanim.md",
+				"/home/friday13/Documents/Baba/_posts/2020-02-03-modern-mutt-kurulumu.md",
+				"/home/friday13/Documents/Baba/_posts/2020-01-28-zsh-icerisine-shopt-kullanmak.md",
+				"/home/friday13/Documents/Baba/_posts/2020-01-04-her-turk-gencinin-izlemesi-gereken.md",
+				"/home/friday13/Documents/Baba/_posts/2019-09-16-virtualbox-vagrant-laravel-arch-linux.md",
+				"/home/friday13/Documents/Baba/_posts/2019-12-04-windows-uzerinde-redshift-kullanm.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-10-spotifydan-muzik-nasl-indirilir-resimli.md",
+				"/home/friday13/Documents/Baba/_posts/2019-12-04-composer-yavas-indirme-sorunu-cozumu.md",
+				"/home/friday13/.config/composer/composer.json",
+				"/home/friday13/Documents/Baba/_posts/2019-11-06-phpstorm-icerisinde-cmder-kullanmak.md",
+				"/home/friday13/Documents/Baba/_posts/2019-05-10-facebook-otomatik-arkadas-ekleme-sureli.md",
+				"/home/friday13/Documents/Baba/_posts/2019-03-30-vlsub-ile-altyaz-aramaya-son-resimli.md",
+				"/home/friday13/Documents/Baba/_posts/2019-03-06-xampp-kullanarak-localhosta-ozel-alan.md",
+				"/home/friday13/Documents/Baba/_posts/2018-12-07-pdo-sum-fonksiyonu-kullanmmorrisjs.md",
+				"/home/friday13/Documents/Baba/_posts/2018-12-07-oh-my-zsh-kurulumu-tema-ve-eklentiler.md",
+				"/home/friday13/Documents/Baba/_posts/2018-12-01-terminatorgitcurlfish-yukleme.md",
+				"/home/friday13/Documents/Baba/_posts/2018-12-01-linux-ozellestirebilir-mp3-oynatcs.md",
+				"/home/friday13/Documents/Baba/_posts/2018-12-01-linux-httrack-kullanm.md",
+				"/home/friday13/Documents/Baba/_posts/2018-12-01-linux-codeigniter-son-surum-nasl.md",
+				"/home/friday13/Documents/Baba/_posts/2018-11-19-arch-linux-apachelampp-sanal-sunucu.md",
+				"/home/friday13/Documents/Baba/_posts/2018-11-18-arch-linux-lampp-kurulumuphp7xmariadbmy.md",
+				"/home/friday13/Documents/Baba/_posts/2018-11-17-windows-uzerinden-paylaslan-dosya-ve.md",
+				"/home/friday13/Documents/Baba/_posts/2018-11-17-obs-linux-browser-eklentisi-kurulumu.md",
+				"/home/friday13/Documents/Baba/_posts/2018-10-11-facebook-toplu-arkadas-eklemegruba.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-25-earncom-nedir-nasl-kullanlr.md",
+				"/home/friday13/Documents/Baba/_sass/baba.scss",
+				"/home/friday13/Documents/Baba/_posts/2018-09-21-linux-tema-nasl-yuklenir-gnome-shell-ve.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-10-sweet-alert-snf-kullanm-detayl-anlatm.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-14-linux-uzerinde-apache2-mysql-phpmyadmin_14.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-14-linuxta-uefi-windows-10-format-usb_14.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-21-git-ssh-key-olusturma-windows.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-10-kullandgm-enfes-sublime-text-eklentileri.md",
+				"/home/friday13/Documents/Baba/_posts/2018-09-13-yeni-baslayanlar-hangi-linux-surumunu.md",
+				"/home/friday13/Documents/Baba/_includes/components/series-header.html",
+				"/home/friday13/Documents/Baba/_posts/2017-12-31-site-creation.md"
 			],
 			"find":
 			{
-				"height": 63.0
+				"height": 39.0
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 155.0,
 				"where_history":
 				[
+					""
 				]
 			},
 			"find_state":
@@ -414,15 +269,22 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"Plug 'unblevable/quick-scope'",
-					"key-bindings.zsh",
-					"rooter",
-					"vim-root",
-					"fzf",
-					"default_linemode",
-					".script",
-					"~/.local/bin/i3cmds/",
-					"displayselect"
+					"div  class=\"showyourterms\"><div  class=\"type\"  data-action=\"command\"  data-delay=\"400\">",
+					"div  class=\"showyourterms\"><br /><div  class=\"type\"  data-action=\"command\"  data-delay=\"400\"><br />",
+					"Archlinux üzerinde Virtualbox + Vagrant + Laravel + Phpmyadmin Kurulumu(Homestead)",
+					"class=\"type\"  data-action=\"command\"  data-delay=\"400\">",
+					"class=\"red\">",
+					"<div",
+					"<br /><div",
+					"<div  class=\"green\">",
+					"</div>",
+					"<br /><div  class=\"green\">",
+					"</div><div  class=\"line yellow\"  data-delay=\"400\">",
+					"<div  class=\"type\"  data-action=\"command\"  data-delay=\"400\"><br />",
+					"<div  class=\"showyourterms\">",
+					"```sh",
+					"posts in this category",
+					"Part of the series"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -430,7 +292,8 @@
 				"regex": false,
 				"replace_history":
 				[
-					" ~/.script/"
+					"",
+					"```shell"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -438,226 +301,23 @@
 				"whole_word": false,
 				"wrap": true
 			},
+			"folders":
+			[
+				{
+					"path": "/home/friday13/Documents/Baba"
+				}
+			],
 			"groups":
 			[
 				{
-					"selected": 0,
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/home/friday13/.config/nvim/init.vim",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3546,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										144,
-										144
-									]
-								],
-								"settings":
-								{
-									"bracket_highlighter.busy": false,
-									"bracket_highlighter.locations":
-									{
-										"close":
-										{
-										},
-										"icon":
-										{
-										},
-										"open":
-										{
-										},
-										"unmatched":
-										{
-										}
-									},
-									"bracket_highlighter.regions":
-									[
-										"bh_c_define",
-										"bh_c_define_center",
-										"bh_c_define_open",
-										"bh_c_define_close",
-										"bh_c_define_content",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_round_content",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_default_content",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_double_quote_content",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_single_quote_content",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_angle_content",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_tag_content",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_unmatched_content",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_square_content",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_curly_content",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_regex_content"
-									],
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/friday13/.config/nvim/keys/which-key.vim",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 2776,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2454,
-										2454
-									]
-								],
-								"settings":
-								{
-									"bracket_highlighter.busy": false,
-									"bracket_highlighter.locations":
-									{
-										"close":
-										{
-										},
-										"icon":
-										{
-										},
-										"open":
-										{
-										},
-										"unmatched":
-										{
-										}
-									},
-									"bracket_highlighter.regions":
-									[
-										"bh_c_define",
-										"bh_c_define_center",
-										"bh_c_define_open",
-										"bh_c_define_close",
-										"bh_c_define_content",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close",
-										"bh_round_content",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_default_content",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_double_quote_content",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_single_quote_content",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_angle_content",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_tag_content",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_unmatched_content",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_square_content",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_curly_content",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_regex_content"
-									],
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_size": 6,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2262.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						}
 					]
 				}
 			],
 			"incremental_find":
 			{
-				"height": 47.0
+				"height": 39.0
 			},
 			"input":
 			{
@@ -686,24 +346,16 @@
 				]
 			},
 			"menu_visible": true,
-			"output.SublimeLinter":
-			{
-				"height": 0.0
-			},
-			"output.exec":
-			{
-				"height": 248.0
-			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,0,54,1556,1047,1920,1080",
+			"position": "0,0,0,0,0,0,54,1916,1047,1920,1080",
 			"project": "",
 			"replace":
 			{
-				"height": 90.0
+				"height": 74.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -741,12 +393,12 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 293.0,
+			"side_bar_width": 357.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 7,
+			"window_id": 1,
 			"workspace_name": ""
 		}
 	],

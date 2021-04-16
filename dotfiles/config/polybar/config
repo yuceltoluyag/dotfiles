@@ -1,19 +1,19 @@
 ;=====================================================
-#                     ████                ██                           
-#                     ████                ██                           
-#                       ██                ██                           
-# ██░███▒    ░████░     ██      ██▓  ▓██  ██░███▒    ▒████▓    ██░████ 
-# ███████▒  ░██████░    ██      ▒██  ██▓  ███████▒   ██████▓   ███████ 
-# ███  ███  ███  ███    ██       ██▒ ██░  ███  ███   █▒  ▒██   ███░    
-# ██░  ░██  ██░  ░██    ██       ███▒██   ██░  ░██    ▒█████   ██      
-# ██    ██  ██    ██    ██       ░██▓█▓   ██    ██  ░███████   ██      
-# ██░  ░██  ██░  ░██    ██        ████░   ██░  ░██  ██▓░  ██   ██      
-# ███  ███  ███  ███    ██▒       ▒███    ███  ███  ██▒  ███   ██      
-# ███████▒  ░██████░    █████      ██▓    ███████▒  ████████   ██      
-# ██░███▒    ░████░     ░████      ██░    ██░███▒    ▓███░██   ██      
-# ██                              ▒██                                  
-# ██                             ███▒                                  
-# ██                             ███            
+#                     ████                ██
+#                     ████                ██
+#                       ██                ██
+# ██░███▒    ░████░     ██      ██▓  ▓██  ██░███▒    ▒████▓    ██░████
+# ███████▒  ░██████░    ██      ▒██  ██▓  ███████▒   ██████▓   ███████
+# ███  ███  ███  ███    ██       ██▒ ██░  ███  ███   █▒  ▒██   ███░
+# ██░  ░██  ██░  ░██    ██       ███▒██   ██░  ░██    ▒█████   ██
+# ██    ██  ██    ██    ██       ░██▓█▓   ██    ██  ░███████   ██
+# ██░  ░██  ██░  ░██    ██        ████░   ██░  ░██  ██▓░  ██   ██
+# ███  ███  ███  ███    ██▒       ▒███    ███  ███  ██▒  ███   ██
+# ███████▒  ░██████░    █████      ██▓    ███████▒  ████████   ██
+# ██░███▒    ░████░     ░████      ██░    ██░███▒    ▓███░██   ██
+# ██                              ▒██
+# ██                             ███▒
+# ██                             ███
 ;
 ;=====================================================
 
@@ -90,12 +90,11 @@ module-margin-right = 1
 
 font-0 = Fantasque Sans Mono:style=Regular:pixelsize=11;2
 font-1 = feather:style=Regular:pixelsize=11;3
-font-2 = FontAwesome:size=11;2
-font-3 = Termsynu:size=7;0
-font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=14;1"
-font-5 = "Font Awesome 5 Free:style=Regular:pixelsize=14;1"
-font-6 = "Font Awesome 5 Brands:pixelsize=7;1"
-font-7 = "Material Icons:size=7;4"
+font-2 = Weather Icons:style=Regular
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=14;1"
+font-4 = "Font Awesome 5 Free:style=Regular:pixelsize=14;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=7;1"
+font-6 = "Material Icons:size=7;4"
 
 
 modules-left = i3 sep uptime pkg
@@ -228,7 +227,7 @@ tail = true
 
 [module/network]
 type = internal/network
-interface = wlp3s0
+interface = wlan0
 interval = 3.0
 accumulate-stats = true
 unknown-as-up = true
@@ -278,15 +277,16 @@ label = %date% %time%
 
 [module/pulse]
 type = internal/pulseaudio
-sink = alsa_output.pci-0000_00_1b.0.analog-stereo
-format-volume-prefix = "%{T2}%{T-} "
-format-volume-prefix-foreground = ${colors.secondary}
-
-format-volume = <label-volume>
-label-volume = %percentage%%
-
-label-muted = 
-label-muted-foreground = ${colors.secondary}
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = true
+interval = 5
+format-volume = <ramp-volume> <label-volume>
+label-muted =  muted
+label-muted-foreground = #666
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+click-right = pavucontrol
 
 [module/powermenu]
 type = custom/menu
@@ -362,16 +362,15 @@ module-margin-right = 1
 
 font-0 = Fantasque Sans Mono:style=Regular:pixelsize=11;2
 font-1 = feather:style=Regular:pixelsize=11;3
-font-2 = FontAwesome:size=11;2
-font-3 = Termsynu:size=7;0
-font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=14;1"
-font-5 = "Font Awesome 5 Free:style=Regular:pixelsize=14;1"
-font-6 = "Font Awesome 5 Brands:pixelsize=7;1"
-font-7 = "Material Icons:size=7;4"
-font-8 = "Weather Icons:size=12;0"
+font-2 = Weather Icons:style=Regular
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=14;1"
+font-4 = "Font Awesome 5 Free:style=Regular:pixelsize=14;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-6 = "Material Icons:size=7;4"
 
 
-modules-left = browser terminal editor thunar telegram steam sep 
+
+modules-left = browser terminal editor thunar telegram steam sep
 modules-center = mpd
 modules-right = news weather refresh lixo
 

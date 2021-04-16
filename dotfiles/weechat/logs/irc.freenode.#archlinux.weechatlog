@@ -1467,3 +1467,221 @@
 2021-04-07 08:12:59	<--	h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Remote host closed the connection)
 2021-04-07 08:13:06	<--	lawt (~lawt@c-73-151-3-92.hsd1.ca.comcast.net) has quit (Read error: Connection reset by peer)
 2021-04-07 08:15:02	<--	rtypo (~alex@unaffiliated/rtypo) has quit (Ping timeout: 252 seconds)
+2021-04-09 09:36:35	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-09 09:36:35	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-09 09:36:35	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-09 09:36:35	--	Channel #archlinux: 1672 nicks (2 ops, 0 voices, 1670 normals)
+2021-04-09 09:36:35	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-09 09:37:20	<--	astylian_ (~astylian@31-41-241.netrun.cytanet.com.cy) has quit (Ping timeout: 260 seconds)
+2021-04-09 09:37:23	-->	dvx (~dvx@185.63.97.64) has joined #archlinux
+2021-04-09 09:37:33	-->	al2o3-cr (~gr33n7007@unaffiliated/gr33n7007h) has joined #archlinux
+2021-04-09 09:37:39	<--	Dinjector (~Dinjector@gateway/tor-sasl/dinjector) has quit (Remote host closed the connection)
+2021-04-09 09:38:33	-->	darutoko (~darutoko@90.188.66.209) has joined #archlinux
+2021-04-09 09:39:00	<--	zarakshR (~zarakshR@94.198.43.37) has quit (Quit: zarakshR)
+2021-04-09 09:39:46	-->	zarakshR (~zarakshR@94.198.43.37) has joined #archlinux
+2021-04-09 09:41:45	<--	zarakshR (~zarakshR@94.198.43.37) has quit (Client Quit)
+2021-04-09 09:41:50	-->	SanskritFritz (~quassel@2E8B45C2.unconfigured.pool.telekom.hu) has joined #archlinux
+2021-04-09 09:42:59	waka95	What are the best practices regarding the connection to the channel?
+2021-04-09 09:43:20	<--	lord| (~solenodic@unaffiliated/solenodic) has quit (Ping timeout: 268 seconds)
+2021-04-09 09:43:45	-->	cotko (~cotko@188-230-251-153.dynamic.t-2.net) has joined #archlinux
+2021-04-09 09:43:58	-->	dolly (~dolly@200-149-190-109.dsl.ovh.fr) has joined #archlinux
+2021-04-09 09:44:21	dostoyevsky	I read yesterday that hibernation often doesn not work on Linux with modern laptops -- but that doesn't mean that sleep doesn't work, right?
+2021-04-09 09:44:34	<--	DrD33M (~DrD33M@218-215-247-65.sta.wbroadband.net.au) has quit (Ping timeout: 268 seconds)
+2021-04-09 09:44:51	Edu4rdSHL	dostoyevsky, where do you read that? Here?
+2021-04-09 09:45:00	<--	swalladge (~swalladge@unaffiliated/swalladge) has quit (Quit: Goodbye)
+2021-04-09 09:45:30	node1	But why i'm getting `NTP service: inactive`  using `timedatectl`  while enabling it using `timedatectl set-ntp true` ?
+2021-04-09 09:45:42	Edu4rdSHL	Hibernation works fine in any computer if set up correctly
+2021-04-09 09:46:14	Edu4rdSHL	node1, systemctl status systemd-timesyncd.service
+2021-04-09 09:46:43	Edu4rdSHL	The fact that you have used set-ntp true doesn't mean that the service will be started instantly
+2021-04-09 09:47:17	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-09 09:47:17	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-09 09:47:17	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-09 09:47:17	--	Channel #archlinux: 1672 nicks (2 ops, 0 voices, 1670 normals)
+2021-04-09 09:47:17	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-09 09:47:39	node1	Active: inactive (dead) using systemctl status systemd-timesyncd.service
+2021-04-09 09:47:52	node1	So how to make it active?
+2021-04-09 09:47:57	-->	lord| (~solenodic@unaffiliated/solenodic) has joined #archlinux
+2021-04-09 09:48:21	Edu4rdSHL	starting it
+2021-04-09 09:48:29	Taxus	Edu4rdSHL: A bit more on the BT, seems like my headset only has the Handsfree UUID, HSP/HFP would want both of them (Handsfree and Headset) to exist on the device for it to work. A forum thread from 2017 claimed that this should be patched in the pulseaudio-modules-bt-git AUR-package but no success.
+2021-04-09 09:48:57	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-09 09:48:57	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-09 09:48:57	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-09 09:48:57	--	Channel #archlinux: 1673 nicks (2 ops, 0 voices, 1671 normals)
+2021-04-09 09:48:57	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-09 09:49:16	<--	parabolize (~paraboliz@c-76-25-97-149.hsd1.co.comcast.net) has quit (Quit: leaving)
+2021-04-09 09:49:21	-->	Szadek (~Szadek@92.60.40.214) has joined #archlinux
+2021-04-09 09:50:02	-->	astylian (~astylian@62-138-90.netrun.cytanet.com.cy) has joined #archlinux
+2021-04-09 09:50:47	dostoyevsky	Edu4rdSHL: https://news.ycombinator.com/item?id=26739220
+2021-04-09 09:50:48	phrik	Title: Ask HN: Why is the Linux community struggling to implement hibernation? | Hacker News (at news.ycombinator.com)
+2021-04-09 09:51:26	-->	Fr1nge (~Fr1nge@176.33.138.133) has joined #archlinux
+2021-04-09 09:51:48	-->	qub411 (~user@14-202-226-51.static.tpgi.com.au) has joined #archlinux
+2021-04-09 09:52:02	dostoyevsky	Edu4rdSHL: but they also mention archlinux later, where the wiki says the crucial part about hibernation is that your swapfile should be large enough to contain all your RAM+normal swap
+2021-04-09 09:52:16	<--	qub411 (~user@14-202-226-51.static.tpgi.com.au) has quit (Client Quit)
+2021-04-09 09:52:40	-->	bakerboy (~gordy@84.64.246.158) has joined #archlinux
+2021-04-09 09:52:56	-->	rapha (~rapha@unaffiliated/rapha) has joined #archlinux
+2021-04-09 09:53:17	Edu4rdSHL	dostoyevsky, all the used RAM
+2021-04-09 09:53:36	<--	waka95 (~waka95@147.234.93.153) has quit (Quit: leaving)
+2021-04-09 09:54:10	Edu4rdSHL	You can have 32GB of RAM then power on your PC and hibernate in a 2GB swap partition
+2021-04-09 09:54:21	<--	ngrammel (ad49c47f@pool-173-73-196-127.washdc.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2021-04-09 09:54:32	-->	SomeHacker_ (~somehacke@gateway/tor-sasl/somehacker) has joined #archlinux
+2021-04-09 09:54:53	Edu4rdSHL	Now, if you use 30GB of RAM in average, then you should have a 30GB swap partition or 32
+2021-04-09 09:55:15	<--	GiorgioBruxx (~giorg@130.61.190.129) has quit (Ping timeout: 260 seconds)
+2021-04-09 09:56:20	<--	SomeHacker (~somehacke@gateway/tor-sasl/somehacker) has quit (Ping timeout: 240 seconds)
+2021-04-09 09:56:56	dostoyevsky	Yeah, alas my swap partition is just 32g, at 64G of ram... I guess I will have to extend it at some point... but I also think just sleep should be enough for me
+2021-04-09 09:57:18	<--	darnir (~darnir@2a01:4f8:190:73b0::2) has quit (Quit: ZNC - https://znc.in)
+2021-04-09 09:58:05	<--	fibonacchoz (~fibonacch@cpe-66-68-144-149.austin.res.rr.com) has quit (Ping timeout: 240 seconds)
+2021-04-09 09:58:32	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-09 09:58:32	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-09 09:58:32	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-09 09:58:32	--	Channel #archlinux: 1672 nicks (2 ops, 0 voices, 1670 normals)
+2021-04-09 09:58:32	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-09 09:58:33	Edu4rdSHL	:p
+2021-04-09 09:58:42	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Read error: Connection reset by peer)
+2021-04-09 09:59:44	Edu4rdSHL	gehidore, if it uses a good comprtession algorithm such as zstd or lz4 the results would be good
+2021-04-09 10:01:17	-->	darnir (~darnir@2a01:4f8:190:73b0::2) has joined #archlinux
+2021-04-09 10:02:05	gehidore	so to say one needs 30G because they "used" 32G of ram is probably still not correct, my brain isn't functioning will enough with this migraine to find the reference in the kernel docs to say exactly what the rumored change was. I'm sure if anything it was something like let's use more if it's available and if there's full capacity on ssd let's do the whole thing but the reality is that many
+2021-04-09 10:02:07	gehidore	things are no longer needed at that point since resume is a cold boot until you hit the resume hook
+2021-04-09 10:02:33	-->	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux
+2021-04-09 10:02:35	-->	aggam (~aggam@5.28.133.105) has joined #archlinux
+2021-04-09 10:03:04	<--	bakerboy (~gordy@84.64.246.158) has quit (Ping timeout: 268 seconds)
+2021-04-09 10:03:37	<--	unluckyshrubbery (~unluckysh@unaffiliated/unluckyshrubbery) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-04-09 10:03:46	-->	Sorna (~Sornaensi@077213203030.dynamic.telenor.dk) has joined #archlinux
+2021-04-09 10:03:49	Edu4rdSHL	gehidore, I was not aware of it tbh
+2021-04-09 10:03:55	Edu4rdSHL	But yeah, that makes sense
+2021-04-09 10:04:12	-->	nob0dy (~nob0dy@23.82.14.18) has joined #archlinux
+2021-04-09 10:04:28	-->	Sorny (~Sornaensi@79.142.232.102) has joined #archlinux
+2021-04-09 10:05:39	-->	Major_Biscuit (~Major_Bis@82-169-100-198.biz.kpn.net) has joined #archlinux
+2021-04-09 10:05:44	<--	CosmosAt1 (~CosmosAtl@180.110.107.139) has quit (Quit: WeeChat 3.1)
+2021-04-09 10:05:52	<--	daex (daex@gateway/vpn/protonvpn/daex) has quit (Ping timeout: 246 seconds)
+2021-04-09 10:06:04	-->	CosmosAtlas (~CosmosAtl@180.110.107.139) has joined #archlinux
+2021-04-09 10:06:13	-->	daex (daex@gateway/vpn/protonvpn/daex) has joined #archlinux
+2021-04-09 10:06:46	<--	tinux (~tinux@fractal.puls.ruhr-uni-bochum.de) has quit (Quit: Leaving)
+2021-04-09 10:08:04	-->	_schrotti (~schrotti@p200300cb6716ba0144629c98254c8e2b.dip0.t-ipconnect.de) has joined #archlinux
+2021-04-09 10:08:40	<--	Sorna (~Sornaensi@077213203030.dynamic.telenor.dk) has quit (Ping timeout: 260 seconds)
+2021-04-09 10:09:04	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-09 10:09:04	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-09 10:09:04	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-09 10:09:04	--	Channel #archlinux: 1675 nicks (2 ops, 0 voices, 1673 normals)
+2021-04-09 10:09:04	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-09 10:09:19	-->	is_null (~jpic@pdpc/supporter/professional/is-null) has joined #archlinux
+2021-04-09 10:09:23	-->	incendiary (~Thunderbi@5.18.157.79) has joined #archlinux
+2021-04-09 10:10:41	<--	frolv (~frolv@c-73-63-147-128.hsd1.ca.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-04-09 10:11:03	gehidore	I tried, can't do it, maybe I'll look tomorrow
+2021-04-09 10:11:21	-->	desmu (~desmu@ip-37-201-133-101.hsi13.unitymediagroup.de) has joined #archlinux
+2021-04-09 10:11:34	gehidore	I know for a very long time it's been defaults to 2/5 available ram
+2021-04-09 10:12:34	-->	panikovsky (~panikovsk@87.117.49.186) has joined #archlinux
+2021-04-09 10:13:45	<--	Netleak (~root@vmi138365.contaboserver.net) has quit (Quit: WeeChat 3.1-dev)
+2021-04-09 10:13:59	<--	nob0dy (~nob0dy@23.82.14.18) has quit (Ping timeout: 252 seconds)
+2021-04-09 10:15:06	Prestige	!paste
+2021-04-09 10:15:06	phrik	Paste short snippets (up to 3 lines) in channel. Please do NOT use pastebin.com or paste.ubuntu.com -- some good, sane paste services are http://ix.io, https://paste.rs, https://bpaste.net and https://gist.github.com. See !ix or !rs for an easy way to paste from a pipe.
+2021-04-09 10:15:50	-->	nob0dy (~nob0dy@23.82.14.18) has joined #archlinux
+2021-04-09 10:16:16	-->	zyga (~zyga@unaffiliated/zyga) has joined #archlinux
+2021-04-09 10:16:56	<--	finkata1 (~finkata@83.222.188.39) has quit (Read error: Connection reset by peer)
+2021-04-09 10:17:38	-->	finkata1 (~finkata@83.222.188.39) has joined #archlinux
+2021-04-09 10:17:49	-->	PoPpiLLs (~PoPpiLLs@64.44.32.101) has joined #archlinux
+2021-04-09 10:18:09	<--	overfiend (~PoPpiLLs@64.44.32.101) has quit (Read error: Connection reset by peer)
+2021-04-09 10:18:36	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-09 10:18:36	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-09 10:18:36	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-09 10:18:36	--	Channel #archlinux: 1678 nicks (2 ops, 0 voices, 1676 normals)
+2021-04-09 10:18:36	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-09 10:18:48	Prestige	Does this look like an issue of the game or am I missing a vital dep?
+2021-04-09 10:20:32	<--	is_null (~jpic@pdpc/supporter/professional/is-null) has quit (Remote host closed the connection)
+2021-04-09 10:21:03	<--	CosmosAtlas (~CosmosAtl@180.110.107.139) has quit (Quit: WeeChat 3.1)
+2021-04-09 10:22:13	-->	glumanda (~manu@194-208-201-025.tele.net) has joined #archlinux
+2021-04-09 10:22:54	-->	CosmosAtlas (~CosmosAtl@180.110.107.139) has joined #archlinux
+2021-04-09 10:24:42	<--	CosmosAtlas (~CosmosAtl@180.110.107.139) has quit (Client Quit)
+2021-04-09 10:25:03	-->	CosmosAtlas (~CosmosAtl@180.110.107.139) has joined #archlinux
+2021-04-09 10:26:12	<--	CosmosAtlas (~CosmosAtl@180.110.107.139) has quit (Client Quit)
+2021-04-09 10:26:29	-->	CosmosAtlas (~CosmosAtl@180.110.107.139) has joined #archlinux
+2021-04-09 10:28:08	<--	wallacer (~quassel@2001:bc8:1824:9a:cafe:babe:b00b:aa01) has quit (Ping timeout: 258 seconds)
+2021-04-09 10:29:36	-->	Netleak (~root@vmi138365.contaboserver.net) has joined #archlinux
+2021-04-09 10:29:37	<--	CosmosAtlas (~CosmosAtl@180.110.107.139) has quit (Client Quit)
+2021-04-09 10:29:59	-->	CosmosAtlas (~CosmosAtl@180.110.107.139) has joined #archlinux
+2021-04-09 10:31:26	-->	wallacer (~quassel@2001:bc8:1824:9a:cafe:babe:b00b:aa03) has joined #archlinux
+2021-04-09 10:31:58	-->	hering (~hering@200116b82af9130067b6b8828a7c0164.dip.versatel-1u1.de) has joined #archlinux
+2021-04-09 10:32:16	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-09 10:32:16	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-09 10:32:16	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-09 10:32:16	--	Channel #archlinux: 1680 nicks (2 ops, 0 voices, 1678 normals)
+2021-04-09 10:32:16	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-09 10:35:59	-->	_thelion_ (~matthias@88-117-124-230.adsl.highway.telekom.at) has joined #archlinux
+2021-04-09 10:39:27	<--	silentz0r (~silentz0r@unaffiliated/silentz0r) has quit (Ping timeout: 268 seconds)
+2021-04-09 10:39:35	-->	random-nick (~random-ni@unaffiliated/random-nick) has joined #archlinux
+2021-04-09 10:39:39	-->	oliverwiegers (~oliverwie@p4fc12c4a.dip0.t-ipconnect.de) has joined #archlinux
+2021-04-09 10:39:47	<--	hering (~hering@200116b82af9130067b6b8828a7c0164.dip.versatel-1u1.de) has quit
+2021-04-09 10:41:57	<--	zyga (~zyga@unaffiliated/zyga) has quit (Quit: zyga)
+2021-04-09 10:43:20	-->	zyga (~zyga@unaffiliated/zyga) has joined #archlinux
+2021-04-09 10:44:26	<--	horseface_ (~horseface@unaffiliated/horseface) has quit (Quit: Leaving)
+2021-04-09 10:44:32	<--	incendiary (~Thunderbi@5.18.157.79) has quit (Quit: incendiary)
+2021-04-09 10:46:14	<--	oliverwiegers (~oliverwie@p4fc12c4a.dip0.t-ipconnect.de) has quit (Ping timeout: 268 seconds)
+2021-04-09 10:47:07	<--	Netleak (~root@vmi138365.contaboserver.net) has quit (Quit: WeeChat 3.1-dev)
+2021-04-14 14:43:13	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-14 14:43:13	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-14 14:43:13	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-14 14:43:14	--	Channel #archlinux: 1723 nicks (2 ops, 0 voices, 1721 normals)
+2021-04-14 14:43:14	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-14 14:44:35	<--	cottoneyejim (~cottoneye@89-212-210-22.dynamic.t-2.net) has quit (Ping timeout: 265 seconds)
+2021-04-14 14:45:34	<--	PsychoTron (~PsychoTro@2001:999:61:3fc:aed7:155d:8404:42d) has quit (Client Quit)
+2021-04-14 14:46:36	-->	salkin-mada (~salkin-ma@138.251.92.62.static.cust.telenor.com) has joined #archlinux
+2021-04-14 14:47:05	-->	cotko_ (~cotko@BSN-182-70-108.dynamic.siol.net) has joined #archlinux
+2021-04-14 14:48:08	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 252 seconds)
+2021-04-14 14:48:38	-->	Foxfir3 (~Foxfir3@77.33.2.45.dhcp.fibianet.dk) has joined #archlinux
+2021-04-14 14:48:46	<--	GuiltySpark343 (~GuiltySpa@unaffiliated/guiltyspark343) has quit (Quit: GuiltySpark343)
+2021-04-14 14:49:02	-->	PsychoTron (~PsychoTro@2001:999:61:3fc:aed7:155d:8404:42d) has joined #archlinux
+2021-04-14 14:49:35	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-14 14:49:48	<--	zeraphel (~daddy@185.175.34.150) has quit (Quit: zeraphel)
+2021-04-14 14:49:49	PsychoTron	ok now it's not burning at all
+2021-04-14 14:50:04	-->	zeraphel (~daddy@185.175.34.150) has joined #archlinux
+2021-04-14 14:50:41	-->	tkrizek (tkrizekmat@gateway/shell/matrix.org/x-qbwpalplvhdsvhuz) has joined #archlinux
+2021-04-14 14:51:05	<--	cotko (~cotko@2a00:ee2:1107:6300:eaaa:4035:e183:fa8f) has quit (Ping timeout: 260 seconds)
+2021-04-14 14:52:43	<--	Tom^ (~Tom^@unaffiliated/tom/x-6084202) has quit (Quit: Segmentation Fault (Tom^ dumped))
+2021-04-14 14:53:00	-->	Foxfir3_ (~Foxfir3@77.33.2.45.dhcp.fibianet.dk) has joined #archlinux
+2021-04-14 14:53:38	<--	Nomenclatura (~p89b7r@189.217.2.182) has quit (Ping timeout: 252 seconds)
+2021-04-14 14:53:43	-->	Tom^ (~Tom^@unaffiliated/tom/x-6084202) has joined #archlinux
+2021-04-14 14:54:11	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 240 seconds)
+2021-04-14 14:54:18	<--	fe80 (~fe80@gateway/tor-sasl/fe80) has quit (Remote host closed the connection)
+2021-04-14 14:54:35	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-14 14:54:42	-->	fe80 (~fe80@gateway/tor-sasl/fe80) has joined #archlinux
+2021-04-14 14:55:28	<--	PsychoTron (~PsychoTro@2001:999:61:3fc:aed7:155d:8404:42d) has quit (Quit: Leaving)
+2021-04-14 14:58:29	-->	glumanda (~manu@046125250041.public.t-mobile.at) has joined #archlinux
+2021-04-14 14:58:41	wyre	I'm using an Arch USB installation medium to take an image of a disk and flash into another
+2021-04-14 14:58:58	wyre	is there a way to show the status when I'm using cp instead dd? 🤔
+2021-04-14 14:59:09	wyre	because pv isn't apparently installed in the installation medium 
+2021-04-14 14:59:10	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 240 seconds)
+2021-04-14 14:59:18	evilop	not really
+2021-04-14 14:59:35	Betal	wyre: what if you install it?
+2021-04-14 14:59:37	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-14 14:59:45	wyre	Betal, good point 
+2021-04-14 15:00:12	-->	mcquinn (~Thunderbi@62.117.12.190) has joined #archlinux
+2021-04-14 15:01:56	-->	tatsumaru (~tatsumaru@85.196.189.103) has joined #archlinux
+2021-04-14 15:02:19	-->	duskrat (~muskrat@trivialand/player/muskrat) has joined #archlinux
+2021-04-14 15:02:25	<--	portalrat_ (~muskrat@trivialand/player/muskrat) has quit (Remote host closed the connection)
+2021-04-14 15:02:26	tatsumaru	hey guys, while I was updating my system I got an error no space left on tmpfs, then I did df -h and noticed that tmpfs was 100% in use. I've never seen this error before. any ideas what happened?
+2021-04-14 15:02:45	tatsumaru	I am talking about /tmp specifically
+2021-04-14 15:03:16	Namarrgon	are you using some aur helper that builds packages in /tmp?
+2021-04-14 15:03:30	tatsumaru	no, that was just pacman -Syu
+2021-04-14 15:03:40	tatsumaru	or you mean in general?
+2021-04-14 15:03:43	Namarrgon	in general
+2021-04-14 15:04:03	Namarrgon	ncdu /tmp
+2021-04-14 15:04:10	-->	urodna (~urodna@unaffiliated/urodna) has joined #archlinux
+2021-04-14 15:04:11	tatsumaru	hmm, I don't think so, I might have something installed over the months, but I use makepkg for aur only and pacman for the rest of the stuff
+2021-04-14 15:04:43	-->	frvr_ (~florea@83.103.192.98) has joined #archlinux
+2021-04-14 15:05:25	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 240 seconds)
+2021-04-14 15:06:38	tatsumaru	ncdu revealed that I have 4.3GiB occupied by something called lu86997gioobo.tmp and 3.4GiB by something called lu8040lgi39im.tmp this is the majority of tmp
+2021-04-14 15:06:39	<--	Ruuchan (~Ruuchan@unaffiliated/ruuchan) has quit (Read error: Connection reset by peer)
+2021-04-14 15:07:04	-->	Ruuchan (~Ruuchan@unaffiliated/ruuchan) has joined #archlinux
+2021-04-14 15:07:13	tatsumaru	could this just be some browser stuff from too many tabs?
+2021-04-14 15:08:35	Namarrgon	i doubt it
+2021-04-14 15:08:37	greyltc[m]	doubt it
+2021-04-14 15:09:09	-->	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has joined #archlinux
+2021-04-14 15:09:10	Namarrgon	are you using libreoffice?
+2021-04-14 15:09:15	tatsumaru	yes
+2021-04-14 15:09:37	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-14 15:09:39	tatsumaru	I did have some issues with a an xlsx yesterady which contained loads of macros and almost crashed my computer
+2021-04-14 15:09:45	<--	frvr_ (~florea@83.103.192.98) has quit (Ping timeout: 268 seconds)
+2021-04-14 15:09:45	<--	multi8 (~multi8@m83-187-182-47.cust.tele2.se) has quit (Ping timeout: 268 seconds)
+2021-04-14 15:09:47	tatsumaru	yesterday*
+2021-04-14 15:09:47	<--	evilop (~Urist@archlinux/op/pdpc.supporter.active.mrelendig) has quit (Quit: doot doot)
+2021-04-14 15:09:54	-->	lkhn_ (~lkhn@unaffiliated/lkhn) has joined #archlinux
+2021-04-14 15:10:08	greyltc[m]	`lsof | grep /tmp/lu86997gioobo.tmp`

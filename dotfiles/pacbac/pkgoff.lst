@@ -19,6 +19,7 @@ calcurse
 clipmenu
 composer
 dialog
+discord
 dmenu
 dunst
 fakeroot
@@ -39,6 +40,8 @@ git
 grep
 groff
 grub
+gtk-engine-murrine
+gucharmap
 gvfs
 gvfs-afc
 gvfs-mtp
@@ -77,6 +80,7 @@ mpd
 mpv
 nano
 ncmpcpp
+neofetch
 network-manager-applet
 networkmanager
 networkmanager-openconnect
@@ -85,6 +89,7 @@ networkmanager-pptp
 networkmanager-vpnc
 newsboat
 noto-fonts-emoji
+npm-check-updates
 ntfs-3g
 opera
 opera-ffmpeg-codecs
@@ -114,6 +119,7 @@ reflector
 ripgrep
 rofi
 sassc
+screenkey
 sed
 steam
 sudo
@@ -123,13 +129,13 @@ texinfo
 the_silver_searcher
 thermald
 thunar
+thunar-volman
 tmux
-transmission-cli
-transmission-qt
 ttf-anonymous-pro
 ttf-croscore
 ttf-dejavu
 ttf-droid
+ttf-font-awesome
 ttf-inconsolata
 ttf-liberation
 ttf-roboto
@@ -138,6 +144,7 @@ tumbler
 ueberzug
 unclutter
 unrar
+urxvt-perls
 vim
 virtualbox
 weechat
@@ -146,6 +153,7 @@ which
 wmctrl
 wpa_supplicant
 xarchiver
+xcape
 xclip
 xdg-user-dirs
 xf86-video-intel

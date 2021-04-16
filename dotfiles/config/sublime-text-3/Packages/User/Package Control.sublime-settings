@@ -6,26 +6,8 @@
 	"installed_packages":
 	[
 		"A File Icon",
-		"Alignment",
-		"AlignTab",
-		"AutoFileName",
-		"BracketHighlighter",
-		"ChangeQuotes",
-		"DocBlockr",
-		"Emmet",
-		"FileIcons",
-		"HTML-CSS-JS Prettify",
-		"i3 wm",
-		"MarkdownLivePreview",
-		"Material Color Scheme",
-		"Material Theme",
+		"ayu",
 		"Package Control",
-		"Pretty JSON",
-		"ProjectManager",
-		"SideBarEnhancements",
-		"SimpleSyntax",
-		"SublimeLinter",
-		"SublimeLinter-jshint",
-		"SublimeLinter-php"
+		"SimpleSyntax"
 	]
 }
