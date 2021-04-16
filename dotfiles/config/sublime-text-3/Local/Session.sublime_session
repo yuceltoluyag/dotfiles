@@ -156,6 +156,33 @@
 			},
 			"buffers":
 			[
+				{
+					"file": "/home/friday13/Documents/Baba/_layouts/front.html",
+					"settings":
+					{
+						"buffer_size": 155,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/friday13/Documents/Baba/_sass/baba.scss",
+					"settings":
+					{
+						"buffer_size": 4903,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/friday13/Documents/Baba/_layouts/default.html",
+					"settings":
+					{
+						"buffer_size": 3438,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -168,6 +195,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
 					[
 						"instal",
 						"Package Control: Install Package"
@@ -198,59 +233,141 @@
 			"expanded_folders":
 			[
 				"/home/friday13/Documents/Baba",
-				"/home/friday13/Documents/Baba/_posts"
+				"/home/friday13/Documents/Baba/_includes",
+				"/home/friday13/Documents/Baba/_layouts",
+				"/home/friday13/Documents/Baba/assets",
+				"/home/friday13/Documents/Baba/assets/js"
 			],
 			"file_history":
 			[
-				"/home/friday13/Documents/Baba/_posts/2020-11-06-facebook-toplu-grup-2021.md",
-				"/home/friday13/Documents/Baba/_posts/2021-02-09-facebook-5000-arkadas-ekleme-sureli -v2.md",
-				"/home/friday13/Documents/Baba/_posts/2020-10-24-elektronik-sigara-zararlimi-faydalimi.md",
-				"/home/friday13/Documents/Baba/_posts/2020-07-17-newsboat-kullanimi.md",
-				"/home/friday13/Documents/Baba/_posts/2020-07-06-felix-coin-guvenlimidir.md",
-				"/home/friday13/Documents/Baba/_posts/2020-07-05-archlinux-ntfs-nasil-yapilandirilir.md",
-				"/home/friday13/Documents/Baba/_posts/2020-07-03-laravel-ide-helper-kullanimi.md",
-				"/home/friday13/Documents/Baba/_posts/2020-06-24-internetten-para-kazanma-guncel-yatirimsiz.md",
-				"/home/friday13/Documents/Baba/_posts/2020-06-15-archlinux-valet-kurulumu.md",
-				"/home/friday13/Documents/Baba/_posts/2020-06-06-guncel-ucretsiz-steam-gog-epic-oyunlari - Kopya.md",
-				"/home/friday13/Documents/Baba/_posts/2020-01-04-vagrant-virtualbox-61-ile-uyumlu-hale.md",
-				"/home/friday13/Documents/Baba/_posts/2020-06-01-tavsiye-ettigim-programlar-ve-uygulamalar.md",
-				"/home/friday13/Documents/Baba/_posts/2020-04-18-linux-ekran-karti-kurulumu.md",
-				"/home/friday13/Documents/Baba/_posts/2020-02-06-phpstorm-icerisinde-phpcsfixer.md",
-				"/home/friday13/Documents/Baba/_posts/2020-02-04-imap-openssl-terminalde-kullanim.md",
-				"/home/friday13/Documents/Baba/_posts/2020-02-03-modern-mutt-kurulumu.md",
-				"/home/friday13/Documents/Baba/_posts/2020-01-28-zsh-icerisine-shopt-kullanmak.md",
-				"/home/friday13/Documents/Baba/_posts/2020-01-04-her-turk-gencinin-izlemesi-gereken.md",
-				"/home/friday13/Documents/Baba/_posts/2019-09-16-virtualbox-vagrant-laravel-arch-linux.md",
-				"/home/friday13/Documents/Baba/_posts/2019-12-04-windows-uzerinde-redshift-kullanm.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-10-spotifydan-muzik-nasl-indirilir-resimli.md",
-				"/home/friday13/Documents/Baba/_posts/2019-12-04-composer-yavas-indirme-sorunu-cozumu.md",
-				"/home/friday13/.config/composer/composer.json",
-				"/home/friday13/Documents/Baba/_posts/2019-11-06-phpstorm-icerisinde-cmder-kullanmak.md",
-				"/home/friday13/Documents/Baba/_posts/2019-05-10-facebook-otomatik-arkadas-ekleme-sureli.md",
-				"/home/friday13/Documents/Baba/_posts/2019-03-30-vlsub-ile-altyaz-aramaya-son-resimli.md",
-				"/home/friday13/Documents/Baba/_posts/2019-03-06-xampp-kullanarak-localhosta-ozel-alan.md",
-				"/home/friday13/Documents/Baba/_posts/2018-12-07-pdo-sum-fonksiyonu-kullanmmorrisjs.md",
-				"/home/friday13/Documents/Baba/_posts/2018-12-07-oh-my-zsh-kurulumu-tema-ve-eklentiler.md",
-				"/home/friday13/Documents/Baba/_posts/2018-12-01-terminatorgitcurlfish-yukleme.md",
-				"/home/friday13/Documents/Baba/_posts/2018-12-01-linux-ozellestirebilir-mp3-oynatcs.md",
-				"/home/friday13/Documents/Baba/_posts/2018-12-01-linux-httrack-kullanm.md",
-				"/home/friday13/Documents/Baba/_posts/2018-12-01-linux-codeigniter-son-surum-nasl.md",
-				"/home/friday13/Documents/Baba/_posts/2018-11-19-arch-linux-apachelampp-sanal-sunucu.md",
-				"/home/friday13/Documents/Baba/_posts/2018-11-18-arch-linux-lampp-kurulumuphp7xmariadbmy.md",
-				"/home/friday13/Documents/Baba/_posts/2018-11-17-windows-uzerinden-paylaslan-dosya-ve.md",
-				"/home/friday13/Documents/Baba/_posts/2018-11-17-obs-linux-browser-eklentisi-kurulumu.md",
-				"/home/friday13/Documents/Baba/_posts/2018-10-11-facebook-toplu-arkadas-eklemegruba.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-25-earncom-nedir-nasl-kullanlr.md",
+				"/home/friday13/Documents/Baba/_config.yml",
+				"/home/friday13/Documents/Baba/_includes/components/social.html",
+				"/home/friday13/Documents/Baba/_sass/_icon.scss",
 				"/home/friday13/Documents/Baba/_sass/baba.scss",
-				"/home/friday13/Documents/Baba/_posts/2018-09-21-linux-tema-nasl-yuklenir-gnome-shell-ve.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-10-sweet-alert-snf-kullanm-detayl-anlatm.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-14-linux-uzerinde-apache2-mysql-phpmyadmin_14.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-14-linuxta-uefi-windows-10-format-usb_14.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-21-git-ssh-key-olusturma-windows.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-10-kullandgm-enfes-sublime-text-eklentileri.md",
-				"/home/friday13/Documents/Baba/_posts/2018-09-13-yeni-baslayanlar-hangi-linux-surumunu.md",
-				"/home/friday13/Documents/Baba/_includes/components/series-header.html",
-				"/home/friday13/Documents/Baba/_posts/2017-12-31-site-creation.md"
+				"/home/friday13/Documents/Baba/assets/js/custom.js",
+				"/home/friday13/Documents/Baba/_layouts/default.html",
+				"/home/friday13/Documents/Baba/_includes/footer.html",
+				"/home/friday13/Documents/Baba/_includes/head.html",
+				"/home/friday13/Documents/Baba/_includes/header.html",
+				"/home/friday13/Documents/Baba/_layouts/post.html",
+				"/home/friday13/Documents/Baba/_includes/share.html",
+				"/home/friday13/Documents/yuceltoluyag.github.io/keybase.txt",
+				"/home/friday13/Downloads/lin.css-master/src/_variables.scss",
+				"/home/friday13/Documents/Baba/_includes/components/made-with.html",
+				"/home/friday13/Downloads/lin.css-master/src/components/_icon.scss",
+				"/home/friday13/Documents/Baba/assets/images/favicon/instructions.txt",
+				"/home/friday13/.config/i3/config",
+				"/home/friday13/Downloads/lin.css-master/dist/lin.css",
+				"/home/friday13/Documents/Baba/assets/images/favicon/site.webmanifest",
+				"/home/friday13/Documents/Baba/assets/images/favicon/manifest.json",
+				"/home/friday13/Documents/Baba/assets/images/favicon/browserconfig.xml",
+				"/home/friday13/.cache/.fr-FwHVgQ/code.txt",
+				"/home/friday13/Downloads/asd/site.webmanifest",
+				"/home/friday13/Documents/Baba/assets/js/search/search.js",
+				"/home/friday13/Documents/Baba/_site/assets/js/search/lunr.multi.min.js",
+				"/home/friday13/Documents/Baba/_site/assets/js/search/lunr.tr.min.js",
+				"/home/friday13/Documents/Baba/_site/assets/js/search/lunr.ru.min.js",
+				"/home/friday13/Documents/Baba/assets/js/search/lunr.ru.min.js",
+				"/home/friday13/Documents/Baba/_site/404.html",
+				"/home/friday13/Documents/Baba/_site/index.html",
+				"/home/friday13/Documents/Baba/_site/about/index.html",
+				"/home/friday13/Documents/Baba/_site/arch-linux-apachelampp-sanal-sunucu/index.html",
+				"/home/friday13/Documents/Baba/_site/arch-linux-lampp-kurulumuphp7xmariadbmy/index.html",
+				"/home/friday13/Documents/Baba/_site/archlinux-ntfs-nasil-yapilandirilir/index.html",
+				"/home/friday13/Documents/Baba/_site/archlinux-valet-kurulumu/index.html",
+				"/home/friday13/Documents/Baba/_site/category/editor.html",
+				"/home/friday13/Documents/Baba/_site/category/facebook.html",
+				"/home/friday13/Documents/Baba/_site/category/kutuphane.html",
+				"/home/friday13/Documents/Baba/_site/category/linux.html",
+				"/home/friday13/Documents/Baba/_site/category/para-kazanma.html",
+				"/home/friday13/Documents/Baba/_site/category/program.html",
+				"/home/friday13/Documents/Baba/_site/category/tanıtım.html",
+				"/home/friday13/Documents/Baba/_site/category/tavsiye.html",
+				"/home/friday13/Documents/Baba/_site/composer-yavas-indirme-sorunu-cozumu/index.html",
+				"/home/friday13/Documents/Baba/_site/earncom-nedir-nasl-kullanlr/index.html",
+				"/home/friday13/Documents/Baba/_site/elektronik-sigara-zararlimi-faydalimi/index.html",
+				"/home/friday13/Documents/Baba/_site/windows-uzerinden-paylaslan-dosya-ve/index.html",
+				"/home/friday13/Documents/Baba/_site/facebook-5000-arkadas-ekleme-sureli-v2/index.html",
+				"/home/friday13/Documents/Baba/_site/facebook-otomatik-arkadas-ekleme-sureli/index.html",
+				"/home/friday13/Documents/Baba/_site/facebook-toplu-arkadas-eklemegruba/index.html",
+				"/home/friday13/Documents/Baba/_site/facebook-toplu-grup-2021/index.html",
+				"/home/friday13/Documents/Baba/_site/felix-coin-guvenlimidir/index.html",
+				"/home/friday13/Documents/Baba/_site/git-ssh-key-olusturma-windows/index.html",
+				"/home/friday13/Documents/Baba/_site/guncel-ucretsiz-steam-gog-epic-oyunlari-Kopya/index.html",
+				"/home/friday13/Documents/Baba/_site/her-turk-gencinin-izlemesi-gereken/index.html",
+				"/home/friday13/Documents/Baba/_site/imap-openssl-terminalde-kullanim/index.html",
+				"/home/friday13/Documents/Baba/_site/internetten-para-kazanma-guncel-yatirimsiz/index.html",
+				"/home/friday13/Documents/Baba/_site/kullandgm-enfes-sublime-text-eklentileri/index.html",
+				"/home/friday13/Documents/Baba/_site/laravel-ide-helper-kullanimi/index.html",
+				"/home/friday13/Documents/Baba/_site/linux-codeigniter-son-surum-nasl/index.html",
+				"/home/friday13/Documents/Baba/_site/linux-ekran-karti-kurulumu/index.html",
+				"/home/friday13/Documents/Baba/_site/linux-httrack-kullanm/index.html",
+				"/home/friday13/Documents/Baba/_site/linux-ozellestirebilir-mp3-oynatcs/index.html",
+				"/home/friday13/Documents/Baba/_site/linux-tema-nasl-yuklenir-gnome-shell-ve/index.html",
+				"/home/friday13/Documents/Baba/_site/linux-uzerinde-apache2-mysql-phpmyadmin_14/index.html",
+				"/home/friday13/Documents/Baba/_site/linuxta-uefi-windows-10-format-usb_14/index.html",
+				"/home/friday13/Documents/Baba/_site/modern-mutt-kurulumu/index.html",
+				"/home/friday13/Documents/Baba/_site/newsboat-kullanimi/index.html",
+				"/home/friday13/Documents/Baba/_site/obs-linux-browser-eklentisi-kurulumu/index.html",
+				"/home/friday13/Documents/Baba/_site/oh-my-zsh-kurulumu-tema-ve-eklentiler/index.html",
+				"/home/friday13/Documents/Baba/_site/pdo-sum-fonksiyonu-kullanmmorrisjs/index.html",
+				"/home/friday13/Documents/Baba/_site/phpstorm-icerisinde-cmder-kullanmak/index.html",
+				"/home/friday13/Documents/Baba/_site/phpstorm-icerisinde-phpcsfixer/index.html",
+				"/home/friday13/Documents/Baba/_site/posts/index.html",
+				"/home/friday13/Documents/Baba/_site/search/index.html",
+				"/home/friday13/Documents/Baba/_site/series/archlampp.html",
+				"/home/friday13/Documents/Baba/_site/series/facebook.html",
+				"/home/friday13/Documents/Baba/_site/series/mutt.html",
+				"/home/friday13/Documents/Baba/_site/series/pasifgelir.html",
+				"/home/friday13/Documents/Baba/_site/series/phpstorm.html",
+				"/home/friday13/Documents/Baba/_site/series/tavsiyelerim.html",
+				"/home/friday13/Documents/Baba/_site/spotifydan-muzik-nasl-indirilir-resimli/index.html",
+				"/home/friday13/Documents/Baba/_site/sweet-alert-snf-kullanm-detayl-anlatm/index.html",
+				"/home/friday13/Documents/Baba/_site/tags/apache.html",
+				"/home/friday13/Documents/Baba/_site/tags/belgesel.html",
+				"/home/friday13/Documents/Baba/_site/tags/cmder.html",
+				"/home/friday13/Documents/Baba/_site/tags/codeigniter.html",
+				"/home/friday13/Documents/Baba/_site/tags/composer.html",
+				"/home/friday13/Documents/Baba/_site/tags/discord.html",
+				"/home/friday13/Documents/Baba/_site/tags/e-mail.html",
+				"/home/friday13/Documents/Baba/_site/tags/earn.html",
+				"/home/friday13/Documents/Baba/_site/tags/facebook.html",
+				"/home/friday13/Documents/Baba/_site/tags/film.html",
+				"/home/friday13/Documents/Baba/_site/tags/github.html",
+				"/home/friday13/Documents/Baba/_site/tags/httrack.html",
+				"/home/friday13/Documents/Baba/_site/tags/imap.html",
+				"/home/friday13/Documents/Baba/_site/tags/internetten-para-kazanma.html",
+				"/home/friday13/Documents/Baba/_site/tags/ipucu.html",
+				"/home/friday13/Documents/Baba/_site/tags/laptop.html",
+				"/home/friday13/Documents/Baba/_site/tags/laravel.html",
+				"/home/friday13/Documents/Baba/_site/tags/linux.html",
+				"/home/friday13/Documents/Baba/_site/tags/mp3.html",
+				"/home/friday13/Documents/Baba/_site/tags/newsboat.html",
+				"/home/friday13/Documents/Baba/_site/tags/ntfs.html",
+				"/home/friday13/Documents/Baba/_site/tags/nvidia.html",
+				"/home/friday13/Documents/Baba/_site/tags/obs.html",
+				"/home/friday13/Documents/Baba/_site/tags/pdo.html",
+				"/home/friday13/Documents/Baba/_site/tags/php.html",
+				"/home/friday13/Documents/Baba/_site/tags/phpstorm.html",
+				"/home/friday13/Documents/Baba/_site/tags/program.html",
+				"/home/friday13/Documents/Baba/_site/tags/spotify.html",
+				"/home/friday13/Documents/Baba/_site/tags/ssh.html",
+				"/home/friday13/Documents/Baba/_site/tags/steam.html",
+				"/home/friday13/Documents/Baba/_site/tags/sublime.html",
+				"/home/friday13/Documents/Baba/_site/tags/sweetalert.html",
+				"/home/friday13/Documents/Baba/_site/tags/tanıtım.html",
+				"/home/friday13/Documents/Baba/_site/tags/terminal.html",
+				"/home/friday13/Documents/Baba/_site/tags/unixporn.html",
+				"/home/friday13/Documents/Baba/_site/tags/vagrant.html",
+				"/home/friday13/Documents/Baba/_site/tags/vlc.html",
+				"/home/friday13/Documents/Baba/_site/tags/windows10.html",
+				"/home/friday13/Documents/Baba/_site/tags/yazılım.html",
+				"/home/friday13/Documents/Baba/_site/tags/zsh.html",
+				"/home/friday13/Documents/Baba/_site/tavsiye-ettigim-programlar-ve-uygulamalar/index.html",
+				"/home/friday13/Documents/Baba/_site/terminatorgitcurlfish-yukleme/index.html",
+				"/home/friday13/Documents/Baba/_site/vagrant-virtualbox-61-ile-uyumlu-hale/index.html",
+				"/home/friday13/Documents/Baba/_site/virtualbox-vagrant-laravel-arch-linux/index.html",
+				"/home/friday13/Documents/Baba/_site/vlsub-ile-altyaz-aramaya-son-resimli/index.html"
 			],
 			"find":
 			{
@@ -269,6 +386,66 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"alertbar",
+					"alertbox",
+					"mc-embedded-subscribe-form",
+					"!Important",
+					"class^=\"lin-icon-\"]",
+					"color-primary",
+					"control",
+					"mpd",
+					"adsense",
+					".navbar-end a {\n    color: #fff;\n}",
+					"ru",
+					"=\"A-Za-zªºÀ-ÖØ-öø-ʸˠ-ˤᴀ-ᴥᴬ-ᵜᵢ-ᵥᵫ-ᵷᵹ-ᶾḀ-ỿⁱⁿₐ-ₜKÅℲⅎⅠ-ↈⱠ-ⱿꜢ-ꞇꞋ-ꞭꞰ-ꞷꟷ-ꟿꬰ-ꭚꭜ-ꭤﬀ-ﬆＡ-Ｚａ-ｚ\",r.tr.trimmer=r.trimmerSupport.generateTrimmer(r.tr.wordCharacters),r.Pipeline.registerFunction(r.tr.trimmer,\"trimmer-tr\"),r.tr.stemmer=function(){var i=r.stemmerSupport.Among,e=r.stemmerSupport.SnowballProgram,n=new function(){function r(r,i,e){for(;;){var n=Dr.limit-Dr.cursor;if(Dr.in_grouping_b(r,i,e)){Dr.cursor=Dr.limit-n;break}if(Dr.cursor=Dr.limit-n,Dr.cursor<=Dr.limit_backward)return!1;Dr.cursor--}return!0}function n(){var i,e;i=Dr.limit-Dr.cursor,r(Wr,97,305);for(var n=0;n<Br.length;n++){e=Dr.limit-Dr.cursor;var t=Br[n];if(Dr.eq_s_b(1,t[0])&&r(t[1],t[2],t[3]))return Dr.cursor=Dr.limit-i,!0;Dr.cursor=Dr.limit-e}return Dr.cursor=Dr.limit-e,!(!Dr.eq_s_b(1,\"ü\")||!r(Zr,246,252))&&(Dr.cursor=Dr.limit-i,!0)}function t(r,i){var e,n=Dr.limit-Dr.cursor;return r()&&(Dr.cursor=Dr.limit-n,Dr.cursor>Dr.limit_backward&&(Dr.cursor--,e=Dr.limit-Dr.cursor,i()))?(Dr.cursor=Dr.limit-e,!0):(Dr.cursor=Dr.limit-n,r()?(Dr.cursor=Dr.limit-n,!1):(Dr.cursor=Dr.limit-n,!(Dr.cursor<=Dr.limit_backward)&&(Dr.cursor--,!!i()&&(Dr.cursor=Dr.limit-n,!0))))}function u(r){return t(r,function(){return Dr.in_grouping_b(Wr,97,305)})}function o(){return u(function(){return Dr.eq_s_b(1,\"n\")})}function s(){return u(function(){return Dr.eq_s_b(1,\"s\")})}function c(){return u(function(){return Dr.eq_s_b(1,\"y\")})}function l(){return t(function(){return Dr.in_grouping_b(Lr,105,305)},function(){return Dr.out_grouping_b(Wr,97,305)})}function a(){return Dr.find_among_b(ur,10)&&l()}function m(){return n()&&Dr.in_grouping_b(Lr,105,305)&&s()}function d(){return Dr.find_among_b(or,2)}function f(){return n()&&Dr.in_grouping_b(Lr,105,305)&&c()}function b(){return n()&&Dr.find_among_b(sr,4)}function w(){return n()&&Dr.find_among_b(cr,4)&&o()}function _(){return n()&&Dr.find_among_b(lr,2)&&c()}function k(){return n()&&Dr.find_among_b(ar,2)}function p(){return n()&&Dr.find_among_b(mr,4)}function g(){return n()&&Dr.find_among_b(dr,2)}function y(){return n()&&Dr.find_among_b(fr,4)}function z(){return n()&&Dr.find_among_b(br,2)}function v(){return n()&&Dr.find_among_b(wr,2)&&c()}function h(){return Dr.eq_s_b(2,\"ki\")}function q(){return n()&&Dr.find_among_b(_r,2)&&o()}function C(){return n()&&Dr.find_among_b(kr,4)&&c()}function P(){return n()&&Dr.find_among_b(pr,4)}function F(){return n()&&Dr.find_among_b(gr,4)&&c()}function S(){return Dr.find_among_b(yr,4)}function W(){return n()&&Dr.find_among_b(zr,2)}function L(){return n()&&Dr.find_among_b(vr,4)}function x(){return n()&&Dr.find_among_b(hr,8)}function A(){return Dr.find_among_b(qr,2)}function E(){return n()&&Dr.find_among_b(Cr,32)&&c()}function j(){return Dr.find_among_b(Pr,8)&&c()}function T(){return n()&&Dr.find_among_b(Fr,4)&&c()}function Z(){return Dr.eq_s_b(3,\"ken\")&&c()}function B(){var r=Dr.limit-Dr.cursor;return!(T()||(Dr.cursor=Dr.limit-r,E()||(Dr.cursor=Dr.limit-r,j()||(Dr.cursor=Dr.limit-r,Z()))))}function D(){if(A()){var r=Dr.limit-Dr.cursor;if(S()||(Dr.cursor=Dr.limit-r,W()||(Dr.cursor=Dr.limit-r,C()||(Dr.cursor=Dr.limit-r,P()||(Dr.cursor=Dr.limit-r,F()||(Dr.cursor=Dr.limit-r))))),T())return!1}return!0}function G(){if(W()){Dr.bra=Dr.cursor,Dr.slice_del();var r=Dr.limit-Dr.cursor;return Dr.ket=Dr.cursor,x()||(Dr.cursor=Dr.limit-r,E()||(Dr.cursor=Dr.limit-r,j()||(Dr.cursor=Dr.limit-r,T()||(Dr.cursor=Dr.limit-r)))),nr=!1,!1}return!0}function H(){if(!L())return!0;var r=Dr.limit-Dr.cursor;return!E()&&(Dr.cursor=Dr.limit-r,!j())}function I(){var r,i=Dr.limit-Dr.cursor;return!(S()||(Dr.cursor=Dr.limit-i,F()||(Dr.cursor=Dr.limit-i,P()||(Dr.cursor=Dr.limit-i,C()))))||(Dr.bra=Dr.cursor,Dr.slice_del(),r=Dr.limit-Dr.cursor,Dr.ket=Dr.cursor,T()||(Dr.cursor=Dr.limit-r),!1)}function J(){var r,i=Dr.limit-Dr.cursor;if(Dr.ket=Dr.cursor,nr=!0,B()&&(Dr.cursor=Dr.limit-i,D()&&(Dr.cursor=Dr.limit-i,G()&&(Dr.cursor=Dr.limit-i,H()&&(Dr.cursor=Dr.limit-i,I()))))){if(Dr.cursor=Dr.limit-i,!x())return;Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,r=Dr.limit-Dr.cursor,S()||(Dr.cursor=Dr.limit-r,W()||(Dr.cursor=Dr.limit-r,C()||(Dr.cursor=Dr.limit-r,P()||(Dr.cursor=Dr.limit-r,F()||(Dr.cursor=Dr.limit-r))))),T()||(Dr.cursor=Dr.limit-r)}Dr.bra=Dr.cursor,Dr.slice_del()}function K(){var r,i,e,n;if(Dr.ket=Dr.cursor,h()){if(r=Dr.limit-Dr.cursor,p())return Dr.bra=Dr.cursor,Dr.slice_del(),i=Dr.limit-Dr.cursor,Dr.ket=Dr.cursor,W()?(Dr.bra=Dr.cursor,Dr.slice_del(),K()):(Dr.cursor=Dr.limit-i,a()&&(Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K()))),!0;if(Dr.cursor=Dr.limit-r,w()){if(Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,e=Dr.limit-Dr.cursor,d())Dr.bra=Dr.cursor,Dr.slice_del();else{if(Dr.cursor=Dr.limit-e,Dr.ket=Dr.cursor,!a()&&(Dr.cursor=Dr.limit-e,!m()&&(Dr.cursor=Dr.limit-e,!K())))return!0;Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K())}return!0}if(Dr.cursor=Dr.limit-r,g()){if(n=Dr.limit-Dr.cursor,d())Dr.bra=Dr.cursor,Dr.slice_del();else if(Dr.cursor=Dr.limit-n,m())Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K());else if(Dr.cursor=Dr.limit-n,!K())return!1;return!0}}return!1}function M(r){if(Dr.ket=Dr.cursor,!g()&&(Dr.cursor=Dr.limit-r,!k()))return!1;var i=Dr.limit-Dr.cursor;if(d())Dr.bra=Dr.cursor,Dr.slice_del();else if(Dr.cursor=Dr.limit-i,m())Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K());else if(Dr.cursor=Dr.limit-i,!K())return!1;return!0}function N(r){if(Dr.ket=Dr.cursor,!z()&&(Dr.cursor=Dr.limit-r,!b()))return!1;var i=Dr.limit-Dr.cursor;return!(!m()&&(Dr.cursor=Dr.limit-i,!d()))&&(Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K()),!0)}function O(){var r,i=Dr.limit-Dr.cursor;return Dr.ket=Dr.cursor,!(!w()&&(Dr.cursor=Dr.limit-i,!v()))&&(Dr.bra=Dr.cursor,Dr.slice_del(),r=Dr.limit-Dr.cursor,Dr.ket=Dr.cursor,!(!W()||(Dr.bra=Dr.cursor,Dr.slice_del(),!K()))||(Dr.cursor=Dr.limit-r,Dr.ket=Dr.cursor,!(a()||(Dr.cursor=Dr.limit-r,m()||(Dr.cursor=Dr.limit-r,K())))||(Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K()),!0)))}function Q(){var r,i,e=Dr.limit-Dr.cursor;if(Dr.ket=Dr.cursor,!p()&&(Dr.cursor=Dr.limit-e,!f()&&(Dr.cursor=Dr.limit-e,!_())))return!1;if(Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,r=Dr.limit-Dr.cursor,a())Dr.bra=Dr.cursor,Dr.slice_del(),i=Dr.limit-Dr.cursor,Dr.ket=Dr.cursor,W()||(Dr.cursor=Dr.limit-i);else if(Dr.cursor=Dr.limit-r,!W())return!0;return Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,K(),!0}function R(){var r,i,e=Dr.limit-Dr.cursor;if(Dr.ket=Dr.cursor,W())return Dr.bra=Dr.cursor,Dr.slice_del(),void K();if(Dr.cursor=Dr.limit-e,Dr.ket=Dr.cursor,q())if(Dr.bra=Dr.cursor,Dr.slice_del(),r=Dr.limit-Dr.cursor,Dr.ket=Dr.cursor,d())Dr.bra=Dr.cursor,Dr.slice_del();else{if(Dr.cursor=Dr.limit-r,Dr.ket=Dr.cursor,!a()&&(Dr.cursor=Dr.limit-r,!m())){if(Dr.cursor=Dr.limit-r,Dr.ket=Dr.cursor,!W())return;if(Dr.bra=Dr.cursor,Dr.slice_del(),!K())return}Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K())}else if(Dr.cursor=Dr.limit-e,!M(e)&&(Dr.cursor=Dr.limit-e,!N(e))){if(Dr.cursor=Dr.limit-e,Dr.ket=Dr.cursor,y())return Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,i=Dr.limit-Dr.cursor,void(a()?(Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K())):(Dr.cursor=Dr.limit-i,W()?(Dr.bra=Dr.cursor,Dr.slice_del(),K()):(Dr.cursor=Dr.limit-i,K())));if(Dr.cursor=Dr.limit-e,!O()){if(Dr.cursor=Dr.limit-e,d())return Dr.bra=Dr.cursor,void Dr.slice_del();Dr.cursor=Dr.limit-e,K()||(Dr.cursor=Dr.limit-e,Q()||(Dr.cursor=Dr.limit-e,Dr.ket=Dr.cursor,(a()||(Dr.cursor=Dr.limit-e,m()))&&(Dr.bra=Dr.cursor,Dr.slice_del(),Dr.ket=Dr.cursor,W()&&(Dr.bra=Dr.cursor,Dr.slice_del(),K()))))}}}function U(){var r;if(Dr.ket=Dr.cursor,r=Dr.find_among_b(Sr,4))switch(Dr.bra=Dr.cursor,r){case 1:Dr.slice_from(\"p\");break;case 2:Dr.slice_from(\"ç\");break;case 3:Dr.slice_from(\"t\");break;case 4:Dr.slice_from(\"k\")}}function V(){for(;;){var r=Dr.limit-Dr.cursor;if(Dr.in_grouping_b(Wr,97,305)){Dr.cursor=Dr.limit-r;break}if(Dr.cursor=Dr.limit-r,Dr.cursor<=Dr.limit_backward)return!1;Dr.cursor--}return!0}function X(r,i,e){if(Dr.cursor=Dr.limit-r,V()){var n=Dr.limit-Dr.cursor;if(!Dr.eq_s_b(1,i)&&(Dr.cursor=Dr.limit-n,!Dr.eq_s_b(1,e)))return!0;Dr.cursor=Dr.limit-r;var t=Dr.cursor;return Dr.insert(Dr.cursor,Dr.cursor,e),Dr.cursor=t,!1}return!0}function Y(){var r=Dr.limit-Dr.cursor;(Dr.eq_s_b(1,\"d\")||(Dr.cursor=Dr.limit-r,Dr.eq_s_b(1,\"g\")))&&X(r,\"a\",\"ı\")&&X(r,\"e\",\"i\")&&X(r,\"o\",\"u\")&&X(r,\"ö\",\"ü\")}function $(){for(var r,i=Dr.cursor,e=2;;){for(r=Dr.cursor;!Dr.in_grouping(Wr,97,305);){if(Dr.cursor>=Dr.limit)return Dr.cursor=r,!(e>0)&&(Dr.cursor=i,!0);Dr.cursor++}e--}}function rr(r,i,e){for(;!Dr.eq_s(i,e);){if(Dr.cursor>=Dr.limit)return!0;Dr.cursor++}return(tr=i)!=Dr.limit||(Dr.cursor=r,!1)}function ir(){var r=Dr.cursor;return!rr(r,2,\"ad\")||(Dr.cursor=r,!rr(r,5,\"soyad\"))}function er(){var r=Dr.cursor;return!ir()&&(Dr.limit_backward=r,Dr.cursor=Dr.limit,Y(),Dr.cursor=Dr.limit,U(),!0)}var nr,tr,ur=[new i(\"m\",-1,-1),new i(\"n\",-1,-1),new i(\"miz\",-1,-1),new i(\"niz\",-1,-1),new i(\"muz\",-1,-1),new i(\"nuz\",-1,-1),new i(\"müz\",-1,-1),new i(\"nüz\",-1,-1),new i(\"mız\",-1,-1),new i(\"nız\",-1,-1)],or=[new i(\"leri\",-1,-1),new i(\"ları\",-1,-1)],sr=[new i(\"ni\",-1,-1),new i(\"nu\",-1,-1),new i(\"nü\",-1,-1),new i(\"nı\",-1,-1)],cr=[new i(\"in\",-1,-1),new i(\"un\",-1,-1),new i(\"ün\",-1,-1),new i(\"ın\",-1,-1)],lr=[new i(\"a\",-1,-1),new i(\"e\",-1,-1)],ar=[new i(\"na\",-1,-1),new i(\"ne\",-1,-1)],mr=[new i(\"da\",-1,-1),new i(\"ta\",-1,-1),new i(\"de\",-1,-1),new i(\"te\",-1,-1)],dr=[new i(\"nda\",-1,-1),new i(\"nde\",-1,-1)],fr=[new i(\"dan\",-1,-1),new i(\"tan\",-1,-1),new i(\"den\",-1,-1),new i(\"ten\",-1,-1)],br=[new i(\"ndan\",-1,-1),new i(\"nden\",-1,-1)],wr=[new i(\"la\",-1,-1),new i(\"le\",-1,-1)],_r=[new i(\"ca\",-1,-1),new i(\"ce\",-1,-1)],kr=[new i(\"im\",-1,-1),new i(\"um\",-1,-1),new i(\"üm\",-1,-1),new i(\"ım\",-1,-1)],pr=[new i(\"sin\",-1,-1),new i(\"sun\",-1,-1),new i(\"sün\",-1,-1),new i(\"sın\",-1,-1)],gr=[new i(\"iz\",-1,-1),new i(\"uz\",-1,-1),new i(\"üz\",-1,-1),new i(\"ız\",-1,-1)],yr=[new i(\"siniz\",-1,-1),new i(\"sunuz\",-1,-1),new i(\"sünüz\",-1,-1),new i(\"sınız\",-1,-1)],zr=[new i(\"lar\",-1,-1),new i(\"ler\",-1,-1)],vr=[new i(\"niz\",-1,-1),new i(\"nuz\",-1,-1),new i(\"nüz\",-1,-1),new i(\"nız\",-1,-1)],hr=[new i(\"dir\",-1,-1),new i(\"tir\",-1,-1),new i(\"dur\",-1,-1),new i(\"tur\",-1,-1),new i(\"dür\",-1,-1),new i(\"tür\",-1,-1),new i(\"dır\",-1,-1),new i(\"tır\",-1,-1)],qr=[new i(\"casına\",-1,-1),new i(\"cesine\",-1,-1)],Cr=[new i(\"di\",-1,-1),new i(\"ti\",-1,-1),new i(\"dik\",-1,-1),new i(\"tik\",-1,-1),new i(\"duk\",-1,-1),new i(\"tuk\",-1,-1),new i(\"dük\",-1,-1),new i(\"tük\",-1,-1),new i(\"dık\",-1,-1),new i(\"tık\",-1,-1),new i(\"dim\",-1,-1),new i(\"tim\",-1,-1),new i(\"dum\",-1,-1),new i(\"tum\",-1,-1),new i(\"düm\",-1,-1),new i(\"tüm\",-1,-1),new i(\"dım\",-1,-1),new i(\"tım\",-1,-1),new i(\"din\",-1,-1),new i(\"tin\",-1,-1),new i(\"dun\",-1,-1),new i(\"tun\",-1,-1),new i(\"dün\",-1,-1),new i(\"tün\",-1,-1),new i(\"dın\",-1,-1),new i(\"tın\",-1,-1),new i(\"du\",-1,-1),new i(\"tu\",-1,-1),new i(\"dü\",-1,-1),new i(\"tü\",-1,-1),new i(\"dı\",-1,-1),new i(\"tı\",-1,-1)],Pr=[new i(\"sa\",-1,-1),new i(\"se\",-1,-1),new i(\"sak\",-1,-1),new i(\"sek\",-1,-1),new i(\"sam\",-1,-1),new i(\"sem\",-1,-1),new i(\"san\",-1,-1),new i(\"sen\",-1,-1)],Fr=[new i(\"miş\",-1,-1),new i(\"muş\",-1,-1),new i(\"müş\",-1,-1),new i(\"mış\",-1,-1)],Sr=[new i(\"b\",-1,1),new i(\"c\",-1,2),new i(\"d\",-1,3),new i(\"ğ\",-1,4)],Wr=[17,65,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,8,0,0,0,0,0,0,1],Lr=[1,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,1],xr=[1,64,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],Ar=[17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,130],Er=[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],jr=[17],Tr=[65],Zr=[65],Br=[[\"a\",xr,97,305],[\"e\",Ar,101,252],[\"ı\",Er,97,305],[\"i\",jr,101,105],[\"o\",Tr,111,117],[\"ö\",Zr,246,252],[\"u\",Tr,111,117]],Dr=new e;this.setCurrent=function(r){Dr.setCurrent(r)},this.getCurrent=function(){return Dr.getCurrent()},this.stem=function(){return!!($()&&(Dr.limit_backward=Dr.cursor,Dr.cursor=Dr.limit,J(),Dr.cursor=Dr.limit,nr&&(R(),Dr.cursor=Dr.limit_backward,er())))}};return function(r){return\"function\"==typeof r.update?r.update(function(r){return n.setCurrent(r),n.stem(),n.getCurrent()}):(n.setCurrent(r),n.stem(),n.getCurrent())}}(),r.Pipeline.registerFunction(r.tr.stemmer,\"stemmer-tr\"),r.tr.stopWordFilter=r.generateStopWordFilter(\"acaba altmış altı ama ancak arada aslında ayrıca bana bazı belki ben benden beni benim beri beş bile bin bir biri birkaç birkez birçok birşey birşeyi biz bizden bize bizi bizim bu buna bunda bundan bunlar bunları bunların bunu bunun burada böyle böylece da daha dahi de defa değil diye diğer doksan dokuz dolayı dolayısıyla dört edecek eden ederek edilecek ediliyor edilmesi ediyor elli en etmesi etti ettiği ettiğini eğer gibi göre halen hangi hatta hem henüz hep hepsi her herhangi herkesin hiç hiçbir iki ile ilgili ise itibaren itibariyle için işte kadar karşın katrilyon kendi kendilerine kendini kendisi kendisine kendisini kez ki kim kimden kime kimi kimse kırk milyar milyon mu mü mı nasıl ne neden nedenle nerde nerede nereye niye niçin o olan olarak oldu olduklarını olduğu olduğunu olmadı olmadığı olmak olması olmayan olmaz olsa olsun olup olur olursa oluyor on ona ondan onlar onlardan onları onların onu onun otuz oysa pek rağmen sadece sanki sekiz seksen sen senden seni senin siz sizden sizi sizin tarafından trilyon tüm var vardı ve veya ya yani yapacak yapmak yaptı yaptıkları yaptığı yaptığını yapılan yapılması yapıyor yedi yerine yetmiş yine yirmi yoksa yüz zaten çok çünkü öyle üzere üç şey şeyden şeyi şeyler şu şuna şunda şundan şunları şunu şöyle\".split(\" \")),r.Pipeline.registerFunction(r.tr.stopWordFilter,\"stopW",
+					"wordCharacters",
+					"Ничего не найдено",
+					"ru",
+					"Ничего не найдено",
+					"/assets/scripts/",
+					"link-color",
+					"feather",
+					"subtitle is-6",
+					"{{ page.date | date: \"%B %-d, %Y\" }}",
+					"date",
+					"perma",
+					"series",
+					"SERİES",
+					"menu is-hidden-touch",
+					"see more",
+					"pagination-previous",
+					"series-footer",
+					"TERMINAL -e ",
+					"bind-key G",
+					"bind-key r",
+					"unbind-key r",
+					"player",
+					"external",
+					"text-width",
+					"bookmark",
+					"reload-threads",
+					" auto-reload",
+					"refresh-on-startup",
+					"browser",
+					"article-sort",
+					"article-sort-order",
+					"unread",
+					"YouTube Abonelikleri",
+					"filter",
+					"trans",
+					"scrot",
+					"player",
+					"html-renderer",
+					"browser",
+					"auto-reload no",
+					"lixo",
+					"news",
+					"font",
+					"weather",
+					"pulse",
+					"antialias",
+					"pulse",
+					".config/",
 					"div  class=\"showyourterms\"><div  class=\"type\"  data-action=\"command\"  data-delay=\"400\">",
 					"div  class=\"showyourterms\"><br /><div  class=\"type\"  data-action=\"command\"  data-delay=\"400\"><br />",
 					"Archlinux üzerinde Virtualbox + Vagrant + Laravel + Phpmyadmin Kurulumu(Homestead)",
@@ -292,6 +469,9 @@
 				"regex": false,
 				"replace_history":
 				[
+					"!important",
+					"/assets/js/",
+					"YouTube",
 					"",
 					"```shell"
 				],
@@ -310,8 +490,97 @@
 			"groups":
 			[
 				{
+					"selected": 2,
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/home/friday13/Documents/Baba/_layouts/front.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 155,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										88,
+										88
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/friday13/Documents/Baba/_sass/baba.scss",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4903,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										436,
+										436
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 607.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/friday13/Documents/Baba/_layouts/default.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3438,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1950,
+										1950
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 472.0,
+								"translation.y": 386.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
 					]
 				}
 			],
@@ -321,7 +590,7 @@
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 61.0
 			},
 			"layout":
 			{
@@ -346,12 +615,16 @@
 				]
 			},
 			"menu_visible": true,
+			"output.SublimeLinter":
+			{
+				"height": 0.0
+			},
 			"output.find_results":
 			{
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,0,54,1916,1047,1920,1080",
+			"position": "0,0,0,0,0,0,54,1556,1047,1920,1080",
 			"project": "",
 			"replace":
 			{
@@ -393,7 +666,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 357.0,
+			"side_bar_width": 207.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{

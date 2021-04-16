@@ -3,7 +3,7 @@
 # Queries {{{
   "query:→ Unread Articles:unread = \"yes\""
   "query:→ YouTube:tags # \"YouTube\"" "YouTube"
-  "query:→ Blogs:tags # \"Blog\"" "Blog"
+  "query:→ Blog:tags # \"Blog\"" "Blog"
 
   # "query:→ Bookmarked Articles:flags # \"s\"" "Starred"
   # "query:→ Podcasts:tags # \"Podcasts\"" "Podcasts"

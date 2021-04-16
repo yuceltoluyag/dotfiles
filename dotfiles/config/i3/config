@@ -33,7 +33,7 @@ set $fyra_l9     -l 'AB=-480 BD=300 AC=-160'
 set $fyra_l8     -l 'AB=-640 BD=390 AC=-160'
 set $fyra_l7     -l 'AB=-920 BD=540 AC=-160'
 
-# >> Font 
+# >> Font
 
 
 font pango:Iosevka 10
@@ -132,9 +132,9 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
-bindsym XF86AudioLowerVolume exec --no-startup-id "$HOME/.script/volumedunst.sh down"
-bindsym XF86AudioRaiseVolume exec --no-startup-id "$HOME/.script/volumedunst.sh up"
-bindsym XF86AudioMute exec --no-startup-id "$HOME/.script/volumedunst.sh mute"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer set Master 2%+ && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
+bindsym XF86AudioLowerVolume exec --no-startup-id "amixer set Master 2%- && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
+bindsym XF86AudioMute exec --no-startup-id "amixer set Master toggle && if amixer get Master | grep -Fq '[off]'; then volnoti-show -m; else volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1); fi"
 
 # >> Window rules
 
@@ -192,7 +192,7 @@ for_window [instance="zathura"]                                 focus; $fyra -m 
 
 
 
-# >> Steam 
+# >> Steam
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 for_window [class="^Steam$" title="^Friends$"] floating enable
@@ -377,7 +377,7 @@ $super+Shift+8 move container to workspace $ws8
 $super+Shift+9 move container to workspace $ws9
 $super+Shift+0 move container to workspace $ws10
 
-# >> Colors   
+# >> Colors
 # Set Xresources colors:
 set_from_resource $darkblack    color0  #000000
 set_from_resource $black        color8  #000000
@@ -414,7 +414,7 @@ client.background $black
 #   position top
 #   mode dock
 #   modifier None
-#  
+#
 #  colors {
 #                        background $darkblack
 #                        statusline $darkwhite

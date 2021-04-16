@@ -6,8 +6,17 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"Alignment",
+		"AlignTab",
+		"AutoFileName",
 		"ayu",
+		"ChangeQuotes",
+		"DocBlockr",
+		"Emmet",
+		"HTML-CSS-JS Prettify",
 		"Package Control",
-		"SimpleSyntax"
+		"SideBarEnhancements",
+		"SimpleSyntax",
+		"SublimeLinter"
 	]
 }

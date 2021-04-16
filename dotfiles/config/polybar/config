@@ -382,10 +382,9 @@ border-top-color = ${colors.secondary}
 
 [module/news]
 type = custom/script
-exec = n=$(newsboat -x print-unread | cut -d ' ' -f 1); echo $(icon news)${n#0}
-interval = 2
-click-left  = start news
-click-right = notify news
+exec = /usr/bin/newsboat -x print-unread | awk '{ print " " $1}'
+interval = 1200
+click-left = urxvt -e newsboat
 
 [module/torrents]
 type = custom/script
