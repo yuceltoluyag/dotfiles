@@ -1,0 +1,361 @@
+#!/usr/bin/env bash
+
+# Target: Operating WiFi via nmcli (networkmanager) On GNU/Linux
+# Developer: MaxdSre
+# Change Log:
+# - Nov 05, 2020 10:05 Thu ET - change WiFi switch/delete method from read input to select menu
+# - Oct 24, 2020 20:40 Sat ET - add WiFi connection switch
+# - Oct 07, 2020 10:22 Wed ET - change WiFi conn/disconn notification icon
+# - May 15, 2020 21:46 Fri ET - change WiFi name and password input method from parameter specification to use function 'read'
+# - May 14, 2020 19:45 Thu ET - first draft
+
+
+# Blog Tutorial:
+# - https://www.thegeekdiary.com/how-to-configure-and-manage-network-connections-using-nmcli/
+
+
+# Thinking
+# 1. Connected
+#  1.1 check connected uudi/name
+#  1.2 down it
+# 2. Disconnected
+#  2.1 check disconnected uuid/name
+#  2.2 scan the available wifi list
+#  2.3 compare, split the available disconnected uuid/name
+#  2.4 up it
+
+
+#########  0-1. Variables Setting  #########
+wifi_scan=${wifi_scan:-0}
+wifi_overview=${wifi_overview:-0}
+wifi_connection_toggle=${wifi_connection_toggle:-0}
+wifi_connection_switch=${wifi_connection_switch:-0}
+wifi_ssid_connect=${wifi_ssid_connect:-0}
+wifi_profile_delete=${wifi_profile_delete:-0}
+read_timeout_threshold=${read_timeout_threshold:-30}
+
+# Icon theme https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+# invoked by notify-send or dunst, save path /usr/share/icons/
+wifi_connection_icon=${wifi_connection_icon:-'network-wireless-hotspot'}
+wifi_disconnection_icon=${wifi_disconnection_icon:-'notification-network-wireless-disconnected'}  # nm-no-connection
+
+
+#########  0-2 getopts Operation  #########
+fn_HelpInfo(){
+echo -e "\e[33mUsage:
+    script [options] ...
+    script | bash -s -- [options] ...
+
+Operating WiFi via nmcli (networkmanager) On GNU/Linux.
+
+Attention: input timeout threshold is 30 seconds.
+
+Arch Linux wiki https://wiki.archlinux.org/index.php/NetworkManager
+
+[available option]
+    -h    --help, show help info
+    -s    --scan available WiFi signals
+    -o    --system WiFi statics overview
+    -t    --toggle WiFi connection (down/up)
+    -e    --switch to other availe connected WiFi connection
+    -c    --connect new WiFi signal
+    -d    --delete existed WiFi connection profile (/etc/NetworkManager/system-connections/)
+\e[0m"
+}
+
+while getopts "hsotecd" option "$@"; do
+    case "$option" in
+        s ) wifi_scan=1 ;;
+        o ) wifi_overview=1 ;;
+        t ) wifi_connection_toggle=1 ;;
+        e ) wifi_connection_switch=1 ;;
+        c ) wifi_ssid_connect=1 ;;
+        d ) wifi_profile_delete=1 ;;
+        h|\? ) fn_HelpInfo && exit ;;
+    esac
+done
+
+
+#########  1-1 WiFi Operation Function #########
+
+fn_WiFi_Scan(){
+    # Scanning Available WiFi List
+    # IN-USE|BSSID|SSID|MODE|CHAN|RATE|SIGNAL|BARS|SECURITY
+    nmcli d wifi 2> /dev/null
+}
+
+fn_WiFi_Overview(){
+    echo 'Radio Status:'
+    # nmcli r 2> /dev/null
+    nmcli general status 2> /dev/null
+
+    echo -e '\nWiFi Connection Info: '
+    nmcli c show --active 2> /dev/null
+
+    echo -e '\nWiFI Connection Details:'
+    nmcli d 2> /dev/null
+
+    echo ''
+    nmcli d wifi 2> /dev/null | sed -r -n '1p;/^\*/{p}'
+
+    # nmcli general permissions  # general permission
+}
+
+
+fn_WiFi_Connection_Toggle(){
+    # c[onnection]    NetworkManager's connections
+    # r[adio]         NetworkManager radio switches
+    
+    # https://askubuntu.com/questions/377687/how-do-i-connect-to-a-wifi-network-using-nmcli
+    # nmcli c up/down 'WIFI_NAME'     # status connected/disconnected
+    # nmcli radio wifi on/off         # status connected/unavailable
+
+    wifi_conected_uuid_info=$(nmcli -f STATE,TYPE,DEVICE,CON-UUID,CONNECTION d status | sed -r -n '1d;/^connected[[:space:]]+wifi/I!d;s@^connected[[:space:]]+wifi[[:space:]]+[^[:space:]]+[[:space:]]+([^[:space:]]+)[[:space:]]+(.*)[[:space:]]*$@\1|\2@g;s@[[:space:]]+$@@g;p')
+    # c728e9d4-b0dc-4925-ab1f-7ff6bad235f5|Blizzard
+
+    if [[ -n "${wifi_conected_uuid_info}" ]]; then
+        # has connected in-use wifi, disconnect it
+        # STATE|TYPE|DEVICE|CON-UUID|CONNECTION
+        # connected|wifi|wlp60s0|c728e9d4-b0dc-4925-ab1f-7ff6bad235f5|Blizzard
+        wifi_ssid=$(cut -d\| -f 2 <<< "${wifi_conected_uuid_info}")
+        wifi_con_uuid=$(cut -d\| -f 1 <<< "${wifi_conected_uuid_info}")
+        echo "Connected in-use WiFi: ${wifi_ssid} (${wifi_con_uuid})"
+
+        output_info=$(nmcli c down "${wifi_con_uuid}")
+        # Connection 'Blizzard' successfully deactivated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/8)
+        sleep 1
+        notify-send -u critical -i "${wifi_disconnection_icon}" 'WiFi Disconnection' "${output_info}"
+        
+        # nmcli radio wifi off 2> /dev/null
+    else
+        # no connected in-use wifi, find available then connect
+        # STATE|TYPE|DEVICE|CON-UUID|CONNECTION
+        # disconnected|wifi|wlp60s0|--|--
+        
+        wifi_disconected_uuid_info=$(nmcli -f TYPE,DEVICE,UUID,NAME con show | sed -r -n '1d;/^wifi[[:space:]]+--/!d;s@^wifi[[:space:]]+--[[:space:]]*([^[:space:]]+)[[:space:]]+(.*)@\1|\2@g;s@[[:space:]]+$@@g;p')
+
+        # scan available WiFi list (just ssid)
+        wifi_available_ssid_list=$(nmcli -f SSID d wifi | sed -r -n '1d;/^--[[:space:]]*$/d;s@[[:space:]]+$@@g;p' | sort | uniq)
+        # c728e9d4-b0dc-4925-ab1f-7ff6bad235f5|Blizzard
+
+        wifi_target_uuid=${wifi_target_uuid:-}
+
+        wifi_target_uuid=$(
+            while IFS="|" read -r con_uuid ssid; do
+                match_result=$(sed -r -n '/^'"${ssid}"'$/{p}' <<< "${wifi_available_ssid_list}")
+                if [[ -n "${match_result}" ]]; then
+                    echo "${con_uuid}"
+                    break
+                fi
+            done <<< "${wifi_disconected_uuid_info}"
+        )
+
+        # If use hidden WiFi, it may be result wifi_target_uuid value empty.
+        [[ -z "${wifi_target_uuid}" ]] && wifi_target_uuid=$(cut -d\| -f 1 <<< "${wifi_disconected_uuid_info}"  | head -n 1)
+
+        if [[ -n "${wifi_target_uuid}" ]]; then
+            output_info=$(nmcli c up "${wifi_target_uuid}")
+            # Connection 'Blizzard' successfully deactivated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/8)
+            sleep 0.5
+            notify-send -u normal -i "${wifi_connection_icon}" 'WiFi Connection' "${output_info}"
+        fi
+
+        # nmcli radio wifi on 2> /dev/null
+        # notify-send -u normal -i "${wifi_connection_icon}" 'WiFi Connection' $(nmcli -f STATE,TYPE,DEVICE,CON-UUID,CONNECTION d status | sed -r -n '1d;/^connected[[:space:]]+wifi/I!d;s@^connected[[:space:]]+wifi[[:space:]]+[^[:space:]]+[[:space:]]+([^[:space:]]+)[[:space:]]+(.*)[[:space:]]*$@Name: \2\nUUID: \1@g;s@[[:space:]]+$@@g;p')
+    fi
+
+
+    # WiFi In-use List
+    # get WiFi ssid, ACTIVE (yes/no)
+    # wifi_name_inuse=$(nmcli -f IN-USE,ACTIVE,SSID d wifi | sed -r -n '/^\*/{s@^\*[[:space:]]*[^[:space:]]+[[:space:]]*@@g;p}')
+    # Blizzard
+}
+
+
+fn_WiFi_Connection_Switch(){
+    local l_active_ssid=${l_active_ssid:-}
+    l_active_ssid=$(nmcli -f TYPE,NAME con show --active | sed -r -n '/^wifi[[:space:]]+/{s@^wifi[[:space:]]+@@g;s@[[:space:]]*$@@g;p}')
+
+    local l_avail_ssid_list=${l_avail_ssid_list:-}
+    l_avail_ssid_list=$(nmcli -f IN-USE,BSSID,SSID d wifi | sed -r -n '1d;s@[[:space:]]*$@@g;s@[[:space:]]{2,}@|@g;/--$/d;s@.*\|([^\|]+)$@\1@g;p' | sort | uniq)
+
+    local l_avail_connected_ssid_list=${l_avail_connected_ssid_list:-}
+
+    l_avail_connected_ssid_list=$(nmcli -f TYPE,NAME con show | sed -r -n '/^wifi[[:space:]]+/{s@^wifi[[:space:]]+@@g;s@[[:space:]]*$@@g;p}' | while read -r line; do
+        if [[ -n "${line}" && "${line}" != "${l_active_ssid}" ]]; then
+            if [[ -n $(sed -r -n '/^'"${line}"'$/p' <<< "${l_avail_ssid_list}") ]]; then
+                echo "${line}"
+            fi
+        fi
+    done
+    )
+
+    if [[ $(sed '/^$/d' <<< "${l_avail_connected_ssid_list}" | wc -l) -gt 0 ]]; then
+        if [[ $(wc -l <<< "${l_avail_connected_ssid_list}") -eq 1 ]]; then
+            ssid_choose=${ssid_choose:-}
+            ssid_choose=$(head -n 1 <<< "${l_avail_connected_ssid_list}")
+            echo -e "\nThe only available WiFi SSID is ${ssid_choose}."
+        else
+            local IFS_BAK=${IFS_BAK:-"$IFS"}  # Backup IFS
+            IFS="|" # Setting temporary IFS
+
+            echo -e "\nAvailable WiFi SSID List:"
+            PS3="Choose number(e.g. 1, 2,...): "
+
+            ssid_choose=${ssid_choose:-}
+            select item in $(sed ':a;N;$!ba;s@\n@|@g' <<< "${l_avail_connected_ssid_list}"); do
+                ssid_choose="${item}"
+                [[ -n "${ssid_choose}" ]] && break
+            done < /dev/tty
+
+            IFS=${IFS_BAK}  # Restore IFS
+            unset IFS_BAK
+            unset PS3
+
+            echo -e "\nWiFi SSID choose is ${ssid_choose}."
+        fi
+
+        echo -e "Switch begining, just be patient ..."
+        # nmcli c up id Blizzard
+        # nmcli c down id Blizzard
+        local l_output_info=${l_output_info:-}
+        l_output_info=$(nmcli c up id "${ssid_choose}")
+        # Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/6)
+
+        sleep 1.5
+
+        while [[ $(nmcli -f TYPE,NAME con show --active | sed -r -n '/^wifi[[:space:]]+/{s@^wifi[[:space:]]+@@g;s@[[:space:]]*$@@g;p}') != "${ssid_choose}" ]]; do
+            sleep 0.5
+        done
+
+        notify-send -u normal -i "${wifi_connection_icon}" "WiFi (${ssid_choose})" "${l_output_info}"
+    else
+        echo -e '\nSorry, no available connected WiFi SSID to switch.'
+    fi
+}
+
+
+fn_WiFi_SSID_Connect(){
+    local l_ssid="${l_ssid:-}"
+    local l_ssid_pass="${l_ssid_pass:-}"
+    local l_ifname=''
+
+    echo -e 'Please specify WiFi name & password (may empty).\n'
+    read -t "${read_timeout_threshold}" -p 'WiFi Name|SSID: ' l_ssid < /dev/tty
+
+    if [[ -n "${l_ssid}" ]]; then
+       
+        local l_avail_ssid_list=''
+        l_avail_ssid_list=$(nmcli -f BSSID,SSID d wifi | more | sed -r -n '1d;/[[:space:]]+--[[:space:]]+/d;s@^[^[:space:]]+[[:space:]]+@@g;s@[[:space:]]+$@@g;p' | sort | uniq)
+        # nmcli -f IN-USE,BSSID,SSID d wifi | sed -r -n '1d;s@[[:space:]]*$@@g;s@[[:space:]]{2,}@|@g;/--$/d;s@.*\|([^\|]+)$@\1@g;p' | sort | uniq
+
+        if [[ -z "${l_avail_ssid_list}" ]]; then
+            echo 'Sorry, no available wifi scanned.'
+        else
+            if [[ -z $(sed '/^'${l_ssid}'$/!d' <<< "${l_avail_ssid_list}") ]]; then
+                echo "Sorry, please specify WiFi name list in 'nmcli d wifi'."
+            else
+                read -t "${read_timeout_threshold}" -sp 'WiFi Password: ' l_ssid_pass < /dev/tty
+                echo -e '\n'
+                l_ifname=$(nmcli -f TYPE,DEVICE d | sed -r -n '/^wifi[[:space:]]+/{s@^wifi[[:space:]]+([^[:space:]]+).*@\1@g;p}')  # wlp60s0
+                # nmcli d 2> /dev/null | sed -r -n '/[[:space:]]+wifi[[:space:]]+/{s@^([^[:space:]]+).*$@\1@g;p}'
+                
+                local l_result_info=''
+
+                # nmcli --ask dev wifi connect "${l_ssid}"
+                if [[ -n "${l_ssid_pass}" ]]; then
+                    l_result_info=$(nmcli d wifi connect "${l_ssid}" password "${l_ssid_pass// /}" ifname "${l_ifname}" hidden yes private yes 2>&1)
+                    # Device 'wlp60s0' successfully activated with 'bd7187dd-45a8-4912-a6f2-8ee6bb2cb204'.
+                else
+                    l_result_info=$(nmcli d wifi connect "${l_ssid}" ifname "${l_ifname}" hidden yes private yes 2>&1)
+                fi
+
+                # Error: 802-11-wireless-security.psk: property is invalid.
+                # Error: Connection activation failed: (7) Secrets were required, but not provided.
+                if [[ -z $(sed -r -n '/(error|fail)/Ip' <<< "${l_result_info}") ]]; then
+                    echo ''
+                    notify-send -u normal -i "${wifi_connection_icon}" 'WiFi Connection Success' "SSID: ${l_result_info}"
+                    sleep 1
+                    fn_WiFi_Overview
+                else
+                    echo "${l_result_info}"
+                    notify-send -u critical -i "${wifi_disconnection_icon}" 'WiFi Connection Error' "${l_result_info}"
+                fi
+
+            fi
+        fi
+    else
+        echo -e '\nSorry, please specify WiFi name (nmcli d wifi).'
+    fi
+}
+
+
+fn_WiFi_Profile_Delete(){
+    # The profile is identified by its name, UUID or D-Bus path.
+
+    # - Method via read input
+    # local l_ssid="${l_ssid:-}"
+    # echo -e 'Please specify WiFi name you wanna delete.\n'
+    # read -t "${read_timeout_threshold}" -p 'WiFi Name|SSID: ' l_ssid < /dev/tty
+    # echo ''
+    # nmcli c delete "${l_ssid}"
+
+    # - Method via select menu
+    local l_avail_connected_ssid_list=${l_avail_connected_ssid_list:-}
+    l_avail_connected_ssid_list=$(nmcli -f TYPE,NAME con show | sed -r -n '/^wifi[[:space:]]+/{s@^wifi[[:space:]]+@@g;s@[[:space:]]*$@@g;p}')
+
+    if [[ $(sed '/^$/d' <<< "${l_avail_connected_ssid_list}" | wc -l) -gt 0 ]]; then
+        local IFS_BAK=${IFS_BAK:-"$IFS"}  # Backup IFS
+        IFS="|" # Setting temporary IFS
+
+        echo -e "\nAvailable WiFi SSID List To Delete:"
+        PS3="Choose number(e.g. 1, 2,...): "
+
+        ssid_choose=${ssid_choose:-}
+        select item in $(sed ':a;N;$!ba;s@\n@|@g' <<< "${l_avail_connected_ssid_list}"); do
+            ssid_choose="${item}"
+            [[ -n "${ssid_choose}" ]] && break
+        done < /dev/tty
+
+        IFS=${IFS_BAK}  # Restore IFS
+        unset IFS_BAK
+        unset PS3
+
+        echo "WiFi SSID choose is ${ssid_choose}."
+
+        # nmcli c delete Blizzard
+        local l_output_info=${l_output_info:-}
+        l_output_info=$(nmcli c delete "${ssid_choose}")
+        # Connection 'Blizzard' (e7eff367-136c-4160-9582-030fa002a023) successfully deleted.
+
+        sleep 0.5
+
+        while [[ -n $(nmcli -f TYPE,NAME con show | sed -r -n '/^wifi[[:space:]]+/{s@^wifi[[:space:]]+@@g;s@[[:space:]]*$@@g;p}' | sed -r -n '/^'"${ssid_choose}"'$/{p}') ]]; do
+            sleep 0.5
+        done
+
+        notify-send -u normal -i "${wifi_connection_icon}" "WiFi (${ssid_choose})" "${l_output_info}"
+        # fn_WiFi_Overview
+    else
+        echo -e '\nSorry, no available connected WiFi SSID to delete.'
+    fi
+
+}
+
+
+#########  2-11 Entry Function #########
+
+fn_Main(){
+    [[ "${wifi_scan}" -eq 1 ]] && fn_WiFi_Scan
+    [[ "${wifi_overview}" -eq 1 ]] && fn_WiFi_Overview
+    [[ "${wifi_connection_toggle}" -eq 1 ]] && fn_WiFi_Connection_Toggle
+    [[ "${wifi_connection_switch}" -eq 1 ]] && fn_WiFi_Connection_Switch
+    [[ "${wifi_ssid_connect}" -eq 1 ]] && fn_WiFi_SSID_Connect
+    [[ "${wifi_profile_delete}" -eq 1 ]] && fn_WiFi_Profile_Delete
+    exit 0
+}
+
+fn_Main
+
+
+# Script End

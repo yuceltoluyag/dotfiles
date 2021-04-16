@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/friday13/Pictures/wallhaven-z8yp3w.jpg' 

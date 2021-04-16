@@ -7,44 +7,141 @@ config:
   link_dotfile_default: nolink
   link_on_import: nolink
   longkey: false
-  ignore_missing_in_dotdrop: true
 dotfiles:
-  f_vimrc:
-    src: vimrc
-    dst: ~/.vimrc
   f_xinitrc:
     src: xinitrc
     dst: ~/.xinitrc
+  f_xresources:
+    src: Xresources
+    dst: ~/.Xresources
+  f_xprofile:
+    src: xprofile
+    dst: ~/.xprofile
+  f_xmodmap:
+    src: Xmodmap
+    dst: ~/.Xmodmap
+  f_xdefaults:
+    src: Xdefaults
+    dst: ~/.Xdefaults
+  f_nvidia-settings-rc:
+    src: nvidia-settings-rc
+    dst: ~/.nvidia-settings-rc
+  f_lock.png:
+    src: lock.png
+    dst: ~/.lock.png
+  f_imwheelrc:
+    src: imwheelrc
+    dst: ~/.imwheelrc
+  f_gtkrc-2.0:
+    src: gtkrc-2.0
+    dst: ~/.gtkrc-2.0
+  f_gitignore:
+    src: gitignore
+    dst: ~/.gitignore
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+  f_face:
+    src: face
+    dst: ~/.face
+  f_dircolors:
+    src: dircolors
+    dst: ~/.dircolors
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+  f_bash_profile:
+    src: bash_profile
+    dst: ~/.bash_profile
+  f_amrc:
+    src: amrc
+    dst: ~/.amrc
+  f_alarm.wav:
+    src: alarm.wav
+    dst: ~/.alarm.wav
+  d_weechat:
+    src: weechat
+    dst: ~/.weechat
+    chmod: '700'
+  d_urxvt:
+    src: urxvt
+    dst: ~/.urxvt
+    chmod: '700'
+  d_script:
+    src: script
+    dst: ~/.script
+    chmod: '711'
+  d_pacbac:
+    src: pacbac
+    dst: ~/.pacbac
+  d_git_template:
+    src: git_template
+    dst: ~/.git_template
+  d_gnupg:
+    src: gnupg
+    dst: ~/.gnupg
+    chmod: '700'
+  d_colors:
+    src: colors
+    dst: ~/.colors
+  f_tmux.conf:
+    src: tmux.conf
+    dst: ~/.tmux.conf
+  f_tmux.conf.osx:
+    src: tmux.conf.osx
+    dst: ~/.tmux.conf.osx
+  f_tmux.powerline.conf:
+    src: tmux.powerline.conf
+    dst: ~/.tmux.powerline.conf
+  f_dmrc:
+    src: dmrc
+    dst: ~/.dmrc
+  f_xscreensaver:
+    src: xscreensaver
+    dst: ~/.xscreensaver
+  f_fzf.bash:
+    src: fzf.bash
+    dst: ~/.fzf.bash
+  f_fzf.zsh:
+    src: fzf.zsh
+    dst: ~/.fzf.zsh
+  f_fehbg:
+    src: fehbg
+    dst: ~/.fehbg
+    chmod: '754'
+  f_xauthority:
+    src: Xauthority
+    dst: ~/.Xauthority
+    chmod: '600'
   d_polybar:
     src: config/polybar
     dst: ~/.config/polybar
-  f_pacman.conf:
-    src: etc/pacman.conf
-    dst: /etc/pacman.conf
-  d_alacritty:
-    src: config/alacritty
-    dst: ~/.config/alacritty
-  d_betterdiscord:
-    src: config/BetterDiscord
-    dst: ~/.config/BetterDiscord
-  d_calcurse:
-    src: config/calcurse
-    dst: ~/.config/calcurse
-  d_cava:
-    src: config/cava
-    dst: ~/.config/cava
-  d_dunst:
-    src: config/dunst
-    dst: ~/.config/dunst
-  d_feh:
-    src: config/feh
-    dst: ~/.config/feh
+  d_systemd:
+    src: config/systemd
+    dst: ~/.config/systemd
+  d_libfm:
+    src: config/libfm
+    dst: ~/.config/libfm
+    chmod: '700'
+  d_pcmanfm:
+    src: config/pcmanfm
+    dst: ~/.config/pcmanfm
+    chmod: '700'
   d_files:
     src: config/files
     dst: ~/.config/files
-  d_fontconfig:
-    src: config/fontconfig
-    dst: ~/.config/fontconfig
+  d_sxiv:
+    src: config/sxiv
+    dst: ~/.config/sxiv
+  d_alacritty:
+    src: config/alacritty
+    dst: ~/.config/alacritty
+  d_cava:
+    src: config/cava
+    dst: ~/.config/cava
+  d_feh:
+    src: config/feh
+    dst: ~/.config/feh
   d_getkeys:
     src: config/getkeys
     dst: ~/.config/getkeys
@@ -57,94 +154,106 @@ dotfiles:
   d_i3status:
     src: config/i3status
     dst: ~/.config/i3status
-  d_mpd:
-    src: config/mpd
-    dst: ~/.config/mpd
   d_mpv:
     src: config/mpv
     dst: ~/.config/mpv
   d_nano:
     src: config/nano
     dst: ~/.config/nano
-  d_ncmpcpp:
-    src: config/ncmpcpp
-    dst: ~/.config/ncmpcpp
   d_neofetch:
     src: config/neofetch
     dst: ~/.config/neofetch
-  d_newsboat:
-    src: config/newsboat
-    dst: ~/.config/newsboat
-  d_nvim:
-    src: config/nvim
-    dst: ~/.config/nvim
-    chmod: '750'
   d_optimus-manager:
     src: config/optimus-manager
     dst: ~/.config/optimus-manager
   d_picom:
     src: config/picom
     dst: ~/.config/picom
-  d_ranger:
-    src: config/ranger
-    dst: ~/.config/ranger
-  d_rofi:
-    src: config/rofi
-    dst: ~/.config/rofi
-  d_spicetify:
-    src: config/spicetify
-    dst: ~/.config/spicetify
-    chmod: '700'
-  d_sublime-text-3:
-    src: config/sublime-text-3
-    dst: ~/.config/sublime-text-3
-    chmod: '700'
-  d_sxiv:
-    src: config/sxiv
-    dst: ~/.config/sxiv
   d_termite:
     src: config/termite
     dst: ~/.config/termite
-  d_thunar:
-    src: config/Thunar
-    dst: ~/.config/Thunar
   d_tmux:
     src: config/tmux
     dst: ~/.config/tmux
   d_tumbler:
     src: config/tumbler
     dst: ~/.config/tumbler
-  d_vifm:
-    src: config/vifm
-    dst: ~/.config/vifm
-  d_wal-discord:
-    src: config/wal-discord
-    dst: ~/.config/wal-discord
   d_zathura:
     src: config/zathura
     dst: ~/.config/zathura
+  d_wal:
+    src: config/wal
+    dst: ~/.config/wal
+  d_gimp:
+    src: config/GIMP
+    dst: ~/.config/GIMP
+  d_i3menu:
+    src: config/i3menu
+    dst: ~/.config/i3menu
+  d_spicetify:
+    src: config/spicetify
+    dst: ~/.config/spicetify
+    chmod: '700'
+  d_ncmpcpp:
+    src: config/ncmpcpp
+    dst: ~/.config/ncmpcpp
+  d_dunst:
+    src: config/dunst
+    dst: ~/.config/dunst
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_xarchiver:
+    src: config/xarchiver
+    dst: ~/.config/xarchiver
+    chmod: '700'
+  d_ranger:
+    src: config/ranger
+    dst: ~/.config/ranger
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
+    chmod: '750'
+  d_calcurse:
+    src: config/calcurse
+    dst: ~/.config/calcurse
+  d_betterdiscord:
+    src: config/BetterDiscord
+    dst: ~/.config/BetterDiscord
+  d_wal-discord:
+    src: config/wal-discord
+    dst: ~/.config/wal-discord
+  d_thunar:
+    src: config/Thunar
+    dst: ~/.config/Thunar
+  d_user:
+    src: config/sublime-text-3/Packages/User
+    dst: ~/.config/sublime-text-3/Packages/User
+    chmod: '700'
+  d_config_optimus-manager:
+    src: config/Optimus Manager
+    dst: ~/.config/Optimus Manager
+  d_fontconfig:
+    src: config/fontconfig
+    dst: ~/.config/fontconfig
+  f_mpd.conf:
+    src: config/mpd/mpd.conf
+    dst: ~/.config/mpd/mpd.conf
+  d_newsboat:
+    src: config/newsboat
+    dst: ~/.config/newsboat
   f_bmdirs:
     src: config/bmdirs
     dst: ~/.config/bmdirs
   f_bmfiles:
     src: config/bmfiles
     dst: ~/.config/bmfiles
-  f_greenclip.cfg:
-    src: config/greenclip.cfg
-    dst: ~/.config/greenclip.cfg
   f_kdenliverc:
     src: config/kdenliverc
     dst: ~/.config/kdenliverc
-  f_mimeapps.list:
-    src: config/mimeapps.list
-    dst: ~/.config/mimeapps.list
-    chmod: '600'
   f_mpd-notification.conf:
     src: config/mpd-notification.conf
     dst: ~/.config/mpd-notification.conf
-  f_pikaur.conf:
-    src: config/pikaur.conf
-    dst: ~/.config/pikaur.conf
   f_redshift.conf:
     src: config/redshift.conf
     dst: ~/.config/redshift.conf
@@ -154,6 +263,9 @@ dotfiles:
   f_tumbler.rc:
     src: config/tumbler.rc
     dst: ~/.config/tumbler.rc
+  f_pikaur.conf:
+    src: config/pikaur.conf
+    dst: ~/.config/pikaur.conf
   f_user-dirs.dirs:
     src: config/user-dirs.dirs
     dst: ~/.config/user-dirs.dirs
@@ -161,37 +273,56 @@ dotfiles:
   f_user-dirs.locale:
     src: config/user-dirs.locale
     dst: ~/.config/user-dirs.locale
-  d_gnupg:
-    src: gnupg
-    dst: ~/.gnupg
-    chmod: '700'
-  d_git_template:
-    src: git_template
-    dst: ~/.git_template
-  d_oh-my-zsh:
-    src: oh-my-zsh
-    dst: ~/.oh-my-zsh
-  d_pacbac:
-    src: pacbac
-    dst: ~/.pacbac
-  d_script:
-    src: script
-    dst: ~/.script
-    chmod: '711'
-  d_ssh:
-    src: ssh
-    dst: ~/.ssh
-  d_telegram-palette-gen:
-    src: telegram-palette-gen
-    dst: ~/.telegram-palette-gen
-  d_urxvt:
-    src: urxvt
-    dst: ~/.urxvt
-    chmod: '700'
-  d_weechat:
-    src: weechat
-    dst: ~/.weechat
-    chmod: '700'
+  f_mimeapps.list:
+    src: config/mimeapps.list
+    dst: ~/.config/mimeapps.list
+    chmod: '600'
+  f_greenclip.cfg:
+    src: config/greenclip.cfg
+    dst: ~/.config/greenclip.cfg
+  f_qtproject.conf:
+    src: config/QtProject.conf
+    dst: ~/.config/QtProject.conf
+  f_pavucontrol.ini:
+    src: config/pavucontrol.ini
+    dst: ~/.config/pavucontrol.ini
+  f_display_setup.sh:
+    src: etc/lightdm/display_setup.sh
+    dst: /etc/lightdm/display_setup.sh
+    chmod: '755'
+  f_lightdm.conf:
+    src: etc/lightdm/lightdm.conf
+    dst: /etc/lightdm/lightdm.conf
+  f_grub:
+    src: etc/default/grub
+    dst: /etc/default/grub
+  d_fonts:
+    src: local/share/fonts
+    dst: ~/.local/share/fonts
+  d_bin:
+    src: local/bin
+    dst: ~/.local/bin
+  f_nobeep.conf:
+    src: etc/modprobe.d/nobeep.conf
+    dst: /etc/modprobe.d/nobeep.conf
+  f_virtualbox.conf:
+    src: etc/modules-load.d/virtualbox.conf
+    dst: /etc/modules-load.d/virtualbox.conf
+  f_99-lowbat.rules:
+    src: etc/udev/rules.d/99-lowbat.rules
+    dst: /etc/udev/rules.d/99-lowbat.rules
+  f_locale.conf:
+    src: etc/locale.conf
+    dst: /etc/locale.conf
+  f_thinkfan.conf:
+    src: etc/thinkfan.conf
+    dst: /etc/thinkfan.conf
+  f_default.pa:
+    src: etc/pulse/default.pa
+    dst: /etc/pulse/default.pa
+  f_pacman.conf:
+    src: etc/pacman.conf
+    dst: /etc/pacman.conf
   d_downloads:
     src: Downloads
     dst: ~/Downloads
@@ -199,212 +330,108 @@ dotfiles:
     src: Pictures
     dst: ~/Pictures
     chmod: '700'
-  f_alarm.wav:
-    src: alarm.wav
-    dst: ~/.alarm.wav
-  f_amrc:
-    src: amrc
-    dst: ~/.amrc
-  f_bash_history:
-    src: bash_history
-    dst: ~/.bash_history
-    chmod: '600'
-  f_bash_logout:
-    src: bash_logout
-    dst: ~/.bash_logout
-  f_bash_profile:
-    src: bash_profile
-    dst: ~/.bash_profile
-  f_bashrc:
-    src: bashrc
-    dst: ~/.bashrc
-  f_dircolors:
-    src: dircolors
-    dst: ~/.dircolors
-  f_face:
-    src: face
-    dst: ~/.face
-  f_gitconfig:
-    src: gitconfig
-    dst: ~/.gitconfig
-  f_gitignore:
-    src: gitignore
-    dst: ~/.gitignore
-  f_gtkrc-2.0:
-    src: gtkrc-2.0
-    dst: ~/.gtkrc-2.0
-  f_imwheelrc:
-    src: imwheelrc
-    dst: ~/.imwheelrc
-  f_lock.png:
-    src: lock.png
-    dst: ~/.lock.png
-  f_nvidia-settings-rc:
-    src: nvidia-settings-rc
-    dst: ~/.nvidia-settings-rc
-  f_xdefaults:
-    src: Xdefaults
-    dst: ~/.Xdefaults
-  f_xmodmap:
-    src: Xmodmap
-    dst: ~/.Xmodmap
-  f_xprofile:
-    src: xprofile
-    dst: ~/.xprofile
-  f_xresources:
-    src: Xresources
-    dst: ~/.Xresources
-  f_zshrc:
-    src: zshrc
-    dst: ~/.zshrc
-  f_baba.txt:
-    src: baba.txt
-    dst: ~/baba.txt
-  d_bin:
-    src: local/bin
-    dst: ~/.local/bin
-  d_fonts:
-    src: local/share/fonts
-    dst: ~/.local/share/fonts
-  f_grub:
-    src: etc/default/grub
-    dst: /etc/default/grub
-  f_display_setup.sh:
-    src: etc/lightdm/display_setup.sh
-    dst: /etc/lightdm/display_setup.sh
-  f_lightdm.conf:
-    src: etc/lightdm/lightdm.conf
-    dst: /etc/lightdm/lightdm.conf
-  f_nobeep.conf:
-    src: etc/modprobe.d/nobeep.conf
-    dst: /etc/modprobe.d/nobeep.conf
-  f_pcspkr_blacklist.confor:
-    src: etc/modprobe.d/pcspkr_blacklist.confor
-    dst: /etc/modprobe.d/pcspkr_blacklist.confor
-  f_virtualbox.conf:
-    src: etc/modules-load.d/virtualbox.conf
-    dst: /etc/modules-load.d/virtualbox.conf
-  f_99-lowbat.rules:
-    src: etc/udev/rules.d/99-lowbat.rules
-    dst: /etc/udev/rules.d/99-lowbat.rules
-  f_config.inc.php:
-    src: etc/webapps/phpmyadmin/config.inc.php
-    dst: /etc/webapps/phpmyadmin/config.inc.php
-  f_locale.conf:
-    src: etc/locale.conf
-    dst: /etc/locale.conf
-  f_php.ini:
-    src: etc/php/php.ini
-    dst: /etc/php/php.ini
-  f_httpd.conf:
-    src: etc/httpd/conf/httpd.conf
-    dst: /etc/httpd/conf/httpd.conf
-  d_http:
-    src: srv/http
-    dst: /srv/http
-    chmod: '757'
-  f_thinkfan.conf:
-    src: etc/thinkfan.conf
-    dst: /etc/thinkfan.conf
-  f_default.pa:
-    src: etc/pulse/default.pa
-    dst: /etc/pulse/default.pa
 profiles:
   f13:
     dotfiles:
-    - f_vimrc
     - f_xinitrc
+    - f_xresources
+    - f_xprofile
+    - f_xmodmap
+    - f_xdefaults
+    - f_nvidia-settings-rc
+    - f_lock.png
+    - f_imwheelrc
+    - f_gtkrc-2.0
+    - f_gitignore
+    - f_gitconfig
+    - f_face
+    - f_dircolors
+    - f_bashrc
+    - f_bash_profile
+    - f_amrc
+    - f_alarm.wav
+    - d_weechat
+    - d_urxvt
+    - d_script
+    - d_pacbac
+    - d_git_template
+    - d_gnupg
+    - d_colors
+    - f_tmux.conf
+    - f_tmux.conf.osx
+    - f_tmux.powerline.conf
+    - f_dmrc
+    - f_xscreensaver
+    - f_fzf.bash
+    - f_fzf.zsh
+    - f_fehbg
+    - f_xauthority
     - d_polybar
-    - f_pacman.conf
-    - d_alacritty
-    - d_betterdiscord
-    - d_calcurse
-    - d_cava
-    - d_dunst
-    - d_feh
+    - d_systemd
+    - d_libfm
+    - d_pcmanfm
     - d_files
-    - d_fontconfig
+    - d_sxiv
+    - d_alacritty
+    - d_cava
+    - d_feh
     - d_getkeys
     - d_htop
     - d_i3
     - d_i3status
-    - d_mpd
     - d_mpv
     - d_nano
-    - d_ncmpcpp
     - d_neofetch
-    - d_newsboat
-    - d_nvim
     - d_optimus-manager
     - d_picom
-    - d_ranger
-    - d_rofi
-    - d_spicetify
-    - d_sublime-text-3
-    - d_sxiv
     - d_termite
-    - d_thunar
     - d_tmux
     - d_tumbler
-    - d_vifm
-    - d_wal-discord
     - d_zathura
+    - d_wal
+    - d_gimp
+    - d_i3menu
+    - d_spicetify
+    - d_ncmpcpp
+    - d_dunst
+    - d_rofi
+    - d_xarchiver
+    - d_ranger
+    - d_nvim
+    - d_calcurse
+    - d_betterdiscord
+    - d_wal-discord
+    - d_thunar
+    - d_user
+    - d_config_optimus-manager
+    - d_fontconfig
+    - f_mpd.conf
+    - d_newsboat
     - f_bmdirs
     - f_bmfiles
-    - f_greenclip.cfg
     - f_kdenliverc
-    - f_mimeapps.list
     - f_mpd-notification.conf
-    - f_pikaur.conf
     - f_redshift.conf
     - f_shortcutrc
     - f_tumbler.rc
+    - f_pikaur.conf
     - f_user-dirs.dirs
     - f_user-dirs.locale
-    - d_gnupg
-    - d_git_template
-    - d_oh-my-zsh
-    - d_pacbac
-    - d_script
-    - d_ssh
-    - d_telegram-palette-gen
-    - d_urxvt
-    - d_weechat
-    - d_downloads
-    - d_pictures
-    - f_alarm.wav
-    - f_amrc
-    - f_bash_history
-    - f_bash_logout
-    - f_bash_profile
-    - f_bashrc
-    - f_dircolors
-    - f_face
-    - f_gitconfig
-    - f_gitignore
-    - f_gtkrc-2.0
-    - f_imwheelrc
-    - f_lock.png
-    - f_nvidia-settings-rc
-    - f_xdefaults
-    - f_xmodmap
-    - f_xprofile
-    - f_xresources
-    - f_zshrc
-    - f_baba.txt
-    - d_bin
-    - d_fonts
-    - f_grub
+    - f_mimeapps.list
+    - f_greenclip.cfg
+    - f_qtproject.conf
+    - f_pavucontrol.ini
     - f_display_setup.sh
     - f_lightdm.conf
+    - f_grub
+    - d_fonts
+    - d_bin
     - f_nobeep.conf
-    - f_pcspkr_blacklist.confor
     - f_virtualbox.conf
     - f_99-lowbat.rules
-    - f_config.inc.php
     - f_locale.conf
-    - f_php.ini
-    - f_httpd.conf
-    - d_http
     - f_thinkfan.conf
     - f_default.pa
+    - f_pacman.conf
+    - d_downloads
+    - d_pictures
