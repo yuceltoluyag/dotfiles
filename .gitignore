@@ -1,5 +1,6 @@
 /home/friday13/Downloads
-/home/friday13/.weechat/logs
+/home/friday13/Documents/dotfiles/dotfiles/weechat/logs
+/home/friday13/Documents/dotfiles/dotfiles/weechat/.idea
 /home/friday13/Documents/dotfiles/dotfiles/local/bin/*.py
 *.idea
 *.tar

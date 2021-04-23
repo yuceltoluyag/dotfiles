@@ -67,6 +67,12 @@ dotfiles:
     src: urxvt
     dst: ~/.urxvt
     chmod: '700'
+    cmpignore:
+    - '*/urxvtd-f13'
+    upignore:
+    - '*/urxvtd-f13'
+    instignore:
+    - '*/urxvtd-f13'
   d_script:
     src: script
     dst: ~/.script
@@ -286,6 +292,7 @@ dotfiles:
   f_pavucontrol.ini:
     src: config/pavucontrol.ini
     dst: ~/.config/pavucontrol.ini
+    chmod: '666'
   f_display_setup.sh:
     src: etc/lightdm/display_setup.sh
     dst: /etc/lightdm/display_setup.sh
@@ -323,9 +330,6 @@ dotfiles:
   f_pacman.conf:
     src: etc/pacman.conf
     dst: /etc/pacman.conf
-  d_downloads:
-    src: Downloads
-    dst: ~/Downloads
   d_pictures:
     src: Pictures
     dst: ~/Pictures
@@ -433,5 +437,4 @@ profiles:
     - f_thinkfan.conf
     - f_default.pa
     - f_pacman.conf
-    - d_downloads
     - d_pictures

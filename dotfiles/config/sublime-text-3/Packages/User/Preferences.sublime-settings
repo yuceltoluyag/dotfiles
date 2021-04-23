@@ -33,5 +33,6 @@
 	"ui_separator": true,
 	"ui_wide_scrollbars": true,
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": false
+	"word_wrap": false,
+
 }

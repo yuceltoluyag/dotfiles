@@ -121,6 +121,7 @@ $super+Delete $exe ~/.script/dmenurecord dmenurecord kill
 $super+quotedbl $exe ~/.script/dmenuunicode
 $super+Insert $exe   ~/.script/showclip
 #bindsym $mod+b      bar mode toggle
+$super+b $exe polybar-msg cmd toggle
 bindsym $mod+Shift+b    floating toggle; sticky toggle; exec --no-startup-id hover left
 bindsym $mod+Shift+n    floating toggle; sticky toggle; exec --no-startup-id hover right
 # Screen brightness controls

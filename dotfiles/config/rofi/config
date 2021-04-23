@@ -3,10 +3,10 @@ rofi.width:                          50
 rofi.lines:                          15
 rofi.columns:                        1
 rofi.font:                           roboto mono 10
-rofi.color-normal:                   #0c0f16, #a5c3c3, #0c0f16, #4a6269, #a5c3c3
-rofi.color-urgent:                   #0c0f16, #d6b48d, #22231D, #d6b48d, #a5c3c3
-rofi.color-active:                   #0c0f16, #16888E, #0c0f16, #16888E, #0c0f16
-rofi.color-window:                   #0c0f16, #4a6269, #334348
+rofi.color-normal:                   #0C0B17, #b1baef, #0C0B17, #870a59, #b1baef
+rofi.color-urgent:                   #0C0B17, #d6b48d, #22231D, #d6b48d, #b1baef
+rofi.color-active:                   #0C0B17, #A90D70, #0C0B17, #A90D70, #0C0B17
+rofi.color-window:                   #0C0B17, #870a59, #5c073d
 rofi.bw:                             5
 rofi.location:                       0
 rofi.padding:                        5

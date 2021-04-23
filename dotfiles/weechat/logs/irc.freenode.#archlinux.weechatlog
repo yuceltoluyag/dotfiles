@@ -1685,3 +1685,511 @@
 2021-04-14 15:09:47	<--	evilop (~Urist@archlinux/op/pdpc.supporter.active.mrelendig) has quit (Quit: doot doot)
 2021-04-14 15:09:54	-->	lkhn_ (~lkhn@unaffiliated/lkhn) has joined #archlinux
 2021-04-14 15:10:08	greyltc[m]	`lsof | grep /tmp/lu86997gioobo.tmp`
+2021-04-16 17:28:21	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-16 17:28:21	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-16 17:28:21	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-16 17:28:21	--	Channel #archlinux: 1755 nicks (3 ops, 0 voices, 1752 normals)
+2021-04-16 17:28:21	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-16 17:28:52	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 240 seconds)
+2021-04-16 17:28:52	<--	ecool (~ecool@45.61.147.151) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2021-04-16 17:29:03	-->	demaio (~homer@ip-37-201-110-254.hsi13.unitymediagroup.de) has joined #archlinux
+2021-04-16 17:29:09	-->	sku1d (~sku1d@188.68.36.244) has joined #archlinux
+2021-04-16 17:30:07	-->	vuoto (~vuoto@80.71.142.174) has joined #archlinux
+2021-04-16 17:30:45	<--	humachine (~sysad@unaffiliated/humachine) has quit (Ping timeout: 252 seconds)
+2021-04-16 17:31:33	<--	aodn01 (~a@unaffiliated/aodn01) has quit (Quit: leaving)
+2021-04-16 17:31:41	-->	nuala (~nuala@unaffiliated/nuala) has joined #archlinux
+2021-04-16 17:32:32	-->	Morteza24 (b2831705@gateway/web/cgi-irc/kiwiirc.com/ip.178.131.23.5) has joined #archlinux
+2021-04-16 17:32:38	-->	yifan (~Thunderbi@101.228.43.52) has joined #archlinux
+2021-04-16 17:33:11	-->	hitest (~hitest@unaffiliated/hitest) has joined #archlinux
+2021-04-16 17:33:11	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 17:33:21	<--	frvr_ (~florea@83.103.192.98) has quit (Ping timeout: 260 seconds)
+2021-04-16 17:33:41	<--	andrei-n (~andrei-n@104.156-130-109.adsl-dyn.isp.belgacom.be) has quit (Quit: Leaving)
+2021-04-16 17:35:03	-->	leogallego_ (~leogalleg@45-8-245-190.fibertel.com.ar) has joined #archlinux
+2021-04-16 17:35:26	-->	Nact (~l@host-85-27-120-155.dynamic.voo.be) has joined #archlinux
+2021-04-16 17:35:42	<--	blue__penquin (~blue_penq@gateway/tor-sasl/bluepenquin/x-11613850) has quit (Remote host closed the connection)
+2021-04-16 17:36:00	-->	blue__penquin (~blue_penq@gateway/tor-sasl/bluepenquin/x-11613850) has joined #archlinux
+2021-04-16 17:36:38	<--	VideoGameEnjoyer (~davidv7@BSN-143-123-122.dynamic.siol.net) has quit (Remote host closed the connection)
+2021-04-16 17:37:08	<--	drathir_tor (~drathir@gateway/tor-sasl/drathir) has quit (Ping timeout: 240 seconds)
+2021-04-16 17:37:24	<--	blue__penquin (~blue_penq@gateway/tor-sasl/bluepenquin/x-11613850) has quit (Remote host closed the connection)
+2021-04-16 17:37:40	-->	blue__penquin (~blue_penq@gateway/tor-sasl/bluepenquin/x-11613850) has joined #archlinux
+2021-04-16 17:38:06	-->	Maiya (~paradox@223.178.56.36) has joined #archlinux
+2021-04-16 17:38:16	-->	frvr_ (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 17:38:25	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 260 seconds)
+2021-04-16 17:39:29	horseface	it works now.
+2021-04-16 17:39:32	horseface	thanks.
+2021-04-16 17:39:41	horseface	it was that, namarrgon.
+2021-04-16 17:39:56	horseface	it now works using rootflags=subvol=@
+2021-04-16 17:39:58	horseface	:-D
+2021-04-16 17:40:01	-->	jujudusud (~julien@2a01:cb1c:8050:b700:515e:711b:6513:9d31) has joined #archlinux
+2021-04-16 17:41:06	<--	SanskritFritz (~quassel@2E8B45C2.catv.pool.telekom.hu) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-04-16 17:41:32	<--	arora (~ashok@5.107.164.34) has quit (Ping timeout: 240 seconds)
+2021-04-16 17:42:40	<--	hussam (~hussam@unaffiliated/hussam) has quit (Quit: leaving)
+2021-04-16 17:43:02	-->	floft (garrett@gateway/vpn/privateinternetaccess/floft) has joined #archlinux
+2021-04-16 17:43:05	<--	frvr_ (~florea@83.103.192.98) has quit (Ping timeout: 260 seconds)
+2021-04-16 17:43:12	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 17:43:26	-->	SanskritFritz (~quassel@2E8B45C2.catv.pool.telekom.hu) has joined #archlinux
+2021-04-16 17:43:49	<--	Sithlord (~sithlord@unaffiliated/sithlord) has quit (Quit: Leaving)
+2021-04-16 17:44:55	<--	powerman2206 (~powerman2@42-66.dsl.iskon.hr) has quit (Quit: WeeChat 3.1)
+2021-04-16 17:47:17	<--	zoug (~zoug@193.16.236.6) has quit (Quit: Leaving)
+2021-04-16 17:47:48	-->	IAmnesia (~amnesia@85.191.191.172) has joined #archlinux
+2021-04-16 17:47:58	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 252 seconds)
+2021-04-16 17:48:12	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 17:48:17	<--	multi8 (~multi8@m83-185-84-74.cust.tele2.se) has quit (Read error: Connection reset by peer)
+2021-04-16 17:48:19	<--	IAmnesia (~amnesia@85.191.191.172) has quit (Read error: Connection reset by peer)
+2021-04-16 17:49:34	<--	floft (garrett@gateway/vpn/privateinternetaccess/floft) has quit (Remote host closed the connection)
+2021-04-16 17:49:45	<--	raster (~raster@enlightenment/developer/raster) has quit (Remote host closed the connection)
+2021-04-16 17:49:47	-->	drathir_tor (~drathir@gateway/tor-sasl/drathir) has joined #archlinux
+2021-04-16 17:50:06	-->	floft (garrett@gateway/vpn/privateinternetaccess/floft) has joined #archlinux
+2021-04-16 17:50:09	-->	multi8 (~multi8@m83-185-84-74.cust.tele2.se) has joined #archlinux
+2021-04-16 17:50:49	-->	Abbott (~Abbott@unaffiliated/abbott) has joined #archlinux
+2021-04-16 17:51:03	<--	LHLaurini (~LHLaurini@177.67.230.220.razaoinfo.com.br) has quit (Quit: Konversation terminated!)
+2021-04-16 17:51:07	-->	Nivlac (~gabriel@172.98.87.36) has joined #archlinux
+2021-04-16 17:51:10	Abbott	will makepkg work like make where I can continue a `makepkg -si` later and it will pick up where it left off?
+2021-04-16 17:51:47	-->	IAmnesia (~amnesia@85.191.191.172) has joined #archlinux
+2021-04-16 17:52:32	<--	thedragon (~thedragon@141.98.255.150) has quit (Quit: Leaving)
+2021-04-16 17:52:52	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 240 seconds)
+2021-04-16 17:52:54	<--	IAmnesia (~amnesia@85.191.191.172) has quit (Remote host closed the connection)
+2021-04-16 17:53:11	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 17:53:38	-->	ramses (~ramses@nat-35.starnet.cz) has joined #archlinux
+2021-04-16 17:53:41	-->	senex (~senex@2806:108e:17:34e3::1) has joined #archlinux
+2021-04-16 17:54:15	-->	raster (~raster@enlightenment/developer/raster) has joined #archlinux
+2021-04-16 17:54:26	-->	IAmnesia (~amnesia@85.191.191.172) has joined #archlinux
+2021-04-16 17:55:21	<--	kelnoky (~shao@ip1f128ba7.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 3.1)
+2021-04-16 17:55:43	slimefoot	Abbott: depends what you mean with "pick up where it left off" - it won't redownload sources, but it will re-extract them and do all the stuff in prepare(), build(), etc. - so it mostly depends on the PKGBUILD (i.e. what build system is used, and how the PKGBUILD itself is written)
+2021-04-16 17:55:57	<--	palasso (~palasso@unaffiliated/palasso) has quit (Remote host closed the connection)
+2021-04-16 17:56:24	-->	sandlst (~sandlst@170.249.173.10) has joined #archlinux
+2021-04-16 17:56:38	<--	akspecs (akspecs@ctrl-c.club) has quit (Quit: leaving)
+2021-04-16 17:56:51	slimefoot	but also, this feels like an XY question...
+2021-04-16 17:56:58	-->	Narrat (~Narrat@p200300df5f2fbf0f06ea56fffe2e7cdc.dip0.t-ipconnect.de) has joined #archlinux
+2021-04-16 17:57:31	-->	cdown_ (~cdown@89.32.122.5) has joined #archlinux
+2021-04-16 17:57:31	<--	finkata1 (~finkata@83.222.188.39) has quit (Read error: Connection reset by peer)
+2021-04-16 17:57:35	NetSysFire	yup
+2021-04-16 17:57:40	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 240 seconds)
+2021-04-16 17:57:54	-->	palasso (~palasso@unaffiliated/palasso) has joined #archlinux
+2021-04-16 17:58:12	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 17:58:20	<--	drathir_tor (~drathir@gateway/tor-sasl/drathir) has quit (Ping timeout: 240 seconds)
+2021-04-16 17:58:25	-->	Dedguy21 (475d4bb9@071-093-075-185.res.spectrum.com) has joined #archlinux
+2021-04-16 17:58:26	-->	finkata1 (~finkata@83.222.188.39) has joined #archlinux
+2021-04-16 17:58:31	-->	chmykh (~chmykh@mm-114-16-123-178.gomel.dynamic.pppoe.byfly.by) has joined #archlinux
+2021-04-16 17:58:34	<--	HaMsTeRs (~mx@182.152.40.210) has quit (Ping timeout: 268 seconds)
+2021-04-16 17:59:46	<--	cdown (~cdown@163.114.130.6) has quit (Ping timeout: 246 seconds)
+2021-04-16 17:59:50	--	cdown_ is now known as cdown
+2021-04-16 18:00:22	-->	parabolize (~paraboliz@c-76-25-97-149.hsd1.co.comcast.net) has joined #archlinux
+2021-04-16 18:00:45	<--	eoli3n_ (~eoli3n@82-64-112-150.subs.proxad.net) has quit (Remote host closed the connection)
+2021-04-16 18:00:59	<--	horseface (~horseface@unaffiliated/horseface) has quit (Quit: -a- IRC for Android 2.1.59)
+2021-04-16 18:01:13	-->	azed (~azed@196.228.222.180) has joined #archlinux
+2021-04-16 18:01:15	<--	jehelset (~jeh@cm-84.209.80.117.getinternet.no) has quit (Remote host closed the connection)
+2021-04-16 18:01:42	-->	kuon (~kuon@2a02:aa08:4024:ffd0::100) has joined #archlinux
+2021-04-16 18:01:58	Shapeshifter	q alis
+2021-04-16 18:02:01	-->	alexvp (~Thunderbi@host86-142-89-89.range86-142.btcentralplus.com) has joined #archlinux
+2021-04-16 18:02:08	-->	sudoforge (~sudoforge@c-73-243-238-132.hsd1.co.comcast.net) has joined #archlinux
+2021-04-16 18:02:39	<--	frostwork (~frostwork@pd958eefc.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2021-04-16 18:03:12	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 252 seconds)
+2021-04-16 18:03:17	<--	aviallon (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-04-16 18:04:51	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 18:05:04	-->	hyskaru (~hyskaru@unaffiliated/hyskaru) has joined #archlinux
+2021-04-16 18:05:18	<--	hyskaru (~hyskaru@unaffiliated/hyskaru) has quit (Client Quit)
+2021-04-16 18:07:00	Shapeshifter	I have a setup where I sometimes use headphones, sometimes my external amp and speakers. I needed to use an equalizer for the amp output to reduce bass. It took me forever to correctly configure alsa so this works: http://ix.io/2WiP Problem is, seems like some applications (steam?) cannot live without pulseaudio. But once I install pulseaudio, everything I configured in asound.conf seems to go out 
+2021-04-16 18:07:06	Shapeshifter	the window. It's super hard to understand how to get pulseaudio to simply sit on top of the alsa default device. I want alsa to take care of the channel output (dmix) and equalizing. I just want pulse to not mess with that. btw I also tried pulseaudio-equalizer but it's slow, choppy and overall bad.
+2021-04-16 18:09:30	-->	grzesuav (~grzesiek@public-gprs369779.centertel.pl) has joined #archlinux
+2021-04-16 18:09:32	<--	frvr (~florea@83.103.192.98) has quit (Ping timeout: 240 seconds)
+2021-04-16 18:09:38	MacGyver	You can't.
+2021-04-16 18:09:46	MacGyver	ALSA is two things.
+2021-04-16 18:09:52	<--	rts64 (~rts64@37.223.109.172) has quit (Ping timeout: 240 seconds)
+2021-04-16 18:09:52	-->	frvr (~florea@83.103.192.98) has joined #archlinux
+2021-04-16 18:10:03	MacGyver	One is the kernel-side audio framework that actually drives the hardware.
+2021-04-18 16:16:46	-->	friday13 (~friday13@ec2-18-184-152-191.eu-central-1.compute.amazonaws.com) has joined #archlinux
+2021-04-18 16:16:46	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-18 16:16:46	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-18 16:16:48	--	Channel #archlinux: 1748 nicks (3 ops, 0 voices, 1745 normals)
+2021-04-18 16:16:48	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-18 16:17:32	<--	d1cor (~d1cor@unaffiliated/d1cor) has quit (Ping timeout: 240 seconds)
+2021-04-18 16:17:53	<--	horseface (~horseface@unaffiliated/horseface) has quit (Quit: Leaving)
+2021-04-18 16:18:34	ploksi	Did it ever work for you?
+2021-04-18 16:18:35	GNU\colossus	see if blacklisting "nvidia" as per https://wiki.archlinux.org/index.php/Kernel_module#Using_kernel_command_line_2 can get you a usable system again
+2021-04-18 16:18:37	phrik	Title: Kernel module - ArchWiki (at wiki.archlinux.org)
+2021-04-18 16:19:13	GNU\colossus	(that would be without a GUI then)
+2021-04-18 16:19:31	DasPoseidon	for me just uninstalling nvidia helps. But I want to use my PC for gaming.
+2021-04-18 16:19:38	-->	Paddy_NI (~pi@cpc117256-ldry4-2-0-cust75.2-1.cable.virginm.net) has joined #archlinux
+2021-04-18 16:19:41	-->	urodna (~urodna@unaffiliated/urodna) has joined #archlinux
+2021-04-18 16:20:15	-->	js3z (~js3z@146.115.76.107) has joined #archlinux
+2021-04-18 16:20:30	GNU\colossus	have an eye open for bugreports and fixes then. also, maybe consider downgrading whatever you upgraded that led to this situation.
+2021-04-18 16:20:45	DasPoseidon	It also worked before but after an update it stopped working and I decided to just reinstall because I first installed with calam-arch and i wanted to get rid of it
+2021-04-18 16:21:09	<--	Icedman (~Icedman@unaffiliated/icedman) has quit (Quit: WeeChat 3.1)
+2021-04-18 16:24:11	<--	DasPoseidon (~daniel@180-120-142-46.pool.kielnet.net) has quit (Quit: Konversation terminated!)
+2021-04-18 16:24:11	<--	finkata1 (~finkata@83.222.188.39) has quit (Read error: Connection reset by peer)
+2021-04-18 16:24:13	-->	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has joined #archlinux
+2021-04-18 16:24:13	-->	linuxguru (~linuxguru@cpef0f24939d493-cmf0f24939d490.cpe.net.cable.rogers.com) has joined #archlinux
+2021-04-18 16:24:37	-->	DasPoseidon (~daniel@2001:9e8:2050:9300:1dda:9d27:d847:e23) has joined #archlinux
+2021-04-18 16:24:57	-->	finkata1 (~finkata@83.222.188.39) has joined #archlinux
+2021-04-18 16:24:57	DasPoseidon	Im just going to install manjaro for now I
+2021-04-18 16:25:05	-->	horseface (~horseface@unaffiliated/horseface) has joined #archlinux
+2021-04-18 16:25:11	thrice	k
+2021-04-18 16:25:22	-->	graffen (~graffen@mail.graffen.io) has joined #archlinux
+2021-04-18 16:26:07	Scimmia	because that will fix upstream driver compatibility issues for sure
+2021-04-18 16:26:16	-->	ice (c92b678b@unaffiliated/icew) has joined #archlinux
+2021-04-18 16:27:04	<--	nisstyre (wes@python-zero/conduct-committee/nisstyre) has quit (Ping timeout: 250 seconds)
+2021-04-18 16:27:17	friday13	Should all the settings here be done by the server? https://wiki.archlinux.org/index.php/OpenVPN#Installation
+2021-04-18 16:27:18	phrik	Title: OpenVPN - ArchWiki (at wiki.archlinux.org)
+2021-04-18 16:28:04	<--	Paddy_NI (~pi@cpc117256-ldry4-2-0-cust75.2-1.cable.virginm.net) has quit (Quit: leaving)
+2021-04-18 16:28:13	<--	Dantalion (~Dantalion@217-123-73-108.cable.dynamic.v4.ziggo.nl) has quit (Remote host closed the connection)
+2021-04-18 16:28:48	MacGyver	All the settings where?
+2021-04-18 16:28:53	DasPoseidon	Scimmia: Then help me find a solution
+2021-04-18 16:29:18	-->	nisstyre (wes@python-zero/conduct-committee/nisstyre) has joined #archlinux
+2021-04-18 16:29:40	thrice	DasPoseidon: the point is "installing manjaro" will likely lead to the same result, if it's a driver issue
+2021-04-18 16:31:06	-->	bubblegum (~bubblegum@gateway/tor-sasl/bubblegum) has joined #archlinux
+2021-04-18 16:31:21	DasPoseidon	Or ill just restore my backup and try again sometime else
+2021-04-18 16:32:59	-->	Andrew2000 (~andrew@41.234.219.183) has joined #archlinux
+2021-04-18 16:33:28	<--	lithiumpt (~lithiumpt@185.9.18.164) has quit (Ping timeout: 246 seconds)
+2021-04-18 16:33:35	Andrew2000	should I use flash filesystems for flash stuff (like SD cards, and USB drives)?
+2021-04-18 16:33:51	Nomenclatura	If everything else fails, just try something that dosn't make sense.
+2021-04-18 16:33:52	[VMGuy23]	"flash filesystems"?
+2021-04-18 16:34:19	-->	gzj (~gzj@unaffiliated/gzj) has joined #archlinux
+2021-04-18 16:34:39	MacGyver	DasPoseidon: Downgrade the nvidia driver to a version that worked. If that doesn't help, downgrade kernel + nvidia driver.
+2021-04-18 16:35:02	-->	trevarj (~trevarj@unaffiliated/reallife) has joined #archlinux
+2021-04-18 16:35:17	MacGyver	DasPoseidon: And "downgrade" in this case means "install a DKMS-package of that version".
+2021-04-18 16:35:19	-->	xoan3 (~xoan@unaffiliated/xoan) has joined #archlinux
+2021-04-18 16:35:23	Andrew2000	[VMGuy23]:  they are supposed to be filesystems that are made specifically for flash drives so they live longer or perform better (with respect to the hardware itself); so I'm wondering if it's worth it/really have effect
+2021-04-18 16:35:52	--	SpinTronix is now known as SpinTronix__
+2021-04-18 16:35:55	Andrew2000	https://en.wikipedia.org/wiki/Flash_file_system#Linux_flash_filesystems
+2021-04-18 16:35:55	phrik	Title: Flash file system - Wikipedia (at en.wikipedia.org)
+2021-04-18 16:36:01	<--	cisco87 (~cisco87@gateway/tor-sasl/cisco87) has quit (Remote host closed the connection)
+2021-04-18 16:36:02	<--	bamdad (~bamdad@gateway/tor-sasl/bamdad) has quit (Remote host closed the connection)
+2021-04-18 16:41:40	--	irc: disconnected from server
+2021-04-18 16:49:39	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-18 16:49:39	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-18 16:49:39	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-18 16:49:40	--	Channel #archlinux: 1758 nicks (3 ops, 0 voices, 1755 normals)
+2021-04-18 16:50:14	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-18 16:52:55	radu242	hey all, a question: until recently I remember being able to access my own Arch desktop by LAN IP from itself (i.e. 192.168.1.xx), now I can't, not sure what's changed. this is useful for bookmarks. Other clients on the network can access from that IP, just now I need to use "localhost" locally. where can I look into to bring this back to how it
+2021-04-18 16:53:00	radu242	was?
+2021-04-18 16:53:04	<--	JohnML (~john1@ip-37-201-129-30.hsi13.unitymediagroup.de) has quit (Ping timeout: 246 seconds)
+2021-04-18 16:53:54	<--	ManiacOfMadness (~ManiacOfM@2a02:2149:88e6:2800:82d3:1996:2a93:1c4d) has quit (Ping timeout: 260 seconds)
+2021-04-18 16:54:05	<--	dmgk (~dg@lucille.syrec.org) has left #archlinux
+2021-04-18 16:54:19	<--	bamdad (~bamdad@gateway/tor-sasl/bamdad) has quit (Quit: quit)
+2021-04-18 16:54:39	DasPoseidon	MacGyver: I did that. I have been trying to fix for pretty much one day now.
+2021-04-18 16:54:41	-->	bamdad_ (~bamdad@gateway/tor-sasl/bamdad) has joined #archlinux
+2021-04-18 16:56:16	MacGyver	DasPoseidon: Well I can't help you further than that suggestion, I'm afraid.
+2021-04-18 16:56:41	NetSysFire	radu242: depends on your network manager but it sounds like something has caused your router to issue another dhcp lease
+2021-04-18 16:56:45	MacGyver	radu242: 99% local firewall rules, 1% routing table shenanigans.
+2021-04-18 16:56:56	NetSysFire	oh i misread that
+2021-04-18 16:58:17	MacGyver	radu242: Could you start with pastebinning the output of `ip r`, `ip rule show`, `ip route show table local`?
+2021-04-18 16:58:18	<--	vuoto (~vuoto@80.71.142.174) has quit (Remote host closed the connection)
+2021-04-18 16:58:33	MacGyver	radu242: And then afterwards we'll probably need `sudo iptables-save`.
+2021-04-18 16:58:42	-->	jiriks74 (~jiriks74@93.89.107.181) has joined #archlinux
+2021-04-18 16:58:45	-->	vuoto (~vuoto@80.71.142.174) has joined #archlinux
+2021-04-18 16:58:47	<--	BoBeR182 (~BoBeR182@gateway/tor-sasl/bober182) has quit (Remote host closed the connection)
+2021-04-18 16:59:04	Ckat	so I assume the next release will be minus the installer right?
+2021-04-18 16:59:08	-->	BoBeR182 (~BoBeR182@gateway/tor-sasl/bober182) has joined #archlinux
+2021-04-18 16:59:09	Ckat	the post april 1st one
+2021-04-18 16:59:21	radu242	Yup will do! I was looking at those rules earlier, trying to fix a VPN / Plex setup, but I didn't think I changed anything.
+2021-04-18 16:59:30	NetSysFire	Ckat: read the /topic
+2021-04-18 16:59:48	Ckat	no but really its abysmal
+2021-04-18 16:59:56	NetSysFire	archinstall will stay optional, you can do your own thing
+2021-04-20 08:30:25	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-20 08:30:25	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-20 08:30:25	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-20 08:30:25	--	Channel #archlinux: 1708 nicks (1 op, 0 voices, 1707 normals)
+2021-04-20 08:30:25	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-20 08:34:13	friday13	good night
+2021-04-20 08:34:29	<--	carloratm (carloratm@tilde.club) has left #archlinux
+2021-04-20 08:35:02	-->	sauvin (sauvin@about/linux/staff/sauvin) has joined #archlinux
+2021-04-20 08:35:42	-->	binux (~calanon@ip-89-177-21-75.net.upcbroadband.cz) has joined #archlinux
+2021-04-20 08:36:09	-->	WaV (~|WaV|@ip24-250-134-105.ga.at.cox.net) has joined #archlinux
+2021-04-20 08:39:17	-->	SpinTronix (~SpinTroni@HSI-KBW-091-089-020-221.hsi2.kabelbw.de) has joined #archlinux
+2021-04-20 08:39:46	-->	docrobot (~docrobot@unaffiliated/docrobot) has joined #archlinux
+2021-04-20 08:41:15	<--	pankaj (~pankaj@45.248.1.21) has quit (Quit: leaving)
+2021-04-20 08:41:49	-->	ransome (~quassel@151.35.218.122) has joined #archlinux
+2021-04-20 08:44:31	<--	floft (garrett@gateway/vpn/privateinternetaccess/floft) has quit (Quit: Leaving.)
+2021-04-21 22:53:52	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-21 22:53:52	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-21 22:53:52	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:36
+2021-04-21 22:53:52	--	Channel #archlinux: 1746 nicks (1 op, 0 voices, 1745 normals)
+2021-04-21 22:53:52	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-21 22:54:06	<--	nij (~user@2001-48F8-9021-806-0-0-0-580E-dynamic.midco.net) has left #archlinux ("ERC (IRC client for Emacs 27.2)")
+2021-04-21 22:54:40	derzahl	so systemd apparently has some services to do thishttps://man.archlinux.org/man/core/systemd/systemd-hibernate-resume@.service.8.en
+2021-04-21 22:54:41	phrik	Title: systemd-hibernate-resume@.service(8) — Arch manual pages (at man.archlinux.org)
+2021-04-21 22:54:57	derzahl	but i cant find any documentation on how exactly to enable them
+2021-04-21 22:55:18	<--	Zum0 (~bje@0x5b90c017.dhcp.fiberflex.dk) has quit (Client Quit)
+2021-04-21 22:55:34	-->	Zum0 (~bje@0x5b90c017.dhcp.fiberflex.dk) has joined #archlinux
+2021-04-21 22:55:48	-->	Dedguy21 (475d4bb9@071-093-075-185.res.spectrum.com) has joined #archlinux
+2021-04-21 22:56:47	NetSysFire	did you try it without plymouth?
+2021-04-21 22:57:07	-->	Lord_of_Life_ (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux
+2021-04-21 22:57:48	<--	bubblegum (~bubblegum@gateway/tor-sasl/bubblegum) has quit (Quit: bubblegum)
+2021-04-21 22:57:48	<--	Murray_B (~Murray_B@55d48334.access.ecotel.net) has quit (Quit: WeeChat 3.1)
+2021-04-21 22:57:54	<--	powerman2206 (~powerman2@39-48.dsl.iskon.hr) has quit (Quit: WeeChat 3.1)
+2021-04-21 22:58:39	derzahl	no, i can give that a try
+2021-04-21 22:58:41	<--	Pickchea (~private@unaffiliated/pickchea) has quit (Quit: Leaving)
+2021-04-21 22:58:42	derzahl	one min
+2021-04-21 22:59:39	-->	Andrew2000 (~andrew@41.37.61.72) has joined #archlinux
+2021-04-21 23:00:07	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:00:14	--	Lord_of_Life_ is now known as Lord_of_Life
+2021-04-21 23:02:15	<--	Zum0 (~bje@0x5b90c017.dhcp.fiberflex.dk) has quit (Quit: WeeChat 2.8)
+2021-04-21 23:02:18	-->	kish`_ (~oracle@gateway/tor-sasl/oracle) has joined #archlinux
+2021-04-21 23:02:46	<--	kish` (~oracle@gateway/tor-sasl/oracle) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:03:21	--	SpinTronix__ is now known as SpinTronix
+2021-04-21 23:04:59	-->	espresso (~eis@gateway/tor-sasl/sescenarius) has joined #archlinux
+2021-04-21 23:05:43	--	kish`_ is now known as kish`
+2021-04-21 23:06:14	<--	derzahl (~derzahl@136-26-76-145.cab.webpass.net) has quit (Read error: Connection reset by peer)
+2021-04-21 23:06:22	<--	Cyrinux (~cyril1@mail.levis.name) has quit (Quit: bye)
+2021-04-21 23:06:25	<--	SleepingShell (~SleepingS@unaffiliated/sleepingshell) has quit (Quit: Bye!)
+2021-04-21 23:06:54	-->	derzahl (~derzahl@136-26-76-145.cab.webpass.net) has joined #archlinux
+2021-04-21 23:07:06	derzahl	no luck without plymouth either
+2021-04-21 23:07:14	<--	ransome (~quassel@151.37.147.216) has quit (Read error: Connection reset by peer)
+2021-04-21 23:07:34	derzahl	i think i just need to enable the systemd service, but cant find any dox on how to
+2021-04-21 23:07:51	-->	ransome (~quassel@151.35.208.64) has joined #archlinux
+2021-04-21 23:08:01	derzahl	systemd-hibernate-resume-generator is supposed to set it all up but it does nothing
+2021-04-21 23:08:09	derzahl	gives no output
+2021-04-21 23:08:13	-->	Zum0 (~bje@0x5b90c017.dhcp.fiberflex.dk) has joined #archlinux
+2021-04-21 23:08:22	derzahl	has no usage info
+2021-04-21 23:08:32	-->	Cyrinux (~cyril1@mail.levis.name) has joined #archlinux
+2021-04-21 23:08:46	NetSysFire	there are three possibilites: hang around until someone answers you here, go to one of the zfs specific channels or to the #systemd one. i would actually recommend the zfs one since tbh it looks like some sort of misconfiguration since you mentioned other problems, too
+2021-04-21 23:09:07	<--	multi8 (~multi8@m83-187-181-60.cust.tele2.se) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:09:23	aphirst	good start would be #zfsonlinux
+2021-04-21 23:09:25	aphirst	good community :)
+2021-04-21 23:09:55	<--	Zum0 (~bje@0x5b90c017.dhcp.fiberflex.dk) has quit (Client Quit)
+2021-04-21 23:10:30	-->	jnt_ (~jnt@dyndsl-178-142-069-023.ewe-ip-backbone.de) has joined #archlinux
+2021-04-21 23:11:34	<--	rj (~x@gateway/tor-sasl/rj) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:12:03	<--	jnt (~jnt@host-091-097-184-034.ewe-ip-backbone.de) has quit (Ping timeout: 268 seconds)
+2021-04-21 23:12:03	--	jnt_ is now known as jnt
+2021-04-21 23:12:05	derzahl	ok thanks
+2021-04-21 23:12:27	derzahl	ill try #zfsonlinux
+2021-04-21 23:13:01	<--	demaio (~homer@ip-176-199-67-189.hsi06.unitymediagroup.de) has quit (Quit: WeeChat 3.1)
+2021-04-21 23:14:28	-->	adamik (~delet@unaffiliated/adamik) has joined #archlinux
+2021-04-21 23:14:47	-->	Cthulu201 (~Cthulu201@unaffiliated/cthulu201) has joined #archlinux
+2021-04-21 23:15:47	-->	redgloboli (~redglobol@unaffiliated/redgloboli) has joined #archlinux
+2021-04-21 23:16:36	<--	VinnySauce (VinnySauce@gateway/vpn/mullvad/vinnysauce) has quit (Quit: Leaving)
+2021-04-21 23:16:38	<--	Dedguy21 (475d4bb9@071-093-075-185.res.spectrum.com) has quit (Quit: Connection closed)
+2021-04-21 23:16:42	<--	bakerboy (~gordy@84.64.246.158) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:16:46	-->	rj (~x@gateway/tor-sasl/rj) has joined #archlinux
+2021-04-21 23:17:02	<--	alexherbo2 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has quit (Ping timeout: 260 seconds)
+2021-04-21 23:19:10	<--	nycex (~nycex@gateway/tor-sasl/nycex) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:19:39	-->	nycex (~nycex@gateway/tor-sasl/nycex) has joined #archlinux
+2021-04-21 23:21:11	<--	akiva (~akiva@d50-92-124-213.bchsia.telus.net) has quit (Ping timeout: 252 seconds)
+2021-04-21 23:21:42	<--	epoll[m] (epollmozil@gateway/shell/matrix.org/x-llxfskbrmulrplmx) has left #archlinux ("User left")
+2021-04-21 23:21:51	-->	Dedguy21 (475d4bb9@071-093-075-185.res.spectrum.com) has joined #archlinux
+2021-04-21 23:22:01	<--	Nahra (~user@unaffiliated/nahra) has quit (Ping timeout: 245 seconds)
+2021-04-21 23:22:48	h4rd3n3D	o/ NetSysFire - yup zfs here, but been distracted - definitely no plymouth hooks here
+2021-04-21 23:23:08	-->	safeith (~safeith@gateway/tor-sasl/safeith) has joined #archlinux
+2021-04-21 23:23:36	-->	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has joined #archlinux
+2021-04-21 23:23:53	-->	alexherbo2 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has joined #archlinux
+2021-04-21 23:24:31	<--	ros2468 (~dataopera@2001:4652:1afb:0:537c:80fd:c006:8933) has quit (Ping timeout: 245 seconds)
+2021-04-21 23:25:45	-->	zapwai (~zapwai@2600:8805:8002:ed00:346a:d6e3:bd63:1a16) has joined #archlinux
+2021-04-21 23:25:48	-->	SleepingShell (~SleepingS@unaffiliated/sleepingshell) has joined #archlinux
+2021-04-21 23:25:58	<--	daysun (~sunday@gateway/tor-sasl/sunday) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:26:51	<--	grzesuav (~grzesiek@public-gprs369779.centertel.pl) has quit (Quit: Konversation terminated!)
+2021-04-21 23:27:56	<--	Dedguy21 (475d4bb9@071-093-075-185.res.spectrum.com) has quit (Quit: Connection closed)
+2021-04-21 23:30:08	-->	ax1 (~axl@pool-96-234-150-212.bltmmd.fios.verizon.net) has joined #archlinux
+2021-04-21 23:30:09	Delvien	if using encrypted root, you have to use plymouth-zfs, which he is'
+2021-04-21 23:31:20	<--	szorfein (~daggoth@gateway/tor-sasl/szorfein) has quit (Quit: szorfein)
+2021-04-21 23:31:21	<--	safeith (~safeith@gateway/tor-sasl/safeith) has quit (Quit: leaving)
+2021-04-21 23:31:46	ice9	qdigidoc4 from AUR fail to install due to:
+2021-04-21 23:31:47	ice9	:: failed to verify integrity or prepare xml-security-c package
+2021-04-21 23:31:47	ice9	:: failed to verify integrity or prepare libdigidocpp package
+2021-04-21 23:31:47	ice9	:: failed to verify integrity or prepare qdigidoc4 package
+2021-04-21 23:31:49	h4rd3n3D	Delvien:  my zfs / is encrypted, and again, no plymouth hooks here
+2021-04-21 23:31:52	ice9	how to solve that?
+2021-04-21 23:32:07	-->	alexvp (~Thunderbi@2.222.131.201) has joined #archlinux
+2021-04-21 23:34:23	-->	safeith (~safeith@gateway/tor-sasl/safeith) has joined #archlinux
+2021-04-21 23:34:24	<--	safeith (~safeith@gateway/tor-sasl/safeith) has quit (Client Quit)
+2021-04-21 23:34:43	<--	e2k (~e2k@dsl-hkibng32-54f844-221.dhcp.inet.fi) has quit (Ping timeout: 252 seconds)
+2021-04-21 23:35:28	-->	MZA (~muzo@165.56.181.36) has joined #archlinux
+2021-04-21 23:36:13	<--	scabootssca (~scabootss@unaffiliated/scabootssca) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:36:21	<--	alx741 (~alx741@181.196.68.199) has quit (Ping timeout: 246 seconds)
+2021-04-21 23:36:40	-->	e2k (~e2k@dsl-hkibng32-54f844-221.dhcp.inet.fi) has joined #archlinux
+2021-04-21 23:36:57	-->	safeith (~safeith@gateway/tor-sasl/safeith) has joined #archlinux
+2021-04-21 23:37:36	<--	liquidsky42 (~liquidsky@b2b-94-79-175-78.unitymedia.biz) has quit (Quit: liquidsky42)
+2021-04-21 23:38:25	mpan	ice9: please clarify. You report installation problems, yet the errors seem like from makepkg, so build, not installation. Also makepkg can’t build multiple packages, so that looks like fragments from multiple build sessions — please provide the full log and how do you invoke `makepkg`.
+2021-04-21 23:39:04	ice9	mpan, that's pacaur actually
+2021-04-21 23:39:10	<--	Cyrinux (~cyril1@mail.levis.name) has quit (Quit: bye)
+2021-04-21 23:39:28	mpan	Build it the normal way and see if the problem persists.
+2021-04-21 23:40:09	<--	horseface (~horseface@unaffiliated/horseface) has quit (Quit: Leaving)
+2021-04-21 23:40:31	-->	horseface (~horseface@unaffiliated/horseface) has joined #archlinux
+2021-04-21 23:40:50	-->	marc3 (~marc@37.164.0.86) has joined #archlinux
+2021-04-21 23:41:32	<--	MZA (~muzo@165.56.181.36) has quit (Quit: WeeChat 3.1)
+2021-04-21 23:41:45	-->	epoll[m] (epollmozil@gateway/shell/matrix.org/x-llxfskbrmulrplmx) has joined #archlinux
+2021-04-21 23:41:52	-->	Cyrinux (~cyril1@mail.levis.name) has joined #archlinux
+2021-04-21 23:43:31	<--	marc2 (~marc@37.172.68.106) has quit (Ping timeout: 252 seconds)
+2021-04-21 23:43:34	<--	safeith (~safeith@gateway/tor-sasl/safeith) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:43:41	-->	alexandros_c_ (~quassel@unaffiliated/alexandros-c/x-1684531) has joined #archlinux
+2021-04-21 23:45:01	--	Swant is now known as IKEA
+2021-04-21 23:45:20	<--	IKEA (swant@freenode/staff/swant) has quit (Remote host closed the connection)
+2021-04-21 23:46:31	<--	derzahl (~derzahl@136-26-76-145.cab.webpass.net) has quit (Read error: Connection reset by peer)
+2021-04-21 23:46:45	-->	TheSilencedOne (~TheSilenc@cpe-74-69-236-2.ne.res.rr.com) has joined #archlinux
+2021-04-21 23:46:46	-->	Swant (swant@freenode/staff/swant) has joined #archlinux
+2021-04-21 23:47:00	<--	TheSilencedOne (~TheSilenc@cpe-74-69-236-2.ne.res.rr.com) has quit (Client Quit)
+2021-04-21 23:47:02	<--	alexandros_c (~quassel@unaffiliated/alexandros-c/x-1684531) has quit (Ping timeout: 252 seconds)
+2021-04-21 23:47:38	<--	sord937 (~sord937@gateway/tor-sasl/sord937) has quit (Quit: sord937)
+2021-04-21 23:48:12	<--	esselfe (~steph@unaffiliated/esselfe) has quit (Quit: 1000‰ Linux)
+2021-04-21 23:49:14	-->	alx741 (~alx741@186.178.109.231) has joined #archlinux
+2021-04-21 23:49:44	-->	Dedguy21 (475d4bb9@071-093-075-185.res.spectrum.com) has joined #archlinux
+2021-04-21 23:49:47	<--	hypercube (hypercube@gateway/vpn/protonvpn/hypercube) has quit (Quit: WeeChat 3.1)
+2021-04-21 23:51:06	<--	LKoen (~LKoen@92.163.9.109.rev.sfr.net) has quit (Quit: “It’s only logical. First you learn to talk, then you learn to think. Too bad it’s not the other way round.”)
+2021-04-21 23:51:12	<--	stef204 (~stef204@unaffiliated/stef-204/x-384198) has quit (Quit: WeeChat 3.1)
+2021-04-21 23:51:13	<--	infides (~infides@i5C75F8B5.versanet.de) has quit (Ping timeout: 252 seconds)
+2021-04-21 23:51:42	<--	wasutton3 (~wasutton3@75-46-236-127.lightspeed.tukrga.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:52:07	<--	Ram-Z (~Ram-Z@li1814-254.members.linode.com) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:52:19	-->	stef204 (~stef204@unaffiliated/stef-204/x-384198) has joined #archlinux
+2021-04-21 23:52:46	<--	spiri_ (~spiri@unaffiliated/spiri) has quit (Quit: Leaving)
+2021-04-21 23:53:02	-->	Ram-Z (~Ram-Z@li1814-254.members.linode.com) has joined #archlinux
+2021-04-21 23:54:10	--	Swant is now known as IKEA
+2021-04-21 23:54:17	-->	irb (NSAEchelon@retribution.maleficarum.org) has joined #archlinux
+2021-04-21 23:54:21	<--	IKEA (swant@freenode/staff/swant) has quit (Remote host closed the connection)
+2021-04-21 23:54:27	Delvien	h4rd3n3D: are you using plymouth at all?
+2021-04-21 23:54:42	-->	Swant (swant@freenode/staff/swant) has joined #archlinux
+2021-04-21 23:55:03	<--	Cyrinux (~cyril1@mail.levis.name) has quit (Quit: bye)
+2021-04-21 23:55:27	Delvien	because there was another user asking about things, encrypted root, and had plymouth hooks.
+2021-04-21 23:55:32	Delvien	which is what i was responding to
+2021-04-21 23:55:38	h4rd3n3D	Delvien:  nope
+2021-04-21 23:55:58	Delvien	It wasnt directed at you.
+2021-04-21 23:56:21	ice9	mpan, i tried building one of the packages manually and got:
+2021-04-21 23:56:22	ice9	xml-security-c-2.0.2.tar.bz2 ... FAILED (unknown public key 378B845402277962)
+2021-04-21 23:56:22	ice9	==> ERROR: One or more PGP signatures could not be verified!
+2021-04-21 23:56:31	mpan	ice9: do you have that key?
+2021-04-21 23:56:39	ice9	mpan, no
+2021-04-21 23:56:40	mpan	ice9: …
+2021-04-21 23:56:49	mpan	ice9: have you ever built packages without using an AUR helper?
+2021-04-21 23:57:08	ice9	mpan, yes and they usually works fine from the first time
+2021-04-21 23:57:19	<--	ax1 (~axl@pool-96-234-150-212.bltmmd.fios.verizon.net) has quit (Quit: WeeChat 2.3)
+2021-04-21 23:57:29	h4rd3n3D	Delvien:  and I also don't use plymouth on my btrfs encrypted /boot, / and swap systems
+2021-04-21 23:57:39	mpan	ice9: https://wiki.archlinux.org/index.php/Makepkg#Signature_checking
+2021-04-21 23:57:40	phrik	Title: makepkg - ArchWiki (at wiki.archlinux.org)
+2021-04-21 23:57:44	-->	esselfe (~steph@unaffiliated/esselfe) has joined #archlinux
+2021-04-21 23:57:59	<--	espresso (~eis@gateway/tor-sasl/sescenarius) has quit (Quit: WeeChat 3.1)
+2021-04-21 23:58:22	<--	rj (~x@gateway/tor-sasl/rj) has quit (Ping timeout: 240 seconds)
+2021-04-21 23:58:35	<--	esselfe (~steph@unaffiliated/esselfe) has quit (Client Quit)
+2021-04-21 23:58:56	-->	esselfe (~steph@unaffiliated/esselfe) has joined #archlinux
+2021-04-21 23:58:58	-->	daniel11420 (~daniel114@unaffiliated/daniel11420) has joined #archlinux
+2021-04-21 23:59:00	-->	Cyrinux (~cyril1@mail.levis.name) has joined #archlinux
+2021-04-21 23:59:01	<--	e2k (~e2k@dsl-hkibng32-54f844-221.dhcp.inet.fi) has quit (Remote host closed the connection)
+2021-04-21 23:59:38	-->	vgeneric (~Generic@2601:142:2:6940::ae8f) has joined #archlinux
+2021-04-22 07:28:44	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-22 07:28:44	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-22 07:28:44	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-22 07:28:44	--	Channel #archlinux: 1679 nicks (1 op, 0 voices, 1678 normals)
+2021-04-22 07:28:44	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-22 07:29:44	-->	finkata1 (~finkata@83.222.188.39) has joined #archlinux
+2021-04-22 07:30:21	<--	vgeneric (~Generic@2601:142:2:6940::ae8f) has quit (Ping timeout: 245 seconds)
+2021-04-22 07:35:04	friday13	/bar hide nicklist
+2021-04-22 07:35:53	<--	hussam (~hussam@unaffiliated/hussam) has quit (Ping timeout: 240 seconds)
+2021-04-22 07:37:13	friday13	sorry
+2021-04-22 07:38:00	Prestige	unforgivable
+2021-04-22 07:38:23	-->	Enitin (~enitin@37.120.203.180) has joined #archlinux
+2021-04-22 07:41:17	friday13	:'(
+2021-04-22 07:41:38	<--	adamik (~delet@unaffiliated/adamik) has quit (Quit: Lost terminal)
+2021-04-22 07:41:47	NetSysFire	we just *may* forgive you if you post pics of your cat right now
+2021-04-22 07:42:00	-->	adamik (~delet@unaffiliated/adamik) has joined #archlinux
+2021-04-22 07:42:17	DigitalKiwi	but i like dawgs :(
+2021-04-22 07:42:53	NetSysFire	cats are clearly superior
+2021-04-22 07:44:04	<--	emberquill (~emberquil@162.245.221.142) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-04-22 07:44:35	<--	bin4ry (~bin4ry@128.199.135.148) has quit (Quit: Ping timeout (120 seconds))
+2021-04-22 07:44:42	-->	emberquill (~emberquil@162.245.221.142) has joined #archlinux
+2021-04-22 07:44:56	-->	bin4ry (~bin4ry@128.199.135.148) has joined #archlinux
+2021-04-22 07:45:13	<--	mostafa_s (~Mir@5.233.92.37) has left #archlinux
+2021-04-22 07:45:14	-->	Jormungandr89 (~brad@136.49.61.2) has joined #archlinux
+2021-04-22 07:45:36	rcf	Lies 
+2021-04-22 07:46:20	NetSysFire	!fight cat dog
+2021-04-22 07:46:20	phrik	cat
+2021-04-22 07:46:37	friday13	cat
+2021-04-22 07:46:58	friday13	clear
+2021-04-22 07:47:04	friday13	pff:D
+2021-04-22 07:47:16	rcf	I mean you'd be correct in that I'd sooner eat a cat, I suppose. 
+2021-04-22 07:47:34	<--	emberquill (~emberquil@162.245.221.142) has quit (Client Quit)
+2021-04-22 07:47:59	<--	victorbrca (~victorbrc@unaffiliated/victorbrca) has quit (Quit: Ping timeout (120 seconds))
+2021-04-22 07:48:23	-->	victorbrca (~victorbrc@unaffiliated/victorbrca) has joined #archlinux
+2021-04-22 07:48:45	-->	emberquill (~emberquil@162.245.221.142) has joined #archlinux
+2021-04-22 07:49:06	<--	rtypo (~alex@unaffiliated/rtypo) has quit (Ping timeout: 245 seconds)
+2021-04-22 07:50:50	-->	C5OK5Y (~C5OK5Y@ip-94-113-67-204.net.upcbroadband.cz) has joined #archlinux
+2021-04-22 07:50:58	 *	Nomenclatura roasts rcf with his own bbq sauce recipe
+2021-04-22 07:52:17	NetSysFire	oooh burn
+2021-04-22 07:54:26	-->	horseface (~horseface@unaffiliated/horseface) has joined #archlinux
+2021-04-22 07:54:58	<--	floft (garrett@gateway/vpn/privateinternetaccess/floft) has quit (Quit: Leaving.)
+2021-04-22 07:55:22	-->	tent405 (~morticide@107-214-50-180.lightspeed.bcvloh.sbcglobal.net) has joined #archlinux
+2021-04-22 07:56:25	-->	rtypo (~alex@unaffiliated/rtypo) has joined #archlinux
+2021-04-22 07:58:07	-->	zaxs (zaxs@gateway/vpn/privateinternetaccess/zaxs) has joined #archlinux
+2021-04-22 07:59:42	<--	zapwai (~zapwai@2600:8805:8002:ed00:346a:d6e3:bd63:1a16) has quit (Quit: Slackin')
+2021-04-22 08:00:00	--	thurstylark is now known as thursdaylark
+2021-04-22 08:02:42	-->	rj__ (~x@gateway/tor-sasl/rj) has joined #archlinux
+2021-04-22 08:02:46	<--	rj_ (~x@gateway/tor-sasl/rj) has quit (Ping timeout: 240 seconds)
+2021-04-22 08:03:12	<--	CosmosAtlas (~CosmosAtl@180.110.107.139) has quit (Quit: WeeChat 3.1)
+2021-04-22 08:03:31	-->	trevarj (~trevarj@unaffiliated/reallife) has joined #archlinux
+2021-04-22 08:05:10	<--	Megver83 (~Icedove@pc-88-170-100-190.cm.vtr.net) has quit (Ping timeout: 265 seconds)
+2021-04-22 08:06:59	<--	rtypo (~alex@unaffiliated/rtypo) has quit (Ping timeout: 252 seconds)
+2021-04-22 08:08:00	-->	andrei-n (~andrei-n@109.130.156.104) has joined #archlinux
+2021-04-22 08:08:15	<--	Betal (~Betal@unaffiliated/betal) has quit (Quit: WeeChat 3.1)
+2021-04-22 08:09:43	-->	multi8 (~multi8@m83-187-181-60.cust.tele2.se) has joined #archlinux
+2021-04-22 08:10:13	-->	demaio (~homer@ip-176-199-67-189.hsi06.unitymediagroup.de) has joined #archlinux
+2021-04-22 08:10:14	<--	ahmubashshir (~ahmubashs@103.133.202.3) has quit (Remote host closed the connection)
+2021-04-22 08:13:09	-->	sord937 (~sord937@gateway/tor-sasl/sord937) has joined #archlinux
+2021-04-22 08:15:42	<--	multi8 (~multi8@m83-187-181-60.cust.tele2.se) has quit (Ping timeout: 240 seconds)
+2021-04-22 08:16:54	-->	szorfein (~daggoth@gateway/tor-sasl/szorfein) has joined #archlinux
+2021-04-22 08:20:36	DigitalKiwi	i prefer roasted not burnt
+2021-04-22 08:20:46	<--	txtsd (~txtsd@103.228.43.144) has quit (Ping timeout: 245 seconds)
+2021-04-22 08:23:21	<--	Zauberfisch (~Zauberfis@unaffiliated/zauberfisch) has quit (Ping timeout: 268 seconds)
+2021-04-22 08:23:42	-->	txtsd (~txtsd@103.228.43.144) has joined #archlinux
+2021-04-22 08:23:47	<--	gschanuel (~gschanuel@200-181-252-244.user3p.brasiltelecom.net.br) has quit (Read error: Connection reset by peer)
+2021-04-22 08:23:56	-->	abdulhakeem (~abdulhake@c-73-209-189-92.hsd1.il.comcast.net) has joined #archlinux
+2021-04-22 08:24:03	-->	gschanuel (~gschanuel@200-181-252-244.user3p.brasiltelecom.net.br) has joined #archlinux
+2021-04-22 08:26:19	-->	sauvin (sauvin@about/linux/staff/sauvin) has joined #archlinux
+2021-04-22 08:26:40	<--	adamik (~delet@unaffiliated/adamik) has quit (Quit: Lost terminal)
+2021-04-22 08:27:11	-->	adamik (~delet@unaffiliated/adamik) has joined #archlinux
+2021-04-22 08:29:10	<--	abdulhakeem (~abdulhake@c-73-209-189-92.hsd1.il.comcast.net) has quit (Quit: Leaving)
+2021-04-22 08:32:47	<--	Enitin (~enitin@37.120.203.180) has quit (Ping timeout: 260 seconds)
+2021-04-22 08:33:11	<--	mryandao_ (~mryandao@gateway/tor-sasl/mryandao) has quit (Remote host closed the connection)
+2021-04-22 08:33:25	<--	invalido (~Digitalkl@2a03:8600:1001:1337::2001) has quit (Quit: WeeChat 3.1)
+2021-04-22 08:34:33	-->	bakerboy (~gordy@84.64.246.158) has joined #archlinux
+2021-04-22 08:35:37	-->	ransome (~quassel@151.37.178.164) has joined #archlinux
+2021-04-22 08:35:40	<--	ledeni (~ledeni@fedora/ledeni) has quit (Remote host closed the connection)
+2021-04-22 08:36:19	-->	mryandao (~mryandao@gateway/tor-sasl/mryandao) has joined #archlinux
+2021-04-23 17:30:34	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-23 17:30:34	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-23 17:30:34	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-23 17:30:34	--	Channel #archlinux: 1728 nicks (1 op, 0 voices, 1727 normals)
+2021-04-23 17:30:34	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-23 17:31:18	-->	masterplain (ce7fb161@unaffiliated/sayo-) has joined #archlinux
+2021-04-23 17:31:25	<--	NoahvdAa (~NoahvdAa@static.78.121.69.159.clients.your-server.de) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-04-23 17:31:26	masterplain	!paste
+2021-04-23 17:31:26	phrik	Paste short snippets (up to 3 lines) in channel. Please do NOT use pastebin.com or paste.ubuntu.com -- some good, sane paste services are http://ix.io, https://paste.rs, https://bpaste.net and https://gist.github.com. See !ix or !rs for an easy way to paste from a pipe.
+2021-04-23 17:33:53	<--	littlepap_ (~homma@unaffiliated/homma) has quit (Quit: just leaving)
+2021-04-23 17:34:22	-->	nij (~user@2001-48F8-9021-806-0-0-0-580E-dynamic.midco.net) has joined #archlinux
+2021-04-23 17:34:48	-->	ubervison (~ubervison@2a02:aa12:b106:1b80:4978:337a:24bd:4bbc) has joined #archlinux
+2021-04-23 17:34:48	-->	NoahvdAa (~NoahvdAa@static.78.121.69.159.clients.your-server.de) has joined #archlinux
+2021-04-23 17:35:08	nij	Hello! Is there a way to dry-run `rm` `cp` `mv` `ln`..? Sometimes it's not clear if an action would fail due to ownership or other issues.
+2021-04-23 17:35:22	-->	daze (~Thunderbi@unaffiliated/daze) has joined #archlinux
+2021-04-23 17:35:40	-->	jellie (~zipper@unaffiliated/zipper) has joined #archlinux
+2021-04-23 17:35:52	-->	homma (~homma@unaffiliated/homma) has joined #archlinux
+2021-04-23 17:36:37	<--	daze (~Thunderbi@unaffiliated/daze) has quit (Client Quit)
+2021-04-23 17:36:56	<--	_h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Remote host closed the connection)
+2021-04-23 17:37:19	-->	parabolize (~paraboliz@c-76-25-97-149.hsd1.co.comcast.net) has joined #archlinux
+2021-04-23 17:37:20	-->	daze (~Thunderbi@unaffiliated/daze) has joined #archlinux
+2021-04-23 17:39:45	r3boot	nij: the commands themselves dont have that feature. You can however check the permissions beforehand, using stat or test
+2021-04-23 17:40:04	r3boot	that, or work with the return code of cp/mv/rm
+2021-04-23 17:40:08	r3boot	if that is non-zero, something failed
+2021-04-23 17:40:19	nij	sometimes it's not the permission.. but maybe the size, or broken files
+2021-04-23 17:41:08	-->	_h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has joined #archlinux
+2021-04-23 17:41:22	-->	linuxguru (~linuxguru@2607:fea8:d660:468e::3) has joined #archlinux
+2021-04-23 17:41:36	AndrewYu	Youccould put 'df' in a script to check
+2021-04-23 17:41:46	NetSysFire	yeah you should maybe a log an error if it fails
+2021-04-23 17:41:48	AndrewYu	nothing i knownof currently handle this
+2021-04-23 17:41:51	<--	Donatzsky (~Donatzsky@2a01:e34:eea9:fa00:2679:86f3:f788:c745) has quit (Remote host closed the connection)
+2021-04-23 17:42:44	-->	ramses (~ramses@nat-35.starnet.cz) has joined #archlinux
+2021-04-23 17:43:16	-->	Donatzsky (~Donatzsky@2a01:e34:eea9:fa00:2679:86f3:f788:c745) has joined #archlinux
+2021-04-23 17:43:32	r3boot	Just dont overcomplicate things, since that will make your scripts brittle :)
+2021-04-23 17:44:11	r3boot	the above tools will fail with a non-zero return code, so best to work with error handlers on that.
+2021-04-23 17:44:27	nij	hmmm i feel any operations must be able to dry run
+2021-04-23 17:44:33	AndrewYu	However it might be worth to check how some file managers implement this, since i himk most of thse check before doing operations, especially w/ disk space
+2021-04-23 17:44:33	nij	if we can do that life will be much easier
+2021-04-23 17:44:51	AndrewYu	What makes you think so, nij
+2021-04-23 17:45:02	<--	n00b101 (uid448161@gateway/web/irccloud.com/x-knnlvfxjsexhlsyv) has quit (Quit: Connection closed for inactivity)
+2021-04-23 17:45:11	nij	i can  know beforehand if an operation will fail
+2021-04-23 17:45:21	nij	for example, say im removing 1000 files
+2021-04-23 17:45:23	NetSysFire	how would they dry-run that? if rm fails and gets an error from the syscall (or rather the kernel) it will report that
+2021-04-23 17:45:32	nij	what if it fails in the middle? how would I know where it stops?
+2021-04-23 17:45:32	NetSysFire	there is a variety of things that can fail
+2021-04-23 17:45:33	Scimmia	So you expect the tool to do checks on every single thing that could fail? How?
+2021-04-23 17:45:37	-->	LKoen (~LKoen@11.160.9.109.rev.sfr.net) has joined #archlinux
+2021-04-23 17:45:41	<--	daze (~Thunderbi@unaffiliated/daze) has quit (Quit: daze)
+2021-04-23 17:45:53	nij	Scimmia: I don't know ..
+2021-04-23 17:45:56	-->	daze (~Thunderbi@unaffiliated/daze) has joined #archlinux
+2021-04-23 17:46:19	fluix	keep in mind there's also a very real race where you could <check> -> <things changes> -> <fails because of changes> 
+2021-04-23 17:46:26	fluix	so you have to handle issues even if you have some dryrun
