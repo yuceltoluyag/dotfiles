@@ -1,8 +1,9 @@
 aic94xx-firmware
 awesome-terminal-fonts-patched
 betterdiscord
+brave-bin
 cava
-cef-minimal
+chromedriver
 chromium-widevine
 damadamas-icon-theme-git
 dart-sass
@@ -12,6 +13,7 @@ electron-wechat
 fff-ueberzug-git
 flashplayer-standalone
 fnm-bin
+font-manager
 gconf
 google-chrome
 gotop
@@ -33,7 +35,11 @@ mpd-notification
 mugshot
 n30f-git
 neovim-nightly-git
+nerd-fonts-complete
+nerd-fonts-dejavu-complete
+nerd-fonts-source-code-pro
 nouveau-fw
+nvdock
 nvidia-390xx
 nvidia-390xx-dkms
 nvidia-390xx-settings
@@ -42,13 +48,14 @@ obs-linuxbrowser-bin
 ocs-url
 oh-my-zsh-git
 opencl-nvidia-390xx
+openvpn-update-systemd-resolved
 optimus-manager-git
 optimus-manager-qt-git
+otf-operator-mono-lig
 otf-sfmono-patched
 otf-vollkorn
 pikaur
 polybar
-postman-bin
 powerline-fonts-git
 ptags-git
 python-magic-ahupp
@@ -65,6 +72,7 @@ spicetify-themes-git
 spotify
 steam-fonts
 sublime-text-dev
+telegram-desktop-bin
 termsyn-font
 thinkfan
 toilet

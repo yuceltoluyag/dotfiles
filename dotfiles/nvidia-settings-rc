@@ -2,11 +2,7 @@
 # /home/friday13/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
-<<<<<<< HEAD
-# Generated on Sat May 15 14:02:08 2021
-=======
-# Generated on Fri Apr 23 17:19:58 2021
->>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
+# Generated on Mon May 17 13:30:11 2021
 #
 
 # ConfigProperties:
@@ -17,9 +13,9 @@ SliderTextEntries = Yes
 IncludeDisplayNameInConfigFile = Yes
 ShowQuitDialog = Yes
 UpdateRulesOnProfileNameChange = Yes
-Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
-Timer = Thermal_Monitor_(GPU_0),Yes,1000
 Timer = Memory_Used_(GPU_0),Yes,3000
+Timer = Thermal_Monitor_(GPU_0),Yes,1000
+Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
 
 # Attributes:
 

@@ -337,6 +337,9 @@ dotfiles:
   d_tig:
     src: config/tig
     dst: ~/.config/tig
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
 profiles:
   f13:
     dotfiles:
@@ -442,3 +445,4 @@ profiles:
     - f_pacman.conf
     - d_pictures
     - d_tig
+    - f_zshrc

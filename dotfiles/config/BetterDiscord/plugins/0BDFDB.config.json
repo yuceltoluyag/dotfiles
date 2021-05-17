@@ -1,11 +1,7 @@
 {
 	"changeLogs": {
-<<<<<<< HEAD
 		"BDFDB": "1.5.7",
 		"GoogleTranslateOption": "2.2.2"
-=======
-		"BDFDB": "1.5.7"
->>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
 	},
 	"choices": {
 		"toastPosition": "right"

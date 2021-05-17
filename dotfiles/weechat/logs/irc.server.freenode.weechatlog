@@ -2680,7 +2680,6 @@
 2021-04-22 07:28:38	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
 2021-04-22 07:28:38	--	freenode-connect (bot@freenode/utility-bot/frigg): Welcome to freenode. To protect the network all new connections will be scanned for vulnerabilities. This will not harm your computer, and vulnerable hosts will be notified.
 2021-04-22 07:28:38	--	CTCP requested by freenode-connect: VERSION (blocked)
-<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Í‚
 á3¿ Î‚
 á3¿ `      x      x                    ^   +   h t t p s : / / g i t h u b . c o m / f r a n k o / l i t e - x l / i s s u e s / 1 5                 8      h t t p s : / / w w w . y o u t u b e . c o m /                      ø      ð       `            0      `      €      ˜      °      à                   0      `      €      ˜      °      à                   0                   H      h      €      ¸      Ð      è      ø                          h   0   
@@ -3049,91 +3048,3 @@
 2021-05-15 20:27:52	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
 2021-05-15 20:27:53	--	freenode-connect (bot@freenode/utility-bot/frigg): Welcome to freenode. To protect the network all new connections will be scanned for vulnerabilities. This will not harm your computer, and vulnerable hosts will be notified.
 2021-05-15 20:27:53	--	CTCP requested by freenode-connect: VERSION (blocked)
-=======
-2021-04-23 17:30:21	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
-2021-04-23 17:30:21	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
-2021-04-23 17:30:21	--	gnutls: receiving 2 certificates
-2021-04-23 17:30:21	--	 - certificate[1] info:
-2021-04-23 17:30:21	--	   - subject `CN=hitchcock.freenode.net', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03f653c21110cf8cb54ab9b95a9aaf6108c6, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-03-22 16:28:23 UTC', expires `2021-06-20 16:28:23 UTC', pin-sha256="vZJAIo5AYL1gCFnDY7pnJuI36vKceDjc2YuwijS7m80="
-2021-04-23 17:30:21	--	 - certificate[2] info:
-2021-04-23 17:30:21	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x400175048314a4c8218c84a90c16cddf, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-10-07 19:21:40 UTC', expires `2021-09-29 19:21:40 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
-2021-04-23 17:30:21	--	gnutls: peer's certificate is trusted
-2021-04-23 17:30:21	--	irc: connected to chat.freenode.net/6697 (130.185.232.126)
-2021-04-23 17:30:21	--	hitchcock.freenode.net: *** Looking up your hostname...
-2021-04-23 17:30:21	--	hitchcock.freenode.net: *** Checking Ident
-2021-04-23 17:30:21	--	hitchcock.freenode.net: *** Couldn't look up your hostname
-2021-04-23 17:30:27	--	hitchcock.freenode.net: *** No Ident response
-2021-04-23 17:30:27	--	irc: client capability, server supports: extended-join tls multi-prefix identify-msg account-notify chghost sasl cap-notify away-notify
-2021-04-23 17:30:27	--	irc: client capability, requesting: sasl
-2021-04-23 17:30:27	--	irc: client capability, enabled: sasl
-2021-04-23 17:30:27	--	You are now logged in as friday13Jv. (friday13!friday13@85.96.51.133)
-2021-04-23 17:30:27	--	SASL authentication successful
-2021-04-23 17:30:28	--	Welcome to the freenode Internet Relay Chat Network friday13
-2021-04-23 17:30:28	--	Your host is hitchcock.freenode.net[130.185.232.126/6697], running version ircd-seven-1.1.9
-2021-04-23 17:30:28	--	This server was created Sun Jul 12 2020 at 20:48:04 UTC
-2021-04-23 17:30:28	--	hitchcock.freenode.net ircd-seven-1.1.9 DOQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
-2021-04-23 17:30:28	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
-2021-04-23 17:30:28	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 WHOX MONITOR=100 SAFELIST :are supported by this server
-2021-04-23 17:30:28	--	ELIST=CTU ETRACE CPRIVMSG CNOTICE KNOCK :are supported by this server
-2021-04-23 17:30:28	--	There are 104 users and 79795 invisible on 31 servers
-2021-04-23 17:30:28	--	30 :IRC Operators online
-2021-04-23 17:30:28	--	50 :unknown connection(s)
-2021-04-23 17:30:28	--	42292 :channels formed
-2021-04-23 17:30:28	--	I have 3410 clients and 1 servers
-2021-04-23 17:30:28	--	3410 3621 :Current local users 3410, max 3621
-2021-04-23 17:30:28	--	79899 83476 :Current global users 79899, max 83476
-2021-04-23 17:30:28	--	Highest connection count: 3622 (3621 clients) (96927 connections received)
-2021-04-23 17:30:28	--	- hitchcock.freenode.net Message of the Day -
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
-2021-04-23 17:30:28	--	- Elemental TV (www.elemental.tv)
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
-2021-04-23 17:30:28	--	- England, Sir Alfred Hitchcock was a noted film director
-2021-04-23 17:30:28	--	- and producer. Over a long career he pioneered many modern
-2021-04-23 17:30:28	--	- techniques in film-making, made more than 50 feature films,
-2021-04-23 17:30:28	--	- and influenced many present-day directors and producers.
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- Welcome to freenode - supporting the free and open source
-2021-04-23 17:30:28	--	- software communities since 1998.
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- By connecting to freenode you indicate that you have read and
-2021-04-23 17:30:28	--	- accept our policies and guidelines as set out on https://freenode.net
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- In the event that you observe behaviour that contravenes our policies,
-2021-04-23 17:30:28	--	- please notify a volunteer staff member via private message, or send us an
-2021-04-23 17:30:28	--	- e-mail to complaints@freenode.net -- we will do our best to address the
-2021-04-23 17:30:28	--	- situation within a reasonable period of time, and we may request further
-2021-04-23 17:30:28	--	- information or, as appropriate, involve other parties such as channel operators
-2021-04-23 17:30:28	--	- Group Contacts representing an on-topic group.
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- freenode runs an open proxy scanner.
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- If you are looking for assistance, you may be able to find a list of
-2021-04-23 17:30:28	--	- volunteer staff on '/stats p' (shows only on-call staff) or by joining
-2021-04-23 17:30:28	--	- #freenode and using the '/who freenode/staff/*' command. You may message
-2021-04-23 17:30:28	--	- any of us at any time. Please note that freenode predominantly provides
-2021-04-23 17:30:28	--	- assistance via private message, and while we have a network channel the
-2021-04-23 17:30:28	--	- primary venue for support requests is via private message to a member
-2021-04-23 17:30:28	--	- of the volunteer staff team.
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- From time to time, volunteer staff may send server-wide notices relating to
-2021-04-23 17:30:28	--	- the project, or the communities that we host. The majority of such notices
-2021-04-23 17:30:28	--	- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
-2021-04-23 17:30:28	--	- do not miss them. Important messages relating to the freenode project, including
-2021-04-23 17:30:28	--	- notices of upcoming maintenance and other scheduled downtime will be issued as
-2021-04-23 17:30:28	--	- global notices.
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- Representing an on-topic project? Don't forget to register, more information
-2021-04-23 17:30:28	--	- can be found on the https://freenode.net website under "Group Registration".
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- Thank you also to our server sponsors for the sustained support in keeping the
-2021-04-23 17:30:28	--	- network going for close to two decades.
-2021-04-23 17:30:28	--	-
-2021-04-23 17:30:28	--	- Thank you for using freenode!
-2021-04-23 17:30:28	--	End of /MOTD command.
-2021-04-23 17:30:28	--	User mode [+Zi] by friday13
-2021-04-23 17:30:28	--	NickServ (NickServ@services.): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
-2021-04-23 17:30:29	--	freenode-connect (bot@freenode/utility-bot/frigg): Welcome to freenode. To protect the network all new connections will be scanned for vulnerabilities. This will not harm your computer, and vulnerable hosts will be notified.
-2021-04-23 17:30:29	--	CTCP requested by freenode-connect: VERSION (blocked)
->>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
