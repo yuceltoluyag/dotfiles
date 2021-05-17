@@ -2141,6 +2141,7 @@
 2021-04-22 08:35:37	-->	ransome (~quassel@151.37.178.164) has joined #archlinux
 2021-04-22 08:35:40	<--	ledeni (~ledeni@fedora/ledeni) has quit (Remote host closed the connection)
 2021-04-22 08:36:19	-->	mryandao (~mryandao@gateway/tor-sasl/mryandao) has joined #archlinux
+<<<<<<< HEAD
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      2021-04-23 20:20:50	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
 2021-04-23 20:20:50	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
 2021-04-23 20:20:50	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
@@ -4005,3 +4006,57 @@
 2021-05-16 11:34:04	<--	haliucinas (~haliucina@5.20.153.21) has quit (Remote host closed the connection)
 2021-05-16 11:34:23	graphitemaster	Well I'm up to date now. I just need a reboot :P
 2021-05-16 11:34:30	<--	finkata1 (~finkata@83.222.188.39) has quit (Read error: Connection reset by peer)
+=======
+2021-04-23 17:30:34	-->	friday13 (~friday13@85.96.51.133) has joined #archlinux
+2021-04-23 17:30:34	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: !paste | Down? https://status.archlinux.org | Yes, the installer is real"
+2021-04-23 17:30:34	--	Topic set by alad (alad@archlinux/trusteduser/alad) on Fri, 02 Apr 2021 02:02:35
+2021-04-23 17:30:34	--	Channel #archlinux: 1728 nicks (1 op, 0 voices, 1727 normals)
+2021-04-23 17:30:34	--	Channel created on Sun, 15 Feb 2004 07:08:31
+2021-04-23 17:31:18	-->	masterplain (ce7fb161@unaffiliated/sayo-) has joined #archlinux
+2021-04-23 17:31:25	<--	NoahvdAa (~NoahvdAa@static.78.121.69.159.clients.your-server.de) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-04-23 17:31:26	masterplain	!paste
+2021-04-23 17:31:26	phrik	Paste short snippets (up to 3 lines) in channel. Please do NOT use pastebin.com or paste.ubuntu.com -- some good, sane paste services are http://ix.io, https://paste.rs, https://bpaste.net and https://gist.github.com. See !ix or !rs for an easy way to paste from a pipe.
+2021-04-23 17:33:53	<--	littlepap_ (~homma@unaffiliated/homma) has quit (Quit: just leaving)
+2021-04-23 17:34:22	-->	nij (~user@2001-48F8-9021-806-0-0-0-580E-dynamic.midco.net) has joined #archlinux
+2021-04-23 17:34:48	-->	ubervison (~ubervison@2a02:aa12:b106:1b80:4978:337a:24bd:4bbc) has joined #archlinux
+2021-04-23 17:34:48	-->	NoahvdAa (~NoahvdAa@static.78.121.69.159.clients.your-server.de) has joined #archlinux
+2021-04-23 17:35:08	nij	Hello! Is there a way to dry-run `rm` `cp` `mv` `ln`..? Sometimes it's not clear if an action would fail due to ownership or other issues.
+2021-04-23 17:35:22	-->	daze (~Thunderbi@unaffiliated/daze) has joined #archlinux
+2021-04-23 17:35:40	-->	jellie (~zipper@unaffiliated/zipper) has joined #archlinux
+2021-04-23 17:35:52	-->	homma (~homma@unaffiliated/homma) has joined #archlinux
+2021-04-23 17:36:37	<--	daze (~Thunderbi@unaffiliated/daze) has quit (Client Quit)
+2021-04-23 17:36:56	<--	_h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has quit (Remote host closed the connection)
+2021-04-23 17:37:19	-->	parabolize (~paraboliz@c-76-25-97-149.hsd1.co.comcast.net) has joined #archlinux
+2021-04-23 17:37:20	-->	daze (~Thunderbi@unaffiliated/daze) has joined #archlinux
+2021-04-23 17:39:45	r3boot	nij: the commands themselves dont have that feature. You can however check the permissions beforehand, using stat or test
+2021-04-23 17:40:04	r3boot	that, or work with the return code of cp/mv/rm
+2021-04-23 17:40:08	r3boot	if that is non-zero, something failed
+2021-04-23 17:40:19	nij	sometimes it's not the permission.. but maybe the size, or broken files
+2021-04-23 17:41:08	-->	_h4rd3n3D_ (~weechat@gateway/tor-sasl/h4rd3n3d) has joined #archlinux
+2021-04-23 17:41:22	-->	linuxguru (~linuxguru@2607:fea8:d660:468e::3) has joined #archlinux
+2021-04-23 17:41:36	AndrewYu	Youccould put 'df' in a script to check
+2021-04-23 17:41:46	NetSysFire	yeah you should maybe a log an error if it fails
+2021-04-23 17:41:48	AndrewYu	nothing i knownof currently handle this
+2021-04-23 17:41:51	<--	Donatzsky (~Donatzsky@2a01:e34:eea9:fa00:2679:86f3:f788:c745) has quit (Remote host closed the connection)
+2021-04-23 17:42:44	-->	ramses (~ramses@nat-35.starnet.cz) has joined #archlinux
+2021-04-23 17:43:16	-->	Donatzsky (~Donatzsky@2a01:e34:eea9:fa00:2679:86f3:f788:c745) has joined #archlinux
+2021-04-23 17:43:32	r3boot	Just dont overcomplicate things, since that will make your scripts brittle :)
+2021-04-23 17:44:11	r3boot	the above tools will fail with a non-zero return code, so best to work with error handlers on that.
+2021-04-23 17:44:27	nij	hmmm i feel any operations must be able to dry run
+2021-04-23 17:44:33	AndrewYu	However it might be worth to check how some file managers implement this, since i himk most of thse check before doing operations, especially w/ disk space
+2021-04-23 17:44:33	nij	if we can do that life will be much easier
+2021-04-23 17:44:51	AndrewYu	What makes you think so, nij
+2021-04-23 17:45:02	<--	n00b101 (uid448161@gateway/web/irccloud.com/x-knnlvfxjsexhlsyv) has quit (Quit: Connection closed for inactivity)
+2021-04-23 17:45:11	nij	i can  know beforehand if an operation will fail
+2021-04-23 17:45:21	nij	for example, say im removing 1000 files
+2021-04-23 17:45:23	NetSysFire	how would they dry-run that? if rm fails and gets an error from the syscall (or rather the kernel) it will report that
+2021-04-23 17:45:32	nij	what if it fails in the middle? how would I know where it stops?
+2021-04-23 17:45:32	NetSysFire	there is a variety of things that can fail
+2021-04-23 17:45:33	Scimmia	So you expect the tool to do checks on every single thing that could fail? How?
+2021-04-23 17:45:37	-->	LKoen (~LKoen@11.160.9.109.rev.sfr.net) has joined #archlinux
+2021-04-23 17:45:41	<--	daze (~Thunderbi@unaffiliated/daze) has quit (Quit: daze)
+2021-04-23 17:45:53	nij	Scimmia: I don't know ..
+2021-04-23 17:45:56	-->	daze (~Thunderbi@unaffiliated/daze) has joined #archlinux
+2021-04-23 17:46:19	fluix	keep in mind there's also a very real race where you could <check> -> <things changes> -> <fails because of changes> 
+2021-04-23 17:46:26	fluix	so you have to handle issues even if you have some dryrun
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba

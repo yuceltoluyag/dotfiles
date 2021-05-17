@@ -2,7 +2,11 @@
  * @name BDFDB
  * @author DevilBro
  * @authorId 278543574059057154
+<<<<<<< HEAD
  * @version 1.6.2
+=======
+ * @version 1.5.9
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
  * @description Required Library for DevilBro's Plugins
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
@@ -20,7 +24,11 @@ module.exports = (_ => {
 		"info": {
 			"name": "BDFDB",
 			"author": "DevilBro",
+<<<<<<< HEAD
 			"version": "1.6.2",
+=======
+			"version": "1.5.9",
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
 			"description": "Required Library for DevilBro's Plugins"
 		},
 		"rawUrl": `https://mwittrien.github.io/BetterDiscordAddons/Library/0BDFDB.plugin.js`
@@ -7773,7 +7781,11 @@ module.exports = (_ => {
 				InternalBDFDB._processAvatarRender = function (user, avatar) {
 					if (BDFDB.ReactUtils.isValidElement(avatar) && BDFDB.ObjectUtils.is(user) && (avatar.props.className || "").indexOf(BDFDB.disCN.bdfdbbadgeavatar) == -1) {
 						avatar.props[InternalData.userIdAttribute] = user.id;
+<<<<<<< HEAD
 						let role = "", className = BDFDB.DOMUtils.formatClassName((avatar.props.className || "").replace(BDFDB.disCN.avatar, "")), addBadge = InternalBDFDB.settings.general.showSupportBadges;
+=======
+						let role = "", className = BDFDB.DOMUtils.formatClassName((avatar.props.className || "").replace(BDFDB.disCN.avatar, "")), addBadge = InternalBDFDB.settings.general.showSupportBadges, customBadge = false;
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
 						if (BDFDB_Patrons[user.id] && BDFDB_Patrons[user.id].active) {
 							role = BDFDB_Patrons[user.id].text || (BDFDB_Patron_Tiers[BDFDB_Patrons[user.id].tier] || {}).text;
 							className = BDFDB.DOMUtils.formatClassName(className, addBadge && BDFDB.disCN.bdfdbhasbadge, BDFDB.disCN.bdfdbbadgeavatar, BDFDB.disCN.bdfdbsupporter, BDFDB.disCN[`bdfdbsupporter${BDFDB_Patrons[user.id].tier}`]);
@@ -7792,6 +7804,10 @@ module.exports = (_ => {
 							let newProps = {
 								className: className,
 								style: {borderRadius: 0, overflow: "visible"},
+<<<<<<< HEAD
+=======
+								custombadge_id: customBadge ? user.id : null,
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
 								children: [avatar]
 							};
 							newProps[InternalData.userIdAttribute] = user.id;
@@ -7810,7 +7826,11 @@ module.exports = (_ => {
 					if (Node.prototype.isPrototypeOf(avatar) && BDFDB.ObjectUtils.is(user) && (avatar.className || "").indexOf(BDFDB.disCN.bdfdbbadgeavatar) == -1) {
 						if (wrapper) wrapper.setAttribute(InternalData.userIdAttribute, user.id);
 						avatar.setAttribute(InternalData.userIdAttribute, user.id);
+<<<<<<< HEAD
 						let role = "", addBadge = InternalBDFDB.settings.general.showSupportBadges;
+=======
+						let role = "", addBadge = InternalBDFDB.settings.general.showSupportBadges, customBadge = false;
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
 						if (BDFDB_Patrons[user.id] && BDFDB_Patrons[user.id].active) {
 							role = BDFDB_Patrons[user.id].text || (BDFDB_Patron_Tiers[BDFDB_Patrons[user.id].tier] || {}).text;
 							avatar.className = BDFDB.DOMUtils.formatClassName(avatar.className, addBadge && BDFDB.disCN.bdfdbhasbadge, BDFDB.disCN.bdfdbbadgeavatar, BDFDB.disCN.bdfdbsupporter, BDFDB.disCN[`bdfdbsupporter${BDFDB_Patrons[user.id].tier}`]);

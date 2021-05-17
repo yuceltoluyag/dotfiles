@@ -941,6 +941,7 @@
 2021-04-23 17:30:20		ruby scripts loaded: colorizer
 2021-04-23 17:30:21		script: 364 scripts for WeeChat 3.1
 2021-04-23 17:30:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
+<<<<<<< HEAD
 2021-04-23 20:20:34		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
 2021-04-23 20:20:34		perl: error: Can't locate Pod/Select.pm in @INC (you may need to install the Pod::Select module) (@INC contains: /usr/lib/perl5/5.32/site_perl /usr/share/perl5/site_perl /usr/lib/perl5/5.32/vendor_perl /usr/share/perl5/vendor_perl /usr/lib/perl5/5.32/core_perl /usr/share/perl5/core_perl) at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
 2021-04-23 20:20:34		BEGIN failed--compilation aborted at /home/friday13/.weechat/perl/autoload/multiline.pl line 240.
@@ -1025,3 +1026,27 @@
 2021-05-15 20:27:41		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger
 2021-05-16 11:34:39		ruby: scripts unloaded
 2021-05-16 11:34:39		python: scripts unloaded
+=======
+2021-04-23 17:46:33		Options reloaded from sec.conf
+2021-04-23 17:46:33		Options reloaded from weechat.conf
+2021-04-23 17:46:33		Options reloaded from plugins.conf
+2021-04-23 17:46:33		Options reloaded from charset.conf
+2021-04-23 17:46:33		Options reloaded from logger.conf
+2021-04-23 17:46:33		Options reloaded from exec.conf
+2021-04-23 17:46:33		Options reloaded from trigger.conf
+2021-04-23 17:46:33		Options reloaded from alias.conf
+2021-04-23 17:46:33		Options reloaded from buflist.conf
+2021-04-23 17:46:33		Options reloaded from fifo.conf
+2021-04-23 17:46:33		Options reloaded from irc.conf
+2021-04-23 17:46:33		Options reloaded from relay.conf
+2021-04-23 17:46:33		Options reloaded from lua.conf
+2021-04-23 17:46:33		Options reloaded from perl.conf
+2021-04-23 17:46:33		Options reloaded from guile.conf
+2021-04-23 17:46:33		Options reloaded from python.conf
+2021-04-23 17:46:33		Options reloaded from colorize_nicks.conf
+2021-04-23 17:46:33		Options reloaded from ruby.conf
+2021-04-23 17:46:33		Options reloaded from script.conf
+2021-04-23 17:46:33		Options reloaded from fset.conf
+2021-04-23 17:46:33		ruby: scripts unloaded
+2021-04-23 17:46:33		python: scripts unloaded
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba

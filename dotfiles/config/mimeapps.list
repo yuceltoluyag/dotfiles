@@ -51,4 +51,7 @@ x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 image/x-xcursor=feh.desktop
 text/x-sass=sublime_text_3.desktop
+<<<<<<< HEAD
 x-scheme-handler/tg=userapp-Telegram Desktop-BG2520.desktop
+=======
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba

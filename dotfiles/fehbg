@@ -1,2 +1,6 @@
 #!/bin/sh
+<<<<<<< HEAD
 feh --no-fehbg --bg-fill '/home/friday13/Pictures/fantasy-man-planets-destruction-hands-galaxy.jpg' 
+=======
+feh --no-fehbg --bg-fill '/home/friday13/Pictures/wallhaven-v9956p.jpg' 
+>>>>>>> b9c5b018446f73a8d8f3d99cb505e2ef535363ba
