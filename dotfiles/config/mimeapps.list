@@ -1,8 +1,8 @@
 [Added Associations]
-image/jpeg=feh.desktop;
-image/png=feh.desktop;sxiv.desktop;gimp.desktop;
+image/jpeg=sxiv.desktop;feh.desktop;
+image/png=sxiv.desktop;feh.desktop;gimp.desktop;
 application/x-shellscript=sublime_text_3.desktop;nvim.desktop;
-text/plain=sublime_text_3.desktop;nvim.desktop;
+text/plain=visual-studio-code.desktop;sublime_text_3.desktop;nvim.desktop;
 text/x-matlab=sublime_text_3.desktop;nvim.desktop;
 application/x-perl=sublime_text_3.desktop;
 text/markdown=sublime_text_3.desktop;
@@ -37,6 +37,8 @@ application/octet-stream=Thunar-folder-handler.desktop;
 application/x-yaml=sublime_text_3.desktop;
 application/x-7z-compressed=xarchiver.desktop;
 image/x-xcursor=feh.desktop;
+audio/x-mpegurl=mpv.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-BG2520.desktop;
 
 [Default Applications]
 x-scheme-handler/mailto=google-chrome.desktop
@@ -48,3 +50,5 @@ x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 image/x-xcursor=feh.desktop
+text/x-sass=sublime_text_3.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-BG2520.desktop

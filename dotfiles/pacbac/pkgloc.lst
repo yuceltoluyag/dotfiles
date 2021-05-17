@@ -28,17 +28,12 @@ lib32-opencl-nvidia-390xx
 libmodule
 libxnvctrl-390xx
 lscolors-git
-mkchromecast
 mons
 mpd-notification
 mugshot
 n30f-git
 neovim-nightly-git
-nerd-fonts-complete
-nerd-fonts-dejavu-complete
-nerd-fonts-source-code-pro
 nouveau-fw
-nvdock
 nvidia-390xx
 nvidia-390xx-dkms
 nvidia-390xx-settings

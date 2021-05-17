@@ -1,12 +1,13 @@
 {
 	"choices": {
 		"inputContext": "auto",
-		"inputMessage": "$discord",
 		"outputContext": "tr",
+		"inputMessage": "$discord",
 		"outputMessage": "en"
 	},
 	"engines": {
-		"translator": "googleapi"
+		"translator": "googleapi",
+		"backup": "----"
 	},
 	"exceptions": {
 		"wordStart": [

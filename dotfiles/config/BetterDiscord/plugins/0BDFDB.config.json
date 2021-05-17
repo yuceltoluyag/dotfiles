@@ -1,4 +1,8 @@
 {
+	"changeLogs": {
+		"BDFDB": "1.5.7",
+		"GoogleTranslateOption": "2.2.2"
+	},
 	"choices": {
 		"toastPosition": "right"
 	},

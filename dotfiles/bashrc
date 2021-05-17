@@ -65,3 +65,5 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export PATH=$HOME/.config/nvcode/utils/bin:$PATH
+# added by travis gem
+[ ! -s /home/friday13/.travis/travis.sh ] || source /home/friday13/.travis/travis.sh

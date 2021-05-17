@@ -18,3 +18,4 @@ gtk-xft-hinting=1
 gtk-xft-hintstyle="hintfull"
 gtk-xft-rgba="rgb"
 gtk-modules="gail:atk-bridge"
+gtk-can-change-accels=1 ~/.gtkrc-2.0

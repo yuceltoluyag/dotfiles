@@ -68,7 +68,7 @@ for_window [instance="dropdown"] border pixel 5
 
 # >> Program launching
 $super+p $exe i3run -i jetbrains-phpstorm -e 'jetbrains-phpstorm'
-$super+g $exe i3run -c google-chrome-stable -e 'google-chrome-stable'
+$super+g $exe google-chrome-stable --incognito
 $super+shift+g $exe gimp
 $super+n  $exe urxvt -e ncmpcpp
 $super+y $exe  urxvt -e calcurse
@@ -121,6 +121,7 @@ $super+Delete $exe ~/.script/dmenurecord dmenurecord kill
 $super+quotedbl $exe ~/.script/dmenuunicode
 $super+Insert $exe   ~/.script/showclip
 #bindsym $mod+b      bar mode toggle
+$super+b $exe polybar-msg cmd toggle
 bindsym $mod+Shift+b    floating toggle; sticky toggle; exec --no-startup-id hover left
 bindsym $mod+Shift+n    floating toggle; sticky toggle; exec --no-startup-id hover right
 # Screen brightness controls
@@ -139,11 +140,13 @@ bindsym XF86AudioMute exec --no-startup-id "amixer set Master toggle && if amixe
 # >> Window rules
 
 for_window [class="^.*"] floating enabled
+for_window [class="firefox"] focus; $fyra -m B
 for_window [class="Lxappearance"] focus; $fyra -m B
 for_window [class="Alacritty"] focus; $fyra -m B
 for_window [class="Sxiv"] focus; $fyra -m B
 for_window [class="feh"] focus; $fyra -m D
 for_window [class="Google-chrome"] focus; $fyra -m A
+for_window [class="Brave-browser"] focus; $fyra -m A
 for_window [class="discord"] focus; $fyra -m A
 for_window [class="Postman"] focus; $fyra -m A
 for_window [instance="subl3"] focus; $fyra -m A
@@ -168,7 +171,7 @@ for_window [class="Font-manager"] focus; exec --no-startup-id i3fyra -m A
 for_window [class="Thunar"] focus; exec --no-startup-id i3fyra -m B
 
 for_window [class="Google-chrome"]                                                           focus; $fyra -m A
-for_window [class="Firefox" instance="Navigator"]               focus; $fyra -m A
+for_window [class="Firefox" instance="Navigator"]               focus; $fyra -m B
 for_window [class="jetbrains-studio"]                           focus; $fyra -m A
 for_window [class="mpv"]                                        focus; $fyra -m D
 for_window [instance="Google-chrome" window_role="browser"]          focus; $fyra -m A

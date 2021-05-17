@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="f5e24095a849793bdd1cbc8f2a30a23d">
+  <resource identifier="gimp-palette-color-history" checksum="9643d00eea765f5b0a9ca094a06a2c5a">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1621,6 +1621,9 @@
   <resource identifier="CaskaydiaCove Nerd Font Mono" checksum="(null)">
   </resource>
 
+  <resource identifier="Classic Console" checksum="(null)">
+  </resource>
+
   <resource identifier="CodeNewRoman Nerd Font" checksum="(null)">
   </resource>
 
@@ -2030,6 +2033,9 @@
   </resource>
 
   <resource identifier="FuraMono Nerd Font Mono Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="gallant12x22 Medium" checksum="(null)">
   </resource>
 
   <resource identifier="GohuFont Nerd Font Medium" checksum="(null)">
@@ -3248,6 +3254,9 @@
   </resource>
 
   <resource identifier="LiterationSerif Nerd Font Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Luxi Mono" checksum="(null)">
   </resource>
 
   <resource identifier="Material" checksum="(null)">
@@ -5836,6 +5845,9 @@
   <resource identifier="Nunito Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="OCR A Std" checksum="(null)">
+  </resource>
+
   <resource identifier="OpenDyslexicAlta Nerd Font" checksum="(null)">
   </resource>
 
@@ -6410,9 +6422,6 @@
   </resource>
 
   <resource identifier="ShureTechMono Nerd Font Mono" checksum="(null)">
-  </resource>
-
-  <resource identifier="Siji" checksum="(null)">
   </resource>
 
   <resource identifier="Source Code Pro" checksum="(null)">
@@ -7204,6 +7213,9 @@
   <resource identifier="SpaceMono Nerd Font Mono Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Special Elite" checksum="(null)">
+  </resource>
+
   <resource identifier="Standard Symbols PS" checksum="(null)">
   </resource>
 
@@ -7619,12 +7631,6 @@
   </resource>
 
   <resource identifier="Wingdings 3," checksum="(null)">
-  </resource>
-
-  <resource identifier="xos4 Terminess Powerline" checksum="(null)">
-  </resource>
-
-  <resource identifier="xos4 Terminess Powerline Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Z003 Medium Italic" checksum="(null)">
